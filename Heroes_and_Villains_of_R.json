@@ -1,0 +1,5844 @@
+{
+	"siteVersion": "1.147.14",
+	"_meta": {
+		"sources": [
+			{
+				"json": "HaVoR",
+				"abbreviation": "HaVoR",
+				"full": "Heroes and Villains of R",
+				"url": "",
+				"authors": [
+					"R9"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1643297749,
+		"dateLastModified": 1643297749
+	},
+	"monster": [
+		{
+			"name": "Hythonia the Crystaline",
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "21d10 + 84",
+				"average": 250
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"swim": 40
+			},
+			"str": 21,
+			"dex": 17,
+			"con": 19,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+11",
+				"con": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"deception": "+10",
+				"insight": "+9",
+				"perception": "+9",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Auran"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"Hythonia is a 12th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, +10 to hit with spell attacks). It has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell lightning lure|TCE}",
+								"{@spell mending}",
+								"{@spell mold earth|XGE}",
+								"{@spell poison spray}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell feather fall}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell levitate}",
+								"{@spell mirror image}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell protection from energy} any damage source",
+								"{@spell slow}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell stoneskin} magical attacks as well",
+								"{@spell storm sphere|XGE}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}",
+								"{@spell wall of stone}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell bones of the earth|XGE}",
+								"{@spell investiture of stone|XGE} magical attacks as well"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Hythonia fails a saving throw, she can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"When a creature that can see Hythonia's eyes starts its turn within 30 feet of her, Hythonia can force it to make a {@dc 18} Constitution saving throw if she isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, on a failed save the creature begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic. Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see Hythonia until the start of its next turn, when it can avert its eyes again. If the creature looks at Hythonia in the meantime, it must immediately make the save. If Hythonia sees herself reflected on a polished surface within 30 feet of her and in an area of bright light, she is affected by her own gaze."
+					]
+				},
+				{
+					"name": "Shed Skin (Mythic Trait; Recharges after a Short or Long Rest)",
+					"entries": [
+						"If Hythonia is reduced to 0 hit points, she doesn't die or fall {@condition unconscious}. Instead, she sheds her skin, regains 250 hit points, and moves up to her speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Sorcery points",
+					"entries": [
+						"The medusa has 12 sorcery points. It can spend 1 or more sorcery points to gain one of the following benefits:",
+						"Extended Spell: When the medusa casts a spell that has a duration of 1 minute or longer, she can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.",
+						"Quickened Spell: When the medusa casts a spell that has a casting time of 1 action, the medusa can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.",
+						"Subtle Spell: When the medusa casts a spell, it can spend 1 sorcery point to cast the spell without any somatic or verbal components."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hythonia makes three attacks: one to constrict, one with her snaky hair and one with her claws."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) slashing damage plus 4 ({@damage 1d8}) lightning  damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one Large or smaller creature. {@h}16 ({@damage 2d10 + 5}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained} and takes 15 ({@damage 3d6 + 5}) bludgeoning damage at the start of each of its turns, and Hythonia can't constrict another target."
+					]
+				},
+				{
+					"name": "Snaky Hair",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}31 ({@damage 4d12 + 5}) bludgeoning damage, and Hythonia can pull the target up to 5 feet closer to her if it is a Large or smaller creature."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Hythonia moves up to her speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Snaky Hair",
+					"entries": [
+						"Hythonia makes one attack with her snaky hair."
+					]
+				},
+				{
+					"name": "Cast a spell (Costs 2 Actions)",
+					"entries": [
+						"Hythonia casts a spell."
+					]
+				},
+				{
+					"name": "Entrust Concentration",
+					"entries": [
+						"Hythonia can entrust a spell concentration to a chosen creature within 10 feet. The spell is maintained by the new creature Hythonia can cast new concentration spells without breaking the entrusted spell's concentration."
+					]
+				}
+			],
+			"mythicHeader": [
+				"If Hythonia's mythic trait is active, she can use the options below as legendary actions for 1 hour after using Shed Skin."
+			],
+			"mythic": [
+				{
+					"name": "Numbing Claws",
+					"entries": [
+						"Hythonia makes two attacks with her claws. If both attacks hit the same creature, it takes an extra 7 ({@damage 2d6}) lightning damage and must succeed on a {@dc 18} Constitution saving throw or become {@condition paralyzed} until the start of her next turn."
+					]
+				},
+				{
+					"name": "Look at Me (Costs 3 Actions)",
+					"entries": [
+						"Hythonia can force a sighted creature she has {@condition grappled} to see her eyes and be affected by her gaze."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Blue Dragon",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), Hythonia can take a lair action to cause one of the following effects. She can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"Hythonia briefly animates creatures that have been {@condition petrified} by her gaze. Each statue attacks one creature within 5 feet of it, with a +11 bonus to hit and dealing 10 ({@damage 3d6}) bludgeoning damage on a hit. If a Medium or smaller creature takes this damage, it is also {@condition grappled} (escape {@dc 15}).",
+											"Hythonia causes spectral snakes to erupt from a point she can see within 150 feet of her. Each creature within 20 feet of that point must succeed on a {@dc 19} Constitution saving throw or take 5 ({@damage 2d4}) piercing damage and become {@condition poisoned} until the end of its next turn. While {@condition poisoned} in this way, the creature has disadvantage on Intelligence checks and Intelligence saving throws, and it behaves as if under the effect of the {@spell confusion} spell."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region containing Hythonia's lair is warped by her presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"A large population of snakes dwells in the region.",
+											"Trees within 1 mile of the lair are petrified wood. Plants that stay within 500 feet of the lair for 1 day turn to stone.",
+											"Small bodies of water within 1 mile of the lair become poisonous. A creature that drinks the water must succeed on a {@dc 19} Constitution saving throw or become {@condition poisoned} for 8 hours. An affected creature can repeat the saving throw at the end of each hour."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Hythonia as a Mythic Encounter",
+								"entries": [
+									"Hythonia serves as a potent threat against even high-level characters, but you can increase the challenge by using the Shed Skin trait. When this happens, Hythonia heals many of her wounds and slips away from danger, and then she can choose one of her mythic actions when she uses a legendary action.",
+									"You might foreshadow Hythonia using her mythic trait by describing her skin cracking and turning pale as she suffers wounds. Read or paraphrase the following text when Hythonia finally uses her Shed Skin trait:",
+									{
+										"type": "insetReadaloud",
+										"id": "3ed",
+										"entries": [
+											"The medusa's skin cracks, turns a lifeless gray, and shatters! The monster crumbles to dust—but what clatters to the ground isn't scale and bone, but hollow stone. The sound of rippling coils precedes the medusa rising up anew, the last of her shed skin dropping away, revealing glistening, unscarred scales."
+										]
+									},
+									"Fighting Hythonia as a mythic encounter is equivalent to taking on two challenge rating 17 creatures in one encounter. Award a party 36,000 XP for defeating Hythonia after she uses Shed Skin."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MOT/Hythonia.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MOT/Hythonia.png?v=1.123.0",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"petrified",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Abigail",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@spell mage armor}",
+						"{@item +2 shield}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 115
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 9,
+			"dex": 16,
+			"con": 16,
+			"int": 15,
+			"wis": 12,
+			"cha": 20,
+			"save": {
+				"wis": "+6",
+				"cha": "+10"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"intimidation": "+10",
+				"religion": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": []
+				},
+				{
+					"resist": [
+						"cold",
+						"lightning"
+					]
+				}
+			],
+			"languages": [
+				"any two languages",
+				"telepathy 120 ft. with all aquatic creatures"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 20}), requiring no material components:"
+					],
+					"will": [
+						"{@spell detect magic}",
+						"{@spell mage armor} (self only)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell power word pain|XGE}",
+							"{@spell true seeing}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warlock is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell eldritch blast} - Kraken Blast",
+								"{@spell guidance}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"5": {
+							"spells": [
+								"{@spell armor of Agathys}*",
+								"{@spell cone of cold}",
+								"{@spell conjure elemental}",
+								"{@spell control water}",
+								"{@spell dimension door}",
+								"{@spell Evard's black tentacles}",
+								"{@spell hex}",
+								"{@spell silence}",
+								"{@spell synaptic static|XGE}",
+								"{@spell thunderwave}"
+							],
+							"slots": 3,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multishoot",
+					"entries": [
+						"Abigail can use Kraken Blast three times and can use Grasp of the Deep."
+					]
+				},
+				{
+					"name": "Kraken Blast",
+					"entries": [
+						"{@atk rw} {@hit 12} to hit, range 300 ft., one target. {@h}12 ({@damage 1d10 + 5}) force damage and the target is pushed 10ft the the opposite direction and its speed is reduced by 10ft until the start of her next turn"
+					]
+				},
+				{
+					"name": "Grasp of the Deep - bonus action",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 10 ft., one target. {@h}10 ({@damage 2d10}) cold or lightning damage."
+					]
+				},
+				{
+					"name": "Devouring Maw",
+					"entries": [
+						"Abigail chooses a point She can see within 60 feet of her. For 1 minute, a translucent maw manifests in a 10-foot radius centered on that point. Each creature in that area when the maw appears must succeed on a {@dc 20} Strength saving throw be {@condition restrained}. Any creature that starts its turn in the maw's area takes {@damage 3d6} cold or lightning damage. As an action, a {@condition restrained} creature can repeat the saving throw, ending the restraint on a success. At the start of Abigail's turn, if there is a creature in the maw's area, she gain 14 temporary hit points."
+					]
+				},
+				{
+					"name": "Unleash the Depths",
+					"entries": [
+						"Transport: You and up to five willing creatures of your choice that you can see within 30 feet of the manifestation point are grasped by spectral tentacles and yanked through your patron's realm. The tentacles teleport you and the chosen creatures to a point of your choice within 100 miles that you have visited within the past 24 hours. The tentacles then vanish.",
+						"Fury: You can direct a barrage of spectral tentacles to issue forth and strike up to five creatures you can see within 30 feet of the manifestation point. Each target must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes {@damage 6d10} cold or lightning damage (your choice) and is knocked {@condition prone}. On a successful save, it takes half as much damage and is not knocked {@condition prone}. The tentacles then vanish."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Guardian Grasp",
+					"entries": [
+						"When Abigail or a creature she can see takes damage while within 10 feet of her Grasp of the Deep tentacle, she can use her reaction to choose one of those creatures and reduce the damage to the chosen creature by half. After doing so, the Grasp of the Deep tentacle vanishes."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Warlock of the Great Old One",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/rZkGHSS.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"TP",
+				"X",
+				"XX"
+			],
+			"damageTags": [
+				"C",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"restrained"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Acererak Demilich",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "T",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"natural armor",
+						"three {@item ioun stone, protection}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "32d4 + 128",
+				"average": 208
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 20,
+			"con": 18,
+			"int": 28,
+			"wis": 22,
+			"cha": 20,
+			"save": {
+				"con": "+11",
+				"int": "+16",
+				"wis": "+13",
+				"cha": "+12"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from magic weapons",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"cr": {
+				"cr": "22",
+				"lair": "23"
+			},
+			"trait": [
+				{
+					"name": "Avoidance",
+					"entries": [
+						"If the demilich is subjected to an effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the demilich fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Turn Immunity",
+					"entries": [
+						"The demilich is immune to effects that turn undead."
+					]
+				},
+				{
+					"name": "Ioun Stones",
+					"entries": [
+						"Acererak is attuned to nine {@item Ioun Stone}s.",
+						"Three of which are Fortitude, if one is destroyed his maximum life decreses by 32 and the DC of all its skills by one.",
+						"Three of which are Protection, if one is destroyed his Armor Class is reduced by one",
+						"Two of which is Absorption that it can use each one without a reaction",
+						"And one is a Greater Absorption"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Howl {@recharge 5}",
+					"entries": [
+						"The demilich emits a bloodcurdling howl. Each creature within 30 feet of the demilich that can hear the howl must succeed on a {@dc 19} Constitution saving throw or drop to 0 hit points. On a successful save, the creature is {@condition frightened} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"The demilich targets up to three creatures that it can see within 10 feet of it. Each target must succeed on a {@dc 19} Constitution saving throw or take 21 ({@damage 6d6}) necrotic damage, and the demilich regains hit points equal to the total damage dealt to all targets."
+					]
+				},
+				{
+					"name": "Trap Soul",
+					"entries": [
+						"The demilich targets one creature that it can see within 30 feet of it. The target must make a {@dc 19} Charisma saving throw. On a failed save, the target's soul is magically trapped inside one of the demilich's gems. While the soul is trapped, the target's body and all the equipment it is carrying cease to exist. On a successful save, the target takes 24 ({@damage 7d6}) necrotic damage, and if this damage reduces the target to 0 hit points, its soul is trapped as if it failed the saving throw. A soul trapped in a gem for 24 hours is devoured and ceases to exist.",
+						"If the demilich drops to 0 hit points, it is destroyed and turns to powder, leaving behind its gems. Crushing a gem releases any soul trapped within, at which point the target's body re-forms in an unoccupied space nearest to the gem and in the same state as when it was trapped."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Greater Absorption",
+					"entries": [
+						"While this marbled lavender and green ellipsoid orbits your head, you can use your reaction to cancel a spell of 8th level or lower cast by a creature you can see and targeting only you. Once the stone has canceled 50 levels of spells, it burns out and turns dull gray, losing its magic. If you are targeted by a spell whose level is higher than the number of spell levels the stone has left, the stone can't cancel it."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Flight",
+					"entries": [
+						"The demilich flies up to half its flying speed."
+					]
+				},
+				{
+					"name": "Cloud of Dust",
+					"entries": [
+						"The demilich magically swirls its dusty remains. Each creature within 10 feet of the demilich, including around a corner, must succeed on a {@dc 19} Constitution saving throw or be {@condition blinded} until the end of the demilich's next turn. A creature that succeeds on the saving throw is immune to this effect until the end of the demilich's next turn."
+					]
+				},
+				{
+					"name": "Energy Drain (Costs 2 Actions)",
+					"entries": [
+						"Each creature with in 30 feet of the demilich must make a {@dc 19} Constitution saving throw. On a failed save, the creature's hit point maximum is magically reduced by 10 ({@dice 3d6}). If a creature's hit point maximum is reduced to 0 by this effect, the creature dies. A creature's hit point maximum can be restored with the  {@spell greater restoration} spell or similar magic."
+					]
+				},
+				{
+					"name": "Vile Curse (Costs 3 Actions)",
+					"entries": [
+						"The demilich targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 19} Wisdom saving throw or be magically cursed. Until the curse ends, the target has advantige on attack rolls and saving throws but must substract the rolled lower from the other used. The target can repeat the saving throw at the end of each of its turns, ending the curse on a success."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Demilich",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The immortality granted to a lich lasts only as long as it feeds mortal souls to its phylactery. If it falters or fails in that task, its bones turn to dust until only its skull remains. This \"demilich\" contains only a fragment of the lich's malevolent life force-just enough so that if it is disturbed, these remains rise into the air and assume a wraith-like form. The skull then emits a terrifying howl that can slay the weak-hearted and leave others trembling with fear. Left alone, it sinks back down and returns to the empty peace of its existence.",
+									"Few liches seek to become demiliches, for it means an end to the existence they hoped to preserve by becoming undead. However, time can erode the lich's reason and memory, causing it to retreat into its ancient tomb and forget to feed on souls. The spells it once knew fade from its mind, and it no longer channels the arcane energy it wielded as a lich. However, even as a mere skull it remains a deadly and vexing enemy.",
+									{
+										"name": "Enduring Existence",
+										"type": "entries",
+										"entries": [
+											"Even after a lich is reduced to a demilich state, its phylactery survives. As long as its phylactery is intact, the demilich can't be permanently destroyed. Its skull reforms after {@dice 1d10} days, restoring the creature to its wretched state. If it has the presence of mind to do so, a demilich can reclaim its former power by feeding just one soul to its phylactery. Doing so restores the demilich to lich form, reconstituting its undead body."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A demilich doesn't require air, food, drink, or sleep. So great is a demilich's will to survive that it always has the maximum number of hit points for its Hit Dice, instead of average hit points."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Demilich's Lair",
+										"entries": [
+											"A demilich hides its earthly remains and treasures in a labyrinthine tomb guarded by monsters and traps. At the heart of this labyrinth rests the demilich's skull and the dust from its other bones. In its crypt, a demilich has access to lair actions and additional uses for its legendary actions. Its whole lair also has unique traits. A demilich in its lair has a challenge rating of 20 (24,500 XP)."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Acererak and His Disciples",
+										"entries": [
+											"The transformation into a demilich isn't a bitter end for all liches that experience it. Made as a conscious choice, the path of the demilich becomes the next step in a dark evolution. The lich Acererak-a powerful wizard and demonologist and the infamous master of the Tomb of Horrors-anticipated his own transformation, preparing for it by setting enchanted gemstones into his skull's eye sockets and teeth. Each of these soul gems possessed the power to capture the souls on which his phylactery would feed.",
+											"Acererak abandoned his physical body, accepting that it would molder and dissolve to dust while he traveled the planes as a disembodied consciousness. If the skull that was his last physical remains was ever disturbed, its gems would claim the souls of the insolent intruders to his tomb, magically transferring them to his phylactery.",
+											"Liches who follow Acererak's path believe that by becoming free of their bodies, they can continue their quest for power beyond the mortal world. As their patron did, they secure their remains within well-guarded vaults, using soul gems to maintain their phylacteries and destroy the adventurers who disturb their lairs.",
+											"Acererak or another demilich like him has a challenge rating of 21 (33,000 XP), or 23 (50,000 XP) in its lair, and gains the following additional action option.",
+											{
+												"name": "Trap Soul",
+												"entries": [
+													" The demilich targets one creature that it can see within 30 feet of it. The target must make a DC 19 Charisma saving throw. On a failed save, the target's soul is magically trapped inside one of the demilich's gems. While the soul is trapped, the target's body and all the equipment it is carrying cease to exist. On a successful save, the target takes 24 ({@damage 7d6}) necrotic damage, and if this damage reduces the target to 0 hit points, its soul is trapped as if it failed the saving throw. A soul trapped in a gem for 24 hours is devoured and ceases to exist.",
+													"If the demilich drops to 0 hit points, it is destroyed and turns to powder, leaving behind its gems. Crushing a gem releases any soul trapped within, at which point the target's body re-forms in an unoccupied space nearest to the gem and in the same state as when it was trapped."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the demilich rolls a {@dice d20}. On a result of 11 or higher, the demilich takes a lair action to cause one of the following effects. It can't use the same effect two rounds in a row.",
+									{
+										"type": "list",
+										"items": [
+											"The tomb trembles violently for a moment. Each creature on the floor of the tomb must succeed on a {@dc 19} Dexterity saving throw or be knocked {@condition prone}.",
+											"The demilich targets one creature it can see within 60 feet of it. An {@spell antimagic field} fills the space of the target, moving with it until initiative count 20 on the next round.",
+											"The demilich targets any number of creatures it can see within 30 feet of it. No target can regain hit points until initiative count 20 on the next round."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"A demilich's tomb might have any or all of the following effects in place:",
+									{
+										"type": "list",
+										"items": [
+											"The first time a non-evil creature enters the tomb's area, the creature takes 16 ({@damage 3d10}) necrotic damage.",
+											"Monsters in the tomb have advantage on saving throws against being {@condition charmed} or {@condition frightened}, and against features that turn undead.",
+											"The tomb is warded against the magical travel of creatures the demilich hasn't authorized. Such creatures can't teleport into or out of the tomb's area or use planar travel to enter or leave it. Effects that allow teleportation or planar travel work within the tomb as long as they aren't used to leave or enter the tomb's area."
+										]
+									},
+									"If the demilich is destroyed, these effects fade over the course of 10 days."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/50/a2/2c/50a22c132bee40d6d1e8e64d8b91ae40.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Demilich.png?v=1.131.6",
+			"traitTags": [
+				"Legendary Resistances",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"U"
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened"
+			],
+			"conditionInflictLegendary": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Ashardelon (unfinnished)",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 11,
+			"int": 17,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"int": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+6",
+				"history": "+6"
+			},
+			"passive": 11,
+			"languages": [
+				"any four languages"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 14}, {@hit 6} to hit with spell attacks). The mage has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell control flames|XGE}",
+								"{@spell create bonfire|XGE}",
+								"{@spell fire bolt}",
+								"{@spell light}",
+								"{@spell minor illusion}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell chromatic orb}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell crown of madness}",
+								"{@spell scorching ray}",
+								"{@spell suggestion}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell wall of fire}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell immolation|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell investiture of flame|XGE}",
+								"{@spell true seeing}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell fire storm}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell earthquake}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Familiars",
+					"entries": [
+						"Any spellcaster that can cast the {@spell find familiar} spell (such as an archmage or mage) is likely to have a familiar. The familiar can be one of the creatures described in the spell (see the Player's Handbook) or some other Tiny monster, such as a {@creature crawling claw}, {@creature imp}, {@creature pseudodragon}, or {@creature quasit}."
+					]
+				}
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Arkhan the Red Abishai",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d12 + 104",
+				"average": 273
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 50
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 19,
+			"int": 12,
+			"wis": 12,
+			"cha": 19,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+10"
+			},
+			"skill": {
+				"intimidation": "+10",
+				"perception": "+7",
+				"athletics": "+12",
+				"deception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft. (can see invisible creatures out to the same range)"
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Arkhan is a 17th level paladin, his spellcasting ability is Charisma (spell save {@dc 18}). He can cast the following spells:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell command}",
+								"{@spell searing smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell find greater steed|XGE}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell geas}",
+							"{@spell raise dead}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the abishai's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The abishai has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The abishai's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Aura of Hate",
+					"entries": [
+						"While Arkhan isn't {@condition incapacitated}, he and all fiends and undead within 30 feet of him deal 4 extra damage whenever they hit with a melee weapon attack (already factored into Arkhan's attacks). This extra damage is of the same type as the weapon's damage type."
+					]
+				},
+				{
+					"name": "Hand of Vecna",
+					"entries": [
+						"The Hand of Vecna has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. Arkhan can cast the following spells from the hand by expending the specified number of charges (spell save {@dc 18}): {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), and {@spell teleport} (3 charges)."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Arkhan wields {@item Fane-Eater|bgdia} and wears a suit of {@item Obsidian Flint Dragon Plate|bgdia}. The armor gives Arkhan advantage on ability checks and saving throws made to avoid or end the {@condition grappled} condition on him."
+					]
+				},
+				{
+					"name": "Hellish Smite",
+					"entries": [
+						"Arkhan can use his spell slots to deal additional necrotic damage with his melee weapon attacks. The additional damage is based on the level of the spellslot used:",
+						{
+							"type": "list",
+							"items": [
+								"1th level: 9 ({@damage 2d8})",
+								"2th level: 13 ({@damage 3d8})",
+								"3th level: 18 ({@damage 4d8})",
+								"4th level: 22 ({@damage 5d8})"
+							]
+						}
+					]
+				},
+				{
+					"name": "Rage (2/day)",
+					"entries": [
+						"As a bonus action, Arkhan can enter a rage. While raging Arkhan gains resistance to bludgeoning, piercing, and slashing damage, his attacks deal an additional +2 damage and he gains advantage on all Athletics skill checks and strength saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Arkhan makes three weapon attacks. If Arkhan is missing at least half of his hitpoints he can use one bite attack instead of a weapon attack"
+					]
+				},
+				{
+					"name": "Fane-Eater (Battleaxe)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}17 ({@damage 1d8 + 13}) slashing damage, or 18 ({@damage 1d10 + 13}) slashing damage when used with two hands, plus 9 ({@damage 2d8}) cold damage. If the target is a creature and Arkhan rolls a 20 on the attack roll, the creature takes an extra 9 ({@damage 2d8}) necrotic damage, and Arkhan regains a number of hit points equal to the necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 10}) piercing damage plus 38 ({@damage 7d10}) fire damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the abishai's choice that is within 120 feet and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the abishai's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Incite Fanaticism",
+					"entries": [
+						"The abishai chooses up to four of its allies within 60 feet of it that can see it. For 1 minute, each of those allies makes attack rolls with advantage and can't be {@condition frightened}."
+					]
+				},
+				{
+					"name": "Power of the Dragon Queen",
+					"entries": [
+						"The abishai targets one dragon it can see within 120 feet of it. The dragon must make a {@dc 18} Charisma saving throw. A chromatic dragon makes this save with disadvantage. On a successful save, the target is immune to the abishai's Power of the Dragon Queen for 1 hour. On a failed save, the target is {@condition charmed} by the abishai for 1 hour. While {@condition charmed} in this way, the target regards the abishai as a trusted friend to be heeded and protected. This effect ends if the abishai or its companions deal damage to the target."
+					]
+				}
+			],
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			]
+		},
+		{
+			"name": "Angel of Shadow (outdated)",
+			"shortName": "Mordekai",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"unarmored defense, {@item Ring of protection}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 - 17",
+				"average": 59
+			},
+			"speed": {
+				"walk": 55,
+				"climb": 55
+			},
+			"str": 7,
+			"dex": 20,
+			"con": 9,
+			"int": 9,
+			"wis": 20,
+			"cha": 22,
+			"save": {
+				"str": "+5",
+				"dex": "+12",
+				"con": "+6",
+				"int": "+6",
+				"wis": "+12",
+				"cha": "+13"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"deception": "+12",
+				"insight": "+11",
+				"stealth": "+11",
+				"religion": "+5"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned",
+				{
+					"special": "diseased"
+				}
+			],
+			"languages": [
+				"All (Tongue of the Sun and Moon)"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Shadow Arts",
+					"headerEntries": [
+						"As an action, the angel can spend 2 ki points to cast the following spells."
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell pass without trace}",
+						"{@spell shadow blade|XGE}",
+						"{@spell silence}"
+					],
+					"type": "spellcasting"
+				},
+				{
+					"name": "Hellish Bloodline",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}"
+							]
+						}
+					},
+					"rest": {
+						"1": [
+							"{@spell hellish rebuke} (at 3rd level 4d10)",
+							"{@spell invisibility}"
+						]
+					},
+					"will": [
+						"{@spell command} only devils"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Poisoned Claws",
+					"entries": [
+						"If the angel can use its action to poison its claws.",
+						"The first six attack deals an aditional poison damage based on the poison.",
+						"{@item Serpent Venom} - 10 ({@damage 3d6}) {@dc 11}",
+						"{@item Wyvern Poison} - 24 ({@damage 7d6}) {@dc 15}",
+						"{@item Purple Worm Poison} 42 ({@damage 12d6}) {@dc 19}"
+					]
+				},
+				{
+					"name": "Magic items",
+					"entries": [
+						"The angel has the following magic items:",
+						"Hell Crown ; {@item Insignia of Claws | HotDQ}; {@item Ring of protection}; {@item Cloak of Elvenkind}"
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the angel is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the angel instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Stillness of Mind",
+					"entries": [
+						"The angel can use an action to end one effect on itself that is causing it to be {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"If the angel moves at least 10 feet straight toward a target and then hits it with its an attack on the same turn, the target takes an extra 10 ({@damage 2d10}) slashing damage."
+					]
+				},
+				{
+					"name": "Ki (17/day)",
+					"entries": [
+						"The angel can use one of the following as a bonus action using 1 ki point:",
+						"Flurry of Blows - Attack ",
+						"Patient Defense - Dodge ",
+						"Step of the Wind - Disengage or Dash "
+					]
+				},
+				{
+					"name": "Touch of Death (3ki)",
+					"entries": [
+						"When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw of {@dc 19}. If it fails, it is reduced to 0 hit points. If it succeeds, it takes {@damage 10d10} necrotic damage."
+					]
+				},
+				{
+					"name": "Shadow Step",
+					"entries": [
+						"When the angel is in dim light or darkness, as a bonus action he can teleport up to 60 feet to an unoccupied space he can see that is also in dim light or darkness. He then have advantage on the first melee attack he make before the end of the turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The angel makes two attacks and can make one Unarmed Strike as a bonus action or two if it uses 1 ki ."
+					]
+				},
+				{
+					"name": "Unarmed Strike +1",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d10 + 6}) slashing damage. This is a magic weapon attack. The angel can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw of {@dc 19} or be {@condition stunned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Cloak of Shadows",
+					"entries": [
+						"When the angel is in an area of dim light or darkness, it can become {@condition invisible}. It remains {@condition invisible} until it makes an attack, casts a spell, or is in an area of bright light."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missiles",
+					"entries": [
+						"The angel can reduce the damage taken by any ranged attack that it can see incoming. When it does so, the damage it takes from the attack is reduced by {@dice 1d10 + 22}. If it is reduced to 0, it can make a ranged attack with the projectile (range 20/60 feet)."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/c1/5f/c0/c15fc04b1a89334abd1a77edb05bfe92.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcBUSMtmsBLgksZp36cY49XKXCbsp2csuijA&usqp=CAU",
+			"traitTags": [
+				"Charge"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"stunned"
+			]
+		},
+		{
+			"name": "Arkhan the Abishai",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"devil"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d12 + 104",
+				"average": 273
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 50
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 19,
+			"int": 12,
+			"wis": 12,
+			"cha": 19,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+10"
+			},
+			"skill": {
+				"intimidation": "+10",
+				"perception": "+7",
+				"athletics": "+12",
+				"deception": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft. (can see invisible creatures out to the same range)"
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Arkhan is a 17th level paladin, his spellcasting ability is Charisma (spell save {@dc 18}). He can cast the following spells:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell command}",
+								"{@spell searing smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell branding smite}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell find greater steed|XGE}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell geas}",
+							"{@spell raise dead}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the abishai's darkvision."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The abishai has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The abishai's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Aura of Hate",
+					"entries": [
+						"While Arkhan isn't {@condition incapacitated}, he and all fiends and undead within 30 feet of him deal 4 extra damage whenever they hit with a melee weapon attack (already factored into Arkhan's attacks). This extra damage is of the same type as the weapon's damage type."
+					]
+				},
+				{
+					"name": "Hand of Vecna",
+					"entries": [
+						"The Hand of Vecna has 8 charges and regains {@dice 1d4 + 4} expended charges daily at dawn. Arkhan can cast the following spells from the hand by expending the specified number of charges (spell save {@dc 18}): {@spell finger of death} (5 charges), {@spell sleep} (1 charge), {@spell slow} (2 charges), and {@spell teleport} (3 charges)."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Arkhan wields {@item Fane-Eater|bgdia} and wears a suit of {@item Obsidian Flint Dragon Plate|bgdia}. The armor gives Arkhan advantage on ability checks and saving throws made to avoid or end the {@condition grappled} condition on him."
+					]
+				},
+				{
+					"name": "Hellish Smite",
+					"entries": [
+						"Arkhan can use his spell slots to deal additional necrotic damage with his melee weapon attacks. The additional damage is based on the level of the spellslot used:",
+						{
+							"type": "list",
+							"items": [
+								"1th level: 9 ({@damage 2d8})",
+								"2th level: 13 ({@damage 3d8})",
+								"3th level: 18 ({@damage 4d8})",
+								"4th level: 22 ({@damage 5d8})"
+							]
+						}
+					]
+				},
+				{
+					"name": "Rage (2/day)",
+					"entries": [
+						"As a bonus action, Arkhan can enter a rage. While raging Arkhan gains resistance to bludgeoning, piercing, and slashing damage, his attacks deal an additional +2 damage and he gains advantage on all Athletics skill checks and strength saving throws."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Arkhan makes three weapon attacks. If Arkhan is missing at least half of his hitpoints he can use one bite attack instead of a weapon attack"
+					]
+				},
+				{
+					"name": "Fane-Eater (Battleaxe)",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}17 ({@damage 1d8 + 13}) slashing damage, or 18 ({@damage 1d10 + 13}) slashing damage when used with two hands, plus 9 ({@damage 2d8}) cold damage. If the target is a creature and Arkhan rolls a 20 on the attack roll, the creature takes an extra 9 ({@damage 2d8}) necrotic damage, and Arkhan regains a number of hit points equal to the necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 10}) piercing damage plus 38 ({@damage 7d10}) fire damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the abishai's choice that is within 120 feet and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the abishai's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Incite Fanaticism",
+					"entries": [
+						"The abishai chooses up to four of its allies within 60 feet of it that can see it. For 1 minute, each of those allies makes attack rolls with advantage and can't be {@condition frightened}."
+					]
+				},
+				{
+					"name": "Power of the Dragon Queen",
+					"entries": [
+						"The abishai targets one dragon it can see within 120 feet of it. The dragon must make a {@dc 18} Charisma saving throw. A chromatic dragon makes this save with disadvantage. On a successful save, the target is immune to the abishai's Power of the Dragon Queen for 1 hour. On a failed save, the target is {@condition charmed} by the abishai for 1 hour. While {@condition charmed} in this way, the target regards the abishai as a trusted friend to be heeded and protected. This effect ends if the abishai or its companions deal damage to the target."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/4/48/Arkhan_DiA.jpg/revision/latest?cb=20190917182221"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcomicbook.com%2Fgaming%2Fnews%2Fdungeons-and-dragons-joe-manganiello-descent-into-avernus-arkhan%2F&psig=AOvVaw0CqeIR5n4VIaA6Ty3Qaq8Q&ust=1642776201760000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCID5s7PIwPUCFQAAAAAdAAAAABAU",
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			]
+		},
+		{
+			"name": "Captain Dário Costa",
+			"isNpc": true,
+			"source": "HaVoR",
+			"level": 14,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 studded leather armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 15,
+			"int": 13,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"dex": "+10",
+				"int": "+6"
+			},
+			"skill": {
+				"acrobatics": "+15",
+				"deception": "+8",
+				"perception": "+7",
+				"athletics": "+6",
+				"persuasion": "+13",
+				"sleight of hand": "+10"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 17,
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The captain deals an extra 21 ({@damage 7d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the captain doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"The captain gains bonus to his initiative rolls equal to his Charisma modifier (+3).",
+						"If the captain makes a melee attack against a creature, that creature can't make opportunity attacks against him for the rest of his turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The captain makes two Rapier attacks."
+					]
+				},
+				{
+					"name": "Rapier +2",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 80/320 ft., one target. {@h}9 ({@damage 1d8 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Panache",
+					"entries": [
+						"As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.",
+						"If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Uncanny Dodge",
+					"entries": [
+						"When an attacker that the captain can see hits him with an attack, he can use his reaction to halve the attack's damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Gor-Tlaltin the Immortal",
+			"source": "HaVoR",
+			"size": "L",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"lizardfolk"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 20,
+			"int": 8,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"con": "+11",
+				"str": "+12"
+			},
+			"skill": {
+				"perception": "+8",
+				"survival": "+8",
+				"athletics": "+12",
+				"intimidation": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Draconic",
+				"Celestial,"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The lizardfolk can hold its breath for 15 minutes."
+					]
+				},
+				{
+					"name": "Rage",
+					"entries": [
+						"1"
+					]
+				},
+				{
+					"name": "Reckless Attack",
+					"entries": [
+						"2"
+					]
+				},
+				{
+					"name": "Divine Fury",
+					"entries": [
+						"The Gor's weapon attacks are magical. When Gor hits with any weapon, the weapon deals an extra {@damage 1d12} radiant damage."
+					]
+				},
+				{
+					"name": "Zealous Presence",
+					"entries": [
+						"As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn.",
+						"Once you use this feature, you can't use it again until you finish a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The lizardfolk makes two attacks: one with its bite and one with its claws or trident or two melee attacks with its trident."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Trident",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Lizardfolk are primitive reptilian humanoids that lurk in the swamps and jungles of the world. Their hut villages thrive in forbidding grottos, half-sunken ruins, and watery caverns.",
+									{
+										"name": "Territorial Xenophobes",
+										"type": "entries",
+										"entries": [
+											"Lizardfolk deal and trade with other races only rarely. Fiercely territorial, they use camouflaged scouts to guard the perimeter of their domain. When unwelcome visitors are detected, a tribe sends a hunting band to harass or drive the trespassers off, or tricks them into blundering into the lairs of crocodiles and other dangerous creatures.",
+											"Lizardfolk have no notion of traditional morality, and they find the concepts of good and evil utterly alien. Truly neutral creatures, they kill when it is expedient and do whatever it takes to survive.",
+											"Lizardfolk rarely stray beyond their claimed hunting grounds. Any creature that enters their territory is fair game to be stalked, killed, and devoured. They make no distinction between humanoids, beasts, and monsters. Similarly, lizardfolk don't like reaching too far beyond their borders, where they could easily become the hunted instead of the hunters.",
+											"Occasions might arise when lizardfolk will form alliances with their neighbors. These lizardfolk usually learn firsthand that humans, dwarves, halflings, and elves can sometimes prove helpful or trustworthy. Once lizardfolk forge ties with outsiders, they are steadfast and fierce allies."
+										]
+									},
+									{
+										"name": "Great Feasts and Sacrifices",
+										"type": "entries",
+										"entries": [
+											"Lizardfolk are omnivorous, but they have a taste for humanoid flesh. Prisoners are often taken back to their camps to become the centerpieces of great feasts and rites involving dancing, storytelling, and ritual combat.",
+											"Victims are either cooked and eaten by the tribe, or are sacrificed to Semuanya, the lizardfolk god."
+										]
+									},
+									{
+										"name": "Canny Crafters",
+										"type": "entries",
+										"entries": [
+											"Though they aren't skilled artisans, lizardfolk craft tools and ornamental jewelry out of the bones of their kills, and they use the hides and shells of dead monsters to create shields."
+										]
+									},
+									{
+										"name": "Lizardfolk Leaders",
+										"type": "entries",
+										"entries": [
+											"Lizardfolk respect and fear magic with a religious awe. Lizardfolk shamans lead their tribes, overseeing rites and ceremonies performed to honor Semuanya. From time to time, however, a lizardfolk tribe produces a powerful figure touched not by Semuanya but by Sess'inek-a reptilian demon lord who seeks to corrupt and control the lizardfolk.",
+											"Lizardfolk born in Sess'inek's image are larger and more cunning than other lizardfolk, and are thoroughly evil. These lizard kings and queens dominate lizardfolk tribes, usurping a shaman's authority and inspiring uncharacteristic aggression among their subjects."
+										]
+									},
+									{
+										"name": "Dragon Worshipers",
+										"type": "entries",
+										"entries": [
+											"Lizardfolk speak Draconic, which they are thought to have learned from dragons in ancient times. A tribe that wanders into the territory of a dragon will offer it tribute to win its favor. An evil dragon might exploit lizardfolk for its own vile ends, turning them into raiders and plunderers."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"traitTags": [
+				"Hold Breath"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Hedralin",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "celestial",
+			"alignment": [
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d8 + 26",
+				"average": 84
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 14,
+			"int": 15,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"con": "+5",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"radiant"
+			],
+			"immune": [
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
+					],
+					"will": [
+						"{@spell detect evil and good}",
+						"{@spell detect magic}"
+					],
+					"daily": {
+						"3": [
+							"{@spell bless}",
+							"{@spell create food and water}",
+							"{@spell cure wounds}",
+							"{@spell lesser restoration}",
+							"{@spell protection from poison}"
+						],
+						"1e": [
+							"{@spell dream}",
+							"{@spell greater restoration}",
+							"{@spell scrying}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The couatl's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Shielded Mind",
+					"entries": [
+						"The couatl is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d6 + 5}) piercing damage, and the target must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} for 24 hours. Until this poison ends, the target is {@condition unconscious}. Another creature can use an action to shake the target awake."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one Medium or smaller creature. {@h}10 ({@damage 2d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 15}). Until this grapple ends, the target is {@condition restrained}, and the couatl can't constrict another target."
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"The couatl magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the couatl's choice).",
+						"In a new form, the couatl retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and other actions are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks. If the new form has a bite attack, the couatl can use its bite in that form."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Couatl",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Couatls are benevolent serpentine beings of great intellect and insight. Their brilliantly colored wings and gentle manner speak to their celestial origins.",
+									{
+										"name": "Divine Caretakers",
+										"type": "entries",
+										"entries": [
+											"Couatls were created as guardians and caretakers by a benevolent god not worshiped since the dawn of time, and which is forgotten now by all but the couatls themselves. Most of the divine mandates given to these beings are long since fulfilled or failed. However, a number of couatls still watch over ancient power, await fulfillment of prophecy, or safeguard the heirs of creatures they once guided and protected. Regardless of a couatl's task, it prefers to remain hidden, revealing itself only as a last resort. Truth Tellers. A couatl can't lie, but it can withhold information, answer questions vaguely, or allow others to jump to the wrong conclusions if doing so is necessary to protect something, to keep promises, or to hide the secret of its existence."
+										]
+									},
+									{
+										"name": "Ancient and Few",
+										"type": "entries",
+										"entries": [
+											"A couatl can live for ages without sustenance, even surviving without air, but these creatures can die of disease or the passage of time. A couatl can sense its end up to a century beforehand, but it has no insight into the manner of its demise. If a couatl has already accomplished what it set out to do, it accepts its fate. However, if its imminent death endangers the completion of its goals, it actively seeks out another couatl with which to produce offspring.",
+											"The mating ritual of couatls is a beautiful and elaborate dance of magic and light, which results in a gem-like egg from which a new couatl hatches. The parent that sought out the mate raises the newborn couatl and instructs it as to its duties, so that it can complete whatever task the parent leaves unfinished."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Couatl.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained",
+				"unconscious"
+			]
+		},
+		{
+			"name": "Grim Jester",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@spell mage armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 72",
+				"average": 153
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 22,
+			"con": 18,
+			"int": 16,
+			"wis": 7,
+			"cha": 20,
+			"save": {
+				"dex": "+11",
+				"con": "+9"
+			},
+			"skill": {
+				"acrobatics": "+16",
+				"deception": "+10",
+				"performance": "+15",
+				"sleight of hand": "+11",
+				"stealth": "+11",
+				"arcana": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [
+				"cold"
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Celestial",
+				"Common",
+				"Gnomish",
+				"telepathy 60 ft."
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The jester's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It can innately cast the following spells requiring no components:"
+					],
+					"will": [
+						"{@spell disguise self}",
+						"{@spell grease}",
+						"{@spell inflict wounds}",
+						"{@spell mage armor}",
+						"{@spell magic mouth}",
+						"{@spell misty step}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell contagion}",
+							"{@spell major image}",
+							"{@spell mirror image}"
+						],
+						"1e": [
+							"{@spell danse macabre|XGE}",
+							"{@spell delayed blast fireball}",
+							"{@spell finger of death}",
+							"{@spell mislead}",
+							"{@spell seeming}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Last Laugh",
+					"entries": [
+						"If it has a phylactery, the destroyed jester gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The jester has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Ridicule Hope",
+					"entries": [
+						"When a spell that restores hit points is cast within 60 feet of the jester, the jester can cause that spell to inflict damage instead of curing it. The damage equals the hit points the spell would have cured."
+					]
+				},
+				{
+					"name": "Joker's Shuffle",
+					"entries": [
+						"If the jester is a target for an attack roll it can force one Medium or Small humanoid within 60 feet to make a {@dc 18} Charisma saving throw. If the saving throw fails, the jester and the target exchange locations via teleportation and an illusion causes them to swap appearance: the jester looks and sounds like the target, and the target looks and sounds like the jester. The illusion lasts for 1 hour unless it is dismissed earlier by the jester as a bonus action, or dispelled ({@dc 18})."
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "Mock The Dead - Original",
+					"entries": [
+						"If the jester sees any creature that is not a zombie or skeleton, die it performs an ancient, nihilistic joke of necromantic power. This joke has no effect on undead or constructs. All other creatures within 60 feet of the jester must make a {@dc 18} Wisdom saving throw. Those that fail fall {@condition prone} in a fit of deadly laughter. The laughter lasts {@dice 1d4} rounds, during which time the victim is {@condition incapacitated} and unable to stand up from {@condition prone}. At the end of its turn each round, an {@condition incapacitated} victim must make a successful {@dc 14} Constitution saving throw or be reduced to 0 hit points. The laughter can be ended early by rendering the victim {@condition unconscious} or with greater restoration or comparable magic. "
+					]
+				},
+				{
+					"name": "Mock The Dead - Bardic",
+					"entries": [
+						"If the jester sees any creature that is not a zombie or skeleton, die it performs an ancient, nihilistic joke of necromantic power. All other undead creatures within 60 feet of the jester gains a {@dice d10} bardic inspiration. If the creature adds that dice to an attack it can attack the rolled number to the damage to as well."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/bf/98/29/bf98297eb887528c4962fd14461a2318.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.pinimg.com/564x/e1/76/f5/e176f58042b33cc060c99f276fbea082.jpg",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CE",
+				"G",
+				"TP"
+			],
+			"spellcastingTags": [
+				"I"
+			]
+		},
+		{
+			"name": "Judas",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "L",
+			"type": "monstrosity",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item adamantine scale mail}"
+					],
+					"condition": "(its fly speed is reduced by 20ft.)"
+				}
+			],
+			"hp": {
+				"average": 76,
+				"formula": "9d12 + 18"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 80
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 15,
+			"int": 7,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Understands Common but can't speak"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The bat can't use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Keen Hearing",
+					"entries": [
+						"The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Judas can make a Claw and a Bite attack if he is flying or {@condition prone}"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage, and Judas can attempt to grapple the target if it is the same or smaller size than him."
+					]
+				},
+				{
+					"name": "Wing Attack",
+					"entries": [
+						"Judas beats his wings. Each creature within 10 feet of the bat must succeed on a {@dc 16} Dexterity saving throw or take 9 ({@damage 2d4 + 4}) bludgeoning damage and be knocked {@condition prone}. Judas can then fly up to half his flying speed."
+					]
+				},
+				{
+					"name": "Screech (1/short rest)",
+					"entries": [
+						"Judas lets out a deafening screech. All creature in a 15ft. long cone must make a Constitution saving throw {@dc 16} or take 18 ({@damage 5d6}) thunder damage, or half as much on a successful one. If it fails by 5 or more it becomes {@condition stunned} until the end of Judas' next turn."
+					]
+				}
+			],
+			"environment": [
+				"farmland"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Katarina",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapecahanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 19,
+			"con": 18,
+			"int": 16,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"dex": "+8",
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+6",
+				"persuasion": "+8",
+				"religion": "+7",
+				"deception": "+12",
+				"stealth": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons"
+				}
+			],
+			"languages": [
+				"The languages it knew in life"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Cruel Combatant",
+					"entries": [
+						"A melee weapon deals one extra die of its damage and an extra 4 ({@damage 1d8}) necrotic damage when the vampire patrician hits with it (included in the attack)."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When it drops to 0 hp outside its resting place, the vampire patrician transforms into a cloud of mist instead of falling {@condition unconscious}, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed. While it has 0 hp in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed.",
+						"While in mist form it can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight.",
+						"Once in its resting place, it reverts to vampire form. It is then {@condition paralyzed} until it regains at least 1 hp. After spending 1 hour in its resting place with 0 hp, it regains 1 hp."
+					]
+				},
+				{
+					"name": "Noble Resilience (Recharges After A Long Rest)",
+					"entries": [
+						"The vampire patrician can ignore the effects of sunlight for up to 1 minute."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The patrician regains 15 hp at the start of its turn if it has at least 1 hp and isn't in sunlight or running water. If it takes radiant damage or damage from holy water, this trait doesn't function at the start of its next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire patrician can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire patrician has the following flaws.",
+						"Forbiddance - The patrician can't enter a residence without an invitation from one of the occupants.",
+						"Harmed by Running Water - The patrician takes 20 acid damage if it ends its turn in running water.",
+						"Stake to the Heart - If a piercing weapon made of wood is driven into the patrician's heart while the patrician is {@condition incapacitated} in its resting place, the patrician is {@condition paralyzed} until the stake is removed.",
+						"Sunlight Hypersensitivity - The patrician takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+						"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+						"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+					]
+				},
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"Katarina can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, Katarina deals an extra 14 ({@damage 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the katarina that isn't {@condition incapacitated} and the katarina doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If Katarina is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the Katarina instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire patrician makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Impaling Rapier +1",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 5}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage. The vampiric knight impales the target on its longsword, grappling the target if it is a Medium or smaller creature (escape {@dc 16}). Until the grapple ends, the target is {@condition restrained}, takes 7 ({@damage 2d6}) necrotic damage at the start of each of its turns, and the vampire patrician can't make rapier attacks against other targets but his rapier attacks have advantage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire patrician, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hp maximum is reduced by an amount equal to the necrotic damage taken, and the patrician regains hp equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hp maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire patrician's control."
+					]
+				},
+				{
+					"name": "Release the Hounds! (1/Day)",
+					"entries": [
+						"The vampire patrician calls {@dice 2d4} hunting hounds (use {@creature mastiff} statistics) to its side. While outdoors, the vampire patrician can call {@dice 2d4} carrion ravens (use {@creature blood hawk} statistics) instead or {@dice 1d4} {@creature giant bat}. These creatures arrive in {@dice 1d4} rounds, helping the patrician and obeying its spoken commands. The beasts remain for 1 hour, until the patrician dies, or until the patrician dismisses them as a bonus action."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"{@i Handsome and youthful-looking with blond hair, slightly pointed ears, and piercing blue eyes, this vampire has a definite air of arrogance as he regards everything around him with barely concealed contempt. }",
+					"Vampire patricians are weaker than their vampire kin but are far superior to the spawn their kin create. What they lack in power, they more than make up for in sheer cruelty.",
+					{
+						"type": "entries",
+						"name": "Iron-Fisted Rulers",
+						"entries": [
+							"Vampire patricians govern a small town or village for their undead overlord. Seeking to impress those above them, they keep the downtrodden peasantry in a state of perpetual dread with public floggings, executions, and sacrifices on the altars of the Blood Goddess and hunting expeditions in which the patrician and guests pursue hapless peasants through the woods."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Brooding Presence",
+						"entries": [
+							" Vampire patricians make their homes in small castles or large manor houses, often on a steep hill that looms over their territory. Their subterranean resting places are well guarded by vampire spawn and mindless undead. The area around a vampire patrician's home is partially corrupted by its unnatural presence, creating the following effects: plants within 1,000 feet of its home warp to become more beautiful and deadly versions of their base form, secreting poison or releasing sweet-smelling, toxic pollen; and sounds are more muted, making conversation harder to overhear and screams for help almost inaudible over distances."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Undead Nature",
+						"entries": [
+							"The vampire patrician doesn't require air."
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Vampires in Midgard",
+						"entries": [
+							"Vampires rule the Blood Kingdom of Morgau openly, treating the living as cattle to be bought, sold, exploited, and drained of blood by their undead masters. King Lucan reigns supreme in Morgau. His sworn nobles and vampire progeny are the princes, princesses, dukes, and duchesses beneath him, all vampires of great power in their own right. The counts and countesses, who hold smaller territories or powerful monasteries for the King, rank slightly lower than the princes and duchesses. Generals and governors, vampires who command Morgau's troops or rule smaller fiefdoms, sit beneath the counts and countesses.",
+							"Vampire patricians rank lowest among the vampire nobility and make up the majority of the lesser nobles, barons, lords, and ladies of the Blood Kingdom—still quite dangerous, and easily able to command darakhul, vampiric knights, and other servants.",
+							"Vampire priestesses stand somewhat outside of the ranking of vampires in the Blood Kingdom, due to their association with the Blood Goddess' faith. Once a vampire joins the Red Sisters, she is bound to the Blood Goddess, but she is also afforded extra respect and status in Morgau, regardless of her sire or original place in the hierarchy.",
+							"King Lucan and his court are the very first northern shroud-eaters and remain some of the strongest to this day. In the Southlands, shroud-eaters dwell within the Grand Necropolis of Siwal, and many inhabit an island known as the Pallid Court of Vampires within the Nurian city of Per-Bastet."
+						]
+					}
+				]
+			},
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Sneak Attack",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			]
+		},
+		{
+			"name": "Lich Hound",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d8 + 88",
+				"average": 187
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 18,
+			"int": 6,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"cha": "+7",
+				"dex": "+9"
+			},
+			"skill": {
+				"survival": "+8",
+				"perception": "+8"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 18,
+			"resist": [],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common",
+				"Elvish",
+				"and Sylvan but can't speak"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The eye has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save {@dc 18}) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges)."
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The lich hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Eye of Vecna",
+					"entries": [
+						"The lich hound is controlled by Vecna himself by his eye. The artefact grants the hound the following:",
+						"-You have truesight.",
+						"-You can use an action to see as if you were wearing a ring of X-ray vision. You can end this effect as a bonus action.",
+						"-While attuned to the artifact, you deal {@damage 1d6} necrotic damage to any plant that isn't a creature and all creatures of 0 CR within 10 ft.",
+						"-While attuned to the artifact, all holy water within 10 feet of you is destroyed.",
+						"-The artifact can maintain concentration for one of your or its spells at any time."
+					]
+				},
+				{
+					"name": "Sunlight Banishment",
+					"entries": [
+						"If the yeth hound starts its turn in sunlight, it is transported to the Ethereal Plane. The hound is visible on the Material Plane while it is in the Border Ethereal, and vice versa, but it can't affect or be affected by anything on the other plane."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) piercing damage and 10 ({@damage 3d6}) cold damage.  If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Gut Rip",
+					"entries": [
+						"Gut Rip. As a bonus action, the lich hound tears into any adjacent {@condition prone} creature, inflicting 19 ({@damage 3d12}) slashing damage and 21 ({@damage 6d6}) cold damage. The target must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Ethereal Jaunt.",
+					"entries": [
+						"As a bonus action, the lich hound can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "Wail (1/Day)",
+					"entries": [
+						"The Hound releases a mournful wail, provided that it isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of her that can hear her must make a {@dc 15} Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 21 ({@damage 6d6}) psychic damage."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://pbs.twimg.com/media/CSIUaBtUcAMx8-q.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://vignette.wikia.nocookie.net/witcher/images/6/68/Gwent_cardart_monsters_the_beast.png/revision/latest/top-crop/width/220/height/220?cb=20180130223039",
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Lich Knight",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@item +2 armor}",
+						"{@item shield|phb} or {@spell haste|phb} if using {@item blackrazor|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d10 + 110",
+				"average": 231
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 11,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+6",
+				"wis": "+9",
+				"cha": "+10"
+			},
+			"skill": {
+				"religion": "+7",
+				"stealth": "+6",
+				"deception": "+10",
+				"intimidation": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"fire"
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Elvish"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The death knight is a 20th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell disguise self}",
+								"{@spell expeditious retreat}",
+								"{@spell searing smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell invisibility}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell crusader's mantle} (necrotic)",
+								"{@spell dispel magic}",
+								"{@spell haste}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell greater invisibility}",
+								"{@spell staggering smite}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell destructive wave} (necrotic)",
+								"{@spell dominate person}",
+								"{@spell raise dead}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The death knight has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Marshal Undead",
+					"entries": [
+						"Unless the death knight is {@condition incapacitated}, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead and gain +4 to all damage rolls."
+					]
+				},
+				{
+					"name": "Blackrazor",
+					"entries": [
+						"The lich knight wields the legendary {@item blackrazor} and gains its full benefits. Its soul is also trapped inside of the sword and can only be destroyed if the sword is destroyed or if it lets a new soul take its place by attuning to the sword. If the lich knight's body is destroyed it gains a new body in {@dice 1d4} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the sword."
+					]
+				},
+				{
+					"name": "Treacherous Strike",
+					"entries": [
+						"The first attack of the knight that hits a creature deals an additional 40 poison damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The death knight makes three melee attacks."
+					]
+				},
+				{
+					"name": "Blackrazor",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d6 + 12}) slashing damage and 5 ({@damage 1d8}) necrotic, plus smite damage ({@damage 2d8}) as a first, ({@damage 3d8}) as a second ({@damage 4d8}) as a third ({@damage 5d8}) as a fouth level."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day)",
+					"entries": [
+						"The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centred on that point must make a {@dc 18} Dexterity saving throw. The sphere spreads around corners. A creature takes 38 ({@damage 11d6}) fire damage and 38 ({@damage 11d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+					]
+				},
+				{
+					"name": "Treachery (only after using the mythic action)",
+					"entries": [
+						"If a creature damages the knight, it must succeed on a {@dc 18} Wisdom saving throw or you control its next action, provided that the knight isn't {@condition incapacitated} when it takes the action. A creature automatically succeeds on the save if the creature is immune to being {@condition charmed}."
+					]
+				}
+			],
+			"mythic": [
+				{
+					"name": "Blackguard's Escape",
+					"entries": [
+						"Immediately after the lich knight is hit by an attack, it can turn {@condition invisible} and teleport up to 60 feet to a spot it can see and leave an illusion of itself crumbling to dust. It remains {@condition invisible} for 1 minute. While {@condition invisible} this way any time the knight has advantage it gains 20 poison damage to its damage of the attack."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"N",
+				"S"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Nyctalus",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"yugoloth"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "16d8 + 32"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 20,
+			"wis": 16,
+			"cha": 17,
+			"save": {
+				"dex": "+5",
+				"int": "+9",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"deception": "+11",
+				"insight": "+11",
+				"perception": "+7"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"acid",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"poisoned"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The arcanaloth's innate spellcasting ability is Charisma (spell save {@dc 15}). The arcanaloth can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell alter self}",
+						"{@spell darkness}",
+						"{@spell heat metal}",
+						"{@spell invisibility} (self only)",
+						"{@spell magic missile}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The arcanaloth is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The arcanaloth has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell shield}",
+								"{@spell Tenser's floating disk}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell phantasmal force}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fear}",
+								"{@spell fireball}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell banishment}",
+								"{@spell dimension door}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell contact other plane}",
+								"{@spell hold monster}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell chain lightning}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell finger of death}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell mind blank}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The arcanaloth has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The arcanaloth's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) slashing damage. The target must make a {@dc 14} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The arcanaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Yugoloth Summoning",
+					"entries": [
+						"Some yugoloths have an action option that allows them to summon other yugoloths.",
+						{
+							"name": "Summon Yugoloth (1/Day)",
+							"type": "entries",
+							"entries": [
+								"The yugoloth attempts a magical summoning.",
+								"An arcanaloth has a {@chance 40|40 percent|40% summoning chance} chance of summoning one arcanaloth.",
+								"A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"name": "Arcanaloth",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Arcanaloths are sly, jackal-headed beings with humanoid bodies, but they can employ magic to take any humanoid form. They do so to gain the trust of creatures with whom they negotiate, replacing jackal snarls with winsome smiles. Regardless of its chosen form, an arcanaloth appears well groomed, clothing itself in fine robes. Highly intelligent spellcasters who hunger for knowledge and power, arcanaloths command units of lesser yugoloths and maintain the contracts, records, and accounts of their kind.",
+									"Arcanaloths speak and write all languages, making them cunning diplomats and negotiators. An arcanaloth properly paid can broker treaties or alliances with subtlety and finesse, just as an arcanaloth who changes sides can easily turn the best-laid peace talks into all-out war. What the fiend demands in exchange for its time and talent is information, as well as powerful magic items that it can trade for even more information."
+								]
+							}
+						]
+					},
+					"Yugoloths are fickle fiends that inhabit the planes of Acheron, Gehenna, Hades, and Carceri. They act as mercenaries and are notorious for their shifting loyalties. They are the embodiments of avarice. Before serving under anyone's banner, a yugoloth asks the only question on its mind: What's in it for me?",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spawn of Gehenna",
+										"entries": [
+											"The first yugoloths were created by a sisterhood of night hags on Gehenna. It is widely believed that Asmodeus, Lord of the Nine Hells, commissioned the work, in the hope of creating an army of fiends that were not bound to the Nine Hells. In the course of making this new army, the hags crafted four magic tomes and recorded the true names of every yugoloth they created, save one, the General of Gehenna. These tomes were called the Books of Keeping. Since knowing a fiend's true name grants power over it, the hags used the books to ensure the yugoloths' loyalty. They also used the books to capture the true names of other fiends that crossed them. It is rumored that the Books of Keeping contain the true names of a few demon lords and archdevils as well.",
+											"Petty jealousies and endless bickering caused the sisterhood to dissolve, and in the ensuing power grab, the Books of Keeping were lost or stolen. No longer indentured to anyone, the yugoloths gained independence, and they now offer their services to the highest bidder."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Fiendish Mercenaries",
+										"entries": [
+											"Summoned yugoloths demand much for their time and loyalty. Whatever promises a yugoloth makes are quickly broken when a better opportunity presents itself. Unlike demons, yugoloths can be reasoned with, but unlike devils, they are rarely true to their word.",
+											"Yugoloths can be found anywhere, but the high cost of maintaining a yugoloth army's loyalty typically exceeds what any warlord on the Material Plane can pay. Being self-serving creatures, yugoloths quarrel among themselves constantly. A yugoloth army is more organized than a ravening horde of demons, but far less orderly and regimented than a legion of devils. Without a powerful leader to keep them in line, yugoloths fight simply to indulge their violent predilections, and only as long as it benefits them to do so."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Back to Gehenna",
+										"entries": [
+											"When a yugoloth dies, it dissolves into a pool of ichor and reforms at full strength on the Bleak Eternity of Gehenna. Only on its native plane can a yugoloth be destroyed permanently. A yugoloth knows this and acts accordingly. When summoned to other planes, a yugoloth fights without concern for its own well-being. On Gehenna, it is more apt to retreat or plead for mercy if its demise seems imminent.",
+											"When a yugoloth is permanently destroyed, its name vanishes from every Book of Keeping. If a yugoloth is re-created by way of an unholy ritual requiring the expenditure of souls, its name reappears in the books."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The Books of Keeping",
+										"entries": [
+											"When all four copies of the Books of Keeping disappeared, Asmodeus and the night hags lost control of their yugoloth creations. Each Book of Keeping still exists, drifting from plane to plane, where the brave and the foolish occasionally stumble upon them. A yugoloth summoned using its true name, as inscribed in the Books of Keeping, is forced to serve its summoner obediently. The yugoloth hates being controlled in this manner and isn't shy about making its displeasure known. Like a petulant child, it will follow its instructions to the letter while looking for opportunities to misinterpret them."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "The General of Gehenna",
+										"entries": [
+											"Somewhere in the brimstone wastes of Gehenna, there roams an ultroloth so strong that none contests his power: the General of Gehenna. Many yugoloths search for this great general in the hope of serving with him. They believe that service with the General of Gehenna grants power and prestige among lower planar entities.",
+											"Whatever the case, no fiend finds the General unless the General desires it. His personal name is unknown, and even the Books of Keeping contain no mention of this powerful, thoroughly evil entity."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Arcanaloth.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Arcanaloth.png?v=1.111.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/arcanaloth.mp3?v=1.111.1"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Teleport"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"I",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"incapacitated",
+				"invisible",
+				"paralyzed"
+			]
+		},
+		{
+			"name": "Szass Tam",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 285,
+				"formula": "30d8 + 150"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 20,
+			"int": 29,
+			"wis": 21,
+			"cha": 20,
+			"save": {
+				"con": "+12",
+				"int": "+16",
+				"wis": "+12"
+			},
+			"skill": {
+				"arcana": "+23",
+				"history": "+16",
+				"insight": "+12",
+				"perception": "+12"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 22,
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"immune": [
+				"necrotic",
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Giant",
+				"Infernal",
+				"Primordial",
+				"Undercommon"
+			],
+			"cr": "24",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Szass Tam is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). Szass Tam has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell ray of sickness}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell ray of enfeeblement}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell counterspell}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell fire shield}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell cone of cold}",
+								"{@spell hold monster}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 3
+						},
+						"7": {
+							"spells": [
+								"{@spell crown of stars|XGE}",
+								"{@spell finger of death}",
+								"{@spell teleport}"
+							],
+							"slots": 3
+						},
+						"8": {
+							"spells": [
+								"{@spell antimagic field}",
+								"{@spell mind blank}"
+							],
+							"slots": 2
+						},
+						"9": {
+							"spells": [
+								"{@spell prismatic wall}",
+								"{@spell psychic scream|XGE}",
+								"{@spell time stop}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Szass Tam carries the {@item Staff of the Magi}. He wears a {@item Robe of the Magi} and has nine {@item Ioun stone}s under his control."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Szass Tam fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"Szass Tam's body turns to dust when he drops to 0 hit points, and his equipment is left behind. Szass Tam gains a new body after {@dice 1d10} days, regaining all his hit points and becoming active again. The new body appears within 5 feet of Szass Tam's phylactery, the location of which is hidden."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Szass Tam has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 16} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage, and the target must succeed on a {@dc 20} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "At-Will Spell",
+					"entries": [
+						"Acererak casts one of his at-will spells."
+					]
+				},
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"Acererak uses Paralyzing Touch or makes one melee attack with his staff."
+					]
+				},
+				{
+					"name": "Disrupt Life (Costs 3 Actions)",
+					"entries": [
+						"Each creature within 20 feet of Acererak must make a {@dc 20} Constitution saving throw against this magic, taking 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Lich",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Acererak is an archlich who travels between worlds and is known to take sick pleasure in devouring the souls of adventurers, whom he lures into trap-ridden dungeons where they suffer horrible deaths. One such dungeon lies under the lost city of Omu. This dungeon is called the Tomb of the Nine Gods, for Acererak slew nine false gods and sealed them within it. More recently, he built a necromantic device called the Soulmonger, then hid it in the heart of the tomb."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Acererak's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"Why be a god when I can be a creator of gods?\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"I build dungeons to trap and slay powerful adventurers. Their deaths and souls are my nourishment.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I underestimate the resolve of my enemies.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.worldanvil.com/uploads/images/0061b6cb54af1edbfdb4eed0746d0b51.jpg"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"D",
+				"DR",
+				"E",
+				"GI",
+				"I",
+				"P",
+				"U"
+			],
+			"damageTags": [
+				"C",
+				"N"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Talona The Gloom Stalker",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "genasi",
+						"prefix": "air"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item +2 studded leather armor}",
+						"Dueling"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 144
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 10,
+			"dex": 20,
+			"con": 14,
+			"int": 12,
+			"wis": 18,
+			"cha": 15,
+			"save": {
+				"dex": "+11",
+				"str": "+6",
+				"wis": "+10"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"survival": "+16",
+				"persuasion": "+8",
+				"nature": "+7",
+				"investigation": "+7",
+				"animal handling": "+10"
+			},
+			"senses": [
+				"darkvision 90 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"lightning",
+				"necrotic",
+				"poison",
+				"thunder"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Primordial",
+				"Elvish,"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"name": "Ranger spells & Poisoned Heart",
+					"headerEntries": [
+						"Talona absorbed the green shard thus poisoning his heart. He can cast the following with dc 18 to hit bonus +10"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell disguise self}",
+								"{@spell speak with animals}",
+								"{@spell zephyr strike|XGE}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell locate object}",
+								"{@spell shadow blade|XGE}",
+								"{@spell silence}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell glyph of warding}",
+								"{@spell lightning arrow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}",
+								"{@spell greater invisibility}",
+								"{@spell locate creature}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				},
+				{
+					"name": "Air Genasi spells",
+					"headerEntries": [
+						"dc 16 +8 to hit"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell gust|XGE}"
+							]
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell levitate}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Favored Enemy +4",
+					"entries": [
+						"Humanoid; Fiend"
+					]
+				},
+				{
+					"name": "Dread Ambusher",
+					"entries": [
+						"You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.",
+						"At the start of your first turn of each combat, your walking speed increases by 10 feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra {@damage 1d8} damage of the weapon's damage type."
+					]
+				},
+				{
+					"name": "Umbral Sight",
+					"entries": [
+						"You are also adept at evading creatures that rely on darkvision. While in darkness, you are {@condition invisible} to any creature that relies on darkvision to see you in that darkness."
+					]
+				},
+				{
+					"name": "Fleet on Foot & Vanish",
+					"entries": [
+						"The gloom stalker can take the {@action Dash} or {@action Hide} action as a bonus action on each of her turns. Also, she can't be tracked by nonmagical means, unless she choose to leave a trail."
+					]
+				},
+				{
+					"name": "Stalker's Flurry",
+					"entries": [
+						"The gloom stalker Once on each of his turns when he misses with a weapon attack, she can make another weapon attack as part of the same action."
+					]
+				},
+				{
+					"name": "Mobile",
+					"entries": [
+						"You are exceptionally speedy and agile. You gain the following benefits:",
+						"When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn.",
+						"When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The gloom stalker makes two attacks and can make one off-hand attack as a bonus action."
+					]
+				},
+				{
+					"name": "Rapier +2",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7 + 4}) piercing damage, and the target must make a {@dc 18} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save and become {@condition poisoned} for 1 hour, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 80/320 ft., one target. {@h}9 ({@damage 1d8 + 5 + 4}) piercing damage, and the target must make a {@dc 18} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save and become inflicted with the {@spell Contagion} spell, or half as much damage on a successful one. A creature can be afflicted by Contagion only once per day."
+					]
+				},
+				{
+					"name": "Shadow Blade",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}18 ({@damage 3d8 + 5 + 4}) psychic damage. This attack is made with advantage when made in dim light or darkness."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png?v=1.122.1",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"P"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Tamoachan",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor",
+						"{@item bracers of defense}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 64",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 19,
+			"con": 18,
+			"int": 15,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+9",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Chultian",
+				"Abyssal",
+				"Celestial",
+				"Draconic"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Hand of the Mist",
+					"headerEntries": [
+						"The magic item has 8 charges and using the item the wielder can cast any of the following spells as normal using charges equal to the spell level. The spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). "
+					],
+					"will": [
+						"{@spell fog cloud}",
+						"{@spell gaseous form}",
+						"{@spell mirage arcane} (1/day without using charges if the are is covered by fog or mist)",
+						"{@spell mirror image}",
+						"{@spell mislead}",
+						"{@spell phantasmal killer}",
+						"{@spell scatter|XGE}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+						"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+						"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed.",
+						"While it has 0 hit points in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then {@condition paralyzed} until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Tamoachan wears {@item bracers of defense}. He wields a {@item +2 handaxe} of the Mist and a heavy crossbow that shoots {@item Arrow of Slaying (Generic)} (Dragon)."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If he is subjected to an effect that allows him to make a Dexterity saving throw to take only half damage, Mirt instead takes no damage if he succeeds on the saving throw, and only half damage if he fails. He can't use this trait if he's {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak attack",
+					"entries": [
+						"Tamoachan deals an extra 17 ({@damage 5d6}) damage when he hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Tamoachan's that isn't {@condition incapacitated} and Tamoachan doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Asassination",
+					"entries": [
+						"Tamoachan has advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit Tamoachan score against a creature that is surprised is a critical hit."
+					]
+				},
+				{
+					"name": "Action Surge (1/Short rest)",
+					"entries": [
+						"On Tamoachan's turn, he can take one additional action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Vampire Form Only)",
+					"entries": [
+						"The vampire makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Mist Axe +2",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}16 ({@damage 3d6 + 6}) psychic damage."
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage and the vampire can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Bite (Bat or Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a {@creature vampire spawn} under the vampire's control."
+					]
+				},
+				{
+					"name": "Dragon Slayer Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage. On a hit the target must make a {@dc 17} Constitution saving throw if it is a dragon. On a failure, it takes an additional {@h}33 ({@damage 6d10}) piercing damage or half as much extra damage on a successful one."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+						"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.",
+									{
+										"name": "Dark Desires",
+										"type": "entries",
+										"entries": [
+											"Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed."
+										]
+									},
+									{
+										"name": "Born from Death",
+										"type": "entries",
+										"entries": [
+											"Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies."
+										]
+									},
+									{
+										"name": "Chained to the Grave",
+										"type": "entries",
+										"entries": [
+											"Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"Neither a vampire nor a vampire spawn requires air."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Vampire's Lair",
+										"entries": [
+											"A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Player Characters as Vampires",
+										"entries": [
+											"The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.",
+											"The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Strahd von Zarovich",
+										"entries": [
+											"A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.",
+											"In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.",
+											"In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.",
+											"In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"There's a noticeable increase in the populations of bats, rats, and wolves in the region.",
+											"Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.",
+											"Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.",
+											"A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents."
+										]
+									},
+									"If the vampire is destroyed, these effects end after {@dice 2d6} days."
+								]
+							}
+						]
+					}
+				]
+			},
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Sneak Attack",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Tarul Var (Archmage)",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 54",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"int": "+12",
+				"wis": "+9"
+			},
+			"skill": {
+				"arcana": "+12",
+				"history": "+12",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"resist": [
+				{
+					"resist": [
+						"cold",
+						"lightning",
+						"necrotic",
+						{
+							"resist": [
+								"bludgeoning",
+								"piercing",
+								"slashing"
+							],
+							"note": "from nonmagical attacks"
+						}
+					]
+				},
+				{
+					"resist": [
+						"force"
+					],
+					"note": "from item"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"Primordial",
+				"Thayan"
+			],
+			"cr": "21",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Var is a 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:",
+						"*Conjuration spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell chill touch}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell unseen servant}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell flaming sphere}*",
+								"{@spell mirror image}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}*",
+								"{@spell Evard's black tentacles}*"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}*",
+								"{@spell scrying}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell Mordenkainen's magnificent mansion}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell demiplane}*"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell power word kill}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Focused Conjuration",
+					"entries": [
+						"While Var is concentrating on a conjuration spell, his concentration can't be broken as a result of taking damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Var fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Var is destroyed but his phylactery remains intact, Var gains a new body in {@dice 1d10} days, regaining all his hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Var has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Magic items",
+					"entries": [
+						"{@item cloak of displacement} - disadvantage on attacks against him until he gets a hit, refers on his turn.",
+						"{@item brooch of shielding}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Benign Transposition",
+					"entries": [
+						"Var teleports up to 30 feet to an unoccupied space he can see. Alternatively, he can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, both creatures teleport, swapping places. Var can use this feature again only after he finishes a long rest or casts a conjuration spell of 1st level or higher."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Var casts a cantrip."
+					]
+				},
+				{
+					"name": "Paralyzing Touch (Costs 2 Actions)",
+					"entries": [
+						"Var uses Paralyzing Touch."
+					]
+				},
+				{
+					"name": "Frightening Gaze (Costs 2 Actions)",
+					"entries": [
+						"Var fixes his gaze on one creature he can see within 10 feet of him. The target must succeed on a {@dc 20} Wisdom saving throw against this magic or become {@condition frightened} for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Var's gaze for the next 24 hours."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Lich",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Tarul Var",
+				"source": "TftYP",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"After failing in an earlier task for the Red Wizards, the lich Tarul Var is sequestered within the Doomvault (Dead in Thay), where he tries to avoid the attention of Szass Tam. Interlopers who discover his quarters are set upon by the lich and his dread warrior guards, but if Var is brought to the brink of death, he might bargain for a chance to escape the dungeon.",
+											{
+												"name": "Undead Nature",
+												"type": "entries",
+												"entries": [
+													"A lich doesn't require air, food, drink, or sleep."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/TftYP/Tarul Var.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/TftYP/Tarul Var.png?v=1.125.1",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"OTH",
+				"P"
+			],
+			"damageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Wemmick",
+			"isNpc": true,
+			"source": "HaVoR",
+			"page": 0,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"dwarf"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +2 chain shirt}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 140
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 18,
+			"wis": 7,
+			"cha": 11,
+			"save": {
+				"con": "+8",
+				"int": "+9"
+			},
+			"skill": {
+				"arcana": "+9",
+				"perception": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Gnomish",
+				"Giant"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The artillerist is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It has the following artillerist spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell mending}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell catapult|XGE}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell see invisibility}",
+								"{@spell scorching ray}",
+								"{@spell shatter}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fireball}",
+								"{@spell flame arrows|XGE}",
+								"{@spell wind wall}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell vitriolic sphere|XGE}"
+							]
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "+1 Light Hammer",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "+1 Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 100/400 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Arcane Turret (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The artillerist magically summons a Medium turret in an unoccupied space on a horizontal surface within 5 feet of it. The turret is a magical object that occupies its space and that has crablike legs. It has an AC of 18 and 65 hit points. It is immune to poison damage, psychic damage, and all conditions. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the mending spell is cast on it, it regains {@dice 2d6} hit points. It disappears if it is reduced to 0 hit points or after 10 minutes. The artillerist can dismiss it early as an action.",
+						"When the artillerist summons the turret, it decides which type it is, choosing from the options listed below:"
+					]
+				},
+				{
+					"name": "1",
+					"entries": [
+						"Flamethrower. The turret exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 4 ({@damage 1d8}) fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried."
+					]
+				},
+				{
+					"name": "2",
+					"entries": [
+						"Force Ballista. Make a ranged spell attack, originating from the turret, at one creature or object within 120 feet of it. On a hit, the target takes 9 ({@damage 2d8}) force damage, and if the target is a creature, it is pushed up to 5 feet away from the turret."
+					]
+				},
+				{
+					"name": "3",
+					"entries": [
+						"Defender. The turret emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it 8 ({@dice 1d8 + 4}) temporary hit points.",
+						"On each of its turns, the artillerist can take a bonus action to cause the turret to activate if it is within 60 feet of it. As part of the same action, the artillerist can direct the turret to walk or climb up to 15 feet to an unoccupied space.",
+						"The artillerist can use an action to command the turret to detonate if is within 60 feet of it. Doing so destroys the turret and forces each creature within 10 feet of it to make a {@dc 15} Dexterity saving throw, taking 10 ({@damage 3d6}) force damage on a failed save or half as much damage on a successful one."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"G",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Yugu",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tortle"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 6,
+			"con": 16,
+			"int": 10,
+			"wis": 20,
+			"cha": 12,
+			"save": {
+				"wis": "+10",
+				"int": "+5"
+			},
+			"skill": {
+				"animal handling": "+10",
+				"nature": "+5",
+				"survival": "+10",
+				"perception": "+10"
+			},
+			"passive": 20,
+			"languages": [
+				"Aquan",
+				"Common",
+				"Druidic"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The tortle is a 14th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell guidance}",
+								"{@spell produce flame}",
+								"{@spell thorn whip}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell animal friendship}",
+								"{@spell cure wounds}",
+								"{@spell speak with animals}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkvision}",
+								"{@spell enhance ability}",
+								"{@spell hold person}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell conjure animals}",
+								"{@spell tidal wave|XGE}",
+								"{@spell water breathing}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell freedom of movement}",
+								"{@spell grasping vine}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell maelstrom|XGE}",
+								"{@spell mass cure wounds}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell investiture of ice|XGE}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell regenerate}"
+							],
+							"slots": 1
+						}
+					},
+					"will": [
+						"{@spell alter self}"
+					],
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Hold Breath",
+					"entries": [
+						"The tortle can hold its breath for 1 hour."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) slashing damage."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage, or 4 ({@damage 1d8}) bludgeoning damage if used with two hands."
+					]
+				},
+				{
+					"name": "Shell Defense",
+					"entries": [
+						"The tortle withdraws into its shell. Until it emerges, it gains a +4 bonus to AC and has advantage on Strength and Constitution saving throws. While in its shell, the tortle is {@condition prone}, its speed is 0 and can't increase, it has disadvantage on Dexterity saving throws, it can't take reactions, and the only action it can take is a bonus action to emerge."
+					]
+				},
+				{
+					"name": "Wild Shape (2/rest)",
+					"entries": [
+						"As a bonus action the druid can turn into a beast with a CR of 4 or lower, or into a CR 5 or lower elemental."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Tortle Druid",
+				"source": "MTF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Tortles",
+										"entries": [
+											"Tortles are omnivorous, turtle-like humanoids with shells that cover most of their bodies. Tortles have a saying: \"We wear our homes on our backs.\" Consequently, tortles feel little need to stay put for long.",
+											"An adult tortle stands about 6 feet tall and weighs between 450 and 500 pounds. Males and females are nearly identical in size and appearance."
+										]
+									},
+									{
+										"name": "Temporary Towns",
+										"type": "entries",
+										"entries": [
+											"A tortle settlement is primarily used as a kind of moot, where tortles can socialize with one another and trade with strangers. Tortles don't regard these settlements as places worth defending with their lives, and they abandon a settlement when it no longer serves their needs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Life of Wandering",
+										"entries": [
+											"Most tortles like to see how other creatures live and discover new customs. The urge to procreate doesn't kick in until the end of a tortle's life, and a tortle can spend decades away from its native land without feeling homesick."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MTF/Tortle.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MTF/Tortle Druid.png?v=1.122.6",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/tortle-druid.mp3?v=1.122.6"
+			},
+			"traitTags": [
+				"Hold Breath"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Xaya",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "L",
+			"type": "dragon",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item adamantine scale mail}"
+					],
+					"condition": "(its fly speed is reduced by 20ft.)"
+				}
+			],
+			"hp": {
+				"average": 119,
+				"formula": "14d10 + 42"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 16,
+			"int": 6,
+			"wis": 14,
+			"cha": 6,
+			"skill": {
+				"athletics": "+8",
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"languages": [
+				"Understands Common",
+				"Draconic but can't speak"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The wyvern deals double damage to objects and structures."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The wyvern makes two attacks. one with its bite and one with its stinger. While flying, it can use its claws in place of one other attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}12 ({@damage 2d6 + 5}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) slashing damage and the creature is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained}, and the wyvern can't use its claw on another target."
+					]
+				},
+				{
+					"name": "Stinger (3/day)",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}12 ({@damage 2d6 + 5}) piercing damage. The target must make a {@dc 16} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"{@i This wyvern's thick armor, jagged claws, and heavy brow belies a pair of intelligent eyes. It looks upon its rider like a hound looks at its master.}",
+					"Bred to be fearsome, obedient, and intelligent mounts for elite knights, war wyverns are superior in all ways to their wild cousins. Their natural scales are enhanced with thick steel scale armor, and selective breeding has granted them the ability to spit venom, in addition to delivering it with their scorpion-like tails.",
+					{
+						"type": "entries",
+						"name": "Loyal and Deadly",
+						"entries": [
+							"A war wyvern is unflinchingly loyal and has been taught to unerringly follow verbal commands given by its master. In military situations, a wyvern's master will often command it to snatch cavalry riders from their horses with its steel-tipped talons, hurling them to their doom, or to use its spiked tail to smash siege weapons or supply wagons. Despite their viciousness on the battlefield, these domesticated wyverns serve their masters out of love, not fear, and act like energetic pit bulls when around those who treat them with kindness."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Two Fight as One",
+						"entries": [
+							"Wyvern knights and their war wyverns act as a single unit in combat. A war wyvern cannot move or take actions independently while it is being used as a mount, but its specialized training gives it the ability to make a single attack when its rider takes the Multiattack action."
+						]
+					}
+				]
+			},
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Xandala the Firetounge",
+			"isNpc": true,
+			"source": "HaVoR",
+			"level": 18,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"half-elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor",
+						"Draconic Majesty",
+						"{@item Bracers of Defense}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 34",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 14,
+			"int": 18,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"int": "+10",
+				"wis": "+9",
+				"dex": "+7"
+			},
+			"skill": {
+				"history": "+10",
+				"insight": "+9",
+				"survival": "+9",
+				"arcana": "+10",
+				"deception": "+17"
+			},
+			"passive": 13,
+			"resist": [
+				"radiant"
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Dwarvish",
+				"Elvish",
+				"Halfling"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Xandala is a 17th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks).",
+						"She has 17 sorcery points that she can use for her meta-magics.",
+						"Xandala can add +10 to the damage to spells indicated by a *.",
+						"Xandala has the following sorcerer spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}*",
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}",
+								"{@spell sacred flame}*"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell absorb elements|XGE} (b)",
+								"{@spell disguise self}",
+								"{@spell shield} (b)"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell scorching ray}*"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink}",
+								"{@spell fireball}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell ice storm}",
+								"{@spell Otiluke's resilient sphere} (b)",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell creation}",
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell mass suggestion}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell whirlwind|XGE} can combine with fire spell*"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell incendiary cloud}*"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell true polymorph}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Quickened Spell",
+					"entries": [
+						"When she casts a spell that has a casting time of 1 action, Xandala changes the casting time to 1 bonus action for that casting using 2 sorcery points."
+					]
+				},
+				{
+					"name": "Magic items",
+					"entries": [
+						"{@item Red Dragon Mask|RoTOS}; {@item bracers of defense} witch has 6 charges that it can use to cast the following spells by expending charges equal to the spell level: {@spell Absorb Elements|XGE}, {@spell Shield} and {@spell Otiluke's Resilient Sphere}; a spell focus that gives +2 to spell attack and saving throws."
+					]
+				},
+				{
+					"name": "Briliant Flames",
+					"entries": [
+						"Xandala can add twice her charisma modifier to the damage of any spell that deals fire or radinat damage."
+					]
+				},
+				{
+					"name": "Twinned Spell",
+					"entries": [
+						"When Xandala casts a spell that targets only one creature and doesn't have a range of self, she can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip)."
+					]
+				},
+				{
+					"name": "Subtle Spell",
+					"entries": [
+						"When Xandala casts a spell, she can spend 1 sorcery point to cast it without any somatic or verbal components."
+					]
+				},
+				{
+					"name": "Twist spell",
+					"entries": [
+						"When Xandala casts a spell that deals a type of damage from the following list, she can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, thunder. Additionaly she can change fire damage to radiant."
+					]
+				},
+				{
+					"name": "Dragonfire",
+					"entries": [
+						"If Xandala deals fire damage to a creature or flammable object, it starts burning. At the start of each of its turns, a creature burning in this way takes 1d6 fire damage. A creature that can reach the burning target can use an action to extinguish the fire."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rs} {@hit 13} to hit, reach 120 ft., one or two target. {@h}31 ({@damage 4d10 + 10}) fire damage and the target is set ablaze, suffering an additional 8 ({@damage 1d6 + 10}) fire damage at the start of its turn. A creature that can reach the burning target can use an action to extinguish the fire."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Xandala",
+				"source": "ToA",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"The half-elf sorcerer Xandala has come to Chult in search of the Ring of Winter, an artifact in Artus Cimber's possession. Xandala knows that the ring has kept Artus alive for over a century, and she craves its power. If she meets the characters, Xandala pretends to be Artus's daughter and tries to convince them to help her find him. Her plan is to cast dominate person on Artus and force him to give her the ring, then escape using her {@spell fly} spell.",
+											"Xandala's magic traces back to a draconic bloodline, and parts of her skin are covered by a thin sheen of protective scales. She has befriended a pseudodragon named Summerwise, who thinks that Xandala's quest for the ring is dangerous but has given up trying to talk the sorcerer out of it. Summerwise can be turned against Xandala by good-aligned characters."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Xandala's Traits",
+										"entries": [
+											{
+												"name": "Ideal",
+												"type": "entries",
+												"entries": [
+													"\"I have the blood of dragons flowing through my veins. I am destined for greatness.\""
+												]
+											},
+											{
+												"name": "Bond",
+												"type": "entries",
+												"entries": [
+													"\"The Ring of Winter will bring me power and immortality.\""
+												]
+											},
+											{
+												"name": "Flaw",
+												"type": "entries",
+												"entries": [
+													"\"I'm surrounded by fools.\""
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/ToA/Xandala.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/ToA/Xandala.png?v=1.122.1",
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"H"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Phaia",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item +1 shield|dmg}"
+					]
+				},
+				{
+					"ac": 20,
+					"condition": "with {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 18,
+			"int": 20,
+			"wis": 14,
+			"cha": 11,
+			"save": {
+				"int": "+10",
+				"wis": "+7",
+				"con": "+9"
+			},
+			"skill": {
+				"arcana": "+10",
+				"history": "+10"
+			},
+			"passive": 12,
+			"resist": [
+				"force",
+				"necrotic"
+			],
+			"languages": [
+				"any four languages"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The necromancer is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The necromancer has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell dancing lights}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell false life}*",
+								"{@spell mage armor}",
+								"{@spell ray of sickness}*",
+								"{@spell shield}"
+							],
+							"slots": 3
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}*",
+								"{@spell ray of enfeeblement}*",
+								"{@spell web}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}*",
+								"{@spell bestow curse}*",
+								"{@spell vampiric touch}*"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}*",
+								"{@spell dimension door}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell cloudkill}"
+							],
+							"slots": 1
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}*",
+								"{@spell contingency}"
+							],
+							"slots": 0
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell feeblemind}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Harvest of Life (1/Turn)",
+					"entries": [
+						"When necromancer deals necrotic damage to a creature that is neither a construct nor undead with a spell of 1st level or higher, the necromancer regains hit points equal to half the damage dealt."
+					]
+				},
+				{
+					"name": "Magic items",
+					"entries": [
+						"Magic blood - gives 15 sorc points and can use Twin Spell",
+						"Brooch of Shielding"
+					]
+				},
+				{
+					"name": "Recently Died",
+					"entries": [
+						"The necromancer suffers a -3 penalty all attack rolls, saving throws, and ability checks."
+					]
+				}
+			],
+			"mythicHeader": [
+				"The necromancer has a Contingency spell active."
+			],
+			"mythic": [
+				{
+					"name": "Contingency: Antilife Shell",
+					"entries": [
+						"If any living creature attempts so step closer than 10 ft. to the necromancer the spell Antilife Shell activates blocking the creacure"
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Necromancers are specialist wizards who study the interaction of life, death, and undeath. Some like to dig up corpses to create undead slaves. A few use their powers for good, becoming hunters of the undead and risking their lives to save others."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Phaia-5e.jpg/revision/latest/scale-to-width-down/975?cb=20171015002914"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Phaia-5e.jpg/revision/latest/scale-to-width-down/975?cb=20171015002914",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"hasFluff": true
+		}
+	]
+}
