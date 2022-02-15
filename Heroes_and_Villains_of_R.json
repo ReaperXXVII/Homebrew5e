@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.147.14",
+	"siteVersion": "1.149.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1643297749,
-		"dateLastModified": 1643297749
+		"dateAdded": 1644945963,
+		"dateLastModified": 1644945963
 	},
 	"monster": [
 		{
@@ -5839,6 +5839,254 @@
 				"CW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Weretigress Magi",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "Shapechanger",
+						"prefix": "Human,"
+					}
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"special": "12"
+				},
+				{
+					"ac": 17,
+					"condition": "with Robe of the Magi",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 48",
+				"average": 120
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in tiger form)"
+				}
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 16,
+			"int": 20,
+			"wis": 13,
+			"cha": 15,
+			"save": {
+				"int": "+10",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+15",
+				"history": "+10",
+				"nature": "+10",
+				"religion": "+10",
+				"perception": "+6",
+				"stealth": "+7"
+			},
+			"passive": 16,
+			"languages": [
+				"any fve languages"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The magi is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 11} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell feather fall}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self}",
+								"{@spell misty step}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell nondetection}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell fire shield}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell creation}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell forcecage}",
+								"{@spell teleport}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell clone}",
+								"{@spell incendiary cloud}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Alter Energy Type (1/Turn)",
+					"entries": [
+						"When the magi casts a spell with a spell slot and the spell deals acid, cold, fire, lightning, or thunder damage, it can substitute that damage with one other type from that list."
+					]
+				},
+				{
+					"name": "Gillded staff",
+					"entries": [
+						"{@item Staff of the Ivory Claw|egw} but also works for her claw and bite attacks in hybrid and tiger forms."
+					]
+				},
+				{
+					"name": "Robe of the Magi",
+					"entries": [
+						"{@item Robe of the Archmagi} but the item is very rare without the +2 to spellcasting ability boon."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The magi has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Pounce (Tiger or Hybrid Form Only)",
+					"entries": [
+						"If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the weretiger can make one bite attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The weretiger has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed except magic items attuned to the weretiger. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Hybrid Form Only)",
+					"entries": [
+						"In hybrid form, the weretiger can make two claw attacks."
+					]
+				},
+				{
+					"name": "Bite (Tiger or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 13} Constitution saving throw or be cursed with weretiger lycanthropy."
+					]
+				},
+				{
+					"name": "Claw (Tiger or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"She is very direct.",
+					"She is materialistic.",
+					"She disregards poorer people.",
+					"She doesn't tolerate nicknames.",
+					"She doesn't like listening to jokes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/020/051/377/large/kibaek-lee-.jpg?1566163396"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Fjk2v7E.png",
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance",
+				"Pounce",
+				"Shapechanger"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
 		}
 	]
 }
