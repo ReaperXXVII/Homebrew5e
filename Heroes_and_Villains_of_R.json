@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1644945963,
-		"dateLastModified": 1644945963
+		"dateAdded": 1644947570,
+		"dateLastModified": 1644947570
 	},
 	"monster": [
 		{
@@ -5904,7 +5904,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The magi is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 11} to hit with spell attacks). It has the following wizard spells prepared:"
+						"The magi is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 11} to hit with spell attacks). The magi is a shapechanger that can cast spells in her Hybrid form, but only those that don't require material components. It has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -5938,7 +5938,7 @@
 								"{@spell dispel magic}",
 								"{@spell fireball}",
 								"{@spell fly}",
-								"{@spell nondetection}"
+								"{@spell haste}"
 							],
 							"slots": 3
 						},
@@ -5959,7 +5959,7 @@
 						"6": {
 							"spells": [
 								"{@spell chain lightning}",
-								"{@spell disintegrate}"
+								"{@spell Tenser's transformation|XGE} (works with claw and bite attacks as well)"
 							],
 							"slots": 1
 						},
@@ -5990,15 +5990,12 @@
 					]
 				},
 				{
-					"name": "Gillded staff",
+					"name": "Special Equipment",
 					"entries": [
-						"{@item Staff of the Ivory Claw|egw} but also works for her claw and bite attacks in hybrid and tiger forms."
-					]
-				},
-				{
-					"name": "Robe of the Magi",
-					"entries": [
-						"{@item Robe of the Archmagi} but the item is very rare without the +2 to spellcasting ability boon."
+						"The magi attuned to the following magic items: ",
+						"-Gillded Claw staff: Similar to a {@item Staff of the Ivory Claw|egw} but also works for her claw and bite attacks in tiger and hybrid forms.",
+						"Robe of the Magi:",
+						"-Similar to a {@item Robe of the Archmagi}, but the item is a very rare rarity without the +2 to spellcasting ability boon."
 					]
 				},
 				{
@@ -6024,6 +6021,12 @@
 					"entries": [
 						"The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed except magic items attuned to the weretiger. It reverts to its true form if it dies."
 					]
+				},
+				{
+					"name": "Golden Flare",
+					"entries": [
+						"If the mage scores a critical with any attack roll, the target takes an extra {@damage 3d6} radiant damage. (this does not get double)"
+					]
 				}
 			],
 			"action": [
@@ -6034,15 +6037,15 @@
 					]
 				},
 				{
-					"name": "Bite (Tiger or Hybrid Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 13} Constitution saving throw or be cursed with weretiger lycanthropy."
-					]
-				},
-				{
 					"name": "Claw (Tiger or Hybrid Form Only)",
 					"entries": [
 						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite (Tiger or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage. If the target is a humanoid, it must succeed on a {@dc 13} Constitution saving throw or be cursed with weretiger lycanthropy."
 					]
 				}
 			],
