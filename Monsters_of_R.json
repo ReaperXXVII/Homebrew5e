@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.147.14",
+	"siteVersion": "1.149.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1643297718,
-		"dateLastModified": 1643297718
+		"dateAdded": 1645354820,
+		"dateLastModified": 1645354820
 	},
 	"monster": [
 		{
@@ -8323,113 +8323,168 @@
 			]
 		},
 		{
-			"name": "Bagman",
+			"name": "Wraith King",
 			"source": "MoR",
-			"basicRules": true,
-			"size": "L",
-			"type": "giant",
+			"page": 302,
+			"size": "M",
+			"type": "undead",
 			"alignment": [
-				"C",
+				"N",
 				"E"
 			],
 			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
+				13
 			],
 			"hp": {
-				"average": 84,
-				"formula": "8d10 + 40"
+				"formula": "9d8 + 27",
+				"average": 80
 			},
 			"speed": {
-				"walk": 30
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
 			},
-			"str": 18,
-			"dex": 15,
-			"con": 20,
-			"int": 7,
-			"wis": 10,
-			"cha": 6,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+8",
-				"sleight of hand": "+5"
-			},
+			"str": 6,
+			"dex": 16,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
 			"senses": [
-				"darkvision 120 ft."
+				"darkvision 60 ft."
 			],
-			"passive": 13,
-			"vulnerable": [
-				"radiant"
+			"passive": 12,
+			"resist": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"immune": [
+				{
+					"immune": [
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
 			],
 			"languages": [
-				"Giant"
+				"the languages it knew in life"
 			],
-			"cr": "8",
+			"cr": "5",
 			"trait": [
 				{
-					"name": "Keen Smell",
+					"name": "Incorporeal Movement",
 					"entries": [
-						"The Bagman has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+						"The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
 					]
 				},
 				{
-					"name": "Regeneration",
+					"name": "Sunlight Sensitivity",
 					"entries": [
-						"The Bagman regains 10 hit points at the start of its turn. If Bagman takes acid, fire or radiant damage, this trait doesn't function at the start of the troll's next turn. Bagman dies only if it starts its turn with 0 hit points and doesn't regenerate."
+						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
+						"Additional the wraith king looses all resistances and Immunities in bright Sunlight"
 					]
 				},
 				{
-					"name": "Sunlight Hypersensitivity",
+					"name": "Cold Presence",
 					"entries": [
-						"The Bagman takes 5 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+						"If the wraith moves through a creatures space, it must make {@dc 14} Dexterity saving throw or take {@damage 1d8} cold damage and its speed is reduced by 10 feet"
 					]
 				},
 				{
-					"name": "Contort Body",
+					"name": "Lair actions:",
 					"entries": [
-						"The Bagman can move through a space as narrow as 10 inch wide while squeezing."
+						"-Lightning Barrier",
+						"-Call of The Night",
+						"-Grasping Souls"
+					]
+				},
+				{
+					"name": "LA. Lightning Barrier",
+					"entries": [
+						"Activates one lightning wall and deactivates another. If there is no active lightning walls it instead activates two."
+					]
+				},
+				{
+					"name": "LA. Call of The Night:",
+					"entries": [
+						"The wraith can chose a single beam of light to change it into a beam of darkness. (can only be one pillar of darkness in the lair)"
+					]
+				},
+				{
+					"name": "LA. Grasping Souls",
+					"entries": [
+						"The wraith chose a points on the ground and within a 10 foot radius sphere spectral hands grasp for the living. The area becomes difficult terrain and a creature starting its turn there must a {@dc 14} Strength saving throw or become {@condition grappled} and the wraith can instantly move the creature anywhere within the effected area. If the creature. The spectral hands last for 2 turns."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Life Drain",
 					"entries": [
-						"The Bagman makes three attacks: one with its bite and two with its claws. Bagman can use Gaze of the Void instead of one of its attack."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}21 ({@damage 4d8 + 3}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Call Specter",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage damage plus 7 ({@damage 2d6}) necrotic damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
-					]
-				},
-				{
-					"name": "Gaze of the Void",
-					"entries": [
-						"One creature that the Bagman can see within 60 feet of it must make a {@dc 16} Wisdom saving or be {@condition frightened} for 1 minute while {@condition frightened} the creature is also {@condition paralyzed} .The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"The wraith can summon an cursed soul for 1 minute. A {@creature specter} apparates in a chosen unoccupied space within 15 feet of the wraith. The {@creature specter} is under the wraith's control with one hit-points and acts on initiative roll 10. "
 					]
 				}
 			],
+			"legendaryHeader": [
+				"The Wrait King has 3 legendary actions"
+			],
+			"legendary": [
+				{
+					"name": "Soul Siphon",
+					"entries": [
+						"The wrait can target up to three creacures within 30 feet of it. All creacure suffers {@dice 1d6} necrotic damage (no save), and the wraith heals an amount for the total damage done."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The wraith moves half of its speed."
+					]
+				},
+				{
+					"name": "Dread",
+					"entries": [
+						"The Wraith looks into the soul of a creature. the target must make a {@dc 14} Wisdom saving throw or become {@condition frightened} until the end of the creatures next turn and take {@dice 2d4} psychic damage. On a save the target isn't frighten and takes only half damage. If the target is immune to being frighten it's also immune to damage as well."
+					]
+				}
+			],
+			"mythicHeader": [],
 			"environment": [
-				"arctic",
-				"forest",
-				"hill",
-				"mountain",
-				"swamp",
 				"underdark"
 			],
 			"fluff": {
+				"name": "Wraith",
+				"source": "MM",
 				"entries": [
 					{
 						"type": "entries",
@@ -8437,18 +8492,35 @@
 							{
 								"type": "entries",
 								"entries": [
+									"A wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.",
 									{
-										"name": "Who (Or What) Is the Bagman?",
+										"name": "Vile Oblivion",
 										"type": "entries",
 										"entries": [
-											"In hushed tones, adventurers and collectors of urban legends tell the tale of the Bagman. Long ago, an adventurer sought to escape certain death by abandoning his party and crawling into a Bag of Holding. While this is generally not a good idea to begin with, the adventurer was desperate and you know what they say about desperate times calling for desperate measures. Upon trying to escape the Bag of Holding, the adventurer’s efforts were useless. Floating in the extradimensional void, he only found a never-ending amount of storage spaces. With no clear escape from his prison, the adventurer continued looking for any way out that he could find. But the strange magical forces within this extradimensional space began to take their toll on the adventurer… His body stretched and warped. His skin grayed, his nails grew sharp and blackened, and his limbs grew stretched and gangly. The adventurer was no longer himself… This tall, sickly creature would come to be known as the BagMan."
+											"When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the Lower Planes. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith-a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life."
 										]
 									},
 									{
-										"name": "What Does the BagMan do?",
+										"name": "Bereft of Body",
 										"type": "entries",
 										"entries": [
-											"To this day, the Bagman continues to try to find his way back home. Every single night, he emerges from a random Bag of Holding in hopes to make his return. If he does not recognize this as his home, he will pull someone near the bag into it never to be heard from again. In their place, he leaves a small piece of junk from his collection in the extra-dimensional space that he inhabits. It makes you wonder… Did you actually misplace that item in your Bag of Holding or did the BagMan take it as his own?"
+											"A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.",
+											"A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become."
+										]
+									},
+									{
+										"name": "Undead Commanders",
+										"type": "entries",
+										"entries": [
+											"A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a specter, spiteful of all that lives.",
+											"Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A wraith doesn't require air, food, drink, or sleep."
 										]
 									}
 								]
@@ -8460,43 +8532,36 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "external",
-							"url": "https://cdn.vox-cdn.com/thumbor/DNf318NvXQBbeckEt4vbSuClUxg=/1400x0/filters:no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22514484/Stephen_Oakley_Bag_Man_SKETCHITW.jpg"
+							"type": "internal",
+							"path": "bestiary/MM/Wraith.jpg"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://i.imgur.com/NDX4yg6.png",
+			"tokenUrl": "https://5e.tools/img/MM/Wraith.png",
 			"soundClip": {
 				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/troll.mp3"
+				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
 			},
 			"traitTags": [
-				"Keen Senses",
-				"Regeneration",
+				"Incorporeal Movement",
 				"Sunlight Sensitivity"
 			],
 			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
+				"D"
 			],
 			"languageTags": [
-				"GI"
+				"LF"
 			],
 			"damageTags": [
 				"N",
-				"P",
-				"R",
-				"S"
+				"O"
 			],
 			"miscTags": [
-				"MW",
-				"RCH"
+				"MW"
 			],
 			"conditionInflict": [
-				"paralyzed"
+				"frightened"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
