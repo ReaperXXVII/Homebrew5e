@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.149.1",
+	"siteVersion": "1.150.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1645354820,
-		"dateLastModified": 1645354820
+		"dateAdded": 1646995477,
+		"dateLastModified": 1646995477
 	},
 	"monster": [
 		{
@@ -8323,168 +8323,73 @@
 			]
 		},
 		{
-			"name": "Wraith King",
+			"name": "Medusa Hatchling",
 			"source": "MoR",
-			"page": 302,
-			"size": "M",
-			"type": "undead",
+			"basicRules": true,
+			"size": "S",
+			"type": "monstrosity",
 			"alignment": [
-				"N",
-				"E"
+				"A"
 			],
 			"ac": [
-				13
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
 			],
 			"hp": {
-				"formula": "9d8 + 27",
-				"average": 80
+				"formula": "4d6 + 4",
+				"average": 18
 			},
 			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 60,
-					"condition": "(hover)"
-				},
-				"canHover": true
+				"walk": 25
 			},
 			"str": 6,
-			"dex": 16,
-			"con": 16,
-			"int": 12,
-			"wis": 14,
-			"cha": 15,
+			"dex": 12,
+			"con": 12,
+			"int": 8,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"cha": "+3",
+				"wis": "+2"
+			},
+			"skill": {
+				"insight": "+2",
+				"perception": "+2"
+			},
 			"senses": [
 				"darkvision 60 ft."
 			],
 			"passive": 12,
-			"resist": [
-				"acid",
-				"cold",
-				"fire",
-				"lightning",
-				"thunder"
-			],
-			"immune": [
-				{
-					"immune": [
-						"necrotic",
-						"poison"
-					]
-				},
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't silvered"
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
-			],
 			"languages": [
-				"the languages it knew in life"
+				"Common"
 			],
-			"cr": "5",
+			"cr": "2",
 			"trait": [
 				{
-					"name": "Incorporeal Movement",
+					"name": "Petrifying Gaze",
 					"entries": [
-						"The wraith can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
-					]
-				},
-				{
-					"name": "Sunlight Sensitivity",
-					"entries": [
-						"While in sunlight, the wraith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight.",
-						"Additional the wraith king looses all resistances and Immunities in bright Sunlight"
-					]
-				},
-				{
-					"name": "Cold Presence",
-					"entries": [
-						"If the wraith moves through a creatures space, it must make {@dc 14} Dexterity saving throw or take {@damage 1d8} cold damage and its speed is reduced by 10 feet"
-					]
-				},
-				{
-					"name": "Lair actions:",
-					"entries": [
-						"-Lightning Barrier",
-						"-Call of The Night",
-						"-Grasping Souls"
-					]
-				},
-				{
-					"name": "LA. Lightning Barrier",
-					"entries": [
-						"Activates one lightning wall and deactivates another. If there is no active lightning walls it instead activates two."
-					]
-				},
-				{
-					"name": "LA. Call of The Night:",
-					"entries": [
-						"The wraith can chose a single beam of light to change it into a beam of darkness. (can only be one pillar of darkness in the lair)"
-					]
-				},
-				{
-					"name": "LA. Grasping Souls",
-					"entries": [
-						"The wraith chose a points on the ground and within a 10 foot radius sphere spectral hands grasp for the living. The area becomes difficult terrain and a creature starting its turn there must a {@dc 14} Strength saving throw or become {@condition grappled} and the wraith can instantly move the creature anywhere within the effected area. If the creature. The spectral hands last for 2 turns."
+						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 11} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
+						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
+						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Life Drain",
+					"name": "Snake Hair",
 					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}21 ({@damage 4d8 + 3}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
-					]
-				},
-				{
-					"name": "Call Specter",
-					"entries": [
-						"The wraith can summon an cursed soul for 1 minute. A {@creature specter} apparates in a chosen unoccupied space within 15 feet of the wraith. The {@creature specter} is under the wraith's control with one hit-points and acts on initiative roll 10. "
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}3 ({@damage 1d4 + 1}) piercing damage plus 14 ({@damage 4d6}) poison damage."
 					]
 				}
 			],
-			"legendaryHeader": [
-				"The Wrait King has 3 legendary actions"
-			],
-			"legendary": [
-				{
-					"name": "Soul Siphon",
-					"entries": [
-						"The wrait can target up to three creacures within 30 feet of it. All creacure suffers {@dice 1d6} necrotic damage (no save), and the wraith heals an amount for the total damage done."
-					]
-				},
-				{
-					"name": "Move",
-					"entries": [
-						"The wraith moves half of its speed."
-					]
-				},
-				{
-					"name": "Dread",
-					"entries": [
-						"The Wraith looks into the soul of a creature. the target must make a {@dc 14} Wisdom saving throw or become {@condition frightened} until the end of the creatures next turn and take {@dice 2d4} psychic damage. On a save the target isn't frighten and takes only half damage. If the target is immune to being frighten it's also immune to damage as well."
-					]
-				}
-			],
-			"mythicHeader": [],
 			"environment": [
-				"underdark"
+				"desert"
 			],
 			"fluff": {
-				"name": "Wraith",
-				"source": "MM",
 				"entries": [
 					{
 						"type": "entries",
@@ -8492,35 +8397,20 @@
 							{
 								"type": "entries",
 								"entries": [
-									"A wraith is malice incarnate, concentrated into an incorporeal form that seeks to quench all life. The creature is suffused with negative energy, and its mere passage through the world leaves nearby plants blackened and withered. Animals flee from its presence. Even small fires can be extinguished by the sucking oblivion of the wraith's horrifying existence.",
+									"As deadly as they are ravishing, the serpent-haired medusas suffer an immortal curse brought on by their vanity. They lurk in quiet exile among the tumbled ruins of their former lives, surrounded by the petrified remains of past admirers and would-be heroes.",
 									{
-										"name": "Vile Oblivion",
+										"name": "Immortal Splendor",
 										"type": "entries",
 										"entries": [
-											"When a mortal humanoid lives a debased life or enters into a fiendish pact, it consigns its soul to eternal damnation in the Lower Planes. However, sometimes the soul becomes so suffused with negative energy that it collapses in on itself and ceases to exist the instant before it can shuffle off to some horrible afterlife. When this occurs, the spirit becomes a soulless wraith-a malevolent void trapped on the plane where it died. Almost nothing of the wraith's former existence is preserved; in this new form, it exists only to annihilate other life."
+											"Men and women who desire eternal youth, beauty, and adoration might pray to malicious gods, beg dragons for ancient magic, or seek out powerful archmages to fulfill their wishes. Others make sacrifices to demon lords or archdevils, offering all in exchange for this gift, oblivious to the curse that accompanies it. Those who strike such bargains gain physical beauty, restored youth, immortality, and the adoration of all who behold them, granting them the influence and power they so desire. However, after years of the living like a demigod among mortals, the price for their vanity and hubris is exacted, and they are forever transformed into medusas. A medusa's hair turns into a nest of venomous serpents, and all who gaze upon the medusa are {@condition petrified}, becoming stone monuments to its corruption."
 										]
 									},
 									{
-										"name": "Bereft of Body",
+										"name": "Medusa Lairs",
 										"type": "entries",
 										"entries": [
-											"A wraith can move through solid creatures and objects as easily as a mortal creature moves through fog.",
-											"A wraith might retain a few memories of its mortal life as shadowy echoes. However, even the strongest events and emotions become little more than faint impressions, fleeting as half-remembered dreams. A wraith might pause to stare at something that fascinated it in life, or it might curb its wrath in acknowledgment of a past friendship. Such moments come rarely, however, because most wraiths despise what they were as a reminder of what they have become."
-										]
-									},
-									{
-										"name": "Undead Commanders",
-										"type": "entries",
-										"entries": [
-											"A wraith can make an undead servant from the spirit of a humanoid creature that has recently suffered a violent death. Such a fragment of woe becomes a specter, spiteful of all that lives.",
-											"Wraiths sometimes rule the legions of the dead, plotting the doom of living creatures. When they emerge from their tombs to do battle, life and hope shrivel before them. Even if a wraith's armies are forced to retreat, the lands its forces occupied are so blasted and withered that those who live there often starve and die."
-										]
-									},
-									{
-										"name": "Undead Nature",
-										"type": "entries",
-										"entries": [
-											"A wraith doesn't require air, food, drink, or sleep."
+											"Medusas live forever in seclusion, alienated from the world around them by their monstrous form and caprice. Their homes gradually fall into disrepair until they are little more than shadowy ruins covered with thorns and creepers, riddled with obstructions and hiding places. Foolhardy looters and adventurers who enter are often unaware of the medusa's presence until the creature is among them.",
+											"A medusa is subject to its own curse. By looking vainly on its reflection, it turns to stone as surely as any living mortal. As a result, a medusa destroys or removes any mirrors or reflective surfaces in its lair."
 										]
 									}
 								]
@@ -8532,36 +8422,33 @@
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Wraith.jpg"
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/015/590/463/large/elena-ilicheva-19.jpg?1548885458"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/MM/Wraith.png",
+			"tokenUrl": "https://i.imgur.com/WZtS3Xn.png",
 			"soundClip": {
 				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
+				"url": "https://5e.tools/audio/bestiary/medusa.mp3"
 			},
-			"traitTags": [
-				"Incorporeal Movement",
-				"Sunlight Sensitivity"
-			],
 			"senseTags": [
 				"D"
 			],
 			"languageTags": [
-				"LF"
+				"C"
 			],
 			"damageTags": [
-				"N",
-				"O"
+				"I",
+				"P"
 			],
 			"miscTags": [
 				"MW"
 			],
 			"conditionInflict": [
-				"frightened"
+				"petrified",
+				"restrained"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
