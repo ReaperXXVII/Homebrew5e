@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1646998057,
-		"dateLastModified": 1646998057
+		"dateAdded": 1647001068,
+		"dateLastModified": 1647001068
 	},
 	"monster": [
 		{
@@ -8539,7 +8539,7 @@
 				{
 					"name": "Lash",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
 					]
 				}
 			],
@@ -8665,6 +8665,513 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "Yuan-ti Hunter",
+			"source": "MoR",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger",
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"stealth": "+6",
+				"survival": "+6",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"headerEntries": [
+						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)"
+					],
+					"daily": {
+						"3": [
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yuan-ti has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Yuan-ti Form Only)",
+					"entries": [
+						"The yuan-ti makes two attacks, but can constrict only once."
+					]
+				},
+				{
+					"name": "Bite (Snake Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and the yuan-ti can't constrict another target."
+					]
+				},
+				{
+					"name": "Scimitar (Yuan-ti Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow (Yuan-ti Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"fluff": {
+				"name": "Yuan-ti Malison (Type 3)",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunt with arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.",
+									{
+										"type": "entries",
+										"name": "Yuan-ti",
+										"entries": [
+											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
+											{
+												"name": "Forsaken Humanity",
+												"entries": [
+													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
+													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
+													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
+													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Serpent Kings of Fallen Empires",
+												"entries": [
+													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cold of Heart",
+												"entries": [
+													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "False Worship",
+												"entries": [
+													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Serpent Gods",
+										"entries": [
+											"The yuan-ti revere a number of powerful entities as gods, including the following.",
+											{
+												"name": "Dendar, the Night Serpent",
+												"entries": [
+													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Merrshaulk, Master of the Pit",
+												"entries": [
+													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Sseth, the Sibilant Death",
+												"entries": [
+													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Yuan-ti Malison.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/TYZSkYQ.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-malison.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Yuan-ti Cultist",
+			"source": "MoR",
+			"page": 310,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 11,
+			"int": 12,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"deception": "+6",
+				"religion": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared, and it can innately cast some spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)",
+						"{@spell poison spray}",
+						"{@spell sacred flame}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell hold person}",
+							"{@spell spiritual weapon}",
+							"{@spell suggestion}"
+						],
+						"2e": [
+							"{@spell command}",
+							"{@spell inflict wounds}",
+							"{@spell shield of faith}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yuan-ti has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The yuan-ti makes two melee attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Inflict Wounds",
+					"entries": [
+						"{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d10}) necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spiritual Weapon",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8 + 2}) force damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
+			],
+			"fluff": {
+				"name": "Yuan-ti Pureblood",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Purebloods form the lowest caste of yuan-ti society. They closely resemble humans, yet a pureblood can't pass for human under close scrutiny because there's always some hint of its true nature, such as scaly patches of skin, serpentine eyes, pointed teeth, or a forked tongue. Wearing cloaks and cowls, they masquerade as humans and infiltrate civilized lands to gather information, kidnap prisoners for interrogation and sacrifice, and trade with anyone who has something that can further their myriad plots.",
+									{
+										"type": "entries",
+										"name": "Yuan-ti",
+										"entries": [
+											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
+											{
+												"name": "Forsaken Humanity",
+												"entries": [
+													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
+													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
+													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
+													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Serpent Kings of Fallen Empires",
+												"entries": [
+													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cold of Heart",
+												"entries": [
+													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "False Worship",
+												"entries": [
+													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Serpent Gods",
+										"entries": [
+											"The yuan-ti revere a number of powerful entities as gods, including the following.",
+											{
+												"name": "Dendar, the Night Serpent",
+												"entries": [
+													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Merrshaulk, Master of the Pit",
+												"entries": [
+													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Sseth, the Sibilant Death",
+												"entries": [
+													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Yuan-ti Pureblood.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Yuan-ti Pureblood.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-pureblood.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }
