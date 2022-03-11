@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1646995477,
-		"dateLastModified": 1646995477
+		"dateAdded": 1646998057,
+		"dateLastModified": 1646998057
 	},
 	"monster": [
 		{
@@ -8452,6 +8452,219 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Inkling",
+			"source": "MoR",
+			"page": 227,
+			"size": "T",
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "4d4 + 4",
+				"average": 14
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"arcana": "+6",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"languages": [
+				"Understands the languages of its creator but can't speak"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The inkling's innate spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring only somatic components:"
+					],
+					"will": [
+						"{@spell fire bolt}",
+						"{@spell mending}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell color spray}",
+							"{@spell detect magic}",
+							"{@spell heat metal}",
+							"{@spell magic missile}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The inkling can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "A Thirst for Knowledge",
+					"entries": [
+						"If an inkling spends 24 hours with a spellbook or a spell scroll, it can learn the magic of one 2ndlevel or lower spell, erasing and absorbing all the ink and magic used to inscribe the spell. The inkling can then cast the spell once per day."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The inkling has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Lash",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) slashing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the inkling takes the Hide action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Spell",
+					"entries": [
+						"If a spell attack hits the inkling, it can force the attacker to make a {@dc 12} Intelligence saving throw. If the attacker fails the saving throw, the spell is redirected to hit another creature of the inkling's choice within 30 feet."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/inkling.jpg"
+						}
+					}
+				],
+				"entries": [
+					"{@i A small, sentient pool of magical ink, shimmering in the light, flows along the bookshelf.}",
+					"An inkling forms when dormant magic sparks to life in a long-unused spellbook. It can take on any form it wishes, although it rarely exceeds a height and width of six inches. It usually chooses the form of a puddle and flows in and around books. It can seep through even the tiniest cracks in its surroundings, making its search for hidden knowledge an easier task.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Wizards' Bane",
+										"entries": [
+											"Inklings possess a wizard's natural thirst for knowledge. Arcane casters must be careful, for inklings are disastrous to find in a wizard's library, craving knowledge and stealing the ink and the knowledge of spells for themselves. Inklings are primarily solitary entities. However, if enough spellbooks or scrolls are stored in one location, a horde of inklings can sometimes form."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Clever Pets",
+										"entries": [
+											"Some inklings have been caught by the wizards they tried to plague. Those not destroyed are kept by such wizards and can be trained to search out a rival's books and bring back knowledge. While not forced by any binding or magical curse, the inklings still follow those they consider their masters, as they crave the acquisition of the arcane their masters provide. As long as the \"master\" keeps the inkling well-supplied with scrolls and other magical writings, it remains a loyal companion."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Innate Casters",
+										"entries": [
+											"Inklings are naturally in tune with the arcane elements of the world and know the inner workings of spells. Not only can they cast some of the basic spells of wizards, they can also sometimes alter the nature of a spell already cast. This is quite helpful if they are ever discovered in a wizard's abode and need to make an escape."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Construct Nature",
+										"entries": [
+											"The inkling doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/SCC/Inkling%20Mascot.png",
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 	]
 }
