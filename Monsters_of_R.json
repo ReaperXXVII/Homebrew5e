@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.150.1",
+	"siteVersion": "1.152.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,14 +13,16 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1647001068,
-		"dateLastModified": 1647001068
+		"dateAdded": 1648667978,
+		"dateLastModified": 1648667978
 	},
 	"monster": [
 		{
 			"name": "Ancient Scroll Mummy",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"A"
@@ -260,7 +262,9 @@
 		{
 			"name": "Ancient Spider Chimera",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"C",
@@ -446,7 +450,9 @@
 		{
 			"name": "Black Abishai Assassin",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -676,7 +682,9 @@
 		{
 			"name": "Boneclaw Ripper",
 			"source": "MoR",
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "undead",
 			"alignment": [
 				"C",
@@ -860,7 +868,9 @@
 		{
 			"name": "Chained Angel",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -1050,7 +1060,9 @@
 		{
 			"name": "Crystaline Guardian",
 			"source": "MoR",
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -1198,7 +1210,9 @@
 		{
 			"name": "Dragonborn Aerial Knight",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -1355,7 +1369,9 @@
 		{
 			"name": "Dread Legioner",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -1493,7 +1509,9 @@
 		{
 			"name": "Elite Red Battle Caster",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -1727,7 +1745,9 @@
 		{
 			"name": "Fellforged Frontman",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -1849,7 +1869,9 @@
 		{
 			"name": "Fire Giant Forgemaster",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "giant",
 			"alignment": [
 				"L",
@@ -2093,7 +2115,9 @@
 		{
 			"name": "Hellfire Engine Behir",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "construct",
 			"alignment": [
 				"L",
@@ -2257,7 +2281,9 @@
 		{
 			"name": "Horrific Helmed Horror",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -2440,7 +2466,9 @@
 		{
 			"name": "Magnetic Assembler",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "construct",
 			"alignment": [
 				"N"
@@ -2644,7 +2672,9 @@
 			"name": "Martial Arts Barbed Devil",
 			"source": "MoR",
 			"page": 70,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -3111,7 +3141,9 @@
 		{
 			"name": "Martial Arts Succubus",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -3301,7 +3333,9 @@
 		{
 			"name": "Mythic Tarrasque",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity"
 			},
@@ -3529,7 +3563,9 @@
 			"name": "Oblex Master",
 			"isNpc": true,
 			"source": "MoR",
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": "ooze",
 			"alignment": [
 				"L",
@@ -3831,7 +3867,9 @@
 		{
 			"name": "Oblex Worker",
 			"source": "MoR",
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": {
 				"type": "ooze",
 				"tags": [
@@ -4060,7 +4098,9 @@
 		{
 			"name": "Pope Lich",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -4453,7 +4493,9 @@
 		{
 			"name": "Priest of Unlife",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -4781,7 +4823,9 @@
 			"name": "Pro Shadow Dancer",
 			"source": "MoR",
 			"page": 225,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -4974,7 +5018,9 @@
 		{
 			"name": "Scylla",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": {
 				"type": "celestial",
 				"tags": [
@@ -5238,7 +5284,9 @@
 		{
 			"name": "Serpent of the Blinding Sky",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "celestial",
 			"alignment": [
 				"L",
@@ -5540,7 +5588,9 @@
 				"Elder Tempest"
 			],
 			"source": "MoR",
-			"size": "G",
+			"size": [
+				"G"
+			],
 			"type": {
 				"type": "elemental",
 				"tags": [
@@ -5790,7 +5840,9 @@
 		{
 			"name": "Serpent of the Night Sky",
 			"source": "MoR",
-			"size": "H",
+			"size": [
+				"H"
+			],
 			"type": "celestial",
 			"alignment": [
 				"N"
@@ -6012,7 +6064,9 @@
 		{
 			"name": "Skeletal Gladiator",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"A"
@@ -6158,7 +6212,9 @@
 		{
 			"name": "Skeletal Murderer",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -6307,7 +6363,9 @@
 		{
 			"name": "Skull Emperor",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"L",
@@ -6719,7 +6777,9 @@
 		{
 			"name": "The Balack Rider",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -6908,7 +6968,9 @@
 		{
 			"name": "Vampire Knight",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -7151,7 +7213,9 @@
 		{
 			"name": "Vampire Patrician of Barovia",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "undead",
 				"tags": [
@@ -7377,7 +7441,9 @@
 		{
 			"name": "Wight Legioner",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -7554,7 +7620,9 @@
 			"name": "White Abishai Reaver",
 			"source": "MoR",
 			"page": 163,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "fiend",
 				"tags": [
@@ -7780,7 +7848,9 @@
 		{
 			"name": "Sultans Steed",
 			"source": "MoR",
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "fiend",
 			"alignment": [
 				"N",
@@ -7909,7 +7979,9 @@
 		{
 			"name": "Iron Coffin Golem",
 			"source": "MoR",
-			"size": "L",
+			"size": [
+				"L"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -8127,7 +8199,9 @@
 		{
 			"name": "Fire Ginat Ortifex",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": "undead",
 			"alignment": [
 				"N",
@@ -8326,7 +8400,9 @@
 			"name": "Medusa Hatchling",
 			"source": "MoR",
 			"basicRules": true,
-			"size": "S",
+			"size": [
+				"S"
+			],
 			"type": "monstrosity",
 			"alignment": [
 				"A"
@@ -8457,7 +8533,9 @@
 			"name": "Inkling",
 			"source": "MoR",
 			"page": 227,
-			"size": "T",
+			"size": [
+				"T"
+			],
 			"type": "construct",
 			"alignment": [
 				"U"
@@ -8669,7 +8747,9 @@
 		{
 			"name": "Yuan-ti Hunter",
 			"source": "MoR",
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "monstrosity",
 				"tags": [
@@ -8929,7 +9009,9 @@
 			"name": "Yuan-ti Cultist",
 			"source": "MoR",
 			"page": 310,
-			"size": "M",
+			"size": [
+				"M"
+			],
 			"type": {
 				"type": "humanoid",
 				"tags": [
@@ -9172,6 +9254,224 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Brassleaf Tree",
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {},
+			"str": 18,
+			"dex": 6,
+			"con": 20,
+			"int": 3,
+			"wis": 12,
+			"cha": 17,
+			"save": {
+				"str": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"languages": [
+				"can understand Sylvan and Draconic but cant speak."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Loyal to Dragon Master",
+					"entries": [
+						"A dragonleaf tree only follows commands from its designated master (or from any creatures to whom the master grants control). It has advantage on saving throws against any charm or {@spell compulsion} spell or effect. Additionally, the tree has advantage on any saving throw to resist Deception, Intimidation, or Persuasion checks made to influence it to act against its masters."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the tree fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Brassleaf Tree can make two attacks"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage plus 7 ({@damage 2d6})."
+					]
+				},
+				{
+					"name": "Leaves",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}7 ({@damage 1d6+4}) slashing damage plus 7 ({@damage 2d6}) fire damage and the target is set ablaze."
+					]
+				},
+				{
+					"name": "Grasping Vine",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/30 ft., one target. {@h}7 ({@damage 1d6+4}) damage, and the target is pulled 20 feet directly toward the tree."
+					]
+				},
+				{
+					"name": "Flame Torrent (recharge)",
+					"entries": [
+						"The brassleaf tree can issue forth a breath weapon from its leaves appropriate to the dragon it honors in a 30-foot cone. The creature's breath weapon deals 28 ({@dice 8d6}) fire damage and the target is set ablaze or half damage to targets that make a successful {@dc 15} Dexterity saving throw and it is not set on fire. The creature on fire takes 5 ({@damage 1d10}) damage at the start of its turn, until someone takes an action to douse the fire."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Recharge",
+					"entries": [
+						"the first time the tree's hitpoints are reduced below certain thresholds it can use it's reaction to recharge its Flame Torrent."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Roots",
+					"entries": [
+						"One creature that the tree can sense that is on the ground, must succeed on a {@dc 15} Strength or Dexterity saving throw or becomes {@condition grappled}."
+					]
+				},
+				{
+					"name": "Vines",
+					"entries": [
+						"The tree can make two Grasping Vine attacks."
+					]
+				},
+				{
+					"name": "Leaves",
+					"entries": [
+						"The tree can make a Leaves attack."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Dragonleaf Tree.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i The dragon-headed leaves of these oak trees sometimes rustle despite the lack of wind, betraying a hint of their draconic power.}",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Gifts among Dragons",
+										"entries": [
+											"These magnificent trees are imbued with some characteristics of their draconic masters. While most groves consist of only one type of dragonleaf tree, dragons sometimes make gifts of them to cement a pact or as a show of fealty. The dragon giving the tree relinquishes command of the plant as part of the deal. This accounts for mixed groves belonging to especially powerful dragon lords."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Silent Guardians",
+										"entries": [
+											"Dragonleaf trees use fairly simple tactics to deter potential intruders. They remain motionless or allow the breeze to jostle their leaves to appear inconspicuous. Once enough targets enter the grove, the trees fire razor sharp leaves at or breathe on their targets, adjusting their position to make better use of their weapons."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Long Memories",
+										"entries": [
+											"Dragonleaf trees live up to 1,000 years. They stand 15 feet tall and weigh 3,000 lb, but ancient specimens can reach heights of 45 feet. Growing a new dragonleaf tree requires a cutting from an existing tree at least 50 years old, which the tree's master imbues with power, sacrificing the use of its breath weapon for a month. While this time barely registers on a dragon's whole lifespan, it still carefully considers the creation of a new tree, for fear that others might discover its temporary weakness."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Dragonleaf Trees in Midgard",
+										"entries": [
+											"The finest druidic minds in the Mharoti Empire created these trees for the draconic lords of the land. Once the druids had shown the dragons the secret of the tree's creation they were slain, so that the secret would not spread. A handful of human and kobold gardeners know how to tend them and make them thrive, but little more."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Dragonleaf%20Tree.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			]
 		}
 	]
 }
