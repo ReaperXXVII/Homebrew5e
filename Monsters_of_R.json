@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.152.1",
+	"siteVersion": "1.154.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1648667978,
-		"dateLastModified": 1648667978
+		"dateAdded": 1653131453,
+		"dateLastModified": 1653131453
 	},
 	"monster": [
 		{
@@ -9357,7 +9357,7 @@
 					]
 				},
 				{
-					"name": "Flame Torrent (recharge)",
+					"name": "Flame Torrent {@recharge}",
 					"entries": [
 						"The brassleaf tree can issue forth a breath weapon from its leaves appropriate to the dragon it honors in a 30-foot cone. The creature's breath weapon deals 28 ({@dice 8d6}) fire damage and the target is set ablaze or half damage to targets that make a successful {@dc 15} Dexterity saving throw and it is not set on fire. The creature on fire takes 5 ({@damage 1d10}) damage at the start of its turn, until someone takes an action to douse the fire."
 					]
@@ -9471,6 +9471,1190 @@
 				"MW",
 				"RCH",
 				"RW"
+			]
+		},
+		{
+			"name": "Cockatrice Raptor",
+			"source": "MoR",
+			"page": 42,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 13,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The raptor makes two Claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Opportunistic",
+					"entries": [
+						"The raptor can make a bite attack as a bonus action against a {@condition restrained}, {@condition grappled}, {@condition prone}, {@condition paralyzed} or {@condition petrified} creature."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the raptor moves at least 20 feet straight toward a creature and then hits it with a Claw attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the raptor can make one Bite attack against it as a bonus action."
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. Usually Cockatrices are omnivores with a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. However these creatures have grown bigger and much more deadlier thanks to their carnivore diet. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its clawed feet darts out to slash and grab onto it's prey. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Cockatrice.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Cockatrice.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cockatrice.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "The Zmey",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 270
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"swim": 40,
+				"canHover": false
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+6",
+				"survival": "+8",
+				"athletics": "+11"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 90 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"unconscious"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 5,000 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the zmey fails a saving throw, it can count it as a success instead."
+					]
+				},
+				{
+					"name": "Multiheaded",
+					"entries": [
+						"The zmey normally has three heads. While it has more than one head, the zmey has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, and {@condition stunned}. If the zmey takes 40 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zmey regains 15 hit points at the start of its turn. If the zmey takes acid or fire damage, this trait doesn't function at the start of the zmey's next turn. Regeneration stops functioning when all heads are severed."
+					]
+				},
+				{
+					"name": "Spawn Headling",
+					"entries": [
+						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump prevents this transformation."
+					]
+				},
+				{
+					"name": "Toxins",
+					"entries": [
+						"Each of the zmey's viper like heads has a unique toxin they can deliver with their bite attack:",
+						"-Neurotoxic Venom",
+						"-Hemotoxic Venom",
+						"-Cytotoxic Venom",
+						"Each venom has three stages, If a creature fails It's save against the toxin, it advances to one stage above. While under the effect of a toxin the a creature must succeed against the venom at the end of each of it's turns until it succeeds on it for the first time. Succeeding on the save does not end the current effects. A creature must separability  for each different toxins it has been {@condition poisoned} with."
+					]
+				},
+				{
+					"name": "Neurotoxic Venom",
+					"entries": [
+						"-First Stage: The target suffers 16 ({@damage 3d10})",
+						"-Second Stage: While the target is affected by the Neurotoxin it experiences crippling pain. Any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
+						"-Third Stage: The target becomes {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Hemotoxic Venom",
+					"entries": [
+						"-First Stage: While the target is affected by the Hemotoxin a creature takes necrotic damage at the start of it's turn equal to half  the total bludgeoning, piercing and slashing damage it took that round unless it revived magical healing that turn.",
+						"-Second Stage: The creature receives vulnerability to all bludgeoning, piercing and slashing damage.",
+						"-Third Stage: The target starts to suffocate as blood fills it's lungs. At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again."
+					]
+				},
+				{
+					"name": "Cytotoxic Venom",
+					"entries": [
+						"-First Stage: At the star of each of it's turns as the creature afflicted by the toxin takes 3 ({@damage 1d6}) poison damage and it's hit point maximum is reduced by the same amount.This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
+						"-Second Stage: The creature takes 21 ({@damage 6d6}) necrotic damage it's hit point maximum is reduced by the same amount. This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
+						"-Third Stage: If an effect would cure or neutralize a poison afflicting this creature, it fails to do so unless it is casted at least at sixth level."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zmey makes one bite attack per head and one claws attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 6}) piercing damage, and the target must make a {@dc 18} Constitution saving throws or be."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, and the target must make a {@dc 14} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads. Creatures in a cone take 18 ({@damage 4d8}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The zmey makes a claw attack."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The zmey makes a tail attack."
+					]
+				},
+				{
+					"name": "Trample",
+					"entries": [
+						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"prone"
+			]
+		},
+		{
+			"name": "Enormous Mimic",
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "natural armor"
+				}
+			],
+			"hp": {
+				"average": 225,
+				"formula": "18d12 + 108"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 25,
+			"dex": 7,
+			"con": 23,
+			"int": 7,
+			"wis": 15,
+			"cha": 8,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Adhesive (Object Form Only)",
+					"entries": [
+						"The mimic adheres to anything that touches it. A creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 16}). Ability checks made to escape this grapple have disadvantaged."
+					]
+				},
+				{
+					"name": "False Appearance (Object Form Only)",
+					"entries": [
+						"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mimic makes three attacks two with its pseudopods and one with its bite or acid spit."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage plus 13 ({@damage 3d8}) acid damage, and if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the mimic can bite only the {@condition grappled} creature and has advantage on attack rolls to do so."
+					]
+				},
+				{
+					"name": "Acid Spit",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}27 ({@damage 6d8}) acid damage."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The mimic makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the mimic, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the mimic's turns. A mimic can have only up to one Medium or two Small creatures swallowed at a time.",
+						"If the mimic takes 30 damage or more on a single turn from the swallowed creature, the mimic must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the mimic. If the mimic dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.redd.it/3jegc2ai3xi41.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Baba%20Lysaga's%20Creeping%20Hut.png",
+			"traitTags": [
+				"False Appearance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Winter Hag",
+			"source": "MoR",
+			"reprintedAs": [
+				"Bheur Hag|MPMM"
+			],
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 17,
+			"con": 16,
+			"int": 15,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"nature": "+5",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"vulnerable": [
+				"fire"
+			],
+			"languages": [
+				"Auran",
+				"Common",
+				"Giant"
+			],
+			"cr": {
+				"cr": "8",
+				"coven": "9"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The hag's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell hold person}*"
+					],
+					"daily": {
+						"3e": [
+							"{@spell cone of cold}*",
+							"{@spell ice storm}*",
+							"{@spell wall of ice}*"
+						],
+						"1e": [
+							"{@spell control weather}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				},
+				{
+					"name": "Shared Spellcasting (Coven Only)",
+					"headerEntries": [
+						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells but must share the spell slots among themselves:"
+					],
+					"footerEntries": [
+						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 14 + the hag's Intelligence modifier, and the spell attack bonus is 6 + the hag's Intelligence modifier."
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bane}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell augury}",
+								"{@spell detect thoughts}",
+								"{@spell spike growth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell bestow curse}",
+								"{@spell counterspell}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell ice storm}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell antilife shell}",
+								"{@spell scrying}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell eyebite}"
+							],
+							"slots": 6
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Graystaff Magic",
+					"entries": [
+						"The hag carries a graystaff, a length of gray wood that is a focus for her inner power. She can ride the staff as if it were a {@item broom of flying}. While holding the staff, she can cast additional spells with her Innate Spellcasting trait (these spells are marked with an asterisk). If the staff is lost or destroyed, the hag must craft another, which takes a year and a day. Only a bheur hag can use a graystaff."
+					]
+				},
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The hag can move across and climb icy surfaces without needing to make an ability check. Additionally, {@quickref difficult terrain||3} composed of ice or snow doesn't cost her extra moment."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d8 + 3}) bludgeoning damage plus 18 ({@damage 4d8}) cold damage."
+					]
+				},
+				{
+					"name": "Piercing Frost Ray",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, reach 60 ft., all creatures in a line. {@h}13 ({@damage 3d8}) cold damage, and the target's speed is reduced by 10 feet until the start of the hag's next turn."
+					]
+				},
+				{
+					"name": "Maddening Feast",
+					"entries": [
+						"The hag feasts on the corpse of one enemy within 5 feet of her that died within the past minute. Each creature of the hag's choice that is within 60 feet of her and able to see her must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} of her for 1 minute. While {@condition frightened} in this way, a creature is {@condition incapacitated}, can't understand what others say, can't read, and speaks only in gibberish; the DM controls the creature's movement, which is erratic. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Maddening Feast for the next 24 hours."
+					]
+				},
+				{
+					"name": "Numbing Cackle {@recharge 5}",
+					"entries": [
+						"The hag makes a chilling cackle. Each creature that isn't immune to cold within 30 feet of the hag and able to hear the hag must succeed on a {@dc 16} Constitution saving throw. On a failed save, a target becomes vulnerable to cold, its speed is halved, it can't take reactions, and it can take either an action or a bonus action on its turn, not both. The effects last for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. On a successful save, a creature takes half as much damage and suffers no other effects."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Bheur Hag",
+				"source": "VGM"
+			},
+			"variant": [
+				{
+					"name": "Hag Covens",
+					"entries": [
+						{
+							"type": "entries",
+							"name": "Hag Eye",
+							"entries": [
+								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+							]
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"name": "Bheur Hag",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Bheur hags live in wintry lands, favoring snow-covered mountains. They become more active during winter, using their ice and weather magic to make life miserable for nearby settlements.",
+											"A bheur hag's skin is blue-white, like that of a person who has frozen to death. Her hair is pale white, and she is emaciated, as if she were a person who had survived winter by eating bark and leather. Her eyes are pale and surrounded by dark, bruise-colored flesh. A bheur carries a twisted gray wooden staff, which she can ride like a flying broom and augments her magical powers.",
+											{
+												"name": "Cold Hearts",
+												"entries": [
+													" Bheur hags are attracted to selfish actions justified by deadly cold, such as murdering a traveler for a winter coat, chopping down a dryad's grove for firewood, and so on. These actions are especially sweet to a bheur if they are unwarranted, such as a greedy merchant hoarding more food for the winter than he could possibly eat while others starve. Bheurs love to seed such ideas and thoughts in mortals. They use their ability to manipulate weather to batter villages with snow and freezing cold, hoping to instill despair that turns the villagers against each other.",
+													"A bheur hag loves watching unprepared people suffer and die for their mistakes during the winter. She is delighted when mortals make petty, pathetic attempts to survive, such as eating boots and leather scraps when no real food is to be found."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Awful to Behold",
+												"entries": [
+													" When a bheur hag is fully in the throes of combat and has recently slain one of her foes, she often forgoes a direct attack on her remaining enemies and instead takes a moment to feed on the corpse, dismembering it and tearing meat from bone. The sight of this savagery is enough to render witnesses temporarily insane."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Covens",
+												"entries": [
+													" A bheur hag that is part of a coven (see the \"Hag Covens\" sidebar in the Monster Manual) has a challenge rating of 9 (5,000 XP)."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"The following lair actions are options for grandmothers and powerful aunties. Grandmothers usually have three to five lair actions, aunties usually only one (if they have any at all). Unless otherwise noted, any lair action that requires a creature to make a saving throw uses the save DC of the hag's most powerful ability.",
+									"On initiative count 20 (losing initiative ties), the hag can take a lair action to cause one of the following effects, but can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"Until initiative count 20 on the next round, the hag can pass through solid walls, doors, ceilings, and floors as if the surfaces weren't there.",
+											"The hag targets any number of doors and windows that she can see, causing each one to either open or close as she wishes. Closed doors can be magically locked (requiring a successful {@dc 20} Strength check to force open) until she chooses to make them unlocked, or until she uses this lair action again to open them."
+										]
+									},
+									"A powerful bheur hag might have the following additional lair action:",
+									{
+										"type": "list",
+										"items": [
+											"The hag creates a blizzard in a 40-foot-high, 20-foot radius cylinder centered on a point she can see within 120 feet of her. The effect lasts until initiative count 20 on the next round. The blizzard lightly obscures every creature and object in the area for the duration. A creature that enters the blizzard for the first time on a turn or starts its turn there is {@condition blinded} until initiative count 20 on the next round."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"Each hag's lair is the source of three to five regional effects; the home of a grandmother, an auntie, or a coven has more effects than the lair of a single hag, including some that can directly harm intruders. Any regional effect that requires a creature to make a saving throw uses the save DC of the hag's most powerful ability. These effects either end immediately if the hag dies or abandons the lair, or take up to {@dice 2d10} days to fade away.",
+									"The region within 1 mile of a grandmother hag's lair is warped by the creature's fell magic, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Birds, rodents, snakes, spiders, or toads (or some other creatures appropriate to the hag) are found in great profusion.",
+											"Beasts that have an Intelligence score of 2 or lower are {@condition charmed} by the hag and directed to be aggressive toward intruders in the area.",
+											"Strange carved figurines, twig fetishes, or rag dolls magically appear in trees."
+										]
+									},
+									"A powerful bheur hag creates one or more of the following additional regional effects within 1 mile of her lair:",
+									{
+										"type": "list",
+										"items": [
+											"Small avalanches of snow intermittently fall, blocking a path or burying intruders. A buried creature is {@condition restrained} and has to hold its breath until it is dug out.",
+											"Human-sized blocks of ice appear, containing frozen corpses. These corpses might break free and attack as zombies, or their spirits might attack as specters.",
+											"Blizzards come without warning. A blizzard occurs once every {@dice 2d12} hours and lasts {@dice 1d3} hours. During a storm, creatures moving overland travel at half normal speed, and normal visibility is reduced to 30 feet.",
+											"Roads, paths, and trails twist and turn back on themselves, making navigation in the area exceedingly difficult."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Bheur Hag.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/VGM/Bheur Hag.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bheur-hag.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"N",
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"conditionInflictLegendary": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"name": "Bheur Hag (Coven)",
+					"source": "VGM",
+					"_mod": {
+						"spellcasting": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shared Spellcasting (Coven Only)",
+								"headerEntries": [
+									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+								],
+								"spells": {
+									"1": {
+										"slots": 4,
+										"spells": [
+											"{@spell identify}",
+											"{@spell ray of sickness}"
+										]
+									},
+									"2": {
+										"slots": 3,
+										"spells": [
+											"{@spell hold person}",
+											"{@spell locate object}"
+										]
+									},
+									"3": {
+										"slots": 3,
+										"spells": [
+											"{@spell bestow curse}",
+											"{@spell counterspell}",
+											"{@spell lightning bolt}"
+										]
+									},
+									"4": {
+										"slots": 3,
+										"spells": [
+											"{@spell phantasmal killer}",
+											"{@spell polymorph}"
+										]
+									},
+									"5": {
+										"slots": 2,
+										"spells": [
+											"{@spell contact other plane}",
+											"{@spell scrying}"
+										]
+									},
+									"6": {
+										"slots": 1,
+										"spells": [
+											"{@spell eyebite}"
+										]
+									}
+								},
+								"ability": "int",
+								"footerEntries": [
+									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
+								]
+							}
+						}
+					},
+					"cr": "9",
+					"variant": null
+				},
+				{
+					"name": "Bheur Hag (Coven; Death)",
+					"source": "VGM",
+					"_mod": {
+						"spellcasting": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shared Spellcasting (Coven Only)",
+								"headerEntries": [
+									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+								],
+								"spells": {
+									"1": {
+										"slots": 4,
+										"spells": [
+											"{@spell false life}",
+											"{@spell inflict wounds}"
+										]
+									},
+									"2": {
+										"slots": 3,
+										"spells": [
+											"{@spell gentle repose}",
+											"{@spell ray of enfeeblement}"
+										]
+									},
+									"3": {
+										"slots": 3,
+										"spells": [
+											"{@spell animate dead}",
+											"{@spell revivify}",
+											"{@spell speak with dead}"
+										]
+									},
+									"4": {
+										"slots": 3,
+										"spells": [
+											"{@spell blight}",
+											"{@spell death ward}"
+										]
+									},
+									"5": {
+										"slots": 2,
+										"spells": [
+											"{@spell contagion}",
+											"{@spell raise dead}"
+										]
+									},
+									"6": {
+										"slots": 1,
+										"spells": [
+											"{@spell circle of death}"
+										]
+									}
+								},
+								"ability": "int",
+								"footerEntries": [
+									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
+								]
+							}
+						}
+					},
+					"cr": "9",
+					"variant": null
+				},
+				{
+					"name": "Bheur Hag (Coven; Nature)",
+					"source": "VGM",
+					"_mod": {
+						"spellcasting": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shared Spellcasting (Coven Only)",
+								"headerEntries": [
+									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+								],
+								"spells": {
+									"1": {
+										"slots": 4,
+										"spells": [
+											"{@spell entangle}",
+											"{@spell speak with animals}"
+										]
+									},
+									"2": {
+										"slots": 3,
+										"spells": [
+											"{@spell flaming sphere}",
+											"{@spell moonbeam}",
+											"{@spell spike growth}"
+										]
+									},
+									"3": {
+										"slots": 3,
+										"spells": [
+											"{@spell call lightning}",
+											"{@spell plant growth}"
+										]
+									},
+									"4": {
+										"slots": 3,
+										"spells": [
+											"{@spell dominate beast}",
+											"{@spell grasping vine}"
+										]
+									},
+									"5": {
+										"slots": 2,
+										"spells": [
+											"{@spell insect plague}",
+											"{@spell tree stride}"
+										]
+									},
+									"6": {
+										"slots": 1,
+										"spells": [
+											"{@spell wall of thorns}"
+										]
+									}
+								},
+								"ability": "int",
+								"footerEntries": [
+									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
+								]
+							}
+						}
+					},
+					"cr": "9",
+					"variant": null
+				},
+				{
+					"name": "Bheur Hag (Coven; Prophecy)",
+					"source": "VGM",
+					"_mod": {
+						"spellcasting": {
+							"mode": "appendArr",
+							"items": {
+								"name": "Shared Spellcasting (Coven Only)",
+								"headerEntries": [
+									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
+								],
+								"spells": {
+									"1": {
+										"slots": 4,
+										"spells": [
+											"{@spell bane}",
+											"{@spell bless}"
+										]
+									},
+									"2": {
+										"slots": 3,
+										"spells": [
+											"{@spell augury}",
+											"{@spell detect thoughts}"
+										]
+									},
+									"3": {
+										"slots": 3,
+										"spells": [
+											"{@spell clairvoyance}",
+											"{@spell dispel magic}",
+											"{@spell nondetection}"
+										]
+									},
+									"4": {
+										"slots": 3,
+										"spells": [
+											"{@spell arcane eye}",
+											"{@spell locate creature}"
+										]
+									},
+									"5": {
+										"slots": 2,
+										"spells": [
+											"{@spell geas}",
+											"{@spell legend lore}"
+										]
+									},
+									"6": {
+										"slots": 1,
+										"spells": [
+											"{@spell true seeing}"
+										]
+									}
+								},
+								"ability": "int",
+								"footerEntries": [
+									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
+								]
+							}
+						}
+					},
+					"cr": "9",
+					"variant": null
+				}
 			]
 		}
 	]
