@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1653131453,
-		"dateLastModified": 1653131453
+		"dateAdded": 1653136177,
+		"dateLastModified": 1653136177
 	},
 	"monster": [
 		{
@@ -10087,10 +10087,7 @@
 				"Common",
 				"Giant"
 			],
-			"cr": {
-				"cr": "8",
-				"coven": "9"
-			},
+			"cr": "8",
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
@@ -10163,7 +10160,7 @@
 							"spells": [
 								"{@spell eyebite}"
 							],
-							"slots": 6
+							"slots": 1
 						}
 					},
 					"type": "spellcasting"
@@ -10213,28 +10210,10 @@
 				"name": "Bheur Hag",
 				"source": "VGM"
 			},
-			"variant": [
-				{
-					"name": "Hag Covens",
-					"entries": [
-						{
-							"type": "entries",
-							"name": "Hag Eye",
-							"entries": [
-								"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
-								"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
-							]
-						}
-					],
-					"type": "variant"
-				}
-			],
 			"environment": [
 				"arctic"
 			],
 			"fluff": {
-				"name": "Bheur Hag",
-				"source": "VGM",
 				"entries": [
 					{
 						"type": "entries",
@@ -10332,14 +10311,22 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "entries",
+						"name": "Hag Eye",
+						"entries": [
+							"A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and darkvision with a radius of 60 feet. If it is destroyed, each coven member takes {@dice 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+							"A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+						]
 					}
 				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/VGM/Bheur Hag.jpg"
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/VGM/Bheur Hag.jpg"
 						}
 					}
 				]
