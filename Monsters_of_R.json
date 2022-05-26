@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.154.2",
+	"siteVersion": "1.155.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1653136177,
-		"dateLastModified": 1653136177
+		"dateAdded": 1653597097,
+		"dateLastModified": 1653597097
 	},
 	"monster": [
 		{
@@ -866,6 +866,224 @@
 			]
 		},
 		{
+			"name": "Brassleaf Tree",
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {},
+			"str": 18,
+			"dex": 6,
+			"con": 20,
+			"int": 3,
+			"wis": 12,
+			"cha": 17,
+			"save": {
+				"str": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"piercing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"conditionImmune": [
+				"blinded",
+				"deafened"
+			],
+			"languages": [
+				"can understand Sylvan and Draconic but cant speak."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Loyal to Dragon Master",
+					"entries": [
+						"A dragonleaf tree only follows commands from its designated master (or from any creatures to whom the master grants control). It has advantage on saving throws against any charm or {@spell compulsion} spell or effect. Additionally, the tree has advantage on any saving throw to resist Deception, Intimidation, or Persuasion checks made to influence it to act against its masters."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the tree fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Brassleaf Tree can make two attacks"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage plus 7 ({@damage 2d6})."
+					]
+				},
+				{
+					"name": "Leaves",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}7 ({@damage 1d6+4}) slashing damage plus 7 ({@damage 2d6}) fire damage and the target is set ablaze."
+					]
+				},
+				{
+					"name": "Grasping Vine",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 60/30 ft., one target. {@h}7 ({@damage 1d6+4}) damage, and the target is pulled 20 feet directly toward the tree."
+					]
+				},
+				{
+					"name": "Flame Torrent {@recharge}",
+					"entries": [
+						"The brassleaf tree can issue forth a breath weapon from its leaves appropriate to the dragon it honors in a 30-foot cone. The creature's breath weapon deals 28 ({@dice 8d6}) fire damage and the target is set ablaze or half damage to targets that make a successful {@dc 15} Dexterity saving throw and it is not set on fire. The creature on fire takes 5 ({@damage 1d10}) damage at the start of its turn, until someone takes an action to douse the fire."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Recharge",
+					"entries": [
+						"the first time the tree's hitpoints are reduced below certain thresholds it can use it's reaction to recharge its Flame Torrent."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Roots",
+					"entries": [
+						"One creature that the tree can sense that is on the ground, must succeed on a {@dc 15} Strength or Dexterity saving throw or becomes {@condition grappled}."
+					]
+				},
+				{
+					"name": "Vines",
+					"entries": [
+						"The tree can make two Grasping Vine attacks."
+					]
+				},
+				{
+					"name": "Leaves",
+					"entries": [
+						"The tree can make a Leaves attack."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Dragonleaf Tree.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i The dragon-headed leaves of these oak trees sometimes rustle despite the lack of wind, betraying a hint of their draconic power.}",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Gifts among Dragons",
+										"entries": [
+											"These magnificent trees are imbued with some characteristics of their draconic masters. While most groves consist of only one type of dragonleaf tree, dragons sometimes make gifts of them to cement a pact or as a show of fealty. The dragon giving the tree relinquishes command of the plant as part of the deal. This accounts for mixed groves belonging to especially powerful dragon lords."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Silent Guardians",
+										"entries": [
+											"Dragonleaf trees use fairly simple tactics to deter potential intruders. They remain motionless or allow the breeze to jostle their leaves to appear inconspicuous. Once enough targets enter the grove, the trees fire razor sharp leaves at or breathe on their targets, adjusting their position to make better use of their weapons."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Long Memories",
+										"entries": [
+											"Dragonleaf trees live up to 1,000 years. They stand 15 feet tall and weigh 3,000 lb, but ancient specimens can reach heights of 45 feet. Growing a new dragonleaf tree requires a cutting from an existing tree at least 50 years old, which the tree's master imbues with power, sacrificing the use of its breath weapon for a month. While this time barely registers on a dragon's whole lifespan, it still carefully considers the creation of a new tree, for fear that others might discover its temporary weakness."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Dragonleaf Trees in Midgard",
+										"entries": [
+											"The finest druidic minds in the Mharoti Empire created these trees for the draconic lords of the land. Once the druids had shown the dragons the secret of the tree's creation they were slain, so that the secret would not spread. A handful of human and kobold gardeners know how to tend them and make them thrive, but little more."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Dragonleaf%20Tree.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			]
+		},
+		{
 			"name": "Chained Angel",
 			"source": "MoR",
 			"size": [
@@ -1056,6 +1274,327 @@
 				"charmed",
 				"prone"
 			]
+		},
+		{
+			"name": "Cockatrice Raptor",
+			"source": "MoR",
+			"page": 42,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 30,
+				"canHover": false
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 13,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"cr": "2",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The raptor makes two Claw attacks."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Opportunistic",
+					"entries": [
+						"The raptor can make a bite attack as a bonus action against a {@condition restrained}, {@condition grappled}, {@condition prone}, {@condition paralyzed} or {@condition petrified} creature."
+					]
+				},
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the raptor moves at least 20 feet straight toward a creature and then hits it with a Claw attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the raptor can make one Bite attack against it as a bonus action."
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. Usually Cockatrices are omnivores with a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. However these creatures have grown bigger and much more deadlier thanks to their carnivore diet. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its clawed feet darts out to slash and grab onto it's prey. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Cockatrice.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Cockatrice.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cockatrice.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"petrified",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Corrupted Avatar of Lurue",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d10 + 24"
+			},
+			"speed": {
+				"walk": 50,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"wis": "+7",
+				"cha": "+7",
+				"int": "+4"
+			},
+			"skill": {
+				"stealth": "+10",
+				"perception": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Celestial",
+				"Elvish",
+				"Sylvan",
+				"telepathy 60 ft."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the unicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The unicorn has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The unicorn's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The unicorn makes two attacks: one with its hooves and one with its horn."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Horn",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage, plus 7 ({@damage 2d6}) necrotic damage. If the target is a humanoid, it must succeed on a {@dc 15} Wisdom saving throw or be transformed into a beast. This transformation lasts for 1 hour, or until the target drops to 0 hit points or dies. The target's game statistics are replaced by the beast's statistics. The target is limited in the actions it can perform by the nature of its wolf form, and it can't speak, cast spells, or take any other action that requires hands or speech. The target's gear melds into the new form, and it can't activate, use, wield, or otherwise benefit from any of its equipment."
+					]
+				},
+				{
+					"name": "Teleport",
+					"entries": [
+						"The unicorn magically teleports up to 120 feet to an unoccupied space."
+					]
+				},
+				{
+					"name": "Gorge on Blood",
+					"entries": [
+						"The unicorn drinks the blood of creature that died no longer than 24 hours. The unicorn regains regains 11 ({@dice 2d8 + 2}) hit points. The unicorn can use a corpse only once this way."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The unicorn can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The unicorn regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Teleport (Costs 2 Actions)",
+					"entries": [
+						"The unicorn uses it's Teleport action."
+					]
+				},
+				{
+					"name": "Gorge",
+					"entries": [
+						"The unicorn uses it's Gorge on Blood action."
+					]
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"The unicorn makes one attack with its hooves."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Unicorn",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Corrupted Avatar of Lurue",
+				"source": "CM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"In normal circumstances, the avatar of Lurue is a breathtaking sight; her silver, stardust-like mane, her shimmering hooves, and her perfectly formed spiral horn elicit awe from even the most hardened souls. As powerful and striking as she is in her true form, she's just as wicked in her alternative state. With necrotic energy twisting and dancing at the tip of her black horn, this corrupted avatar of Lurue is instead a nightmare come to life.",
+							"While tainted by the influence of Malar, the avatar of Lurue carries out the Beast Lord's will: to slaughter anything that dares to cross its path."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CM/Corrupted Avatar of Lurue.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/JioF424.png",
+			"traitTags": [
+				"Charge",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Teleport"
+			],
+			"languageTags": [
+				"CE",
+				"E",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Crystaline Guardian",
@@ -1743,6 +2282,149 @@
 			]
 		},
 		{
+			"name": "Enormous Mimic",
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"condition": "natural armor"
+				}
+			],
+			"hp": {
+				"average": 225,
+				"formula": "18d12 + 108"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 25,
+			"dex": 7,
+			"con": 23,
+			"int": 7,
+			"wis": 15,
+			"cha": 8,
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"acid"
+			],
+			"conditionImmune": [
+				"prone"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Adhesive (Object Form Only)",
+					"entries": [
+						"The mimic adheres to anything that touches it. A creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 16}). Ability checks made to escape this grapple have disadvantaged."
+					]
+				},
+				{
+					"name": "False Appearance (Object Form Only)",
+					"entries": [
+						"While the mimic remains motionless, it is indistinguishable from an ordinary object."
+					]
+				},
+				{
+					"name": "Grappler",
+					"entries": [
+						"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mimic makes three attacks two with its pseudopods and one with its bite or acid spit."
+					]
+				},
+				{
+					"name": "Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage plus 13 ({@damage 3d8}) acid damage, and if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the mimic can bite only the {@condition grappled} creature and has advantage on attack rolls to do so."
+					]
+				},
+				{
+					"name": "Acid Spit",
+					"entries": [
+						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}27 ({@damage 6d8}) acid damage."
+					]
+				},
+				{
+					"name": "Swallow",
+					"entries": [
+						"The mimic makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the mimic, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the mimic's turns. A mimic can have only up to one Medium or two Small creatures swallowed at a time.",
+						"If the mimic takes 30 damage or more on a single turn from the swallowed creature, the mimic must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the mimic. If the mimic dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement, exiting {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.redd.it/3jegc2ai3xi41.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CoS/Baba%20Lysaga's%20Creeping%20Hut.png",
+			"traitTags": [
+				"False Appearance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained"
+			]
+		},
+		{
 			"name": "Fellforged Frontman",
 			"source": "MoR",
 			"size": [
@@ -2113,6 +2795,206 @@
 			]
 		},
 		{
+			"name": "Fire Ginat Ortifex",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "13d10 + 52",
+				"average": 123
+			},
+			"speed": {
+				"canHover": true,
+				"fly": {
+					"number": "30",
+					"condition": "(hover)"
+				},
+				"walk": 0
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 8,
+			"wis": 13,
+			"cha": 12,
+			"save": {
+				"con": "+8",
+				"wis": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 11,
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Blood Bearer",
+					"entries": [
+						"A creature that subsists on blood, such as a {@condition vampire}, can use its action while within 5 feet of the ortifex to drain blood from it. The creature can drain up to the ortifex's current temporary hp, regaining hp equal to that amount. The ortifex then loses temporary hp equal to that amount."
+					]
+				},
+				{
+					"name": "Blood Sense",
+					"entries": [
+						"The ortifex can pinpoint the location of creatures that aren't constructs or undead within 60 feet of it and can sense the general direction of such creatures within 1 mile of it."
+					]
+				},
+				{
+					"name": "Hypnotic Heartbeat",
+					"entries": [
+						"A creature that can hear the ortifex's heartbeat and starts its turn within 60 feet of the ortifex must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} until the start of its next turn. While {@condition charmed}, it is {@condition incapacitated} and must move toward the ortifex by the most direct route on its turn, trying to get within 5 feet of the ortifex. A Tether attack againts a {@condition charmed} creacure is an automatic sucsess. It doesn't avoid {@action opportunity attack|phb|opportunity attacks}, but before moving into damaging terrain, such as lava or a pit, it can repeat the saving throw, ending the effect on a success.",
+						"Unless surprised, a creature can plug its ears to avoid the saving throw at the start of its turn. If the creature does so, it is {@condition deafened} until it unplugs its ears. If the creature unplugs its ears while still within range of the ortifex's heartbeat, it must immediately make the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tether",
+					"entries": [
+						"{@atk mw} {@hit +8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage plus 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount and the target is {@condition grappled} by the ortifex. The ortifex gains temporary hp equal to the total necrotic damage dealt."
+					]
+				},
+				{
+					"name": "Blood Siphon {@recharge 5}",
+					"entries": [
+						"The ortifex drains blood from nearby creatures. Each creature within 20 feet of the ortifex must make a {@dc 16} Constitution saving throw, taking 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount on a failed save, or half as much damage on a successful one. The ortifex gains temporary hp equal to the total necrotic damage dealt. If it gains temporary hp from this action while it still has temporary hp from a previous use of this action, the temporary hp add together. The ortifex's temporary hp can't exceed its hp maximum. A creature that doesn't have blood is immune to Blood Siphon."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Drain",
+					"entries": [
+						"All creacures {@condition grappled} by the ortifex suffers 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount. The ortifex gains temporary hp equal to the total necrotic damage dealt."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Interpose",
+					"entries": [
+						"If the ortifex is targeted by an attack it can move one creacure that it grapples so that the attack hits the {@condition grappled} creacure. The ortifex also gains 5 AC until the end of the attackers turns, and if an attack misses until it has this bonus the attack hits the {@condition grappled} target."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"A large, rotting heart floats forward, its hypnotic heartbeat echoing all around it."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Vampiric Hunters",
+										"entries": [
+											"An ortifex's singular purpose is to absorb blood from living creatures. When seeking blood, it disorients victims with an ominous, hypnotic heartbeat, then magically siphons their blood, leaving behind a shriveled carcass."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Harvested from Giants and Dragons",
+										"entries": [
+											"Only large hearts can be made into ortifexes, which are typically created from the hearts of giants, dragons, and particularly large beasts. Necromancers who create ortifexes for vampiric clients pay well for a sizeable heart, especially if it is minimally decomposed."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Agents of Oppression",
+										"entries": [
+											"When a blood cult, necromancer, or intelligent undead wants to demoralize a village or demand a sacrifice, it often sends an ortifex to collect payment in blood."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Undead Nature",
+										"entries": [
+											"An ortifex doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "inset",
+						"name": "Ortifex in Midgard",
+						"entries": [
+							"The Red Sisters, who operate openly in the Greater Duchy of Morgau, regularly gift ortifexes as rewards for favors rendered. Recent reports tell of a secret meeting between King Lucan and Marena's high priestesses regarding the possibility of extracting the heart of a Dread Walker in the Wasted West and turning it into a massive ortifex for the Blood Kingdom."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/Ortifex.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Ortifex (Token).png",
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"grappled"
+			]
+		},
+		{
 			"name": "Hellfire Engine Behir",
 			"source": "MoR",
 			"size": [
@@ -2462,6 +3344,441 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "Inkling",
+			"source": "MoR",
+			"page": 227,
+			"size": [
+				"T"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "4d4 + 4",
+				"average": 14
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"arcana": "+6",
+				"stealth": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 10,
+			"languages": [
+				"Understands the languages of its creator but can't speak"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The inkling's innate spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring only somatic components:"
+					],
+					"will": [
+						"{@spell fire bolt}",
+						"{@spell mending}",
+						"{@spell minor illusion}",
+						"{@spell prestidigitation}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell color spray}",
+							"{@spell detect magic}",
+							"{@spell heat metal}",
+							"{@spell magic missile}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The inkling can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "A Thirst for Knowledge",
+					"entries": [
+						"If an inkling spends 24 hours with a spellbook or a spell scroll, it can learn the magic of one 2ndlevel or lower spell, erasing and absorbing all the ink and magic used to inscribe the spell. The inkling can then cast the spell once per day."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The inkling has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Lash",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the inkling takes the Hide action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Redirect Spell",
+					"entries": [
+						"If a spell attack hits the inkling, it can force the attacker to make a {@dc 12} Intelligence saving throw. If the attacker fails the saving throw, the spell is redirected to hit another creature of the inkling's choice within 30 feet."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/inkling.jpg"
+						}
+					}
+				],
+				"entries": [
+					"{@i A small, sentient pool of magical ink, shimmering in the light, flows along the bookshelf.}",
+					"An inkling forms when dormant magic sparks to life in a long-unused spellbook. It can take on any form it wishes, although it rarely exceeds a height and width of six inches. It usually chooses the form of a puddle and flows in and around books. It can seep through even the tiniest cracks in its surroundings, making its search for hidden knowledge an easier task.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Wizards' Bane",
+										"entries": [
+											"Inklings possess a wizard's natural thirst for knowledge. Arcane casters must be careful, for inklings are disastrous to find in a wizard's library, craving knowledge and stealing the ink and the knowledge of spells for themselves. Inklings are primarily solitary entities. However, if enough spellbooks or scrolls are stored in one location, a horde of inklings can sometimes form."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Clever Pets",
+										"entries": [
+											"Some inklings have been caught by the wizards they tried to plague. Those not destroyed are kept by such wizards and can be trained to search out a rival's books and bring back knowledge. While not forced by any binding or magical curse, the inklings still follow those they consider their masters, as they crave the acquisition of the arcane their masters provide. As long as the \"master\" keeps the inkling well-supplied with scrolls and other magical writings, it remains a loyal companion."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Innate Casters",
+										"entries": [
+											"Inklings are naturally in tune with the arcane elements of the world and know the inner workings of spells. Not only can they cast some of the basic spells of wizards, they can also sometimes alter the nature of a spell already cast. This is quite helpful if they are ever discovered in a wizard's abode and need to make an escape."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Construct Nature",
+										"entries": [
+											"The inkling doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/SCC/Inkling%20Mascot.png",
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Iron Coffin Golem",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 210
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 20,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Glass Coffin",
+					"entries": [
+						"The golem has a transparant contaner as a body in witch one medium creacure can fit inside. While a creacure is inside, the creature is {@condition restrained}, it has total cover against attacks and other effects outside the golem.",
+						"If the golem is at half health or below the Glass coffin breaks open, but it can reapair it by regaining hitpoint."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes two Slash attacks, if both attack hits it can make an Encase attack agings the target."
+					]
+				},
+				{
+					"name": "Slash",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., up to two targets with in 5ft. {@h}23 ({@damage 3d10 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Encase",
+					"entries": [
+						"The golem makes a {@atk mw} {@hit 13} to hit, reach 5 ft., against a Medium or smaller target. If the attack hits, the target takes no damage but the target is encased in the glass coffin. While Encased, the creature is {@condition restrained}, it has total cover against attacks and other effects outside the golem."
+					]
+				},
+				{
+					"name": "Whirlwind of Blades {@recharge 5}",
+					"entries": [
+						"Each creature within 10 feet of the golem must make a {@dc 19} Dexterity saving throw, taking 44 ({@damage 8d10}) slashing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The mightiest of the golems, the iron golem is a massive, towering giant wrought of heavy metal. An iron golem's shape can be worked into any form, though most are fashioned to look like giant suits of armor. Its fist can destroy creatures with a single blow, and its clanging steps shake the earth beneath its feet. Iron golems wield enormous blades to extend their reach, and all can belch clouds of deadly poison.",
+									"An iron golem's body is smelted with rare tinctures and admixtures. Though other golems bear weaknesses inherent in their materials or the power of the elemental spirit bound within them, iron golems were designed to be nearly invulnerable. Their iron bodies imprison the spirits that drive them, and are susceptible only to weapons imbued with magic or the strength of adamantine.",
+									{
+										"type": "entries",
+										"name": "Golems",
+										"entries": [
+											"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
+											"To create a golem, one requires a manual of golems (see the Dungeon Master's Guide). The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
+											{
+												"name": "Elemental Spirit in Material Form",
+												"entries": [
+													" The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
+													"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
+													"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
+													"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Ageless Guardians",
+												"entries": [
+													" Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Blind Obedience",
+												"entries": [
+													" When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is {@condition incapacitated}, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Constructed Nature",
+												"entries": [
+													" A golem doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Iron Golem.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Iron Golem.png?v=1.131.6",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3?v=1.131.6"
+			},
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Magnetic Assembler",
@@ -3329,6 +4646,139 @@
 			"conditionInflict": [
 				"charmed"
 			]
+		},
+		{
+			"name": "Medusa Hatchling",
+			"source": "MoR",
+			"basicRules": true,
+			"size": [
+				"S"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 4",
+				"average": 18
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 6,
+			"dex": 12,
+			"con": 12,
+			"int": 8,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"cha": "+3",
+				"wis": "+2"
+			},
+			"skill": {
+				"insight": "+2",
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Petrifying Gaze",
+					"entries": [
+						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 11} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
+						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
+						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Snake Hair",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}3 ({@damage 1d4 + 1}) piercing damage plus 14 ({@damage 4d6}) poison damage."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"As deadly as they are ravishing, the serpent-haired medusas suffer an immortal curse brought on by their vanity. They lurk in quiet exile among the tumbled ruins of their former lives, surrounded by the petrified remains of past admirers and would-be heroes.",
+									{
+										"name": "Immortal Splendor",
+										"type": "entries",
+										"entries": [
+											"Men and women who desire eternal youth, beauty, and adoration might pray to malicious gods, beg dragons for ancient magic, or seek out powerful archmages to fulfill their wishes. Others make sacrifices to demon lords or archdevils, offering all in exchange for this gift, oblivious to the curse that accompanies it. Those who strike such bargains gain physical beauty, restored youth, immortality, and the adoration of all who behold them, granting them the influence and power they so desire. However, after years of the living like a demigod among mortals, the price for their vanity and hubris is exacted, and they are forever transformed into medusas. A medusa's hair turns into a nest of venomous serpents, and all who gaze upon the medusa are {@condition petrified}, becoming stone monuments to its corruption."
+										]
+									},
+									{
+										"name": "Medusa Lairs",
+										"type": "entries",
+										"entries": [
+											"Medusas live forever in seclusion, alienated from the world around them by their monstrous form and caprice. Their homes gradually fall into disrepair until they are little more than shadowy ruins covered with thorns and creepers, riddled with obstructions and hiding places. Foolhardy looters and adventurers who enter are often unaware of the medusa's presence until the creature is among them.",
+											"A medusa is subject to its own curse. By looking vainly on its reflection, it turns to stone as surely as any living mortal. As a result, a medusa destroys or removes any mirrors or reflective surfaces in its lair."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/015/590/463/large/elena-ilicheva-19.jpg?1548885458"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/WZtS3Xn.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/medusa.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Mythic Tarrasque",
@@ -6775,6 +8225,137 @@
 			]
 		},
 		{
+			"name": "Sultans Steed",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": "fiend",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 36",
+				"average": 102
+			},
+			"speed": {
+				"walk": 70,
+				"fly": 100,
+				"canHover": false
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 16,
+			"int": 10,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+5"
+			},
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks"
+				}
+			],
+			"immune": [
+				"fire"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"petrified"
+			],
+			"languages": [
+				"understands Abyssal, Common, and Infernal but can't speak"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Confer Fire Resistance",
+					"entries": [
+						"The nightmare can grant resistance to fire damage to anyone riding it."
+					]
+				},
+				{
+					"name": "Illumination",
+					"entries": [
+						"The nightmare sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Ethereal Stride",
+					"entries": [
+						"The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"\"As Sultan of the Efreet, Marrake was able to indulge any whim he cared for. Interestingly, however, he was a creature of few pleasures and rarely even visited his harem of a hundred and one courtesans. He was instead a lover of gambling on races, particularly those involving his prized nightmares, Eversmoke and Black Onyx. His love of these steeds was such that it had even led to rumors that he slept in their stables before important races. Sometimes his wagers resulted in near bankruptcies for the city's treasury.\""
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/nightmare.mp3?v=1.110.1"
+			},
+			"traitTags": [
+				"Illumination"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"CS",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
 			"name": "The Balack Rider",
 			"source": "MoR",
 			"size": [
@@ -6962,6 +8543,539 @@
 			],
 			"conditionInflict": [
 				"frightened",
+				"prone"
+			]
+		},
+		{
+			"name": "The Fuck you mage",
+			"source": "MoR",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item Mithral +1 Half Plate Armor|AI}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"wis": "+7",
+				"con": "+7",
+				"str": "+9",
+				"dex": "+4"
+			},
+			"skill": {
+				"arcana": "+9",
+				"athletics": "+9",
+				"history": "+9",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Primordial",
+				"Celestial,"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The war caster is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, + {@hit 9} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell rime's binding ice|FTD}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell steel wind strike|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell prismatic spray}"
+							],
+							"slots": 1
+						}
+					},
+					"daily": {
+						"1": [
+							"{@spell lightning bolt} (at 4th level)"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Battle Concentration",
+					"entries": [
+						"The war caster has advantage on Constitution saving throws that it makes to maintain concentration on a spell when it takes damage."
+					]
+				},
+				{
+					"name": "Spell Penetration",
+					"entries": [
+						"When the mage casts a spell and is interrupted by an enemy's counterspell, treat the spell's level 3 levels higher."
+					]
+				},
+				{
+					"name": "War Magic",
+					"entries": [
+						"When the war caster uses its action to cast a spell, it can make one melee attack as a bonus action."
+					]
+				},
+				{
+					"name": "Shield Master",
+					"entries": [
+						"If the elite war caster is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elite war caster instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mage makes two melee attacks or casts a spell and makes one melee attack as a bonus action."
+					]
+				},
+				{
+					"name": "Lightning Strike",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Strike {@recharge}",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, and the target must make {@dc 17} Constitution saving throw or become {@condition stunned} until the end of the mage's next turn."
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, 120 ft. range, one target. {@h}22 ({@damage 4d10}) fire damage."
+					]
+				},
+				{
+					"name": "Shield Bash (Bonus Action)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Opportunity Spell",
+					"entries": [
+						"When a hostile creature's movement provokes an {@action opportunity attack} from the war caster, it can use its reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/elitewarcaster.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/elitewarcaster.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"L"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
+		},
+		{
+			"name": "The Zmey",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 270
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"swim": 40,
+				"canHover": false
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+6",
+				"survival": "+8",
+				"athletics": "+11"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 90 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"paralyzed",
+				"unconscious"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 5,000 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the zmey fails a saving throw, it can count it as a success instead."
+					]
+				},
+				{
+					"name": "Multiheaded",
+					"entries": [
+						"The zmey normally has three heads. While it has more than one head, the zmey has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, and {@condition stunned}. If the zmey takes 40 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zmey regains 15 hit points at the start of its turn. If the zmey takes acid or fire damage, this trait doesn't function at the start of the zmey's next turn. Regeneration stops functioning when all heads are severed."
+					]
+				},
+				{
+					"name": "Spawn Headling",
+					"entries": [
+						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump prevents this transformation."
+					]
+				},
+				{
+					"name": "Toxins",
+					"entries": [
+						"Each of the zmey's viper like heads has a unique toxin they can deliver with their bite attack:",
+						"-Neurotoxic Venom",
+						"-Hemotoxic Venom",
+						"-Cytotoxic Venom",
+						"Each venom has three stages, If a creature fails It's save against the toxin, it advances to one stage above. While under the effect of a toxin the a creature must succeed against the venom at the end of each of it's turns until it succeeds on it for the first time. Succeeding on the save does not end the current effects. A creature must separability  for each different toxins it has been {@condition poisoned} with."
+					]
+				},
+				{
+					"name": "Neurotoxic Venom",
+					"entries": [
+						"-First Stage: The target suffers 16 ({@damage 3d10})",
+						"-Second Stage: While the target is affected by the Neurotoxin it experiences crippling pain. Any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
+						"-Third Stage: The target becomes {@condition paralyzed}."
+					]
+				},
+				{
+					"name": "Hemotoxic Venom",
+					"entries": [
+						"-First Stage: While the target is affected by the Hemotoxin a creature takes necrotic damage at the start of it's turn equal to half  the total bludgeoning, piercing and slashing damage it took that round unless it revived magical healing that turn.",
+						"-Second Stage: The creature receives vulnerability to all bludgeoning, piercing and slashing damage.",
+						"-Third Stage: The target starts to suffocate as blood fills it's lungs. At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again."
+					]
+				},
+				{
+					"name": "Cytotoxic Venom",
+					"entries": [
+						"-First Stage: At the star of each of it's turns as the creature afflicted by the toxin takes 3 ({@damage 1d6}) poison damage and it's hit point maximum is reduced by the same amount.This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
+						"-Second Stage: The creature takes 21 ({@damage 6d6}) necrotic damage it's hit point maximum is reduced by the same amount. This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
+						"-Third Stage: If an effect would cure or neutralize a poison afflicting this creature, it fails to do so unless it is casted at least at sixth level."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zmey makes one bite attack per head and one claws attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 6}) piercing damage, and the target must make a {@dc 18} Constitution saving throws or be."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, and the target must make a {@dc 14} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads. Creatures in a cone take 18 ({@damage 4d8}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The zmey makes a claw attack."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The zmey makes a tail attack."
+					]
+				},
+				{
+					"name": "Trample",
+					"entries": [
+						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"paralyzed",
 				"prone"
 			]
 		},
@@ -7439,100 +9553,75 @@
 			]
 		},
 		{
-			"name": "Wight Legioner",
+			"name": "Warforged Demolisher",
 			"source": "MoR",
 			"size": [
-				"M"
+				"H"
 			],
-			"type": "undead",
+			"type": "construct",
 			"alignment": [
-				"N",
-				"E"
+				"L",
+				"N"
 			],
 			"ac": [
 				{
-					"ac": 20,
+					"ac": 18,
 					"from": [
-						"{@item half plate armor}",
-						"{@item shield}",
-						"Fighting Style"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"formula": "15d10 + 45",
-				"average": 127
+				"formula": "20d12 + 120",
+				"average": 250
 			},
 			"speed": {
-				"walk": 30
+				"walk": 40
 			},
-			"str": 18,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 13,
-			"cha": 16,
+			"str": 25,
+			"dex": 8,
+			"con": 22,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
 			"save": {
-				"str": "+8",
-				"con": "+7"
+				"str": "+12"
 			},
 			"skill": {
-				"perception": "+5",
-				"stealth": "+6",
-				"athletics": "+8",
-				"survival": "+5"
+				"athletics": "+12",
+				"perception": "+5"
 			},
 			"senses": [
 				"darkvision 60 ft."
 			],
 			"passive": 15,
-			"resist": [
-				"necrotic",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical weapons that aren't silvered"
-				}
-			],
 			"immune": [
-				"poison"
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
 			],
 			"languages": [
-				"the languages it knew in life"
+				"understands the languages of its creator but can't speak"
 			],
-			"cr": "9",
+			"cr": "16",
 			"trait": [
 				{
-					"name": "Sunlight Sensitivity",
+					"name": "Platforms",
 					"entries": [
-						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+						"The warforged demolisher has two platforms built into its chassis. One Medium or smaller creature can ride on each platform without squeezing. To make a melee attack against a target within 5 feet of the warforged, they must use spears or weapons with reach and the target must be Large or larger."
 					]
 				},
 				{
-					"name": "Commanding strike (1/Turn)",
+					"name": "Siege Monster",
 					"entries": [
-						"When the wight uses its multiattack it can forgo one of its own attacks to command up to 3 zombies that it has control over to make attacks using their reactions. Attacks made this way gain a {@dice 1d4} bonus to the attack roll."
-					]
-				},
-				{
-					"name": "Action Surge (1/day)",
-					"entries": [
-						"The Wight can take one additional action on its turn"
-					]
-				},
-				{
-					"name": "Elemental Weapons",
-					"entries": [
-						"All weapon attacks made by the wight considered magical and deal a {@hit 1} to hit and damage rolls in addition it deals {@damage 1d4} damage of a chosen type (acid, cold, fire, lightning, or thunder) Included in the attacks"
-					]
-				},
-				{
-					"name": "Defensive formation",
-					"entries": [
-						"If the wight is within 5 feet two of its ally than If the wight  is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the wight instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+						"The warforged demolisher deals double damage to objects and structures."
 					]
 				}
 			],
@@ -7540,57 +9629,78 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The wight makes three attacks. It can use its Life Drain in place of up to two attack."
+						"The warforged demolisher makes one hammerfist attack and one axehand or sweeping axe attack, it can replace one of it's attacks with a barbed net attack."
 					]
 				},
 				{
-					"name": "Life Drain",
+					"name": "Axehand",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
-						"A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) slashing damage, plus 11 ({@damage 2d10}) slashing damage if the target is {@condition prone}."
 					]
 				},
 				{
-					"name": "War Spear",
+					"name": "Hammerfist",
 					"entries": [
-						"{@atk mw,rw} {@hit 8} to hit, reach 10 ft. and range 20/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, or 14 ({@damage 2d8 + 5}) piercing damage if used with two hands to make a melee attack plus 2 ({@damage 1d4}) any elemental damage."
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
 					]
 				},
 				{
-					"name": "Keep formation {@recharge 5}",
+					"name": "Sweeping Axe",
 					"entries": [
-						"Up to twelve zombies under the wight command within 60 feet can use their reaction to move up to half their speed without provoking opportunity attacks."
+						"The warforged demolisher makes a sweep with its axehand, and each creature within 10 feet of it must make a {@dc 20} Dexterity saving throw. A creature takes 20 ({@damage 3d8 + 7}) slashing damage on a failed save, or half as much damage on a successful one."
 					]
 				},
 				{
-					"name": "Shield Bash",
+					"name": "Barbed Net (2/day)",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 15} Strength saving throw or be knocked 5 feet in any direction or {@condition prone}."
+						"The warforged demolisher launches a net with metal barbs up to 90 feet. All creatures in a 10 feet radius within range must make a {@dc 20} Dexterity saving throw. A creature takes 12 ({@damage 2d4 + 7}) slashing damage on a failed save and is {@condition restrained} by the net, the target is not {@condition restrained} and takes no damage on a successful one. A {@condition restrained} creature can use its action to make a {@dc 15} Strength check, freeing itself or another creature within its reach on a success. Dealing 10 slashing damage to the net (AC 15) also frees the creature without harming it, ending the effect and destroying the net."
 					]
 				}
 			],
 			"reaction": [
 				{
-					"name": "Rebuke",
+					"name": "Pulverize",
 					"entries": [
-						"When the wight sees a creature make an attack against it or a creature within 5 feet of it the wight gives a plus 3 to the targets armor class as it blocks the attack with its shield. If this blocks an attack it can make one shield bash attack against the attacker if the target is within range."
+						"When the warforged demolisher attacks a target and it would miss, the warforged demolisher can destroy a non magical shield the target is wielding, or can crack one non magical armor the target is wearing, reducing the targets AC by 2 potentially turning the miss to a hit. This reduction is permanent and cumulative. If its penalty reduces an armor's bonus to 0, the armor is destroyed."
 					]
 				}
 			],
 			"fluff": {
+				"name": "Warforged Titan",
+				"source": "ERLW",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Warforged titans are hulking constructs built to wreak paths of destruction through enemy armies. Some of the most feared combatants of the Last War, warforged titans are barely sentient, with just enough intelligence to follow commands.",
+									{
+										"type": "entries",
+										"name": "Legacy of Giants",
+										"entries": [
+											"In the Age of Giants, giant artificers built mindless war golems to aid them in their war against the quori. Millennia later, some of these golems were unearthed by adventurers searching for the secrets of that age, then turned over to artificers working for the dragonmarked houses during the Last War. House Cannith studied these designs, and in the course of uncovering the secrets of the golems and the giant artificers who made them, House Cannith created the first warforged titans."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/wightcaptain.webp"
+							"type": "internal",
+							"path": "bestiary/ERLW/Warforged Titan.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/wightcaptain.png",
+			"tokenUrl": "https://5e.tools/img/ERLW/Warforged Titan.png",
 			"traitTags": [
-				"Sunlight Sensitivity"
+				"Siege Monster"
 			],
 			"senseTags": [
 				"D"
@@ -7599,22 +9709,23 @@
 				"Multiattack"
 			],
 			"languageTags": [
-				"LF"
+				"CS"
 			],
 			"damageTags": [
 				"B",
-				"N",
-				"P"
+				"S"
 			],
 			"miscTags": [
+				"AOE",
 				"MW",
-				"RCH",
-				"RW",
-				"THW"
+				"RCH"
 			],
 			"conditionInflict": [
-				"prone"
-			]
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "White Abishai Reaver",
@@ -7846,358 +9957,7 @@
 			"hasFluffImages": true
 		},
 		{
-			"name": "Sultans Steed",
-			"source": "MoR",
-			"size": [
-				"L"
-			],
-			"type": "fiend",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "12d10 + 36",
-				"average": 102
-			},
-			"speed": {
-				"walk": 70,
-				"fly": 100,
-				"canHover": false
-			},
-			"str": 20,
-			"dex": 16,
-			"con": 16,
-			"int": 10,
-			"wis": 14,
-			"cha": 15,
-			"save": {
-				"str": "+8",
-				"con": "+6"
-			},
-			"skill": {
-				"athletics": "+8",
-				"intimidation": "+5"
-			},
-			"passive": 12,
-			"resist": [
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from non magical attacks"
-				}
-			],
-			"immune": [
-				"fire"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"petrified"
-			],
-			"languages": [
-				"understands Abyssal, Common, and Infernal but can't speak"
-			],
-			"cr": "5",
-			"trait": [
-				{
-					"name": "Confer Fire Resistance",
-					"entries": [
-						"The nightmare can grant resistance to fire damage to anyone riding it."
-					]
-				},
-				{
-					"name": "Illumination",
-					"entries": [
-						"The nightmare sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Hooves",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage plus 7 ({@damage 2d6}) fire damage."
-					]
-				},
-				{
-					"name": "Ethereal Stride",
-					"entries": [
-						"The nightmare and up to three willing creatures within 5 feet of it magically enter the Ethereal Plane from the Material Plane, or vice versa."
-					]
-				}
-			],
-			"fluff": {
-				"entries": [
-					"\"As Sultan of the Efreet, Marrake was able to indulge any whim he cared for. Interestingly, however, he was a creature of few pleasures and rarely even visited his harem of a hundred and one courtesans. He was instead a lover of gambling on races, particularly those involving his prized nightmares, Eversmoke and Black Onyx. His love of these steeds was such that it had even led to rumors that he slept in their stables before important races. Sometimes his wagers resulted in near bankruptcies for the city's treasury.\""
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/nightmare.mp3?v=1.110.1"
-			},
-			"traitTags": [
-				"Illumination"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"CS",
-				"I"
-			],
-			"damageTags": [
-				"B",
-				"F"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			]
-		},
-		{
-			"name": "Iron Coffin Golem",
-			"source": "MoR",
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d10 + 100",
-				"average": 210
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 24,
-			"dex": 14,
-			"con": 20,
-			"int": 3,
-			"wis": 11,
-			"cha": 1,
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 10,
-			"immune": [
-				"fire",
-				"poison",
-				"psychic",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks that aren't adamantine",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"poisoned"
-			],
-			"languages": [
-				"understands the languages of its creator but can't speak"
-			],
-			"cr": "16",
-			"trait": [
-				{
-					"name": "Fire Absorption",
-					"entries": [
-						"Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
-					]
-				},
-				{
-					"name": "Immutable Form",
-					"entries": [
-						"The golem is immune to any spell or effect that would alter its form."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The golem has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Magic Weapons",
-					"entries": [
-						"The golem's weapon attacks are magical."
-					]
-				},
-				{
-					"name": "Glass Coffin",
-					"entries": [
-						"The golem has a transparant contaner as a body in witch one medium creacure can fit inside. While a creacure is inside, the creature is {@condition restrained}, it has total cover against attacks and other effects outside the golem.",
-						"If the golem is at half health or below the Glass coffin breaks open, but it can reapair it by regaining hitpoint."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The golem makes two Slash attacks, if both attack hits it can make an Encase attack agings the target."
-					]
-				},
-				{
-					"name": "Slash",
-					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 10 ft., up to two targets with in 5ft. {@h}23 ({@damage 3d10 + 7}) slashing damage."
-					]
-				},
-				{
-					"name": "Encase",
-					"entries": [
-						"The golem makes a {@atk mw} {@hit 13} to hit, reach 5 ft., against a Medium or smaller target. If the attack hits, the target takes no damage but the target is encased in the glass coffin. While Encased, the creature is {@condition restrained}, it has total cover against attacks and other effects outside the golem."
-					]
-				},
-				{
-					"name": "Whirlwind of Blades {@recharge 5}",
-					"entries": [
-						"Each creature within 10 feet of the golem must make a {@dc 19} Dexterity saving throw, taking 44 ({@damage 8d10}) slashing damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"fluff": {
-				"name": "Iron Golem",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The mightiest of the golems, the iron golem is a massive, towering giant wrought of heavy metal. An iron golem's shape can be worked into any form, though most are fashioned to look like giant suits of armor. Its fist can destroy creatures with a single blow, and its clanging steps shake the earth beneath its feet. Iron golems wield enormous blades to extend their reach, and all can belch clouds of deadly poison.",
-									"An iron golem's body is smelted with rare tinctures and admixtures. Though other golems bear weaknesses inherent in their materials or the power of the elemental spirit bound within them, iron golems were designed to be nearly invulnerable. Their iron bodies imprison the spirits that drive them, and are susceptible only to weapons imbued with magic or the strength of adamantine.",
-									{
-										"type": "entries",
-										"name": "Golems",
-										"entries": [
-											"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
-											"To create a golem, one requires a manual of golems (see the Dungeon Master's Guide). The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
-											{
-												"name": "Elemental Spirit in Material Form",
-												"entries": [
-													" The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
-													"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
-													"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
-													"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Ageless Guardians",
-												"entries": [
-													" Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Blind Obedience",
-												"entries": [
-													" When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is {@condition incapacitated}, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Constructed Nature",
-												"entries": [
-													" A golem doesn't require air, food, drink, or sleep."
-												],
-												"type": "entries"
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Iron Golem.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Iron Golem.png?v=1.131.6",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3?v=1.131.6"
-			},
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Fire Ginat Ortifex",
+			"name": "Wight Legioner",
 			"source": "MoR",
 			"size": [
 				"M"
@@ -8209,1823 +9969,169 @@
 			],
 			"ac": [
 				{
-					"ac": 13,
+					"ac": 20,
 					"from": [
-						"natural armor"
+						"{@item half plate armor}",
+						"{@item shield}",
+						"Fighting Style"
 					]
 				}
 			],
 			"hp": {
-				"formula": "13d10 + 52",
-				"average": 123
+				"formula": "15d10 + 45",
+				"average": 127
 			},
 			"speed": {
-				"canHover": true,
-				"fly": {
-					"number": "30",
-					"condition": "(hover)"
-				},
-				"walk": 0
+				"walk": 30
 			},
 			"str": 18,
-			"dex": 10,
-			"con": 18,
-			"int": 8,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
 			"wis": 13,
-			"cha": 12,
+			"cha": 16,
 			"save": {
-				"con": "+8",
-				"wis": "+5"
+				"str": "+8",
+				"con": "+7"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6",
+				"athletics": "+8",
+				"survival": "+5"
 			},
 			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
+				"darkvision 60 ft."
 			],
-			"passive": 11,
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons that aren't silvered"
+				}
+			],
 			"immune": [
-				"fire",
 				"poison"
 			],
-			"conditionImmune": [
-				"blinded",
-				"charmed",
-				"deafened",
-				"exhaustion",
-				"frightened",
-				"poisoned",
-				"prone"
-			],
 			"languages": [
-				"understands the languages of its creator but can't speak"
+				"the languages it knew in life"
 			],
 			"cr": "9",
 			"trait": [
 				{
-					"name": "Blood Bearer",
+					"name": "Sunlight Sensitivity",
 					"entries": [
-						"A creature that subsists on blood, such as a {@condition vampire}, can use its action while within 5 feet of the ortifex to drain blood from it. The creature can drain up to the ortifex's current temporary hp, regaining hp equal to that amount. The ortifex then loses temporary hp equal to that amount."
+						"While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
 					]
 				},
 				{
-					"name": "Blood Sense",
+					"name": "Commanding strike (1/Turn)",
 					"entries": [
-						"The ortifex can pinpoint the location of creatures that aren't constructs or undead within 60 feet of it and can sense the general direction of such creatures within 1 mile of it."
+						"When the wight uses its multiattack it can forgo one of its own attacks to command up to 3 zombies that it has control over to make attacks using their reactions. Attacks made this way gain a {@dice 1d4} bonus to the attack roll."
 					]
 				},
 				{
-					"name": "Hypnotic Heartbeat",
+					"name": "Action Surge (1/day)",
 					"entries": [
-						"A creature that can hear the ortifex's heartbeat and starts its turn within 60 feet of the ortifex must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} until the start of its next turn. While {@condition charmed}, it is {@condition incapacitated} and must move toward the ortifex by the most direct route on its turn, trying to get within 5 feet of the ortifex. A Tether attack againts a {@condition charmed} creacure is an automatic sucsess. It doesn't avoid {@action opportunity attack|phb|opportunity attacks}, but before moving into damaging terrain, such as lava or a pit, it can repeat the saving throw, ending the effect on a success.",
-						"Unless surprised, a creature can plug its ears to avoid the saving throw at the start of its turn. If the creature does so, it is {@condition deafened} until it unplugs its ears. If the creature unplugs its ears while still within range of the ortifex's heartbeat, it must immediately make the saving throw."
+						"The Wight can take one additional action on its turn"
+					]
+				},
+				{
+					"name": "Elemental Weapons",
+					"entries": [
+						"All weapon attacks made by the wight considered magical and deal a {@hit 1} to hit and damage rolls in addition it deals {@damage 1d4} damage of a chosen type (acid, cold, fire, lightning, or thunder) Included in the attacks"
+					]
+				},
+				{
+					"name": "Defensive formation",
+					"entries": [
+						"If the wight is within 5 feet two of its ally than If the wight  is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the wight instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Tether",
+					"name": "Multiattack",
 					"entries": [
-						"{@atk mw} {@hit +8} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage plus 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount and the target is {@condition grappled} by the ortifex. The ortifex gains temporary hp equal to the total necrotic damage dealt."
+						"The wight makes three attacks. It can use its Life Drain in place of up to two attack."
 					]
 				},
 				{
-					"name": "Blood Siphon {@recharge 5}",
+					"name": "Life Drain",
 					"entries": [
-						"The ortifex drains blood from nearby creatures. Each creature within 20 feet of the ortifex must make a {@dc 16} Constitution saving throw, taking 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount on a failed save, or half as much damage on a successful one. The ortifex gains temporary hp equal to the total necrotic damage dealt. If it gains temporary hp from this action while it still has temporary hp from a previous use of this action, the temporary hp add together. The ortifex's temporary hp can't exceed its hp maximum. A creature that doesn't have blood is immune to Blood Siphon."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) necrotic damage. The target must succeed on a {@dc 14} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+						"A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
 					]
-				}
-			],
-			"bonus": [
+				},
 				{
-					"name": "Drain",
+					"name": "War Spear",
 					"entries": [
-						"All creacures {@condition grappled} by the ortifex suffers 14 ({@damage 4d6}) necrotic damage and its hitpoint maximum is reduced by the same amount. The ortifex gains temporary hp equal to the total necrotic damage dealt."
+						"{@atk mw,rw} {@hit 8} to hit, reach 10 ft. and range 20/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, or 14 ({@damage 2d8 + 5}) piercing damage if used with two hands to make a melee attack plus 2 ({@damage 1d4}) any elemental damage."
+					]
+				},
+				{
+					"name": "Keep formation {@recharge 5}",
+					"entries": [
+						"Up to twelve zombies under the wight command within 60 feet can use their reaction to move up to half their speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 15} Strength saving throw or be knocked 5 feet in any direction or {@condition prone}."
 					]
 				}
 			],
 			"reaction": [
 				{
-					"name": "Interpose",
+					"name": "Rebuke",
 					"entries": [
-						"If the ortifex is targeted by an attack it can move one creacure that it grapples so that the attack hits the {@condition grappled} creacure. The ortifex also gains 5 AC until the end of the attackers turns, and if an attack misses until it has this bonus the attack hits the {@condition grappled} target."
+						"When the wight sees a creature make an attack against it or a creature within 5 feet of it the wight gives a plus 3 to the targets armor class as it blocks the attack with its shield. If this blocks an attack it can make one shield bash attack against the attacker if the target is within range."
 					]
 				}
 			],
-			"environment": [
-				"urban"
-			],
 			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "quote",
-										"entries": [
-											"A large, rotting heart floats forward, its hypnotic heartbeat echoing all around it."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Vampiric Hunters",
-										"entries": [
-											"An ortifex's singular purpose is to absorb blood from living creatures. When seeking blood, it disorients victims with an ominous, hypnotic heartbeat, then magically siphons their blood, leaving behind a shriveled carcass."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Harvested from Giants and Dragons",
-										"entries": [
-											"Only large hearts can be made into ortifexes, which are typically created from the hearts of giants, dragons, and particularly large beasts. Necromancers who create ortifexes for vampiric clients pay well for a sizeable heart, especially if it is minimally decomposed."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Agents of Oppression",
-										"entries": [
-											"When a blood cult, necromancer, or intelligent undead wants to demoralize a village or demand a sacrifice, it often sends an ortifex to collect payment in blood."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Undead Nature",
-										"entries": [
-											"An ortifex doesn't require air, food, drink, or sleep."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "inset",
-						"name": "Ortifex in Midgard",
-						"entries": [
-							"The Red Sisters, who operate openly in the Greater Duchy of Morgau, regularly gift ortifexes as rewards for favors rendered. Recent reports tell of a secret meeting between King Lucan and Marena's high priestesses regarding the possibility of extracting the heart of a Dread Walker in the Wasted West and turning it into a massive ortifex for the Blood Kingdom."
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/Ortifex.webp"
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/wightcaptain.webp"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Ortifex (Token).png",
-			"senseTags": [
-				"B"
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/wightcaptain.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
 			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"N"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflict": [
-				"charmed",
-				"grappled"
-			]
-		},
-		{
-			"name": "Medusa Hatchling",
-			"source": "MoR",
-			"basicRules": true,
-			"size": [
-				"S"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "4d6 + 4",
-				"average": 18
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 6,
-			"dex": 12,
-			"con": 12,
-			"int": 8,
-			"wis": 10,
-			"cha": 12,
-			"save": {
-				"cha": "+3",
-				"wis": "+2"
-			},
-			"skill": {
-				"insight": "+2",
-				"perception": "+2"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 12,
-			"languages": [
-				"Common"
-			],
-			"cr": "2",
-			"trait": [
-				{
-					"name": "Petrifying Gaze",
-					"entries": [
-						"When a creature that can see the medusa's eyes starts its turn within 30 feet of the medusa, the medusa can force it to make a {@dc 11} Constitution saving throw if the medusa isn't {@condition incapacitated} and can see the creature. If the saving throw fails by 5 or more, the creature is instantly {@condition petrified}. Otherwise, a creature that fails the save begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the  {@spell greater restoration} spell or other magic.",
-						"Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the medusa until the start of its next turn, when it can avert its eyes again. If the creature looks at the medusa in the meantime, it must immediately make the save.",
-						"If the medusa sees itself reflected on a polished surface within 30 feet of it and in an area of bright light, the medusa is, due to its curse, affected by its own gaze."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Snake Hair",
-					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one creature. {@h}3 ({@damage 1d4 + 1}) piercing damage plus 14 ({@damage 4d6}) poison damage."
-					]
-				}
-			],
-			"environment": [
-				"desert"
-			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"As deadly as they are ravishing, the serpent-haired medusas suffer an immortal curse brought on by their vanity. They lurk in quiet exile among the tumbled ruins of their former lives, surrounded by the petrified remains of past admirers and would-be heroes.",
-									{
-										"name": "Immortal Splendor",
-										"type": "entries",
-										"entries": [
-											"Men and women who desire eternal youth, beauty, and adoration might pray to malicious gods, beg dragons for ancient magic, or seek out powerful archmages to fulfill their wishes. Others make sacrifices to demon lords or archdevils, offering all in exchange for this gift, oblivious to the curse that accompanies it. Those who strike such bargains gain physical beauty, restored youth, immortality, and the adoration of all who behold them, granting them the influence and power they so desire. However, after years of the living like a demigod among mortals, the price for their vanity and hubris is exacted, and they are forever transformed into medusas. A medusa's hair turns into a nest of venomous serpents, and all who gaze upon the medusa are {@condition petrified}, becoming stone monuments to its corruption."
-										]
-									},
-									{
-										"name": "Medusa Lairs",
-										"type": "entries",
-										"entries": [
-											"Medusas live forever in seclusion, alienated from the world around them by their monstrous form and caprice. Their homes gradually fall into disrepair until they are little more than shadowy ruins covered with thorns and creepers, riddled with obstructions and hiding places. Foolhardy looters and adventurers who enter are often unaware of the medusa's presence until the creature is among them.",
-											"A medusa is subject to its own curse. By looking vainly on its reflection, it turns to stone as surely as any living mortal. As a result, a medusa destroys or removes any mirrors or reflective surfaces in its lair."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://cdnb.artstation.com/p/assets/images/images/015/590/463/large/elena-ilicheva-19.jpg?1548885458"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://i.imgur.com/WZtS3Xn.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/medusa.mp3"
-			},
 			"senseTags": [
 				"D"
 			],
+			"actionTags": [
+				"Multiattack"
+			],
 			"languageTags": [
-				"C"
+				"LF"
 			],
 			"damageTags": [
-				"I",
+				"B",
+				"N",
 				"P"
 			],
 			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"petrified",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Inkling",
-			"source": "MoR",
-			"page": 227,
-			"size": [
-				"T"
-			],
-			"type": "construct",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"formula": "4d4 + 4",
-				"average": 14
-			},
-			"speed": {
-				"walk": 20,
-				"climb": 20
-			},
-			"str": 4,
-			"dex": 16,
-			"con": 12,
-			"int": 14,
-			"wis": 10,
-			"cha": 10,
-			"skill": {
-				"arcana": "+6",
-				"stealth": "+5"
-			},
-			"senses": [
-				"blindsight 60 ft. (blind beyond this radius)"
-			],
-			"passive": 10,
-			"languages": [
-				"Understands the languages of its creator but can't speak"
-			],
-			"cr": "1/4",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The inkling's innate spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring only somatic components:"
-					],
-					"will": [
-						"{@spell fire bolt}",
-						"{@spell mending}",
-						"{@spell minor illusion}",
-						"{@spell prestidigitation}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell color spray}",
-							"{@spell detect magic}",
-							"{@spell heat metal}",
-							"{@spell magic missile}"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Amorphous",
-					"entries": [
-						"The inkling can move through a space as narrow as 1 inch wide without squeezing."
-					]
-				},
-				{
-					"name": "A Thirst for Knowledge",
-					"entries": [
-						"If an inkling spends 24 hours with a spellbook or a spell scroll, it can learn the magic of one 2ndlevel or lower spell, erasing and absorbing all the ink and magic used to inscribe the spell. The inkling can then cast the spell once per day."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The inkling has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Lash",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Shadow Stealth",
-					"entries": [
-						"While in dim light or darkness, the inkling takes the Hide action."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Redirect Spell",
-					"entries": [
-						"If a spell attack hits the inkling, it can force the attacker to make a {@dc 12} Intelligence saving throw. If the attacker fails the saving throw, the spell is redirected to hit another creature of the inkling's choice within 30 feet."
-					]
-				}
-			],
-			"environment": [
-				"urban"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/inkling.jpg"
-						}
-					}
-				],
-				"entries": [
-					"{@i A small, sentient pool of magical ink, shimmering in the light, flows along the bookshelf.}",
-					"An inkling forms when dormant magic sparks to life in a long-unused spellbook. It can take on any form it wishes, although it rarely exceeds a height and width of six inches. It usually chooses the form of a puddle and flows in and around books. It can seep through even the tiniest cracks in its surroundings, making its search for hidden knowledge an easier task.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Wizards' Bane",
-										"entries": [
-											"Inklings possess a wizard's natural thirst for knowledge. Arcane casters must be careful, for inklings are disastrous to find in a wizard's library, craving knowledge and stealing the ink and the knowledge of spells for themselves. Inklings are primarily solitary entities. However, if enough spellbooks or scrolls are stored in one location, a horde of inklings can sometimes form."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Clever Pets",
-										"entries": [
-											"Some inklings have been caught by the wizards they tried to plague. Those not destroyed are kept by such wizards and can be trained to search out a rival's books and bring back knowledge. While not forced by any binding or magical curse, the inklings still follow those they consider their masters, as they crave the acquisition of the arcane their masters provide. As long as the \"master\" keeps the inkling well-supplied with scrolls and other magical writings, it remains a loyal companion."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Innate Casters",
-										"entries": [
-											"Inklings are naturally in tune with the arcane elements of the world and know the inner workings of spells. Not only can they cast some of the basic spells of wizards, they can also sometimes alter the nature of a spell already cast. This is quite helpful if they are ever discovered in a wizard's abode and need to make an escape."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Construct Nature",
-										"entries": [
-											"The inkling doesn't require air, food, drink, or sleep."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/SCC/Inkling%20Mascot.png",
-			"traitTags": [
-				"Amorphous",
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"B"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			]
-		},
-		{
-			"name": "Yuan-ti Hunter",
-			"source": "MoR",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"shapechanger",
-					"yuan-ti"
-				]
-			},
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				14
-			],
-			"hp": {
-				"average": 66,
-				"formula": "12d8 + 12"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 14,
-			"dex": 18,
-			"con": 13,
-			"int": 10,
-			"wis": 14,
-			"cha": 14,
-			"skill": {
-				"deception": "+4",
-				"stealth": "+6",
-				"survival": "+6",
-				"perception": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 16,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Draconic"
-			],
-			"cr": "3",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting (Yuan-ti Form Only)",
-					"headerEntries": [
-						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell animal friendship} (snakes only)"
-					],
-					"daily": {
-						"3": [
-							"{@spell suggestion}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The yuan-ti has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack (Yuan-ti Form Only)",
-					"entries": [
-						"The yuan-ti makes two attacks, but can constrict only once."
-					]
-				},
-				{
-					"name": "Bite (Snake Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."
-					]
-				},
-				{
-					"name": "Constrict",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and the yuan-ti can't constrict another target."
-					]
-				},
-				{
-					"name": "Scimitar (Yuan-ti Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
-					]
-				},
-				{
-					"name": "Longbow (Yuan-ti Form Only)",
-					"entries": [
-						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
-					]
-				}
-			],
-			"environment": [
-				"desert",
-				"forest",
-				"swamp"
-			],
-			"fluff": {
-				"name": "Yuan-ti Malison (Type 3)",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"A malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunt with arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.",
-									{
-										"type": "entries",
-										"name": "Yuan-ti",
-										"entries": [
-											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
-											{
-												"name": "Forsaken Humanity",
-												"entries": [
-													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
-													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
-													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
-													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Serpent Kings of Fallen Empires",
-												"entries": [
-													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Cold of Heart",
-												"entries": [
-													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "False Worship",
-												"entries": [
-													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
-												],
-												"type": "entries"
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Serpent Gods",
-										"entries": [
-											"The yuan-ti revere a number of powerful entities as gods, including the following.",
-											{
-												"name": "Dendar, the Night Serpent",
-												"entries": [
-													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Merrshaulk, Master of the Pit",
-												"entries": [
-													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Sseth, the Sibilant Death",
-												"entries": [
-													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
-												],
-												"type": "entries"
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Yuan-ti Malison.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://i.imgur.com/TYZSkYQ.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/yuan-ti-malison.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"I",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"F",
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
-			],
-			"conditionInflict": [
-				"grappled",
-				"restrained"
-			],
-			"conditionInflictSpell": [
-				"charmed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Yuan-ti Cultist",
-			"source": "MoR",
-			"page": 310,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"yuan-ti"
-				]
-			},
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				12
-			],
-			"hp": {
-				"average": 40,
-				"formula": "9d8"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 11,
-			"dex": 14,
-			"con": 11,
-			"int": 12,
-			"wis": 13,
-			"cha": 14,
-			"skill": {
-				"deception": "+6",
-				"religion": "+3",
-				"stealth": "+4"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 11,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Draconic"
-			],
-			"cr": "1",
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared, and it can innately cast some spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell animal friendship} (snakes only)",
-						"{@spell poison spray}",
-						"{@spell sacred flame}",
-						"{@spell thaumaturgy}"
-					],
-					"daily": {
-						"1e": [
-							"{@spell hold person}",
-							"{@spell spiritual weapon}",
-							"{@spell suggestion}"
-						],
-						"2e": [
-							"{@spell command}",
-							"{@spell inflict wounds}",
-							"{@spell shield of faith}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The yuan-ti has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The yuan-ti makes two melee attacks."
-					]
-				},
-				{
-					"name": "Scimitar",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
-					]
-				},
-				{
-					"name": "Inflict Wounds",
-					"entries": [
-						"{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d10}) necrotic damage."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Spiritual Weapon",
-					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8 + 2}) force damage."
-					]
-				}
-			],
-			"environment": [
-				"desert",
-				"forest",
-				"swamp",
-				"urban"
-			],
-			"fluff": {
-				"name": "Yuan-ti Pureblood",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Purebloods form the lowest caste of yuan-ti society. They closely resemble humans, yet a pureblood can't pass for human under close scrutiny because there's always some hint of its true nature, such as scaly patches of skin, serpentine eyes, pointed teeth, or a forked tongue. Wearing cloaks and cowls, they masquerade as humans and infiltrate civilized lands to gather information, kidnap prisoners for interrogation and sacrifice, and trade with anyone who has something that can further their myriad plots.",
-									{
-										"type": "entries",
-										"name": "Yuan-ti",
-										"entries": [
-											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
-											{
-												"name": "Forsaken Humanity",
-												"entries": [
-													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
-													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
-													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
-													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Serpent Kings of Fallen Empires",
-												"entries": [
-													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Cold of Heart",
-												"entries": [
-													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "False Worship",
-												"entries": [
-													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
-												],
-												"type": "entries"
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Serpent Gods",
-										"entries": [
-											"The yuan-ti revere a number of powerful entities as gods, including the following.",
-											{
-												"name": "Dendar, the Night Serpent",
-												"entries": [
-													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Merrshaulk, Master of the Pit",
-												"entries": [
-													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
-												],
-												"type": "entries"
-											},
-											{
-												"name": "Sseth, the Sibilant Death",
-												"entries": [
-													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
-												],
-												"type": "entries"
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Yuan-ti Pureblood.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Yuan-ti Pureblood.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/yuan-ti-pureblood.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"N",
-				"O",
-				"S"
-			],
-			"spellcastingTags": [
-				"CC",
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "Brassleaf Tree",
-			"source": "MoR",
-			"size": [
-				"G"
-			],
-			"type": "plant",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 90",
-				"average": 207
-			},
-			"speed": {},
-			"str": 18,
-			"dex": 6,
-			"con": 20,
-			"int": 3,
-			"wis": 12,
-			"cha": 17,
-			"save": {
-				"str": "+8",
-				"wis": "+5"
-			},
-			"skill": {
-				"perception": "+5"
-			},
-			"senses": [
-				"blindsight 120 ft."
-			],
-			"passive": 15,
-			"resist": [
-				{
-					"resist": [
-						"piercing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"immune": [
-				"fire"
-			],
-			"vulnerable": [
-				"cold"
-			],
-			"conditionImmune": [
-				"blinded",
-				"deafened"
-			],
-			"languages": [
-				"can understand Sylvan and Draconic but cant speak."
-			],
-			"cr": "10",
-			"trait": [
-				{
-					"name": "Loyal to Dragon Master",
-					"entries": [
-						"A dragonleaf tree only follows commands from its designated master (or from any creatures to whom the master grants control). It has advantage on saving throws against any charm or {@spell compulsion} spell or effect. Additionally, the tree has advantage on any saving throw to resist Deception, Intimidation, or Persuasion checks made to influence it to act against its masters."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the tree fails a saving throw, it can choose to succeed instead."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Brassleaf Tree can make two attacks"
-					]
-				},
-				{
-					"name": "Slam",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d10 + 4}) bludgeoning damage plus 7 ({@damage 2d6})."
-					]
-				},
-				{
-					"name": "Leaves",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 30/60 ft., one target. {@h}7 ({@damage 1d6+4}) slashing damage plus 7 ({@damage 2d6}) fire damage and the target is set ablaze."
-					]
-				},
-				{
-					"name": "Grasping Vine",
-					"entries": [
-						"{@atk rw} {@hit 8} to hit, range 60/30 ft., one target. {@h}7 ({@damage 1d6+4}) damage, and the target is pulled 20 feet directly toward the tree."
-					]
-				},
-				{
-					"name": "Flame Torrent {@recharge}",
-					"entries": [
-						"The brassleaf tree can issue forth a breath weapon from its leaves appropriate to the dragon it honors in a 30-foot cone. The creature's breath weapon deals 28 ({@dice 8d6}) fire damage and the target is set ablaze or half damage to targets that make a successful {@dc 15} Dexterity saving throw and it is not set on fire. The creature on fire takes 5 ({@damage 1d10}) damage at the start of its turn, until someone takes an action to douse the fire."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Recharge",
-					"entries": [
-						"the first time the tree's hitpoints are reduced below certain thresholds it can use it's reaction to recharge its Flame Torrent."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Roots",
-					"entries": [
-						"One creature that the tree can sense that is on the ground, must succeed on a {@dc 15} Strength or Dexterity saving throw or becomes {@condition grappled}."
-					]
-				},
-				{
-					"name": "Vines",
-					"entries": [
-						"The tree can make two Grasping Vine attacks."
-					]
-				},
-				{
-					"name": "Leaves",
-					"entries": [
-						"The tree can make a Leaves attack."
-					]
-				}
-			],
-			"environment": [
-				"forest",
-				"urban"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Dragonleaf Tree.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i The dragon-headed leaves of these oak trees sometimes rustle despite the lack of wind, betraying a hint of their draconic power.}",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Gifts among Dragons",
-										"entries": [
-											"These magnificent trees are imbued with some characteristics of their draconic masters. While most groves consist of only one type of dragonleaf tree, dragons sometimes make gifts of them to cement a pact or as a show of fealty. The dragon giving the tree relinquishes command of the plant as part of the deal. This accounts for mixed groves belonging to especially powerful dragon lords."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Silent Guardians",
-										"entries": [
-											"Dragonleaf trees use fairly simple tactics to deter potential intruders. They remain motionless or allow the breeze to jostle their leaves to appear inconspicuous. Once enough targets enter the grove, the trees fire razor sharp leaves at or breathe on their targets, adjusting their position to make better use of their weapons."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Long Memories",
-										"entries": [
-											"Dragonleaf trees live up to 1,000 years. They stand 15 feet tall and weigh 3,000 lb, but ancient specimens can reach heights of 45 feet. Growing a new dragonleaf tree requires a cutting from an existing tree at least 50 years old, which the tree's master imbues with power, sacrificing the use of its breath weapon for a month. While this time barely registers on a dragon's whole lifespan, it still carefully considers the creation of a new tree, for fear that others might discover its temporary weakness."
-										]
-									},
-									{
-										"type": "inset",
-										"name": "Dragonleaf Trees in Midgard",
-										"entries": [
-											"The finest druidic minds in the Mharoti Empire created these trees for the draconic lords of the land. Once the druids had shown the dragons the secret of the tree's creation they were slain, so that the secret would not spread. A handful of human and kobold gardeners know how to tend them and make them thrive, but little more."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Dragonleaf%20Tree.png",
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
 				"MW",
 				"RCH",
-				"RW"
-			]
-		},
-		{
-			"name": "Cockatrice Raptor",
-			"source": "MoR",
-			"page": 42,
-			"basicRules": true,
-			"size": [
-				"M"
-			],
-			"type": "monstrosity",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				13
-			],
-			"hp": {
-				"formula": "5d8 + 5",
-				"average": 27
-			},
-			"speed": {
-				"walk": 40,
-				"fly": 30,
-				"canHover": false
-			},
-			"str": 14,
-			"dex": 16,
-			"con": 13,
-			"int": 4,
-			"wis": 12,
-			"cha": 6,
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 13,
-			"cr": "2",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The raptor makes two Claw attacks."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw against being magically {@condition petrified}. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified}."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Opportunistic",
-					"entries": [
-						"The raptor can make a bite attack as a bonus action against a {@condition restrained}, {@condition grappled}, {@condition prone}, {@condition paralyzed} or {@condition petrified} creature."
-					]
-				},
-				{
-					"name": "Pounce",
-					"entries": [
-						"If the raptor moves at least 20 feet straight toward a creature and then hits it with a Claw attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the raptor can make one Bite attack against it as a bonus action."
-					]
-				}
-			],
-			"environment": [
-				"grassland"
-			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. Usually Cockatrices are omnivores with a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. However these creatures have grown bigger and much more deadlier thanks to their carnivore diet. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its clawed feet darts out to slash and grab onto it's prey. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Cockatrice.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Cockatrice.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/cockatrice.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
+				"RW",
+				"THW"
 			],
 			"conditionInflict": [
-				"petrified",
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
-		},
-		{
-			"name": "The Zmey",
-			"source": "MoR",
-			"size": [
-				"H"
-			],
-			"type": "dragon",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 90",
-				"average": 270
-			},
-			"speed": {
-				"walk": 40,
-				"fly": 60,
-				"swim": 40,
-				"canHover": false
-			},
-			"str": 23,
-			"dex": 13,
-			"con": 20,
-			"int": 16,
-			"wis": 16,
-			"cha": 12,
-			"save": {
-				"con": "+10",
-				"wis": "+8",
-				"cha": "+6"
-			},
-			"skill": {
-				"perception": "+8",
-				"stealth": "+6",
-				"survival": "+8",
-				"athletics": "+11"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 90 ft."
-			],
-			"passive": 18,
-			"resist": [
-				"fire",
-				"poison"
-			],
-			"conditionImmune": [
-				"paralyzed",
-				"unconscious"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"Elvish",
-				"Sylvan"
-			],
-			"cr": "14",
-			"trait": [
-				{
-					"name": "Amphibious",
-					"entries": [
-						"The zmey can breathe air and water."
-					]
-				},
-				{
-					"name": "Lake Leap",
-					"entries": [
-						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 5,000 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the zmey fails a saving throw, it can count it as a success instead."
-					]
-				},
-				{
-					"name": "Multiheaded",
-					"entries": [
-						"The zmey normally has three heads. While it has more than one head, the zmey has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, and {@condition stunned}. If the zmey takes 40 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The zmey regains 15 hit points at the start of its turn. If the zmey takes acid or fire damage, this trait doesn't function at the start of the zmey's next turn. Regeneration stops functioning when all heads are severed."
-					]
-				},
-				{
-					"name": "Spawn Headling",
-					"entries": [
-						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump prevents this transformation."
-					]
-				},
-				{
-					"name": "Toxins",
-					"entries": [
-						"Each of the zmey's viper like heads has a unique toxin they can deliver with their bite attack:",
-						"-Neurotoxic Venom",
-						"-Hemotoxic Venom",
-						"-Cytotoxic Venom",
-						"Each venom has three stages, If a creature fails It's save against the toxin, it advances to one stage above. While under the effect of a toxin the a creature must succeed against the venom at the end of each of it's turns until it succeeds on it for the first time. Succeeding on the save does not end the current effects. A creature must separability  for each different toxins it has been {@condition poisoned} with."
-					]
-				},
-				{
-					"name": "Neurotoxic Venom",
-					"entries": [
-						"-First Stage: The target suffers 16 ({@damage 3d10})",
-						"-Second Stage: While the target is affected by the Neurotoxin it experiences crippling pain. Any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
-						"-Third Stage: The target becomes {@condition paralyzed}."
-					]
-				},
-				{
-					"name": "Hemotoxic Venom",
-					"entries": [
-						"-First Stage: While the target is affected by the Hemotoxin a creature takes necrotic damage at the start of it's turn equal to half  the total bludgeoning, piercing and slashing damage it took that round unless it revived magical healing that turn.",
-						"-Second Stage: The creature receives vulnerability to all bludgeoning, piercing and slashing damage.",
-						"-Third Stage: The target starts to suffocate as blood fills it's lungs. At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again."
-					]
-				},
-				{
-					"name": "Cytotoxic Venom",
-					"entries": [
-						"-First Stage: At the star of each of it's turns as the creature afflicted by the toxin takes 3 ({@damage 1d6}) poison damage and it's hit point maximum is reduced by the same amount.This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
-						"-Second Stage: The creature takes 21 ({@damage 6d6}) necrotic damage it's hit point maximum is reduced by the same amount. This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
-						"-Third Stage: If an effect would cure or neutralize a poison afflicting this creature, it fails to do so unless it is casted at least at sixth level."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The zmey makes one bite attack per head and one claws attack."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 6}) piercing damage, and the target must make a {@dc 18} Constitution saving throws or be."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, and the target must make a {@dc 14} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
-					]
-				},
-				{
-					"name": "Fire Breath {@recharge 5}",
-					"entries": [
-						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads. Creatures in a cone take 18 ({@damage 4d8}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
-					]
-				}
-			],
-			"legendaryActions": 1,
-			"legendary": [
-				{
-					"name": "Bite",
-					"entries": [
-						"The zmey makes a claw attack."
-					]
-				},
-				{
-					"name": "Tail Attack",
-					"entries": [
-						"The zmey makes a tail attack."
-					]
-				},
-				{
-					"name": "Trample",
-					"entries": [
-						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
-					]
-				}
-			],
-			"environment": [
-				"forest"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
-					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Claws of the Forest",
-										"entries": [
-											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Solitary Hunters",
-										"entries": [
-											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Three-Headed Rage",
-										"entries": [
-											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
-											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Zmey Headling",
-						"entries": [
-							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
-			"traitTags": [
-				"Amphibious",
-				"Legendary Resistances",
-				"Regeneration"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"E",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"I",
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"paralyzed",
 				"prone"
-			]
-		},
-		{
-			"name": "Enormous Mimic",
-			"source": "MoR",
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"shapechanger"
-				]
-			},
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 13,
-					"condition": "natural armor"
-				}
-			],
-			"hp": {
-				"average": 225,
-				"formula": "18d12 + 108"
-			},
-			"speed": {
-				"walk": 25
-			},
-			"str": 25,
-			"dex": 7,
-			"con": 23,
-			"int": 7,
-			"wis": 15,
-			"cha": 8,
-			"skill": {
-				"stealth": "+6"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 12,
-			"immune": [
-				"acid"
-			],
-			"conditionImmune": [
-				"prone"
-			],
-			"cr": "10",
-			"trait": [
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"The mimic can use its action to polymorph into an object or back into its true, amorphous form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn 't transformed. It reverts to its true form if it dies."
-					]
-				},
-				{
-					"name": "Adhesive (Object Form Only)",
-					"entries": [
-						"The mimic adheres to anything that touches it. A creature adhered to the mimic is also {@condition grappled} by it (escape {@dc 16}). Ability checks made to escape this grapple have disadvantaged."
-					]
-				},
-				{
-					"name": "False Appearance (Object Form Only)",
-					"entries": [
-						"While the mimic remains motionless, it is indistinguishable from an ordinary object."
-					]
-				},
-				{
-					"name": "Grappler",
-					"entries": [
-						"The mimic has advantage on attack rolls against any creature {@condition grappled} by it."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The mimic makes three attacks two with its pseudopods and one with its bite or acid spit."
-					]
-				},
-				{
-					"name": "Pseudopod",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. If the mimic is in object form, the target is subjected to its Adhesive trait."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft. one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage plus 13 ({@damage 3d8}) acid damage, and if the target is Medium or smaller, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the mimic can bite only the {@condition grappled} creature and has advantage on attack rolls to do so."
-					]
-				},
-				{
-					"name": "Acid Spit",
-					"entries": [
-						"{@atk rs} {@hit 6} to hit, range 60 ft., one target. {@h}27 ({@damage 6d8}) acid damage."
-					]
-				},
-				{
-					"name": "Swallow",
-					"entries": [
-						"The mimic makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the mimic, and it takes 21 ({@damage 6d6}) acid damage at the start of each of the mimic's turns. A mimic can have only up to one Medium or two Small creatures swallowed at a time.",
-						"If the mimic takes 30 damage or more on a single turn from the swallowed creature, the mimic must succeed on a {@dc 16} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the mimic. If the mimic dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 10 feet of movement, exiting {@condition prone}."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.redd.it/3jegc2ai3xi41.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/CoS/Baba%20Lysaga's%20Creeping%20Hut.png",
-			"traitTags": [
-				"False Appearance",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Swallow"
-			],
-			"damageTags": [
-				"A",
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"restrained"
 			]
 		},
 		{
@@ -10380,269 +10486,518 @@
 				"unconscious"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true,
-			"_versions": [
+			"hasFluffImages": true
+		},
+		{
+			"name": "Yuan-ti Cultist",
+			"source": "MoR",
+			"page": 310,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 11,
+			"int": 12,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"deception": "+6",
+				"religion": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "1",
+			"spellcasting": [
 				{
-					"name": "Bheur Hag (Coven)",
-					"source": "VGM",
-					"_mod": {
-						"spellcasting": {
-							"mode": "appendArr",
-							"items": {
-								"name": "Shared Spellcasting (Coven Only)",
-								"headerEntries": [
-									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
-								],
-								"spells": {
-									"1": {
-										"slots": 4,
-										"spells": [
-											"{@spell identify}",
-											"{@spell ray of sickness}"
-										]
-									},
-									"2": {
-										"slots": 3,
-										"spells": [
-											"{@spell hold person}",
-											"{@spell locate object}"
-										]
-									},
-									"3": {
-										"slots": 3,
-										"spells": [
-											"{@spell bestow curse}",
-											"{@spell counterspell}",
-											"{@spell lightning bolt}"
-										]
-									},
-									"4": {
-										"slots": 3,
-										"spells": [
-											"{@spell phantasmal killer}",
-											"{@spell polymorph}"
-										]
-									},
-									"5": {
-										"slots": 2,
-										"spells": [
-											"{@spell contact other plane}",
-											"{@spell scrying}"
-										]
-									},
-									"6": {
-										"slots": 1,
-										"spells": [
-											"{@spell eyebite}"
-										]
-									}
-								},
-								"ability": "int",
-								"footerEntries": [
-									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
-								]
-							}
-						}
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared, and it can innately cast some spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)",
+						"{@spell poison spray}",
+						"{@spell sacred flame}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell hold person}",
+							"{@spell spiritual weapon}",
+							"{@spell suggestion}"
+						],
+						"2e": [
+							"{@spell command}",
+							"{@spell inflict wounds}",
+							"{@spell shield of faith}"
+						]
 					},
-					"cr": "9",
-					"variant": null
-				},
-				{
-					"name": "Bheur Hag (Coven; Death)",
-					"source": "VGM",
-					"_mod": {
-						"spellcasting": {
-							"mode": "appendArr",
-							"items": {
-								"name": "Shared Spellcasting (Coven Only)",
-								"headerEntries": [
-									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
-								],
-								"spells": {
-									"1": {
-										"slots": 4,
-										"spells": [
-											"{@spell false life}",
-											"{@spell inflict wounds}"
-										]
-									},
-									"2": {
-										"slots": 3,
-										"spells": [
-											"{@spell gentle repose}",
-											"{@spell ray of enfeeblement}"
-										]
-									},
-									"3": {
-										"slots": 3,
-										"spells": [
-											"{@spell animate dead}",
-											"{@spell revivify}",
-											"{@spell speak with dead}"
-										]
-									},
-									"4": {
-										"slots": 3,
-										"spells": [
-											"{@spell blight}",
-											"{@spell death ward}"
-										]
-									},
-									"5": {
-										"slots": 2,
-										"spells": [
-											"{@spell contagion}",
-											"{@spell raise dead}"
-										]
-									},
-									"6": {
-										"slots": 1,
-										"spells": [
-											"{@spell circle of death}"
-										]
-									}
-								},
-								"ability": "int",
-								"footerEntries": [
-									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
-								]
-							}
-						}
-					},
-					"cr": "9",
-					"variant": null
-				},
-				{
-					"name": "Bheur Hag (Coven; Nature)",
-					"source": "VGM",
-					"_mod": {
-						"spellcasting": {
-							"mode": "appendArr",
-							"items": {
-								"name": "Shared Spellcasting (Coven Only)",
-								"headerEntries": [
-									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
-								],
-								"spells": {
-									"1": {
-										"slots": 4,
-										"spells": [
-											"{@spell entangle}",
-											"{@spell speak with animals}"
-										]
-									},
-									"2": {
-										"slots": 3,
-										"spells": [
-											"{@spell flaming sphere}",
-											"{@spell moonbeam}",
-											"{@spell spike growth}"
-										]
-									},
-									"3": {
-										"slots": 3,
-										"spells": [
-											"{@spell call lightning}",
-											"{@spell plant growth}"
-										]
-									},
-									"4": {
-										"slots": 3,
-										"spells": [
-											"{@spell dominate beast}",
-											"{@spell grasping vine}"
-										]
-									},
-									"5": {
-										"slots": 2,
-										"spells": [
-											"{@spell insect plague}",
-											"{@spell tree stride}"
-										]
-									},
-									"6": {
-										"slots": 1,
-										"spells": [
-											"{@spell wall of thorns}"
-										]
-									}
-								},
-								"ability": "int",
-								"footerEntries": [
-									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
-								]
-							}
-						}
-					},
-					"cr": "9",
-					"variant": null
-				},
-				{
-					"name": "Bheur Hag (Coven; Prophecy)",
-					"source": "VGM",
-					"_mod": {
-						"spellcasting": {
-							"mode": "appendArr",
-							"items": {
-								"name": "Shared Spellcasting (Coven Only)",
-								"headerEntries": [
-									"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells from the wizard's spell list but must share the spell slots among themselves:"
-								],
-								"spells": {
-									"1": {
-										"slots": 4,
-										"spells": [
-											"{@spell bane}",
-											"{@spell bless}"
-										]
-									},
-									"2": {
-										"slots": 3,
-										"spells": [
-											"{@spell augury}",
-											"{@spell detect thoughts}"
-										]
-									},
-									"3": {
-										"slots": 3,
-										"spells": [
-											"{@spell clairvoyance}",
-											"{@spell dispel magic}",
-											"{@spell nondetection}"
-										]
-									},
-									"4": {
-										"slots": 3,
-										"spells": [
-											"{@spell arcane eye}",
-											"{@spell locate creature}"
-										]
-									},
-									"5": {
-										"slots": 2,
-										"spells": [
-											"{@spell geas}",
-											"{@spell legend lore}"
-										]
-									},
-									"6": {
-										"slots": 1,
-										"spells": [
-											"{@spell true seeing}"
-										]
-									}
-								},
-								"ability": "int",
-								"footerEntries": [
-									"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save {@dc 13}, and the spell attack bonus is {@hit 5}."
-								]
-							}
-						}
-					},
-					"cr": "9",
-					"variant": null
+					"ability": "wis",
+					"type": "spellcasting"
 				}
-			]
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yuan-ti has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The yuan-ti makes two melee attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Inflict Wounds",
+					"entries": [
+						"{@atk ms} {@hit 4} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d10}) necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spiritual Weapon",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d8 + 2}) force damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"swamp",
+				"urban"
+			],
+			"fluff": {
+				"name": "Yuan-ti Pureblood",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Purebloods form the lowest caste of yuan-ti society. They closely resemble humans, yet a pureblood can't pass for human under close scrutiny because there's always some hint of its true nature, such as scaly patches of skin, serpentine eyes, pointed teeth, or a forked tongue. Wearing cloaks and cowls, they masquerade as humans and infiltrate civilized lands to gather information, kidnap prisoners for interrogation and sacrifice, and trade with anyone who has something that can further their myriad plots.",
+									{
+										"type": "entries",
+										"name": "Yuan-ti",
+										"entries": [
+											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
+											{
+												"name": "Forsaken Humanity",
+												"entries": [
+													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
+													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
+													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
+													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Serpent Kings of Fallen Empires",
+												"entries": [
+													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cold of Heart",
+												"entries": [
+													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "False Worship",
+												"entries": [
+													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Serpent Gods",
+										"entries": [
+											"The yuan-ti revere a number of powerful entities as gods, including the following.",
+											{
+												"name": "Dendar, the Night Serpent",
+												"entries": [
+													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Merrshaulk, Master of the Pit",
+												"entries": [
+													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Sseth, the Sibilant Death",
+												"entries": [
+													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Yuan-ti Pureblood.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Yuan-ti Pureblood.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-pureblood.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Yuan-ti Hunter",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger",
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"stealth": "+6",
+				"survival": "+6",
+				"perception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"headerEntries": [
+						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)"
+					],
+					"daily": {
+						"3": [
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yuan-ti has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack (Yuan-ti Form Only)",
+					"entries": [
+						"The yuan-ti makes two attacks, but can constrict only once."
+					]
+				},
+				{
+					"name": "Bite (Snake Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d4 + 4}) piercing damage plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, and the yuan-ti can't constrict another target."
+					]
+				},
+				{
+					"name": "Scimitar (Yuan-ti Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Longbow (Yuan-ti Form Only)",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"fluff": {
+				"name": "Yuan-ti Malison (Type 3)",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunt with arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.",
+									{
+										"type": "entries",
+										"name": "Yuan-ti",
+										"entries": [
+											"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
+											{
+												"name": "Forsaken Humanity",
+												"entries": [
+													" The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
+													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
+													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
+													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Serpent Kings of Fallen Empires",
+												"entries": [
+													" The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cold of Heart",
+												"entries": [
+													" Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as an exploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "False Worship",
+												"entries": [
+													" Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Serpent Gods",
+										"entries": [
+											"The yuan-ti revere a number of powerful entities as gods, including the following.",
+											{
+												"name": "Dendar, the Night Serpent",
+												"entries": [
+													" Dendar's followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Merrshaulk, Master of the Pit",
+												"entries": [
+													" Merrshaulk is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Sseth, the Sibilant Death",
+												"entries": [
+													" Sseth appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Yuan-ti Malison.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/TYZSkYQ.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-malison.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		}
 	]
 }
