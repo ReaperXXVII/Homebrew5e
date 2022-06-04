@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.155.2",
+	"siteVersion": "1.158.4",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1653932180,
-		"dateLastModified": 1653932180
+		"dateAdded": 1654351423,
+		"dateLastModified": 1654351423
 	},
 	"monster": [
 		{
@@ -682,9 +682,8 @@
 		{
 			"name": "Black Corruption",
 			"source": "MoR",
-			"page": 241,
 			"size": [
-				"H"
+				"M"
 			],
 			"type": "ooze",
 			"alignment": [
@@ -694,14 +693,14 @@
 				7
 			],
 			"hp": {
-				"formula": "14d10 + 42",
-				"average": 119
+				"formula": "10d10 + 30",
+				"average": 85
 			},
 			"speed": {
 				"walk": 20,
 				"climb": 20
 			},
-			"str": 18,
+			"str": 16,
 			"dex": 5,
 			"con": 16,
 			"int": 1,
@@ -730,7 +729,7 @@
 				{
 					"name": "Amorphous",
 					"entries": [
-						"The pudding can move through a space as narrow as 1 inch wide without squeezing."
+						"The ooze can move through a space as narrow as 1 inch wide without squeezing."
 					]
 				},
 				{
@@ -746,9 +745,9 @@
 					]
 				},
 				{
-					"name": "Corrupting Touch",
+					"name": "Regeneration",
 					"entries": [
-						"When a  ooze scores a critical hit or starts its turn with a foe {@condition grappled}, it can dissolve one leather, metal, or wood item of its choosing in the possession of the target creature. A mundane item is destroyed automatically; a magical item is destroyed if its owner fails to make a successful {@dc 16} Dexterity saving throw."
+						"When the a black corruption is spawned it has 40 hit points, but regains 10 hit points at the start of its turn. When the black corruption has 50 or more hitpoints it grows to a size category of large. If the black corruption takes radiant or necrotic damage, this trait doesn't function at the start of the black corruption's next turn. The black corruption dies only if it starts its turn with 0 hit points and doesn't regenerate."
 					]
 				}
 			],
@@ -756,7 +755,7 @@
 				{
 					"name": "Pseudopod",
 					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 4}) bludgeoning damage plus 18 ({@damage 4d8}) acid damage, and the target is {@condition grappled} (escape {@dc 13}).. In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage plus 10 ({@damage 4d4}) acid damage, and the target is {@condition grappled} (escape {@dc 14}). In addition, nonmagical armor worn by the target is partly dissolved and takes a permanent and cumulative −1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
 					]
 				}
 			],
@@ -764,7 +763,7 @@
 				{
 					"name": "Split",
 					"entries": [
-						"When an ooze that is Medium or larger is subjected to lightning or slashing damage, it splits into two new oozes if it has at least 10 hit points. Each new ooze has hit points equal to half the original ooze's, rounded down. New oozes are one size smaller than the original pudding."
+						"When an ooze that is Medium or larger is subjected to lightning or slashing damage, it splits into two new oozes if it has at least 10 hit points. Each new ooze has hit points equal to half the original ooze's, rounded down. New oozes are one size smaller than the original ooze."
 					]
 				}
 			],
@@ -841,6 +840,7 @@
 			},
 			"traitTags": [
 				"Amorphous",
+				"Regeneration",
 				"Spider Climb"
 			],
 			"senseTags": [
