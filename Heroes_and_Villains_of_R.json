@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.158.4",
+	"siteVersion": "1.158.5",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1654351418,
-		"dateLastModified": 1654351418
+		"dateAdded": 1654940823,
+		"dateLastModified": 1654940823
 	},
 	"monster": [
 		{
@@ -1993,6 +1993,254 @@
 				"RW"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Cassius Elendiir",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item Mithral +1 Half Plate Armor|AI}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"wis": "+7",
+				"dex": "+7",
+				"con": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"athletics": "+9",
+				"history": "+9",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Common",
+				"Primordial",
+				"Celestial",
+				"Elvish"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The war caster is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, + {@hit 9} to hit with spell attacks). It has the following wizard spells prepared:"
+					],
+					"daily": {
+						"1": [
+							"{@spell lightning bolt} (at 4th level)"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell burning hands}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell rime's binding ice|FTD}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell greater invisibility}",
+								"{@spell ice storm}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell steel wind strike|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Battle Concentration",
+					"entries": [
+						"The war caster has advantage on Constitution saving throws that it makes to maintain concentration on a spell when it takes damage."
+					]
+				},
+				{
+					"name": "War Magic",
+					"entries": [
+						"When the war caster uses its action to cast a spell, it can make one melee attack as a bonus action."
+					]
+				},
+				{
+					"name": "Shield Master",
+					"entries": [
+						"If the elite war caster is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elite war caster instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mage makes two melee attacks or casts a spell and makes one melee attack as a bonus action."
+					]
+				},
+				{
+					"name": "Lightning Strike",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Thunder Strike {@recharge}",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, and the target must make {@dc 17} Constitution saving throw or become {@condition stunned} until the end of the mage's next turn."
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rw} {@hit 9} to hit, 120 ft. range, one target. {@h}22 ({@damage 4d10}) fire damage."
+					]
+				},
+				{
+					"name": "Shield Bash (Bonus Action)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Opportunity Spell",
+					"entries": [
+						"When a hostile creature's movement provokes an {@action opportunity attack} from the war caster, it can use its reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Cassius Elendiir is a 48 year old male human artificier.",
+					"He has short, well kept, black hair with white steaks and green eyes.",
+					"He has soft gray skin.",
+					"He stands 189cm (6'2\") tall and has a regular build.",
+					"He has a diamond-shaped face.",
+					"Magic items:",
+					"Mithral +1 Half Plate Armor",
+					"Gauntlets of Ogre Power",
+					"Staff of Thunder and Lightning",
+					"Shield Guardian Amulet",
+					"Potion of Greater Healing"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/U5ydEnC.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/U5ydEnC.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"E",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"L"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
 		},
 		{
 			"name": "Gor-Tlaltin the Immortal",
