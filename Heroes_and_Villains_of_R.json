@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.158.5",
+	"siteVersion": "1.165.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1654940823,
-		"dateLastModified": 1654940823
+		"dateAdded": 1659197479,
+		"dateLastModified": 1659197479
 	},
 	"monster": [
 		{
@@ -1664,6 +1664,272 @@
 			"hasFluff": true
 		},
 		{
+			"name": "Avarice",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"condition": "Armor of Shadows"
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 14,
+			"int": 13,
+			"wis": 10,
+			"cha": 18,
+			"save": {
+				"cha": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"deception": "+8",
+				"persuasion": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"cold",
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Infernal",
+				"Orc",
+				"Yeti"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Avarice is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}; {@hit 8} to hit with spell attacks). She has knows the following sorcerer and warlock spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt} *",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell minor illusion}",
+								"{@spell ray of frost} *"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell armor of Agathys}",
+								"{@spell comprehend languages}",
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell witch bolt} *"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell mirror image}",
+								"{@spell rime's binding ice|FTD}",
+								"{@spell scorching ray} *"
+							],
+							"slots": 5
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fly}",
+								"{@spell thunder step|XGE}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell fire shield}",
+								"{@spell storm sphere|XGE} *"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell infernal calling|XGE}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Icy Doom",
+					"entries": [
+						"When Avarice dies, her corpse freezes for 9 days, during which time it can't be thawed, harmed by fire, animated, or raised from the dead."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Avarice wields a {@item staff of frost} with 10 charges, a {@item Spell Gem (Star ruby) | OotA}"
+					]
+				},
+				{
+					"name": "Spell Sniper",
+					"entries": [
+						"When Avarice casts a spell that requires her to make an attack roll, the spell's range is doubled, additionally her ranged spell attacks ignore half cover and three-quarters cover."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Twin Rays",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 120 ft., up to two targets. {@h}13 ({@damage 3d8}) cold damage and the target's speed is decreased by 10 feet until the end of it's next turn."
+					]
+				},
+				{
+					"name": "Twin Bolts",
+					"entries": [
+						"{@atk rs} {@hit 8} to hit, range 240 ft., up to two targets. {@h}13 ({@damage 3d10}) fire damage."
+					]
+				},
+				{
+					"name": "Staff of Frost",
+					"entries": [
+						"While holding this staff, Avarice can expend 1 or more of its charges to cast one of the following spells from it (spell save {@dc 16}): {@spell cone of cold} (5 charges), {@spell fog cloud} (1 charge), {@spell ice storm} (4 charges), or {@spell wall of ice} (4 charges). The staff regains {@dice 1d6 + 4} charges daily at dawn. If its last charge is expended, roll a {@dice d20}; on a 1, the staff turns to water and is destroyed."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Quickened Spell",
+					"entries": [
+						"Avarice casts a spell that has a casting time of one action as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Banishing Rebuke (Recharges after a Long Rest)",
+					"entries": [
+						"When Avarice is damaged by a creature that she can see within 60 feet of her, she can banish that creature to a frigid extradimensional prison for 1 minute. While there, the creature is {@condition incapacitated} and takes 5 ({@damage 1d10}) cold damage at the start of each of its turns. At the end of each of its turns, the creature can make a {@dc 16} Charisma saving throw, escaping the prison on a success and reappearing in the space it left or in the nearest unoccupied space if that space is occupied. A creature that dies in the prison is trapped there indefinitely."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Avarice",
+				"source": "IDRotF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Avarice is a cruel and vindictive tiefling trained in the arcane tradition of evocation. She likes using her magic to destroy things, and her hunger for magic items knows no bounds. Her supreme confidence means that she never backs down from a challenge, even when the odds are clearly stacked against her. Seeing other wizards as a threat, paranoia rules her life.",
+									"Avarice has been a member of the Arcane Brotherhood for almost two years. She fantasizes about rising to fame and prominence in record time and hopes that plundering the lost Netherese city of Ythryn will turn her fantasies into reality.",
+									"The tiefling has the secret support of the archdevil Levistus, having traded her soul years ago for her first taste of magical power. Levistus speaks to her in dreams and guides her path. Shortly after Avarice arrived in Ten-Towns, Levistus urged her to seek out the Black Sword. Avarice didn't know who or what the Black Sword was until she was approached by cultists of Levistus bearing swordlike shards of chardalyn worn as pendants around their necks. These self-styled Knights of the Black Sword offered her sanctuary in the keep of Caer-Dineval, where they are based. Although she doesn't trust the cultists, they treat her with more respect than anyone else does, and the keep is a safer location than most other places in Ten-Towns.",
+									{
+										"type": "entries",
+										"name": "Companions",
+										"entries": [
+											"Avarice has a pair of loyal {@creature Gargoyle||gargoyles} named Gargle and Gurgle who serve her as bodyguards and scouts. Avarice uses her {@spell Rary's telepathic bond} spell to stay in telepathic contact with her gargoyles before sending them off on any mission. Avarice also has the support of the Knights of the Black Sword, if she needs to call on their talents."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Familiar",
+										"entries": [
+											"Avarice's familiar throughout the adventure is a squawking raven named Skelm. It uses the {@creature raven} stat block in the {@book Monster Manual|MM} but is a fiend instead of a beast."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Spellbook",
+										"entries": [
+											"Avarice's spellbook has white leather covers and vellum pages. The tiefling's personal sigil is burned into the front cover. The book contains the spells Avarice has prepared plus the following additional spells: {@spell burning hands}, {@spell cone of cold}, {@spell find familiar}, {@spell ice storm}, {@spell lightning bolt}, {@spell rope trick}, {@spell thunderwave}, {@spell tongues}, {@spell wall of fire}, and {@spell wall of force}."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/IDRotF/Avarice.png"
+						},
+						"title": "Avarice, her raven familiar, and her gargoyles"
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/IDRotF/Avarice.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I",
+				"O",
+				"OTH"
+			],
+			"damageTags": [
+				"C",
+				"F"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"CL",
+				"CS"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Blackblood",
 			"source": "HaVoR",
 			"size": [
@@ -2241,6 +2507,222 @@
 				"prone",
 				"stunned"
 			]
+		},
+		{
+			"name": "Flame Beard",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item +1 studded leather armor|dmg}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 80",
+				"average": 168
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"wis": "+8",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+10",
+				"survival": "+8",
+				"perception": "+8",
+				"intimidation": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common"
+			],
+			"cr": "16",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Flame Beard is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It has the following paladin spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell command}",
+								"{@spell compelled duel}",
+								"{@spell searing smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell hold person}",
+								"{@spell locate object}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell dispel magic}",
+								"{@spell incite greed|AI}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}",
+								"{@spell staggering smite}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The death knight has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Undead Captian",
+					"entries": [
+						"Unless Flame Beard is {@condition incapacitated}, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Flame Beard makes three falchion attacks."
+					]
+				},
+				{
+					"name": "Falchion +1",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, or 11 ({@damage 1d10 + 6}) slashing damage if used with two hands, plus 13 ({@damage 3d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Hellfire Orb (1/Day)",
+					"entries": [
+						"Flame Beard hurls a ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 17} Dexterity saving throw. The sphere spreads around corners. A creature takes 35 ({@damage 10d6}) fire damage and 35 ({@damage 10d6}) bludgeoning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Legendary Reactions",
+					"entries": [
+						"Flame Beard can take up to three reactions per round but only one per turn."
+					]
+				},
+				{
+					"name": "Parry",
+					"entries": [
+						"Flame Beard adds 5 to its AC against attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+					]
+				},
+				{
+					"name": "Command The Crew",
+					"entries": [
+						"When Flame Beard sees a hostile creature on his ship he can command an allied unleaded creature that can hear Flame Beard to can take an action using their reaction."
+					]
+				},
+				{
+					"name": "Not the ship",
+					"entries": [
+						"If Flame Beard sees a creature attempting to damage his ship, he can cast command or compelled duel on that creature before it can act."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/000/015/211/large/LeChuck_Boco_Web.jpg?1400273655"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/Ie3DOsn.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Gor-Tlaltin the Immortal",
