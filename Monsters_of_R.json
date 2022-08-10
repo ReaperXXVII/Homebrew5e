@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.158.4",
+	"siteVersion": "1.165.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1654351423,
-		"dateLastModified": 1654351423
+		"dateAdded": 1660168180,
+		"dateLastModified": 1660168180
 	},
 	"monster": [
 		{
@@ -3961,6 +3961,177 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Knight of the Black Sword",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 16",
+				"average": 52
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"cha": "+4",
+				"wis": "+2"
+			},
+			"skill": {
+				"persuasion": "+4",
+				"religion": "+2",
+				"deception": "+4"
+			},
+			"passive": 10,
+			"resist": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Infernal"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The knight is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The knight has the following spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell armor of Agathys}",
+								"{@spell command}",
+								"{@spell hellish rebuke}",
+								"{@spell shield of faith}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell find steed}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The knight has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				},
+				{
+					"name": "Icy Doom",
+					"entries": [
+						"When the cultist dies, its corpse freezes for 9 days, during which time it can't be thawed, harmed by any means, animated, or raised from the dead short of a wish."
+					]
+				},
+				{
+					"name": "Unholy Smite",
+					"entries": [
+						"When the knight hits with a melee attack, it can use one of it's spell slots to deal an additional {@damage 2d8} necrotic damage to the target."
+					]
+				},
+				{
+					"name": "Path of Levistus",
+					"entries": [
+						"The cultist magically teleports to a location of Levistus’s choice within 1 mile of its location. Using this ability also restores all of the cultist’s hit points. This ability can be invoked as an action by the cultist or when the cultist would die. Once the cultist uses it, the cultist can’t use it again."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The knight makes two melee attacks."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Hellish Rebuke",
+					"entries": [
+						"The knight cast hellish rebuke as a reaction."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Knight of the Black Sword",
+				"source": "IDRotF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/IDRotF/Knight of the Black Sword.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"paralyzed",
+				"prone"
+			],
+			"hasFluff": true
+		},
+		{
 			"name": "Magnetic Assembler",
 			"source": "MoR",
 			"size": [
@@ -7213,261 +7384,6 @@
 			]
 		},
 		{
-			"name": "Serpent of the Blue Sky",
-			"alias": [
-				"Elder Tempest"
-			],
-			"source": "MoR",
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "elemental",
-				"tags": [
-					"primordial"
-				]
-			},
-			"alignment": [
-				"C",
-				"N"
-			],
-			"ac": [
-				20
-			],
-			"hp": {
-				"formula": "22d20 + 132",
-				"average": 363
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 120,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 23,
-			"dex": 30,
-			"con": 23,
-			"int": 2,
-			"wis": 21,
-			"cha": 18,
-			"save": {
-				"wis": "+11",
-				"cha": "+10",
-				"dex": "+16",
-				"con": "+12"
-			},
-			"senses": [
-				"truesight 120 ft."
-			],
-			"passive": 15,
-			"resist": [
-				"radiant"
-			],
-			"immune": [
-				{
-					"immune": [
-						"lightning",
-						"poison",
-						"psychic",
-						"thunder"
-					]
-				},
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"conditionImmune": [
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained",
-				"stunned"
-			],
-			"cr": "20",
-			"spellcasting": [
-				{
-					"name": "Hand of the Winds",
-					"headerEntries": [
-						"The Hand of the Winds have 12 charges, the Tempest can use an action to cast a spell from the item by using a number of charges equal to the spell level."
-					],
-					"will": [
-						"{@spell lightning bolt}",
-						"{@spell chain lightning}",
-						"{@spell far step|XGE}",
-						"{@spell shatter}",
-						"{@spell storm sphere|XGE}",
-						"{@spell thunderous smite}"
-					],
-					"type": "spellcasting"
-				},
-				{
-					"name": "Hand of The Storm",
-					"headerEntries": [
-						"The Hand of the Storm have 12 charges, the Tempest can use an action to cast a spell from the item by using a number of charges equal to the spell level."
-					],
-					"will": [
-						"{@spell earthbind|XGE}",
-						"{@spell freedom of movement}",
-						"{@spell investiture of wind|XGE}",
-						"{@spell steel wind strike|XGE}",
-						"{@spell wind wall}",
-						"{@spell zephyr strike|XGE}"
-					],
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Air Form",
-					"entries": [
-						"The tempest can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
-					]
-				},
-				{
-					"name": "Flyby",
-					"entries": [
-						"The tempest doesn't provoke opportunity attacks when it flies out of an enemy's reach."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the tempest fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Living Storm",
-					"entries": [
-						"The tempest is always at the center of a storm {@dice 1d6 + 4} miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
-						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"The tempest deals double damage to objects and structures."
-					]
-				},
-				{
-					"name": "Static Charge",
-					"entries": [
-						"Any creature that moves through the space of the tempest gains one stack of Static Charge. ",
-						{
-							"type": "list",
-							"items": [
-								"For each stack of Static Charge on a creature all it's saving throws suffer a minus 1 penalty.",
-								"If a creature hits a target with an attack all of the stacks on the creature transfer to the target suffers an additional {@damage 1d12} lightning damage for every stack transferred.",
-								"If the target attacks the ground it looses all of the stacks it had and suffers {@damage 1d12} lightning damage for every stack lost.",
-								"4"
-							]
-						}
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Thunder and Lightning",
-					"entries": [
-						"The tempest makes two attacks first with thunderous slam than with lightning strike."
-					]
-				},
-				{
-					"name": "Thunderous Slam",
-					"entries": [
-						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 10}) thunder damage and the target must succeed on a Strength saving throw {@dc 19} or knocked {@condition prone}."
-					]
-				},
-				{
-					"name": "Lightning Strike",
-					"entries": [
-						"{@atk rw} {@hit 16} to hit, range 150/600 ft., one target. {@h}24 ({@damage 4d6 + 10}) lightning damageand the target must succeed on a Constitution saving throw {@dc 19} or loose its reaction for the turn."
-					]
-				},
-				{
-					"name": "Lightning Storm {@recharge}",
-					"entries": [
-						"All other creatures within 120 feet of the tempest must each make a {@dc 19} Dexterity saving throw, taking 27 ({@damage 6d8}) lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also {@condition stunned} until the end of its next turn."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Move",
-					"entries": [
-						"The tempest moves up to its speed."
-					]
-				},
-				{
-					"name": "Lightning Strike (Costs 2 Actions)",
-					"entries": [
-						"The tempest can cause a bolt of lightning to strike a point on the ground anywhere under its storm. Each creature within 5 feet of that point must make a {@dc 19} Dexterity saving throw, taking 16 ({@damage 3d10}) lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Screaming Gale (Costs 3 Actions)",
-					"entries": [
-						"The tempest releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide. Objects in that area take 22 ({@damage 4d10}) thunder damage. Each creature there must succeed on a {@dc 19} Dexterity saving throw or take 22 ({@damage 4d10}) thunder damage and be flung up to 60 feet in a direction away from the line. If a thrown target collides with an immovable object, such as a wall or floor, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown before impact. If the target would collide with another creature instead, that other creature must succeed on a {@dc 19} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
-					]
-				}
-			],
-			"environment": [
-				"arctic",
-				"coastal",
-				"grassland",
-				"hill",
-				"mountain"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://www.aidedd.org/dnd/images/elder-tempest.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/CMR/Elder Tempest.png?v=1.110.1",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/elder-tempest.mp3?v=1.110.1"
-			},
-			"traitTags": [
-				"Flyby",
-				"Legendary Resistances",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"U"
-			],
-			"damageTags": [
-				"B",
-				"L",
-				"T"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH",
-				"RW"
-			],
-			"conditionInflict": [
-				"prone",
-				"stunned"
-			]
-		},
-		{
 			"name": "Serpent of the Night Sky",
 			"source": "MoR",
 			"size": [
@@ -8405,6 +8321,225 @@
 			]
 		},
 		{
+			"name": "Storm Serpent",
+			"alias": [
+				"Elder Tempest"
+			],
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"primordial"
+				]
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "20d20 + 120",
+				"average": 330
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 120,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 23,
+			"dex": 28,
+			"con": 23,
+			"int": 2,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				"psychic",
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Air Form",
+					"entries": [
+						"The tempest can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"The tempest doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the tempest fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Living Storm",
+					"entries": [
+						"The tempest is always at the center of a storm {@dice 1d6 + 4} miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
+						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The tempest deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Static Charge",
+					"entries": [
+						"Any creature that passes through the space of the tempest gains one Static Charge. ",
+						{
+							"type": "list",
+							"items": [
+								"For each stack of Static Charge on a creature all it's saving throws suffer a minus 1 penalty.",
+								"If a creature hits a target with an attack all of the stacks on the creature transfer to the target, and it suffers an additional {@damage 1d6} lightning damage for every stack transferred.",
+								"If the creature touches the ground it looses all of the stacks it had and suffers {@damage 1d6} lightning damage for every stack lost."
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Thunder and Lightning",
+					"entries": [
+						"The tempest makes two attacks first with thunderous slam than with lightning strike."
+					]
+				},
+				{
+					"name": "Thunderous Slam",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 9}) thunder damage and the target must succeed on a Strength saving throw {@dc 19} or knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Lightning Strike",
+					"entries": [
+						"{@atk rw} {@hit 16} to hit, range 150/600 ft., one target. {@h}24 ({@damage 4d6 + 9}) lightning damage and looses its reaction for the turn."
+					]
+				},
+				{
+					"name": "Lightning Storm {@recharge}",
+					"entries": [
+						"All other creatures within 120 feet of the tempest must each make a {@dc 19} Dexterity saving throw, taking 27 ({@damage 6d8}) lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The tempest moves up to its speed."
+					]
+				},
+				{
+					"name": "Lightning Strike (Costs 2 Actions)",
+					"entries": [
+						"The tempest can cause a bolt of lightning to strike a point on the ground anywhere under its storm. Each creature within 5 feet of that point must make a {@dc 19} Dexterity saving throw, taking 16 ({@damage 3d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Screaming Gale (Costs 3 Actions)",
+					"entries": [
+						"The tempest releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide. Objects in that area take 22 ({@damage 4d10}) thunder damage. Each creature there must succeed on a {@dc 19} Dexterity saving throw or take 22 ({@damage 4d10}) thunder damage and be flung up to 60 feet in a direction away from the line. If a thrown target collides with an immovable object, such as a wall or floor, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown before impact. If the target would collide with another creature instead, that other creature must succeed on a {@dc 19} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.aidedd.org/dnd/images/elder-tempest.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CMR/Elder Tempest.png?v=1.110.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/elder-tempest.mp3?v=1.110.1"
+			},
+			"traitTags": [
+				"Flyby",
+				"Legendary Resistances",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
+		},
+		{
 			"name": "Sultans Steed",
 			"source": "MoR",
 			"size": [
@@ -8727,251 +8862,393 @@
 			]
 		},
 		{
-			"name": "The Fuck you mage",
-			"source": "MoR",
-			"page": 0,
-			"size": [
-				"M"
+			"name": "The Watcher",
+			"group": [
+				"Beholders"
 			],
-			"type": {
-				"type": "humanoid",
-				"tags": [
-					"any"
-				]
-			},
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
 			"alignment": [
-				"A"
+				"L",
+				"E"
 			],
 			"ac": [
 				{
-					"ac": 20,
+					"ac": 18,
 					"from": [
-						"{@item Mithral +1 Half Plate Armor|AI}",
-						"{@item shield|phb}"
+						"natural armor"
 					]
 				}
 			],
 			"hp": {
-				"formula": "16d8 + 32",
-				"average": 104
+				"average": 180,
+				"formula": "19d10 + 76"
 			},
 			"speed": {
-				"walk": 30
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
 			},
-			"str": 19,
+			"str": 12,
 			"dex": 14,
-			"con": 14,
-			"int": 18,
-			"wis": 14,
-			"cha": 12,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 17,
 			"save": {
+				"int": "+8",
 				"wis": "+7",
-				"con": "+7",
-				"str": "+9",
-				"dex": "+4"
+				"cha": "+8"
 			},
 			"skill": {
-				"arcana": "+9",
-				"athletics": "+9",
-				"history": "+9",
-				"perception": "+7"
+				"perception": "+12"
 			},
-			"passive": 17,
+			"senses": [
+				"darkvision 120 ft.",
+				"truesight 120 ft."
+			],
+			"passive": 22,
+			"conditionImmune": [
+				"prone"
+			],
 			"languages": [
-				"Common",
-				"Primordial",
-				"Celestial,"
+				"Deep Speech",
+				"Undercommon"
 			],
-			"cr": "14",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The war caster is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, + {@hit 9} to hit with spell attacks). It has the following wizard spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}",
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell burning hands}",
-								"{@spell magic missile}",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell mirror image}",
-								"{@spell misty step}",
-								"{@spell rime's binding ice|FTD}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell thunder step|XGE}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell fire shield}",
-								"{@spell greater invisibility}",
-								"{@spell ice storm}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell cone of cold}",
-								"{@spell steel wind strike|XGE}"
-							],
-							"slots": 2
-						},
-						"6": {
-							"spells": [
-								"{@spell disintegrate}",
-								"{@spell globe of invulnerability}"
-							],
-							"slots": 1
-						},
-						"7": {
-							"spells": [
-								"{@spell prismatic spray}"
-							],
-							"slots": 1
-						}
-					},
-					"daily": {
-						"1": [
-							"{@spell lightning bolt} (at 4th level)"
-						]
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
+			"cr": {
+				"cr": "13",
+				"lair": "14"
+			},
 			"trait": [
 				{
-					"name": "Battle Concentration",
+					"name": "Antimagic Cone",
 					"entries": [
-						"The war caster has advantage on Constitution saving throws that it makes to maintain concentration on a spell when it takes damage."
-					]
-				},
-				{
-					"name": "Spell Penetration",
-					"entries": [
-						"When the mage casts a spell and is interrupted by an enemy's counterspell, treat the spell's level 3 levels higher."
-					]
-				},
-				{
-					"name": "War Magic",
-					"entries": [
-						"When the war caster uses its action to cast a spell, it can make one melee attack as a bonus action."
-					]
-				},
-				{
-					"name": "Shield Master",
-					"entries": [
-						"If the elite war caster is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the elite war caster instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+						"The beholder's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Psychic touch",
 					"entries": [
-						"The mage makes two melee attacks or casts a spell and makes one melee attack as a bonus action."
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) psychic damage, and the targeted creature must succeed on a {@dc 16} Intelligence saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
-					"name": "Lightning Strike",
+					"name": "Eye Rays",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, plus 7 ({@damage 2d6}) lightning damage."
+						"The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it. it can forgo an eye ray to make one melee attack:",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1. Confusion Ray",
+									"style": "italic",
+									"entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@spell confusion} for 1 minute. At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
+								},
+								{
+									"type": "item",
+									"name": "2. Paralyzing Ray",
+									"style": "italic",
+									"entry": "The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								},
+								{
+									"type": "item",
+									"name": "3. Fear Ray",
+									"style": "italic",
+									"entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								},
+								{
+									"type": "item",
+									"name": "4. Slowing Ray",
+									"style": "italic",
+									"entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+								},
+								{
+									"type": "item",
+									"name": "5. Enervation Ray",
+									"style": "italic",
+									"entry": "The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one."
+								},
+								{
+									"type": "item",
+									"name": "6. Telekinetic Ray",
+									"style": "italic",
+									"entries": [
+										"If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
+										"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
+									]
+								},
+								{
+									"type": "item",
+									"name": "7. Teleportation ray",
+									"style": "italic",
+									"entry": "The watcher targets itself, and teleport up to 120 feet to an unoccupied space that it can see."
+								},
+								{
+									"type": "item",
+									"name": "8. Petrification Ray",
+									"style": "italic",
+									"entry": "The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic."
+								},
+								{
+									"type": "item",
+									"name": "9. Disintegration Ray",
+									"style": "italic",
+									"entries": [
+										"If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
+										"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it."
+									]
+								},
+								{
+									"type": "item",
+									"name": "10. Death Ray",
+									"style": "italic",
+									"entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+								}
+							]
+						}
 					]
 				},
 				{
-					"name": "Thunder Strike {@recharge}",
+					"name": "Ray replacemants:",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage, and the target must make {@dc 17} Constitution saving throw or become {@condition stunned} until the end of the mage's next turn."
-					]
-				},
-				{
-					"name": "Firebolt",
-					"entries": [
-						"{@atk rw} {@hit 9} to hit, 120 ft. range, one target. {@h}22 ({@damage 4d10}) fire damage."
-					]
-				},
-				{
-					"name": "Shield Bash (Bonus Action)",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+						"Draining: {@condition exhaustion}",
+						"enervating-> circle of death (10-foot-radius sphere; {@damage 4d6} necrotic damage to all creatures in the area)",
+						"Negative Energy Flood maybe"
 					]
 				}
 			],
-			"reaction": [
+			"legendaryHeader": [
+				"The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
 				{
-					"name": "Opportunity Spell",
+					"name": "Eye Ray",
 					"entries": [
-						"When a hostile creature's movement provokes an {@action opportunity attack} from the war caster, it can use its reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+						"The beholder uses one random eye ray."
 					]
 				}
+			],
+			"legendaryGroup": {
+				"name": "Beholder",
+				"source": "MM"
+			},
+			"variant": [
+				{
+					"type": "inset",
+					"name": "Variant Abilities",
+					"entries": [
+						"When a beholder's dream-imagination runs wild, the result can be an offspring that has an unusual or unique set of abilities. Rather than the standard powers of a beholder's central eye and eyestalks, the creature has one or more variant abilities—guaranteed to surprise any enemies who thought they knew what they were getting themselves into.",
+						"This section provides several alternative spell effects for a beholder's eye. Each of these effects is designed to be of the same power level as the one it replaces, enabling you to create a custom beholder without altering the monster's challenge rating. As another option, you can switch any of the damaging eye rays in the {@book Monster Manual|MM} to an effect with a different damage type, such as replacing the enervation ray with a combustion ray that deals fire damage instead of necrotic damage.",
+						"Unless otherwise indicated, an alternative ability has the same range as the eye ray it is replacing, and it affects only one creature per use (even if the ability is based on a spell that normally affects an area or multiple targets). The saving throw for an alternative ability uses the same DC and the same ability score as the spell the eye ray is based on.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Antimagic Cone:",
+									"entry": "{@spell mirage arcane}, {@spell power word stun} (affecting the weakest non-{@condition stunned} target in the cone each round)"
+								},
+								{
+									"type": "item",
+									"name": "Charm Ray:",
+									"entry": "{@spell banishment} (1 minute), {@spell confusion} (1 minute)"
+								},
+								{
+									"type": "item",
+									"name": "Death Ray:",
+									"entry": "{@spell circle of death} (10-foot-radius sphere; 4d6 necrotic damage to all creatures in the area), {@spell feeblemind}"
+								},
+								{
+									"type": "item",
+									"name": "Disintegration Ray:",
+									"entry": "{@spell chain lightning} (primary target takes 6d8 lightning damage; two secondary targets within 30 feet of the primary target take 3d8 lightning damage each), {@spell eyebite} (sickened effect; 1 minute)"
+								},
+								{
+									"type": "item",
+									"name": "Enervation Ray:",
+									"entry": "{@spell create undead} (usable regardless of the time of day), {@spell polymorph} (1 minute)"
+								},
+								{
+									"type": "item",
+									"name": "Fear Ray:",
+									"entry": "{@spell gaseous form} (self or willing creature only), {@spell moonbeam}"
+								},
+								{
+									"type": "item",
+									"name": "Paralyzing Ray:",
+									"entry": "{@spell modify memory}, {@spell silence} (1 minute)"
+								},
+								{
+									"type": "item",
+									"name": "Petrification Ray:",
+									"entry": "{@spell Otto's irresistible dance} (1 minute), {@spell wall of ice} (1 minute; one 10-foot-square panel)"
+								},
+								{
+									"type": "item",
+									"name": "Sleep Ray:",
+									"entry": "{@spell blindness/deafness}, {@spell misty step} (self or willing creature only)"
+								},
+								{
+									"type": "item",
+									"name": "Slowing Ray:",
+									"entry": "{@spell bestow curse} (1 minute), {@spell sleet storm} (one 10-foot-cube)"
+								},
+								{
+									"type": "item",
+									"name": "Telekinesis Ray:",
+									"entry": "{@spell geas} (1 hour), {@spell wall of force} (1 minute; one 10-foot-square panel)"
+								}
+							]
+						}
+					],
+					"source": "VGM",
+					"page": 12,
+					"_version": {
+						"name": "Beholder (Variant Abilities)",
+						"addAs": "trait"
+					}
+				}
+			],
+			"environment": [
+				"underdark"
 			],
 			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.",
+									"A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.",
+									{
+										"name": "Xenophobic Isolationists",
+										"type": "entries",
+										"entries": [
+											"Enemies abound, or so every beholder believes. Beholders are convinced that other creatures resent them for their brilliance and magical power, even as they dismiss those lesser creatures as crude and disgusting. Beholders always suspect others of plotting against them, even when no other creatures are around.",
+											"The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies."
+										]
+									},
+									{
+										"name": "Eye Tyrant",
+										"type": "entries",
+										"entries": [
+											"Some beholders manage to channel their xenophobic tendencies into a terrible despotism. Rather than live in isolation, the aptly named eye tyrants enslave those other creatures, founding and controlling vast empires. An eye tyrant sometimes carves out a domain within or under a major city, commanding networks of agents that operate on their master's behalf."
+										]
+									},
+									{
+										"name": "Alien Lairs",
+										"type": "entries",
+										"entries": [
+											"Because they refuse to share territory with others, most beholders withdraw to frigid hills, abandoned ruins, and deep caverns to scheme. A beholder's lair is carved out by its disintegration eye ray, emphasizing vertical passages connecting chambers stacked on top of each other. Such an environment allows a beholder to move freely, even as it prevents intruders from easily creeping about. When intruders do break in, the height of its open ceilings allows a beholder to float up and harry foes on the floor.",
+											"As alien as their creator, the rooms in a beholder's lair reflect the creature's arrogance. It festoons its chambers with trophies from the battles it has won, including {@condition petrified} adventurers standing frozen in their horrified final moments, pieces of other beholders, and magic items wrested from powerful foes. A beholder judges its own worth by its acquisitions, and it never willingly parts with its treasures."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Beholder's Lair",
+										"entries": [
+											"A beholder's central lair is typically a large, spacious cavern with high ceilings, where it can attack without fear of closing to melee range. A beholder encountered in its lair has a challenge rating of 14 (11,500 XP)."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"A 50-foot-square area of ground within 120 feet of the beholder becomes slimy; that area is {@quickref difficult terrain||3} until initiative count 20 on the next round.",
+											"Walls within 120 feet of the beholder sprout grasping appendages until initiative count 20 on the round after next. Each creature of the beholder's choice that starts its turn within 10 feet of such a wall must succeed on a {@dc 15} Dexterity saving throw or be {@condition grappled}. Escaping requires a successful {@dc 15} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check.",
+											"An eye opens on a solid surface within 60 feet of the beholder. One random eye ray of the beholder shoots from that eye at a target of the beholder's choice that it can see. The eye then closes and disappears."
+										]
+									},
+									"The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Creatures within 1 mile of the beholder's lair sometimes feel as if they're being watched when they aren't.",
+											"When the beholder sleeps, minor warps in reality occur within 1 mile of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person."
+										]
+									},
+									"If the beholder dies, these effects fade over the course of {@dice 1d10} days."
+								]
+							}
+						]
+					}
+				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/elitewarcaster.webp"
+							"url": "https://i.imgur.com/jTDALsi.png"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded2/token/elitewarcaster.png",
-			"actionTags": [
-				"Multiattack"
+			"tokenUrl": "https://i.imgur.com/jTDALsi.png",
+			"senseTags": [
+				"SD",
+				"U"
 			],
 			"languageTags": [
-				"C",
-				"CE",
-				"P"
+				"DS",
+				"U"
 			],
 			"damageTags": [
-				"B",
-				"F",
-				"L"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"C",
-				"F",
-				"I",
 				"L",
+				"N",
 				"O",
-				"T"
-			],
-			"spellcastingTags": [
-				"CW"
+				"Y"
 			],
 			"miscTags": [
-				"MW",
-				"RW"
+				"AOE",
+				"MW"
 			],
 			"conditionInflict": [
-				"prone",
-				"stunned"
-			]
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"restrained"
+			],
+			"conditionInflictLegendary": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "The Zmey",
