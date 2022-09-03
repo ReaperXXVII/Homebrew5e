@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.165.1",
+	"siteVersion": "1.167.5",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1660168180,
-		"dateLastModified": 1660168180
+		"dateAdded": 1662202090,
+		"dateLastModified": 1662202090
 	},
 	"monster": [
 		{
@@ -2222,6 +2222,138 @@
 				"RCH",
 				"RW",
 				"THW"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Dream Spawn",
+			"source": "MoR",
+			"reprintedAs": [
+				"Star Spawn Hulk|MPMM"
+			],
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 32",
+				"average": 120
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"con": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"lightning",
+						"poison"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"unconscious"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"name": "Psychic Mirror",
+					"entries": [
+						"When the spawn takes damage it also deals the same amount of damage distributed equally as psychic damage to all creatures within 300 feet with an intelligence score of 4 or higher. When an affected creature is healed the spawn also heals for the same amount. The damage distribution starting with the creature that has the highest current hit points.",
+						"Additionally when the spawn deals damage to an affected creature the spawn also takes the same amount of damage it dealt."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The spawn uses Imitate three times or uses it's Stolen Thought and Imitate once"
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Imitate",
+					"entries": [
+						"The spawn makes an attack using a random creature's attack as it's own, using the bonuses of the owner."
+					]
+				},
+				{
+					"name": "Stolen Thought",
+					"entries": [
+						"The spawn casts a spell using a random creature's spell that it has a spell slot for as it's own, using the bonuses of the owner."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Mind Leach",
+					"entries": [
+						"The spawn absorbs the thoughts of all nearby sentient creatures. All creatures within 300 feet with an intelligence score of 4 or higher lose one feature or trait they have. The spawn can use those features and traits once each, after that the original owner of that feature or trait regains it."
+					]
+				}
+			],
+			"tokenUrl": "https://i.pinimg.com/564x/3b/36/0b/3b360be6742861b97b9098881f52987c.jpg",
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
 			],
 			"hasFluff": true
 		},
@@ -5897,6 +6029,310 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Ophanim",
+			"group": [
+				"Beholders"
+			],
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 180,
+				"formula": "19d10 + 76"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 18,
+			"int": 18,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"int": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"perception": "+12",
+				"insight": "+12",
+				"arcana": "+9",
+				"religion": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"truesight 120 ft."
+			],
+			"passive": 22,
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": {
+				"cr": "13",
+				"lair": "14"
+			},
+			"trait": [
+				{
+					"name": "Antimagic Cone",
+					"entries": [
+						"The Ophanim's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the Ophanim decides which way the cone faces and whether the cone is active. The area works against the the Ophanim's other eyes."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mind Break",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) psychic damage, and the targeted creature must succeed on a {@dc 17} Intelligence saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Divine Eyes",
+					"entries": [
+						"The Ophanim uses three of the following magical eyes at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:"
+					]
+				},
+				{
+					"name": "1. Eye of Love",
+					"entries": [
+						"The targeted creature must succeed on a {@dc 17} Wisdom saving throw or be {@condition charmed} by the Ophanim for 1 hour, or until the Ophanim harms the creature."
+					]
+				},
+				{
+					"name": "2. Eye of Creation",
+					"entries": [
+						"The Ophanim chooses raw materials that it can see within range. It can fabricate a Huge or smaller object (contained within a 15-foot cube, or twenty seven connected 5-foot cubes), given a sufficient quantity of raw material. Creatures or magic items can't be created or transmuted by this effect. If a chosen material is carried or being worn by another creature, the creature can make a {@dc 17} Dexterity saving throw to avoid the effect."
+					]
+				},
+				{
+					"name": "3. Eye of Dreams",
+					"entries": [
+						"The Ophanim makes terrain in a 150-foot cube in range look, sound, and smell like some other sort of terrain. The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, as an action a creature can carefully examine the illusion rolling a {@dc 17} Intelligence (Investigation) check. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain."
+					]
+				},
+				{
+					"name": "4. Eye of Control",
+					"entries": [
+						"The targeted creature must succeed on a {@dc 17} Wisdom saving throw. On a failed save, target's speed is halved, it takes a −2 penalty to AC and Dexterity saving throws for 1 minute. In addition, the creature can't take reactions, and it can take either use an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "5. Eye of Vitality",
+					"entries": [
+						"The targeted creature must make a {@dc 17} Constitution saving throw, taking 18 ({@damage 4d8}) necrotic damage on a failed save, or half as much damage on a successful one and the Ophanim regains hit points equal to the damage dealt."
+					]
+				},
+				{
+					"name": "6. Eye of Teleportation",
+					"entries": [
+						"The Ophanim teleports itself an unoccupied space that it can see."
+					]
+				},
+				{
+					"name": "7. Eye of All-seeing",
+					"entries": [
+						"The targeted creature must make a {@dc 17} Charisma saving throw, on a fail the Ophanim becomes aware of every thoughts of the targeted creature for one hour. For the duration, the Ophanim can't be surprised by the targeted creature and gains advantage on attack rolls, ability checks, and saving throws against the target. Additionally, the targeted creature have disadvantage and can't gain advantage on attack rolls, ability checks, and saving throws against the Ophanim for the duration. A creature aware of the probing can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "8. Eye of Nightmares",
+					"entries": [
+						"The targeted creature must make a {@dc 17} Constitution saveing throw else lose their lowest level spellslot or take 8 ({@damage 2d8}) psychic damage and their hp maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. If the target failed it's save or was already wounded a minor malleable forms next to the target with 10 hitpoints or 20 if the target failed it's save, the malleable can make one attack immediately as a reaction.",
+						"Alternatively the Ophanim can target one corpse of a humanoid or a beast and form a minor malleable from it with 30 hitpoints."
+					]
+				},
+				{
+					"name": "9. Eye of  Disintegration",
+					"entries": [
+						"If the target is a creature, it must succeed on a {@dc 17} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it."
+					]
+				},
+				{
+					"name": "10. Eye of Power",
+					"entries": [
+						"A stroke of lightning forms a 5 feet wide line between the Ophanim and a point it can see within range. Each creature in the line must succeed on a {@dc 17} Dexterity saving throw or take 35 ({@damage 10d6}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The Ophanim can take 3 legendary actions, using the Divine Eyes option below. It can take only one legendary action at a time and only at the end of another creature's turn. The Ophanim regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Divine Eyes",
+					"entries": [
+						"The Ophanim uses one random eye."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Beholder",
+				"source": "MM"
+			},
+			"variant": [
+				{
+					"name": "Variant Abilities",
+					"entries": [
+						"When a beholder's dream-imagination runs wild, the result can be an offspring that has an unusual or unique set of abilities. Rather than the standard powers of a beholder's central eye and eyestalks, the creature has one or more variant abilities—guaranteed to surprise any enemies who thought they knew what they were getting themselves into.",
+						"This section provides several alternative spell effects for a beholder's eye. Each of these effects is designed to be of the same power level as the one it replaces, enabling you to create a custom beholder without altering the monster's challenge rating. As another option, you can switch any of the damaging eye rays in the {@book Monster Manual|MM} to an effect with a different damage type, such as replacing the enervation ray with a combustion ray that deals fire damage instead of necrotic damage.",
+						"Unless otherwise indicated, an alternative ability has the same range as the eye ray it is replacing, and it affects only one creature per use (even if the ability is based on a spell that normally affects an area or multiple targets). The saving throw for an alternative ability uses the same DC and the same ability score as the spell the eye ray is based on."
+					],
+					"type": "variant"
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.",
+									"A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.",
+									{
+										"name": "Xenophobic Isolationists",
+										"type": "entries",
+										"entries": [
+											"Enemies abound, or so every beholder believes. Beholders are convinced that other creatures resent them for their brilliance and magical power, even as they dismiss those lesser creatures as crude and disgusting. Beholders always suspect others of plotting against them, even when no other creatures are around.",
+											"The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies."
+										]
+									},
+									{
+										"name": "Eye Tyrant",
+										"type": "entries",
+										"entries": [
+											"Some beholders manage to channel their xenophobic tendencies into a terrible despotism. Rather than live in isolation, the aptly named eye tyrants enslave those other creatures, founding and controlling vast empires. An eye tyrant sometimes carves out a domain within or under a major city, commanding networks of agents that operate on their master's behalf."
+										]
+									},
+									{
+										"name": "Alien Lairs",
+										"type": "entries",
+										"entries": [
+											"Because they refuse to share territory with others, most beholders withdraw to frigid hills, abandoned ruins, and deep caverns to scheme. A beholder's lair is carved out by its disintegration eye ray, emphasizing vertical passages connecting chambers stacked on top of each other. Such an environment allows a beholder to move freely, even as it prevents intruders from easily creeping about. When intruders do break in, the height of its open ceilings allows a beholder to float up and harry foes on the floor.",
+											"As alien as their creator, the rooms in a beholder's lair reflect the creature's arrogance. It festoons its chambers with trophies from the battles it has won, including {@condition petrified} adventurers standing frozen in their horrified final moments, pieces of other beholders, and magic items wrested from powerful foes. A beholder judges its own worth by its acquisitions, and it never willingly parts with its treasures."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Beholder's Lair",
+										"entries": [
+											"A beholder's central lair is typically a large, spacious cavern with high ceilings, where it can attack without fear of closing to melee range. A beholder encountered in its lair has a challenge rating of 14 (11,500 XP)."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"A 50-foot-square area of ground within 120 feet of the beholder becomes slimy; that area is {@quickref difficult terrain||3} until initiative count 20 on the next round.",
+											"Walls within 120 feet of the beholder sprout grasping appendages until initiative count 20 on the round after next. Each creature of the beholder's choice that starts its turn within 10 feet of such a wall must succeed on a {@dc 15} Dexterity saving throw or be {@condition grappled}. Escaping requires a successful {@dc 15} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check.",
+											"An eye opens on a solid surface within 60 feet of the beholder. One random eye ray of the beholder shoots from that eye at a target of the beholder's choice that it can see. The eye then closes and disappears."
+										]
+									},
+									"The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Regional Effects",
+								"entries": [
+									"A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:",
+									{
+										"type": "list",
+										"items": [
+											"Creatures within 1 mile of the beholder's lair sometimes feel as if they're being watched when they aren't.",
+											"When the beholder sleeps, minor warps in reality occur within 1 mile of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person."
+										]
+									},
+									"If the beholder dies, these effects fade over the course of {@dice 1d10} days."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/803iZ4l.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/96JysFX.png",
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"paralyzed"
+			],
+			"conditionInflictLegendary": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Pope Lich",
 			"source": "MoR",
 			"size": [
@@ -8755,11 +9191,6 @@
 					"headerEntries": [
 						"The black rider is a 11th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, +9 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
-					"daily": {
-						"1": [
-							"{@spell scatter|XGE}"
-						]
-					},
 					"rest": {
 						"3": [
 							"{@spell bestow curse}",
@@ -8767,6 +9198,11 @@
 							"{@spell dimension door}",
 							"{@spell hex}",
 							"{@spell summon greater demon|XGE} (insted of a demon it can summon any other fiend)"
+						]
+					},
+					"daily": {
+						"1": [
+							"{@spell scatter|XGE}"
 						]
 					},
 					"ability": "cha",
@@ -8860,395 +9296,6 @@
 				"frightened",
 				"prone"
 			]
-		},
-		{
-			"name": "The Watcher",
-			"group": [
-				"Beholders"
-			],
-			"source": "MoR",
-			"size": [
-				"H"
-			],
-			"type": "aberration",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"average": 180,
-				"formula": "19d10 + 76"
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 20,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 12,
-			"dex": 14,
-			"con": 18,
-			"int": 17,
-			"wis": 15,
-			"cha": 17,
-			"save": {
-				"int": "+8",
-				"wis": "+7",
-				"cha": "+8"
-			},
-			"skill": {
-				"perception": "+12"
-			},
-			"senses": [
-				"darkvision 120 ft.",
-				"truesight 120 ft."
-			],
-			"passive": 22,
-			"conditionImmune": [
-				"prone"
-			],
-			"languages": [
-				"Deep Speech",
-				"Undercommon"
-			],
-			"cr": {
-				"cr": "13",
-				"lair": "14"
-			},
-			"trait": [
-				{
-					"name": "Antimagic Cone",
-					"entries": [
-						"The beholder's central eye creates an area of antimagic, as in the {@spell antimagic field} spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether the cone is active. The area works against the beholder's own eye rays."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Psychic touch",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) psychic damage, and the targeted creature must succeed on a {@dc 16} Intelligence saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				},
-				{
-					"name": "Eye Rays",
-					"entries": [
-						"The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it. it can forgo an eye ray to make one melee attack:",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"type": "item",
-									"name": "1. Confusion Ray",
-									"style": "italic",
-									"entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@spell confusion} for 1 minute. At the end of each of its turns, an affected target can make a Wisdom saving throw. If it succeeds, this effect ends for that target."
-								},
-								{
-									"type": "item",
-									"name": "2. Paralyzing Ray",
-									"style": "italic",
-									"entry": "The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-								},
-								{
-									"type": "item",
-									"name": "3. Fear Ray",
-									"style": "italic",
-									"entry": "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-								},
-								{
-									"type": "item",
-									"name": "4. Slowing Ray",
-									"style": "italic",
-									"entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-								},
-								{
-									"type": "item",
-									"name": "5. Enervation Ray",
-									"style": "italic",
-									"entry": "The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one."
-								},
-								{
-									"type": "item",
-									"name": "6. Telekinetic Ray",
-									"style": "italic",
-									"entries": [
-										"If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or the beholder moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of the beholder's next turn or until the beholder is {@condition incapacitated}.",
-										"If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. The beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container."
-									]
-								},
-								{
-									"type": "item",
-									"name": "7. Teleportation ray",
-									"style": "italic",
-									"entry": "The watcher targets itself, and teleport up to 120 feet to an unoccupied space that it can see."
-								},
-								{
-									"type": "item",
-									"name": "8. Petrification Ray",
-									"style": "italic",
-									"entry": "The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the  {@spell greater restoration} spell or other magic."
-								},
-								{
-									"type": "item",
-									"name": "9. Disintegration Ray",
-									"style": "italic",
-									"entries": [
-										"If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust.",
-										"If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it."
-									]
-								},
-								{
-									"type": "item",
-									"name": "10. Death Ray",
-									"style": "italic",
-									"entry": "The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
-								}
-							]
-						}
-					]
-				},
-				{
-					"name": "Ray replacemants:",
-					"entries": [
-						"Draining: {@condition exhaustion}",
-						"enervating-> circle of death (10-foot-radius sphere; {@damage 4d6} necrotic damage to all creatures in the area)",
-						"Negative Energy Flood maybe"
-					]
-				}
-			],
-			"legendaryHeader": [
-				"The beholder can take 3 legendary actions, using the Eye Ray option below. It can take only one legendary action at a time and only at the end of another creature's turn. The beholder regains spent legendary actions at the start of its turn."
-			],
-			"legendary": [
-				{
-					"name": "Eye Ray",
-					"entries": [
-						"The beholder uses one random eye ray."
-					]
-				}
-			],
-			"legendaryGroup": {
-				"name": "Beholder",
-				"source": "MM"
-			},
-			"variant": [
-				{
-					"type": "inset",
-					"name": "Variant Abilities",
-					"entries": [
-						"When a beholder's dream-imagination runs wild, the result can be an offspring that has an unusual or unique set of abilities. Rather than the standard powers of a beholder's central eye and eyestalks, the creature has one or more variant abilities—guaranteed to surprise any enemies who thought they knew what they were getting themselves into.",
-						"This section provides several alternative spell effects for a beholder's eye. Each of these effects is designed to be of the same power level as the one it replaces, enabling you to create a custom beholder without altering the monster's challenge rating. As another option, you can switch any of the damaging eye rays in the {@book Monster Manual|MM} to an effect with a different damage type, such as replacing the enervation ray with a combustion ray that deals fire damage instead of necrotic damage.",
-						"Unless otherwise indicated, an alternative ability has the same range as the eye ray it is replacing, and it affects only one creature per use (even if the ability is based on a spell that normally affects an area or multiple targets). The saving throw for an alternative ability uses the same DC and the same ability score as the spell the eye ray is based on.",
-						{
-							"type": "list",
-							"style": "list-hang-notitle",
-							"items": [
-								{
-									"type": "item",
-									"name": "Antimagic Cone:",
-									"entry": "{@spell mirage arcane}, {@spell power word stun} (affecting the weakest non-{@condition stunned} target in the cone each round)"
-								},
-								{
-									"type": "item",
-									"name": "Charm Ray:",
-									"entry": "{@spell banishment} (1 minute), {@spell confusion} (1 minute)"
-								},
-								{
-									"type": "item",
-									"name": "Death Ray:",
-									"entry": "{@spell circle of death} (10-foot-radius sphere; 4d6 necrotic damage to all creatures in the area), {@spell feeblemind}"
-								},
-								{
-									"type": "item",
-									"name": "Disintegration Ray:",
-									"entry": "{@spell chain lightning} (primary target takes 6d8 lightning damage; two secondary targets within 30 feet of the primary target take 3d8 lightning damage each), {@spell eyebite} (sickened effect; 1 minute)"
-								},
-								{
-									"type": "item",
-									"name": "Enervation Ray:",
-									"entry": "{@spell create undead} (usable regardless of the time of day), {@spell polymorph} (1 minute)"
-								},
-								{
-									"type": "item",
-									"name": "Fear Ray:",
-									"entry": "{@spell gaseous form} (self or willing creature only), {@spell moonbeam}"
-								},
-								{
-									"type": "item",
-									"name": "Paralyzing Ray:",
-									"entry": "{@spell modify memory}, {@spell silence} (1 minute)"
-								},
-								{
-									"type": "item",
-									"name": "Petrification Ray:",
-									"entry": "{@spell Otto's irresistible dance} (1 minute), {@spell wall of ice} (1 minute; one 10-foot-square panel)"
-								},
-								{
-									"type": "item",
-									"name": "Sleep Ray:",
-									"entry": "{@spell blindness/deafness}, {@spell misty step} (self or willing creature only)"
-								},
-								{
-									"type": "item",
-									"name": "Slowing Ray:",
-									"entry": "{@spell bestow curse} (1 minute), {@spell sleet storm} (one 10-foot-cube)"
-								},
-								{
-									"type": "item",
-									"name": "Telekinesis Ray:",
-									"entry": "{@spell geas} (1 hour), {@spell wall of force} (1 minute; one 10-foot-square panel)"
-								}
-							]
-						}
-					],
-					"source": "VGM",
-					"page": 12,
-					"_version": {
-						"name": "Beholder (Variant Abilities)",
-						"addAs": "trait"
-					}
-				}
-			],
-			"environment": [
-				"underdark"
-			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"One glance at a beholder is enough to assess its foul and otherworldly nature. Aggressive, hateful, and greedy, these aberrations dismiss all other creatures as lesser beings, toying with them or destroying them as they choose.",
-									"A beholder's spheroid body levitates at all times, and its great bulging eye sits above a wide, toothy maw, while the smaller eyestalks that crown its body twist and turn to keep its foes in sight. When a beholder sleeps, it closes its central eye but leaves its smaller eyes open and alert.",
-									{
-										"name": "Xenophobic Isolationists",
-										"type": "entries",
-										"entries": [
-											"Enemies abound, or so every beholder believes. Beholders are convinced that other creatures resent them for their brilliance and magical power, even as they dismiss those lesser creatures as crude and disgusting. Beholders always suspect others of plotting against them, even when no other creatures are around.",
-											"The disdain a beholder has for other creatures extends to other beholders. Each beholder believes its form to be an ideal, and that any deviation from that form is a flaw in the racial purity of its kind. Beholders vary greatly in their physical forms, making conflict between them inevitable. Some beholders are protected by overlapping chitinous plates. Some have smooth hides. Some have eyestalks that writhe like tentacles, while others' stalks bear crustacean-like joints. Even slight differences of coloration in hide can turn two beholders into lifelong enemies."
-										]
-									},
-									{
-										"name": "Eye Tyrant",
-										"type": "entries",
-										"entries": [
-											"Some beholders manage to channel their xenophobic tendencies into a terrible despotism. Rather than live in isolation, the aptly named eye tyrants enslave those other creatures, founding and controlling vast empires. An eye tyrant sometimes carves out a domain within or under a major city, commanding networks of agents that operate on their master's behalf."
-										]
-									},
-									{
-										"name": "Alien Lairs",
-										"type": "entries",
-										"entries": [
-											"Because they refuse to share territory with others, most beholders withdraw to frigid hills, abandoned ruins, and deep caverns to scheme. A beholder's lair is carved out by its disintegration eye ray, emphasizing vertical passages connecting chambers stacked on top of each other. Such an environment allows a beholder to move freely, even as it prevents intruders from easily creeping about. When intruders do break in, the height of its open ceilings allows a beholder to float up and harry foes on the floor.",
-											"As alien as their creator, the rooms in a beholder's lair reflect the creature's arrogance. It festoons its chambers with trophies from the battles it has won, including {@condition petrified} adventurers standing frozen in their horrified final moments, pieces of other beholders, and magic items wrested from powerful foes. A beholder judges its own worth by its acquisitions, and it never willingly parts with its treasures."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Beholder's Lair",
-										"entries": [
-											"A beholder's central lair is typically a large, spacious cavern with high ceilings, where it can attack without fear of closing to melee range. A beholder encountered in its lair has a challenge rating of 14 (11,500 XP)."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"When fighting inside its lair, a beholder can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the beholder can take one lair action to cause one of the following effects:",
-									{
-										"type": "list",
-										"items": [
-											"A 50-foot-square area of ground within 120 feet of the beholder becomes slimy; that area is {@quickref difficult terrain||3} until initiative count 20 on the next round.",
-											"Walls within 120 feet of the beholder sprout grasping appendages until initiative count 20 on the round after next. Each creature of the beholder's choice that starts its turn within 10 feet of such a wall must succeed on a {@dc 15} Dexterity saving throw or be {@condition grappled}. Escaping requires a successful {@dc 15} Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check.",
-											"An eye opens on a solid surface within 60 feet of the beholder. One random eye ray of the beholder shoots from that eye at a target of the beholder's choice that it can see. The eye then closes and disappears."
-										]
-									},
-									"The beholder can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"A region containing a beholder's lair is warped by the creature's unnatural presence, which creates one or more of the following effects:",
-									{
-										"type": "list",
-										"items": [
-											"Creatures within 1 mile of the beholder's lair sometimes feel as if they're being watched when they aren't.",
-											"When the beholder sleeps, minor warps in reality occur within 1 mile of its lair and then vanish 24 hours later. Marks on cave walls might change subtly, an eerie trinket might appear where none existed before, harmless slime might coat a statue, and so on. These effects apply only to natural surfaces and to nonmagical objects that aren't on anyone's person."
-										]
-									},
-									"If the beholder dies, these effects fade over the course of {@dice 1d10} days."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/jTDALsi.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://i.imgur.com/jTDALsi.png",
-			"senseTags": [
-				"SD",
-				"U"
-			],
-			"languageTags": [
-				"DS",
-				"U"
-			],
-			"damageTags": [
-				"L",
-				"N",
-				"O",
-				"Y"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"paralyzed",
-				"petrified",
-				"restrained"
-			],
-			"conditionInflictLegendary": [
-				"grappled"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
 		},
 		{
 			"name": "The Zmey",
@@ -10678,9 +10725,6 @@
 					"headerEntries": [
 						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells but must share the spell slots among themselves:"
 					],
-					"footerEntries": [
-						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 14 + the hag's Intelligence modifier, and the spell attack bonus is 6 + the hag's Intelligence modifier."
-					],
 					"spells": {
 						"1": {
 							"spells": [
@@ -10726,6 +10770,9 @@
 							"slots": 1
 						}
 					},
+					"footerEntries": [
+						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 14 + the hag's Intelligence modifier, and the spell attack bonus is 6 + the hag's Intelligence modifier."
+					],
 					"type": "spellcasting"
 				}
 			],
