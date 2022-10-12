@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.167.5",
+	"siteVersion": "1.168.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1662202090,
-		"dateLastModified": 1662202090
+		"dateAdded": 1665578896,
+		"dateLastModified": 1665578896
 	},
 	"monster": [
 		{
@@ -2358,6 +2358,219 @@
 			"hasFluff": true
 		},
 		{
+			"name": "Elder Tempest",
+			"alias": [
+				"Elder Tempest"
+			],
+			"source": "MoR",
+			"size": [
+				"G"
+			],
+			"type": "elemental",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "16d20 + 96",
+				"average": 264
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 120,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 23,
+			"dex": 28,
+			"con": 23,
+			"int": 2,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"lightning",
+				"poison",
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "23",
+			"trait": [
+				{
+					"name": "Air Form",
+					"entries": [
+						"The tempest can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Flyby",
+					"entries": [
+						"The tempest doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+					]
+				},
+				{
+					"name": "Living Storm",
+					"entries": [
+						"The tempest is always at the center of a storm {@dice 1d6 + 4} miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
+						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The tempest deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Static Charge",
+					"entries": [
+						"A creature that touches the tempest or hits it with a melee attack gains a Static Charge. Additionally if a creature passes through the space of the tempest both the tempest and the creature gains a Static Charge.",
+						{
+							"type": "list",
+							"items": [
+								"For each Static Charge a creature has it's movement speed is increased by 10 feet.",
+								"If a creature with Static Charges touches the ground or an object that is in contact with the ground, it looses all of charges and suffers {@damage 1d10} lightning damage for every charge lost.",
+								"If a creature with Static Charges hits a target with a melee attack all charges on the creature transfers to the target, the damage of this attack deals an additional {@damage 1d10} lightning damage for every charge transferred.",
+								"If a creature with Static Charges roll's a saving throw, it can chose to expand any number of charges it has gaining a +1 bonus to it's roll per charge expanded, the creature takes {@damage 1d10} lightning damage for every charge expand.",
+								"A creature can use a bonus action to touch another willing creature, transferring all of it's Static Charges without dealing damage in the process."
+							]
+						}
+					]
+				},
+				{
+					"name": "Overcharge",
+					"entries": [
+						"While the tempest has at least a single Static Charge and is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt. However when it has no Static Charges it is vulnerable to lightning damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Thunder and Lightning",
+					"entries": [
+						"The tempest makes two attacks."
+					]
+				},
+				{
+					"name": "Thunderous Slam",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 20 ft., one target. {@h}20 ({@damage 4d6 + 6}) thunder damage and the target must succeed on a Strength saving throw {@dc 21} or knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Lightning Strike (Costs 1 Static Charges)",
+					"entries": [
+						"{@atk rw} {@hit 16} to hit, range 150/600 ft., one target. {@h}16 ({@damage 3d10}) lightning damage and the target gains one Static Charge."
+					]
+				},
+				{
+					"name": "Lightning Storm (Costs 5 Static Charges)",
+					"entries": [
+						"All other creatures within 120 feet of the tempest must each make a {@dc 20} Dexterity saving throw, taking 27 ({@damage 6d8}) lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The tempest moves up to its speed."
+					]
+				},
+				{
+					"name": "Lightning Strike (Costs 1 Static Charges)",
+					"entries": [
+						"The tempest can make an attack with Lightning Strike or strike a point on the ground anywhere under its storm. Each creature within 5 feet of that point must make a {@dc 20} Dexterity saving throw, taking 22 ({@damage 4d10}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Screaming Gale (Costs 3 Actions)",
+					"entries": [
+						"The tempest releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide. Objects in that area take 22 ({@damage 4d10}) thunder damage. Each creature there must succeed on a {@dc 21} Dexterity saving throw or take 22 ({@damage 4d10}) thunder damage and be flung up to 60 feet in a direction away from the line. If a thrown target collides with an immovable object, such as a wall or floor, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown before impact. If the target would collide with another creature instead, that other creature must succeed on a {@dc 21} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"coastal",
+				"grassland",
+				"hill",
+				"mountain"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://www.aidedd.org/dnd/images/elder-tempest.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/CMR/Elder Tempest.png?v=1.110.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/elder-tempest.mp3?v=1.110.1"
+			},
+			"traitTags": [
+				"Flyby",
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone",
+				"stunned"
+			]
+		},
+		{
 			"name": "Elite Red Battle Caster",
 			"source": "MoR",
 			"size": [
@@ -3461,6 +3674,222 @@
 				"P",
 				"S",
 				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Horned Serpent Form",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 20,
+			"int": 4,
+			"wis": 1,
+			"cha": 1,
+			"save": {
+				"dex": "+8",
+				"wis": "+0",
+				"con": "+10"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+8",
+				"athletics": "+11"
+			},
+			"senses": [
+				"darkvision 300 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"fire",
+				"necrotic",
+				"radiant"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The horned serpent can breathe air and water."
+					]
+				},
+				{
+					"name": "Corpse Cough",
+					"entries": [
+						"Those who fail a saving throw against the horned serpent's Gem Gaze or bite attack become infected with the corpse cough disease. The infected creature can't benefit from short or long rests due to a constant, wet cough. The infected creature must succeed on a {@dc 17} Constitution saving throw each day or take 18 ({@damage 4d8}) necrotic damage. The target's hp maximum is reduced by an amount equal to the necrotic damage taken. The target dies if this effect reduces its hp maximum to 0. The reduction lasts until the target is cured of the disease with a {@spell greater restoration} spell or similar magic. If the infected creature comes into physical contact with a blood relative before the disease is cured, the relative must succeed on a {@dc 17} Constitution saving throw or also become infected with the disease. The blood relative is afflicted with a constant, wet cough within hours of infection, but the disease's full effects don't manifest until {@dice 1d4} days later. Corpse cough is so named due to the smell of the cough as the infected creature's lungs become necrotic."
+					]
+				},
+				{
+					"name": "Poisonous Aura",
+					"entries": [
+						"At the start of each of the horned serpent's turns, each creature within 20 feet of it must make a {@dc 17} Constitution saving throw, taking 18 ({@damage 4d8}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Shielded Mind",
+					"entries": [
+						"The horned serpent is immune to scrying and to any effect that would sense its emotions, read its thoughts, or detect its location."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The horned serpent makes one gore attack and one bite attack."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}20 ({@damage 4d6 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage, and the target must succeed on a {@dc 17} Constitution saving throw or become infected with the corpse cough disease (see the Corpse Cough trait)."
+					]
+				},
+				{
+					"name": "Gem Gaze {@recharge 5}",
+					"entries": [
+						"The horned serpent's gem flashes, bathing a 30-foot cone in iridescent light. Each creature in the area must make a {@dc 17} Constitution saving throw. On a failed save, a creature takes 35 ({@damage 10d6}) radiant damage and is infected with the corpse cough disease (see the Corpse Cough trait). On a success, a creature takes half the damage and isn't infected with the disease. Gem Gaze has no effect on constructs and undead."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, plus 10 ({@damage 4d4}) piercing damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the creature is {@condition restrained}, and the serpent can't constrict another target."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"{@i This huge serpent has spines on it's back, forming a crown like frill on it's head. It's gem-like eyes gives off a faint glow as it gazes at it's prey.}",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Plague Bearers",
+										"entries": [
+											"Known to be a bringer of magical plagues, horned serpents are also sought after for their horns and for their strange gem-like eyes, both believed to have powerful curative properties."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Wilderness Wanderer",
+										"entries": [
+											"Horned serpents travel between lakes, ponds, and deep rivers, never staying in one area for more than a few seasons. Though they live primarily in the water, they venture onto the land to hunt, where the sweetness of their poisonous scent draws game to them."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Grisly Signs",
+										"entries": [
+											"The presence of a horned serpent is most often detected by an area of dead creatures, poisoned but otherwise untouched."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/35de4dae-c241-4e80-8361-be66bcee9ad2/d6smiu1-cd5ab23f-a60e-4ebb-a534-4139e409ef1f.jpg/v1/fill/w_900,h_653,q_75,strp/wurm_by_athayar_d6smiu1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUzIiwicGF0aCI6IlwvZlwvMzVkZTRkYWUtYzI0MS00ZTgwLTgzNjEtYmU2NmJjZWU5YWQyXC9kNnNtaXUxLWNkNWFiMjNmLWE2MGUtNGViYi1hNTM0LTQxMzllNDA5ZWYxZi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.ByHSg7q4XWsKPTkJvkaUomDsyt7kCrI3S1601_2C98A"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/u2fBKI0.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N",
+				"P",
+				"R"
 			],
 			"miscTags": [
 				"AOE",
@@ -8757,225 +9186,6 @@
 			]
 		},
 		{
-			"name": "Storm Serpent",
-			"alias": [
-				"Elder Tempest"
-			],
-			"source": "MoR",
-			"size": [
-				"G"
-			],
-			"type": {
-				"type": "elemental",
-				"tags": [
-					"primordial"
-				]
-			},
-			"alignment": [
-				"C",
-				"N"
-			],
-			"ac": [
-				19
-			],
-			"hp": {
-				"formula": "20d20 + 120",
-				"average": 330
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 120,
-					"condition": "(hover)"
-				},
-				"canHover": true
-			},
-			"str": 23,
-			"dex": 28,
-			"con": 23,
-			"int": 2,
-			"wis": 21,
-			"cha": 18,
-			"save": {
-				"wis": "+12",
-				"cha": "+11"
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"passive": 15,
-			"resist": [
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"immune": [
-				"lightning",
-				"poison",
-				"psychic",
-				"thunder"
-			],
-			"conditionImmune": [
-				"exhaustion",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained",
-				"stunned"
-			],
-			"cr": "24",
-			"trait": [
-				{
-					"name": "Air Form",
-					"entries": [
-						"The tempest can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
-					]
-				},
-				{
-					"name": "Flyby",
-					"entries": [
-						"The tempest doesn't provoke opportunity attacks when it flies out of an enemy's reach."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the tempest fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Living Storm",
-					"entries": [
-						"The tempest is always at the center of a storm {@dice 1d6 + 4} miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
-						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
-					]
-				},
-				{
-					"name": "Siege Monster",
-					"entries": [
-						"The tempest deals double damage to objects and structures."
-					]
-				},
-				{
-					"name": "Static Charge",
-					"entries": [
-						"Any creature that passes through the space of the tempest gains one Static Charge. ",
-						{
-							"type": "list",
-							"items": [
-								"For each stack of Static Charge on a creature all it's saving throws suffer a minus 1 penalty.",
-								"If a creature hits a target with an attack all of the stacks on the creature transfer to the target, and it suffers an additional {@damage 1d6} lightning damage for every stack transferred.",
-								"If the creature touches the ground it looses all of the stacks it had and suffers {@damage 1d6} lightning damage for every stack lost."
-							]
-						}
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Thunder and Lightning",
-					"entries": [
-						"The tempest makes two attacks first with thunderous slam than with lightning strike."
-					]
-				},
-				{
-					"name": "Thunderous Slam",
-					"entries": [
-						"{@atk mw} {@hit 16} to hit, reach 20 ft., one target. {@h}24 ({@damage 4d6 + 9}) thunder damage and the target must succeed on a Strength saving throw {@dc 19} or knocked {@condition prone}."
-					]
-				},
-				{
-					"name": "Lightning Strike",
-					"entries": [
-						"{@atk rw} {@hit 16} to hit, range 150/600 ft., one target. {@h}24 ({@damage 4d6 + 9}) lightning damage and looses its reaction for the turn."
-					]
-				},
-				{
-					"name": "Lightning Storm {@recharge}",
-					"entries": [
-						"All other creatures within 120 feet of the tempest must each make a {@dc 19} Dexterity saving throw, taking 27 ({@damage 6d8}) lightning damage on a failed save, or half as much damage on a successful one. If a target's saving throw fails by 5 or more, the creature is also {@condition stunned} until the end of its next turn."
-					]
-				}
-			],
-			"legendary": [
-				{
-					"name": "Move",
-					"entries": [
-						"The tempest moves up to its speed."
-					]
-				},
-				{
-					"name": "Lightning Strike (Costs 2 Actions)",
-					"entries": [
-						"The tempest can cause a bolt of lightning to strike a point on the ground anywhere under its storm. Each creature within 5 feet of that point must make a {@dc 19} Dexterity saving throw, taking 16 ({@damage 3d10}) lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Screaming Gale (Costs 3 Actions)",
-					"entries": [
-						"The tempest releases a blast of thunder and wind in a line that is 1 mile long and 20 feet wide. Objects in that area take 22 ({@damage 4d10}) thunder damage. Each creature there must succeed on a {@dc 19} Dexterity saving throw or take 22 ({@damage 4d10}) thunder damage and be flung up to 60 feet in a direction away from the line. If a thrown target collides with an immovable object, such as a wall or floor, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown before impact. If the target would collide with another creature instead, that other creature must succeed on a {@dc 19} Dexterity saving throw or take the same damage and be knocked {@condition prone}."
-					]
-				}
-			],
-			"environment": [
-				"arctic",
-				"coastal",
-				"grassland",
-				"hill",
-				"mountain"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://www.aidedd.org/dnd/images/elder-tempest.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/CMR/Elder Tempest.png?v=1.110.1",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/elder-tempest.mp3?v=1.110.1"
-			},
-			"traitTags": [
-				"Flyby",
-				"Legendary Resistances",
-				"Siege Monster"
-			],
-			"senseTags": [
-				"D"
-			],
-			"damageTags": [
-				"B",
-				"L",
-				"T"
-			],
-			"damageTagsSpell": [
-				"B",
-				"O"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH",
-				"RW"
-			],
-			"conditionInflict": [
-				"prone",
-				"stunned"
-			]
-		},
-		{
 			"name": "Sultans Steed",
 			"source": "MoR",
 			"size": [
@@ -9310,6 +9520,277 @@
 			],
 			"ac": [
 				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60,
+				"swim": 40,
+				"canHover": false
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 20,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+6",
+				"survival": "+8",
+				"athletics": "+11"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Multiheaded",
+					"entries": [
+						"The zmey normally has three heads.",
+						"While it has more than one head, the zmey can only be {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed} or {@condition stunned} if all of it's remaining heads are affected. If a single head is affected by such condition only that head is affected. If one head of the zmey takes 60 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies. The zmey has one Legendary Actions and Reactions per head per turn."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zmey regains 10 hit points when it uses a legendary action. If one of it's head's takes acid or necrotic damage, this trait doesn't functions for that head the next time it would regenerate."
+					]
+				},
+				{
+					"name": "Spawn Headling",
+					"entries": [
+						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing acid or necrotic damage to it prevents this transformation."
+					]
+				},
+				{
+					"name": "Firepower",
+					"entries": [
+						"The zmey has 9 charges of Firepower it can use to power it's Fire Breath and Spellburn. At the start of it's turn the zmey regains one Firepower for each of it's heads"
+					]
+				},
+				{
+					"name": "Hemotoxin venom",
+					"entries": [
+						"For each points of Hemotoxin afflicting a creature:",
+						"-Subtracts one from all it's Dexterity and Strength based attack rolls, saving throws and skill checks.",
+						"-Suffers one points of poison damage each time it casts a spell attacks, moves 10 feet or when it takes damage.",
+						"A creature affected by Hemotoxin can make a {@dc 13} Constitution saving throw at the end of its turn, on a success the creature loses 1 points of Hemotoxin, 2 if it succeeds by 5 or more and 4 if it succeeds by 10 or more. The Hemotoxin is considered a type poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 points per level of the spell used."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zmey makes two claws attack and one tail attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage. The Zmey can choose not to deal damage, but to try to grapple the creature instead."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 19} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				},
+				{
+					"name": "Fire Breath (cost 1-3 firepower)",
+					"entries": [
+						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads that prepared one. Creatures in a cone take 17 ({@damage 5d6}) fire damage, or half damage with a successful {@dc 18} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spellburn",
+					"entries": [
+						"When the zmey sees a spell being cast within 60 of it or if the spell targets the zmey, it can use it's reaction to nullify the spell's effect by spending Firepower charges equal to the spell's level."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Bite",
+					"entries": [
+						"The zmey makes a bite attack."
+					]
+				},
+				{
+					"name": "Prepare",
+					"entries": [
+						"The head prepares its Fire Breath."
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"The head uses it's and all other prepared Fire Breaths."
+					]
+				},
+				{
+					"name": "Trample",
+					"entries": [
+						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "The Zmey (venom)",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
 					"ac": 18,
 					"from": [
 						"natural armor"
@@ -9575,6 +10056,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"HPR",
 				"MW",
 				"RCH"
 			],
@@ -11502,6 +11984,197 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Zmey Headling",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 24",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 17,
+			"int": 14,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"wis": "+7",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The zmey headling can breathe air and water."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zmey headling reaver regains 10 hit points at the start of its turn. This trait doesn't function if the zmey headling took acid or necrotic damage since the end of its previous turn. It dies if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Firepower",
+					"entries": [
+						"At the start of it's turn the zmey headling regains one Firepower."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zmey headling makes one constrict and one bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage, and the zmey headling injects {@dice 1d4} points of Hemotoxin into the creatures body."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Fire Breath (cost 1 firepower)",
+					"entries": [
+						"The zmey headling exhales fire in a 30-foot cone. Each creature in that area takes 17 ({@damage 5d6}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"marshes"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a stunted body and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey%20Headling.png",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
 		}
 	]
 }
