@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1665578896,
-		"dateLastModified": 1665578896
+		"dateAdded": 1665580485,
+		"dateLastModified": 1665580485
 	},
 	"monster": [
 		{
@@ -2442,7 +2442,7 @@
 					"name": "Living Storm",
 					"entries": [
 						"The tempest is always at the center of a storm {@dice 1d6 + 4} miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom ({@skill Perception}) checks that rely on hearing.",
-						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
+						"In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguishes open flames, disperses fog, and makes flying by nonmagical means nearly impossible. A flying creature without the ability to hover must land at the end of its turn or must succeed on a {@dc 20} Strength saving throw, on a fail the creature falls."
 					]
 				},
 				{
@@ -2458,10 +2458,10 @@
 						{
 							"type": "list",
 							"items": [
-								"For each Static Charge a creature has it's movement speed is increased by 10 feet.",
-								"If a creature with Static Charges touches the ground or an object that is in contact with the ground, it looses all of charges and suffers {@damage 1d10} lightning damage for every charge lost.",
-								"If a creature with Static Charges hits a target with a melee attack all charges on the creature transfers to the target, the damage of this attack deals an additional {@damage 1d10} lightning damage for every charge transferred.",
-								"If a creature with Static Charges roll's a saving throw, it can chose to expand any number of charges it has gaining a +1 bonus to it's roll per charge expanded, the creature takes {@damage 1d10} lightning damage for every charge expand.",
+								"For each Static Charge a creature has, it's movement speed is increased by 10 feet.",
+								"If a creature with Static Charge touches the ground or an object that is in contact with the ground, it looses all of charges and suffers {@damage 1d10} lightning damage for every charge lost.",
+								"If a creature with Static Charge hits a target with a melee attack, it deals an additional {@damage 1d10} lightning damage for every charge it has, than all Static Charges of the creature transfers to the target.",
+								"If a creature with Static Charge roll's a saving throw, it can chose to expand any number of charges it has gaining a +1 bonus to it's roll per charge expanded, the creature takes {@damage 1d10} lightning damage for every charge expand.",
 								"A creature can use a bonus action to touch another willing creature, transferring all of it's Static Charges without dealing damage in the process."
 							]
 						}
@@ -2470,7 +2470,7 @@
 				{
 					"name": "Overcharge",
 					"entries": [
-						"While the tempest has at least a single Static Charge and is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt. However when it has no Static Charges it is vulnerable to lightning damage."
+						"While the tempest has at least a single Static Charge and is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt. However when the tempest has no Static Charges it is vulnerable to lightning damage."
 					]
 				}
 			],
@@ -2533,12 +2533,12 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://www.aidedd.org/dnd/images/elder-tempest.jpg"
+							"url": "https://5e.tools/img/bestiary/MPMM/Elder%20Tempest.webp"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://5e.tools/img/CMR/Elder Tempest.png?v=1.110.1",
+			"tokenUrl": "https://i.imgur.com/ciL7LJr.png",
 			"soundClip": {
 				"type": "external",
 				"url": "https://5e.tools/audio/bestiary/elder-tempest.mp3?v=1.110.1"
