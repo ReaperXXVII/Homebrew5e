@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.165.1",
+	"siteVersion": "1.168.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1659197479,
-		"dateLastModified": 1659197479
+		"dateAdded": 1665838333,
+		"dateLastModified": 1665838333
 	},
 	"monster": [
 		{
@@ -830,6 +830,15 @@
 				},
 				{
 					"name": "Hellish Bloodline",
+					"will": [
+						"{@spell command} only devils"
+					],
+					"rest": {
+						"1": [
+							"{@spell hellish rebuke} (at 3rd level 4d10)",
+							"{@spell invisibility}"
+						]
+					},
 					"spells": {
 						"0": {
 							"spells": [
@@ -837,15 +846,6 @@
 							]
 						}
 					},
-					"rest": {
-						"1": [
-							"{@spell hellish rebuke} (at 3rd level 4d10)",
-							"{@spell invisibility}"
-						]
-					},
-					"will": [
-						"{@spell command} only devils"
-					],
 					"type": "spellcasting"
 				}
 			],
@@ -1054,6 +1054,12 @@
 					"headerEntries": [
 						"Arkhan is a 17th level paladin, his spellcasting ability is Charisma (spell save {@dc 18}). He can cast the following spells:"
 					],
+					"daily": {
+						"1e": [
+							"{@spell geas}",
+							"{@spell raise dead}"
+						]
+					},
 					"spells": {
 						"1": {
 							"spells": [
@@ -1084,12 +1090,6 @@
 							],
 							"slots": 2
 						}
-					},
-					"daily": {
-						"1e": [
-							"{@spell geas}",
-							"{@spell raise dead}"
-						]
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -1328,6 +1328,12 @@
 					"headerEntries": [
 						"Arkhan is a 17th level paladin, his spellcasting ability is Charisma (spell save {@dc 18}). He can cast the following spells:"
 					],
+					"daily": {
+						"1e": [
+							"{@spell geas}",
+							"{@spell raise dead}"
+						]
+					},
 					"spells": {
 						"1": {
 							"spells": [
@@ -1358,12 +1364,6 @@
 							],
 							"slots": 2
 						}
-					},
-					"daily": {
-						"1e": [
-							"{@spell geas}",
-							"{@spell raise dead}"
-						]
 					},
 					"ability": "cha",
 					"type": "spellcasting"
@@ -2507,6 +2507,255 @@
 				"prone",
 				"stunned"
 			]
+		},
+		{
+			"name": "Dzaan",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@spell mage armor}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 12",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 13,
+			"int": 19,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"int": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"arcana": "+8",
+				"deception": "+7",
+				"history": "+8",
+				"investigation": "+8"
+			},
+			"passive": 11,
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Giant",
+				"Infernal"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dzaan is a 11th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). He has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}*",
+								"{@spell light}",
+								"{@spell minor illusion}",
+								"{@spell shocking grasp}*"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell disguise self}",
+								"{@spell magic missile}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell levitate}",
+								"{@spell phantasmal force}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell fireball}",
+								"{@spell sending}",
+								"{@spell slow}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell confusion}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell animate objects}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell mental prison|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"footerEntries": [
+						"*See \"Actions\" below."
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Shocking Grasp (Cantrip)",
+					"entries": [
+						"{@atk ms} {@hit 8} to hit, reach 5 ft., one creature (the attack roll has advantage if the target is wearing armor made of metal). {@h}13 ({@damage 3d8}) lightning damage, and the target can't take reactions until the start of his next turn."
+					]
+				},
+				{
+					"name": "Acid Splash (Cantrip)",
+					"entries": [
+						"Dzaan hurls a bubble of acid at one creature he can see within 60 feet of it, or at two such creatures that are within 5 feet of each other. A target must succeed on a {@dc 16} Dexterity saving throw or take 10 ({@damage 3d6}) acid damage."
+					]
+				},
+				{
+					"name": "Magic Missile (1st-Level Spell; Requires a Spell Slot)",
+					"entries": [
+						"Dzaan creates three darts of magical force. Each dart unerringly strikes one creature Dzaan can see within 120 feet of it, dealing 3 ({@damage 1d4 + 1}) force damage. If Dzaan casts this spell using a 2nd-level spell slot, he creates one more dart."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Displacement {@recharge 5}",
+					"entries": [
+						"Dzaan projects an illusion that makes the wizard appear to be standing in a place a few inches from its actual location, causing any creature to have disadvantage on attack rolls against the illusionist. The effect lasts for 1 minute, and it ends early if Dzaan takes damage, if it is {@condition incapacitated}, or if its speed becomes 0."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Illusory Self (once per short rest)",
+					"entries": [
+						"When a creature makes an attack roll against Dzaan, he uses his reaction to interpose an illusory duplicate between the attacker and himself. The attack automatically misses, then the illusion dissipates."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Dzaan",
+				"source": "IDRotF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Dzaan was a Red Wizard of Thay who studied the arcane tradition of illusion. The leaders of the Arcane Brotherhood welcomed him with open arms, eager to count a Red Wizard among their ranks. Dzaan might have become a force to reckon with in the brotherhood had his quest for power not led him to Icewind Dale, where he was killed by the people of Easthaven after making a few too many enemies.",
+									{
+										"type": "entries",
+										"name": "Dzaan's Demise",
+										"entries": [
+											"Dzaan's trouble started after he broke away from his fellow wizards and hired adventurers to scour Icewind Dale for Netherese ruins. One group of them uncovered a buried tower in the tundra (see \"{@area Lost Spire of Netheril|3a8|x}\"), and Dzaan went out of his way to eliminate anyone who knew of it, including the adventurers who found it and several Ten-Towners with whom they had spoken. After turning the tower into his secret base, Dzaan visited Easthaven to gather supplies. Although he took the precaution of adopting a magical disguise, members of the local militia recognized Dzaan by the way he walked and spoke. They captured him, gagged him, confiscated his spellbook, and condemned him to death.",
+											"The characters have no opportunity to speak with Dzaan. They first encounter him in Easthaven, tied to a stake and engulfed in flames (see \"{@area Toil and Trouble|16c|x}\"). The Ten-Towners enjoy the execution while it lasts. After warming themselves by the fire, they leave Dzaan's ashes to be scattered by the wind."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Dzaan's Simulacrum",
+										"entries": [
+											"Unbeknownst to his executioners, Dzaan had used a {@item spell scroll} of {@spell simulacrum} to create a copy of himself. This simulacrum dwells in the sunken Netherese spire, waiting for its creator to return.",
+											"The simulacrum, which looks and acts like Dzaan, has half of Dzaan's hit points and can't regain expended spell slots. It has wasted its 3rd-level spell slots trying to reach Dzaan with {@spell sending} spells, to no avail, and has expended other spell slots to help it survive the perils of the spire. It uses its remaining spell slots sparingly.",
+											"The sunken Netherese tower contains a special room that can transform the simulacrum into a real person—or any magical illusion into the real thing, for that matter. If this change occurs, the simulacrum effectively becomes a {@creature Dzaan|IDRotF|clone of Dzaan}, authentic in every way. Dzaan's stat block and abilities change as follows:",
+											{
+												"type": "list",
+												"items": [
+													"He has spell slots appropriate for a 9th-level wizard (four 1st-level spell slots, three 2nd- through 4th-level spell slots, and one 5th-level spell slot), but he lacks a spellbook and therefore can't change his list of prepared spells.",
+													"If he finishes a long rest, he has the following additional spell slots, which allow him to cast the indicated spells: 3rd level (3 slots): {@spell fireball}, {@spell sending}, {@spell slow} 4th level (3 slots): {@spell arcane eye}, {@spell confusion} 5th level (1 slot): {@spell animate objects}",
+													"His hit point maximum becomes 49 ({@dice 9d8 + 9}), and his challenge rating becomes 2 (450 XP). His challenge rating becomes 4 (1,100 XP) if he finishes a long rest and regains his expended spells."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Companion",
+										"entries": [
+											"Because they're so despised throughout Faerûn, Red Wizards often adopt disguises and rarely travel abroad without an escort. They generally favor undead servants and bodyguards, since they find that undead tend to be more obedient than the living. Dzaan's bodyguard is a Thayan {@creature wight} named Krintaas. When Dzaan returned to Easthaven, he ordered his companion to stay with the simulacrum and watch over it and the buried Netherese spire."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/IDRotF/Dzaan.png"
+						},
+						"title": "Dzaan and his wight bodyguard, Krintaas"
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/IDRotF/Dzaan.png",
+			"languageTags": [
+				"AB",
+				"C",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"A",
+				"L",
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"L",
+				"O",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Flame Beard",
@@ -5411,17 +5660,17 @@
 					"headerEntries": [
 						"dc 16 +8 to hit"
 					],
+					"daily": {
+						"1": [
+							"{@spell levitate}"
+						]
+					},
 					"spells": {
 						"0": {
 							"spells": [
 								"{@spell gust|XGE}"
 							]
 						}
-					},
-					"daily": {
-						"1": [
-							"{@spell levitate}"
-						]
 					},
 					"type": "spellcasting"
 				}
@@ -6171,6 +6420,267 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Undying Alchemist",
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 15,
+			"int": 17,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"int": "+6",
+				"con": "+5"
+			},
+			"skill": {
+				"arcana": "+6",
+				"nature": "+6",
+				"medicine": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Abyssal",
+				"Giant"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"name": "Replicate Spells",
+					"headerEntries": [
+						"The alchemist casts one of the following spells without needing to concentrate on them, using Intelligence as the spellcasting ability  (spell save {@dc 14}, {@hit 6} to hit with spell attacks):"
+					],
+					"ability": "int",
+					"weekly": {
+						"3": [
+							"{@spell animate dead}",
+							"{@spell bestow curse}",
+							"{@spell stinking cloud}"
+						],
+						"5": [
+							"{@spell frost fingers|IDRotF}",
+							"{@spell grease}",
+							"{@spell sleep}",
+							"{@spell Tasha's caustic brew|TCE}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The alchemist has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Acid Burn",
+					"entries": [
+						"When the alchemist deals acid damage it inflicts one batch of acid-burn. A creature cowered by acid takes 3 ({@damage 1d6}) acid damage per batch covering it at the end of it's turn. Dousing water on the acid washes it off from a creature."
+					]
+				},
+				{
+					"name": "3. Resilience",
+					"entries": [
+						"The drinker gains resistance to all damage until the end of it's next turn. When the potion enters a wound of a creature it must make a Constitution saving throw {@dc 14} or the creature becomes vulnerable to the next damage it suffers."
+					]
+				},
+				{
+					"name": "5. Flight",
+					"entries": [
+						"The The drinker gains a flying speed of 10 feet for 1 minutes. When the potion enters a wound of a creature it must make a Strength saving throw {@dc 14} or become suspended in the air 5 feet of the ground."
+					]
+				},
+				{
+					"name": "6. Transformation",
+					"entries": [
+						"When the potion makes contact with a creature it's body is transformed as if by the polymorph spell. A non willing creature must make a Wisdom saving throw {@dc 14} to resist the transformation"
+					]
+				},
+				{
+					"name": "4. Boldness",
+					"entries": [
+						"The drinker can roll a {@dice d4} and add the number rolled to every attack roll and saving throw they make for the next minute. When the potion enters a wound of a creature it must make a Charisma saving throw {@dc 14} or for one minute it must start it's turn by making an attack roll against the closest creature to it."
+					]
+				},
+				{
+					"name": "2. Swiftness",
+					"entries": [
+						"The drinker's walking speed increases by 10 feet for 1 minute. When the potion enters a wound of a creature it must make a Dexterity saving throw {@dc 14} or for one minute it must start it's turn by using all it's moment speed to move."
+					]
+				},
+				{
+					"name": "1. Poison",
+					"entries": [
+						"When a creature drinks or the potion enters a wound of a creature it takes 6 ({@damage 2d4 + 2}) poison damage or if it is an undead it regains the rolled amount instead of taking damage."
+					]
+				},
+				{
+					"name": "Substitution",
+					"entries": [
+						"If the alchemist's fails a saving throw it can end the effects of a potion on itself to instead succeed on the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The skeletal alchemist makes two attacks."
+					]
+				},
+				{
+					"name": "Snatching Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft. one target. {@h}5 ({@damage 1d6 + 2}) slashing damage, and the target must succeed on a Strength or Dexterity saving throw {@dc 13}, on a failed roll the alchemist steals one item that is not an armor or shield of it's choice from the target."
+					]
+				},
+				{
+					"name": "Lob Acid",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}7 ({@damage 2d6}) acid damage, on a miss it creates an acid puddle next to the target."
+					]
+				},
+				{
+					"name": "Lob Potion",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}1 piercing damage and the target is effected by a random potion of the alchemist."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Swig Potion",
+					"entries": [
+						"The alchemist drinks one of it's potion it has, or one that it snatched."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The alchemist uses Snatching Claws or Lob Acid if there are no hostile creature within 5 feet."
+					]
+				},
+				{
+					"name": "Replicate Spells (Cost 2 actions)",
+					"entries": [
+						"The alchemist uses Replicate Spells."
+					]
+				},
+				{
+					"name": "Swig",
+					"entries": [
+						"The alchemist drinks a random potion it has, or one that it snatched."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Skeletal Alchemist",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"This undead retains enough of its former self to continue its alchemical work, often on behalf of necromancers or other sinister patrons. It toils in a dark laboratory (such as the one found in The Sinister Secret of Saltmarsh), often falling dormant for long periods of time."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GoS/Skeletal Alchemist.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/GoS/Skeletal Alchemist.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"GI"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
@@ -8895,6 +9405,9 @@
 					"headerEntries": [
 						"The tortle is a 14th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following druid spells prepared:"
 					],
+					"will": [
+						"{@spell alter self}"
+					],
 					"spells": {
 						"0": {
 							"spells": [
@@ -8956,9 +9469,6 @@
 							"slots": 1
 						}
 					},
-					"will": [
-						"{@spell alter self}"
-					],
 					"ability": "wis",
 					"type": "spellcasting"
 				}
