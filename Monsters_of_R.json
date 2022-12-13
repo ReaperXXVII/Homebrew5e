@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.168.2",
+	"siteVersion": "1.171.0",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1665580485,
-		"dateLastModified": 1665580485
+		"dateAdded": 1670963723,
+		"dateLastModified": 1670963723
 	},
 	"monster": [
 		{
@@ -3072,6 +3072,214 @@
 			"miscTags": [
 				"MW"
 			]
+		},
+		{
+			"name": "Fey'ri",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item scale mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 16,
+			"int": 14,
+			"wis": 12,
+			"cha": 17,
+			"save": {
+				"con": "+6",
+				"int": "+5",
+				"cha": "+6",
+				"dex": "+7"
+			},
+			"skill": {
+				"deception": "+6",
+				"intimidation": "+6",
+				"perception": "+4",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The cambion's spellcasting ability is Charisma (spell save {@dc 14}). The cambion can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1": [
+							"{@spell fireball}"
+						],
+						"3e": [
+							"{@spell alter self}",
+							"{@spell command}",
+							"{@spell crown of madness}",
+							"{@spell detect magic}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fiendish Blessing",
+					"entries": [
+						"The AC of the cambion includes its Charisma bonus."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cambion makes two melee attacks or uses its Fire Ray twice."
+					]
+				},
+				{
+					"name": "Shrieking Blade",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 4 ({@damage 1d8}) thunder damage."
+					]
+				},
+				{
+					"name": "Fire Ray",
+					"entries": [
+						"{@atk rs} {@hit 7} to hit, range 120 ft., one target. {@h}10 ({@damage 3d6}) fire damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A cambion is the offspring of a fiend (usually a succubus or incubus) and a humanoid (usually a human). Cambions inherit aspects of both parents, but their horns, leathery wings, and sinewy tails are hallmarks of their otherworldly parentage.",
+									{
+										"name": "Born to Be Bad",
+										"type": "entries",
+										"entries": [
+											"Cambions grow into ruthless adults whose wickedness and perversion horrifies even the most devoted mortal parent. Even as a youth, a cambion identifies its rightful place as an overlord of mortals. It might orchestrate uprisings in towns and cities, gathering gangs of humanoids and lesser devils to serve it."
+										]
+									},
+									{
+										"name": "Pawns of the Mighty",
+										"type": "entries",
+										"entries": [
+											"A cambion forced to serve its fiendish parent does so out of admiration and dread, but also with the expectation that it will one day rise to a place of prominence. Cambions raised in the Nine Hells serve as soldiers, envoys, and personal attendants to greater devils. In the Abyss, a cambion carries only as much authority as it can muster through sheer strength and force of will."
+										]
+									},
+									{
+										"name": "Spawn of Graz'zt",
+										"type": "entries",
+										"entries": [
+											"The demon lord Graz'zt is fond of procreating with humanoids who have made pacts with fiends, and he has sired many cambions who help him sow chaos across the multiverse. These cambions are characterized by charcoal-black skin, cloven hooves, six-fingered hands, and unearthly beauty."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/5/5c/Fey%27ri_4e.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Cambion.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cambion.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"S",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Fire Giant Forgemaster",
@@ -9184,6 +9392,219 @@
 				"invisible",
 				"stunned"
 			]
+		},
+		{
+			"name": "Statue of The Beast",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d10 + 56",
+				"average": 133
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 16,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"but can't speek it."
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Psionic Predator",
+					"headerEntries": [
+						"The statue harbors a wellspring of psionic energy. This energy is represented as Psi power. The statue can use the following abilities using Psi power:",
+						"• Mind Barrier",
+						"• Protective Field",
+						"• Psi Charge"
+					],
+					"will": [
+						"{@spell thunderous smite}",
+						"{@spell thunderwave}",
+						"{@spell wrathful smite}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The statue is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Mind Barrier",
+					"entries": [
+						"If the statue fails a saving throw, it can choose re roll it using one Psi power."
+					]
+				},
+				{
+					"name": "Curse of the Prey",
+					"entries": [
+						"When a creature affected by this curse is hit by an attack it suffers an additional 7 ({@damage 2d6}) damage. Additionally the statue always knows the exact location of a creature under the effect of this curse."
+					]
+				},
+				{
+					"name": "Curse of the Sacrafice",
+					"entries": [
+						"When a creature affected by this curse takes damage, a random creature within 5 feet of it, other than it regains hitpoints equal to the damage sustained."
+					]
+				},
+				{
+					"name": "Curse of the Hunter",
+					"entries": [
+						"When a creature affected by this curse sees another creature leave it's reach, it must make an attack of opportunity against the creature with the weapon it is currently wielding or with an unarmed strike if it wields no melee weapons."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The statue makes two attacks: one with it's claws and one with it's gore."
+					]
+				},
+				{
+					"name": "Gore",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage. If the statue moves at least 20 feet straight toward the target before it hits with this attack the target takes an extra 9 ({@damage 2d8}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h} 11 ({@damage 2d4 + 4}) slashing damage. If the target is a creature, that creature becomes hexed by one of the curses of the statue."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protective Field",
+					"entries": [
+						"When the statue takes damage it can protect itself with its psionic powers. The statue expends one Psi power and gains 12 ({@damage 2d8 + 3}) temporary hit points."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Claw",
+					"entries": [
+						"The statue makes one claw attack."
+					]
+				},
+				{
+					"name": "Mind Siphon (costs 2 action)",
+					"entries": [
+						"All creatures currently cursed by the statue and within 20 feet of it take 3 psychic damage and the statue gains a Psi power for each creature affected."
+					]
+				},
+				{
+					"name": "Psi Charge",
+					"entries": [
+						"The statue moves up to its speed in a strait line and must make a gore attack against the first creature or object that blocks it's movement. Costs one Psi power."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"A large, exquisitely carved jade statue of a vampire guards the tunnels in Isle of the Abbey, having been brought to life by dark magic. Its stone fangs draw blood that it then uses to work a curse on its victims."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/11cpMPh.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/11cpMPh.png",
+			"traitTags": [
+				"Immutable Form"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true
 		},
 		{
 			"name": "Sultans Steed",
