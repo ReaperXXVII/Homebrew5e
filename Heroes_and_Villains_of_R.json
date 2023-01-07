@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.169.5",
+	"siteVersion": "1.174.2",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1669138084,
-		"dateLastModified": 1669138084
+		"dateAdded": 1673134884,
+		"dateLastModified": 1673134884
 	},
 	"monster": [
 		{
@@ -2507,6 +2507,167 @@
 				"prone",
 				"stunned"
 			]
+		},
+		{
+			"name": "Cirlia Salinde",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"high-elf"
+				]
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 14,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "4d6",
+				"average": 21
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 13,
+			"con": 10,
+			"int": 16,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+5",
+				"perception": "+4",
+				"stealth": "+3",
+				"performance": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan",
+				"Abyssal"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Cirlia is a 4th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 13}; {@hit 5} to hit with spell attacks). Cirlia has the following spells prepared from the wizard's spell list:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell gust|XGE}",
+								"{@spell mage hand}",
+								"{@spell ray of frost}",
+								"{@spell shocking grasp}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell speak with animals}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell invisibility}",
+								"{@spell wither and bloom|SCC}"
+							],
+							"slots": 3
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Cirlia has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Personality: Cirlia Salinde is a very shy but kind hearted person who is always willing to help others. She is very loyal to those she loves and respects. She can be unpatient at times but always refrains herself from doing something dangerous or dumb.",
+									"Appearance: Cirlia Salinde is a young female High elf with green short hair with two smaller ponytail like strands at the back of her head."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oxScMxA.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/dfOvUFc.png",
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflictSpell": [
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Dzaan",
@@ -5239,24 +5400,24 @@
 			"str": 19,
 			"dex": 16,
 			"con": 20,
-			"int": 29,
+			"int": 28,
 			"wis": 21,
 			"cha": 20,
 			"save": {
-				"con": "+12",
-				"int": "+16",
-				"wis": "+12"
+				"con": "+14",
+				"int": "+18",
+				"wis": "+14"
 			},
 			"skill": {
-				"arcana": "+23",
-				"history": "+16",
-				"insight": "+12",
-				"perception": "+12"
+				"history": "+18",
+				"insight": "+14",
+				"perception": "+14",
+				"arcana": "+27"
 			},
 			"senses": [
 				"truesight 120 ft."
 			],
-			"passive": 22,
+			"passive": 24,
 			"resist": [
 				"cold",
 				"lightning"
@@ -5296,17 +5457,19 @@
 				"Primordial",
 				"Undercommon"
 			],
-			"cr": "24",
+			"cr": "30",
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"Szass Tam is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). Szass Tam has the following wizard spells prepared:"
+						"Szass Tam is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 26}, {@hit 18} to hit with spell attacks). Szass Tam has the following wizard spells prepared:"
 					],
 					"spells": {
 						"0": {
 							"spells": [
+								"{@spell booming blade|TCE}",
 								"{@spell chill touch}",
+								"{@spell fire bolt}",
 								"{@spell mage hand}",
 								"{@spell ray of frost}",
 								"{@spell shocking grasp}"
@@ -5314,6 +5477,9 @@
 						},
 						"1": {
 							"spells": [
+								"{@spell absorb elements|XGE}",
+								"{@spell false life}",
+								"{@spell magic missile}",
 								"{@spell ray of sickness}",
 								"{@spell shield}"
 							],
@@ -5322,14 +5488,19 @@
 						"2": {
 							"spells": [
 								"{@spell mirror image}",
-								"{@spell ray of enfeeblement}"
+								"{@spell misty step}",
+								"{@spell ray of enfeeblement}",
+								"{@spell vortex warp|SCC}"
 							],
 							"slots": 0
 						},
 						"3": {
 							"spells": [
 								"{@spell animate dead}",
-								"{@spell counterspell}"
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell lightning bolt}",
+								"{@spell tidal wave|XGE}"
 							],
 							"slots": 0
 						},
@@ -5368,6 +5539,7 @@
 						},
 						"8": {
 							"spells": [
+								"{@spell Abi-Dalzim's horrid wilting|XGE}",
 								"{@spell antimagic field}",
 								"{@spell mind blank}"
 							],
@@ -5416,7 +5588,13 @@
 				{
 					"name": "Paralyzing Touch",
 					"entries": [
-						"{@atk ms} {@hit 16} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage, and the target must succeed on a {@dc 20} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"{@atk ms} {@hit 14} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage, and the target must succeed on a {@dc 22} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Booming Blade",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d4 + 7}) piercing damage, plus 13 ({@damage 3d8}) thunder damage. On a hit, the target becomes sheathed in booming energy until the start of Szass Tam's next turn. If the target willingly moves 5 feet or more before then, the target takes 18 ({@damage 4d8}) thunder damage thunder damage, and the spell ends."
 					]
 				}
 			],
@@ -5424,19 +5602,19 @@
 				{
 					"name": "At-Will Spell",
 					"entries": [
-						"Acererak casts one of his at-will spells."
+						"Szass Tam casts one of his at-will spells."
 					]
 				},
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"Acererak uses Paralyzing Touch or makes one melee attack with his staff."
+						"Szass Tam uses Paralyzing Touch or makes one melee attack."
 					]
 				},
 				{
 					"name": "Disrupt Life (Costs 3 Actions)",
 					"entries": [
-						"Each creature within 20 feet of Acererak must make a {@dc 20} Constitution saving throw against this magic, taking 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+						"Each creature within 20 feet of Szass Tam must make a {@dc 22} Constitution saving throw against this magic, taking 42 ({@damage 12d6}) necrotic damage on a failed save, or half as much damage on a successful one."
 					]
 				}
 			],
@@ -5445,57 +5623,12 @@
 				"source": "MM"
 			},
 			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Acererak is an archlich who travels between worlds and is known to take sick pleasure in devouring the souls of adventurers, whom he lures into trap-ridden dungeons where they suffer horrible deaths. One such dungeon lies under the lost city of Omu. This dungeon is called the Tomb of the Nine Gods, for Acererak slew nine false gods and sealed them within it. More recently, he built a necromantic device called the Soulmonger, then hid it in the heart of the tomb."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Acererak's Traits",
-										"entries": [
-											{
-												"name": "Ideal",
-												"type": "entries",
-												"entries": [
-													"\"Why be a god when I can be a creator of gods?\""
-												]
-											},
-											{
-												"name": "Bond",
-												"type": "entries",
-												"entries": [
-													"\"I build dungeons to trap and slay powerful adventurers. Their deaths and souls are my nourishment.\""
-												]
-											},
-											{
-												"name": "Flaw",
-												"type": "entries",
-												"entries": [
-													"\"I underestimate the resolve of my enemies.\""
-												]
-											}
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://www.worldanvil.com/uploads/images/0061b6cb54af1edbfdb4eed0746d0b51.jpg"
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d6/Szass_Tam_-_Sam_Wood.jpg"
 						}
 					}
 				]
@@ -5521,13 +5654,32 @@
 			],
 			"damageTags": [
 				"C",
+				"N",
+				"P",
+				"T"
+			],
+			"damageTagsLegendary": [
 				"N"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"R",
+				"T",
+				"Y"
 			],
 			"spellcastingTags": [
 				"CW"
 			],
 			"miscTags": [
-				"AOE"
+				"AOE",
+				"MW"
 			],
 			"conditionInflict": [
 				"paralyzed"
