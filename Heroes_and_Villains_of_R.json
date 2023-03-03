@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.174.2",
+	"siteVersion": "1.177.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1673137567,
-		"dateLastModified": 1673137567
+		"dateAdded": 1677845381,
+		"dateLastModified": 1677845381
 	},
 	"monster": [
 		{
@@ -1503,6 +1503,229 @@
 			]
 		},
 		{
+			"name": "Arveiaturace",
+			"group": [
+				"Chromatic Dragon"
+			],
+			"source": "HaVoR",
+			"size": [
+				"G"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d20 + 144",
+				"average": 504
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 26,
+			"int": 12,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"dex": "+6",
+				"con": "+14",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+6",
+				"survival": "+14",
+				"athletics": "+14",
+				"acrobatics": "+6"
+			},
+			"senses": [
+				"blindsight 60 ft. blind beyond this range,"
+			],
+			"passive": 18,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"daily": {
+						"7": [
+							"{@spell fireball}",
+							"{@spell lightning bolt}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Ice Walk",
+					"entries": [
+						"The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, {@quickref difficult terrain||3} composed of ice or snow doesn't cost it extra movement."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}24 ({@damage 3d10 + 8}) piercing damage plus 9 ({@damage 2d8}) cold damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}22 ({@damage 4d6 + 8}) slashing damage, and the target is {@condition grappled} (escape {@dc 22})."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 20 ft., one target. {@h}21 ({@damage 3d8 + 8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 22} Strength saving throw or be knocked {@condition prone}. If the creature is large or smaller it is also pushed 20 feet in a direction chosen by the dragon."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Cold Breath {@recharge 5}",
+					"entries": [
+						"The dragon exhales an icy blast in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw, taking 72 ({@damage 16d8}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The dragon makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"The dragon makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a {@dc 22} Dexterity saving throw or take 18 ({@damage 3d6 + 8}) bludgeoning damage and be knocked {@condition prone}. The dragon can then fly up to half its flying speed."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "White Dragon",
+				"source": "MM"
+			},
+			"environment": [
+				"arctic"
+			],
+			"fluff": {
+				"entries": [
+					"Arveiaturace the White Wyrm, known to sailors and minstrels alike as Iceclaws, thanks to her habit of drifting low over ships sailing off the Sword Coast and plucking up crew members for quick snacks. This ancient white dragon is feared by all sailors who ply the shipping lanes of the Sword Coast, except for those who dismiss her as a legend -- until it's too late. The Flying Hunt of Nimbral and several aerial patrols from Evermeet have fought her in midair and forced her into flight on occasion, but most ships are helpless against her diving attacks -- and when crews scramble down into their holds to escape her snatching claws, she's been known to land on a ship and tear it apart like a child opening a gift. What makes Arveiaturace so deadly is she is the steed of a wizard, Meltharond Thone, who captured and tamed her centuries ago."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/IDRotF/091-02-002.dragon.png"
+						}
+					}
+				]
+			},
+			"dragonCastingColor": "white",
+			"dragonAge": "ancient",
+			"tokenUrl": "https://i.imgur.com/XZyArwb.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/white-dragon.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [
+				"C",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"blinded"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Ashardelon (unfinnished)",
 			"isNpc": true,
 			"source": "HaVoR",
@@ -2670,6 +2893,267 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Dendar, The Night Serpent",
+			"source": "HaVoR",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "elder evil",
+						"prefix": "primordial"
+					}
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "35d20 + 315",
+				"average": 682
+			},
+			"speed": {
+				"walk": 20,
+				"fly": {
+					"number": 80,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 30,
+			"dex": 9,
+			"con": 28,
+			"int": 23,
+			"wis": 23,
+			"cha": 25,
+			"save": {
+				"dex": "+8",
+				"wis": "+15"
+			},
+			"skill": {
+				"stealth": "+17",
+				"perception": "+15"
+			},
+			"senses": [
+				"darkvision 120 ft.",
+				"blindsight 60 ft.",
+				"truesight 120 ft."
+			],
+			"passive": 25,
+			"resist": [
+				"cold",
+				"necrotic",
+				"poison",
+				"psychic"
+			],
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				},
+				{
+					"immune": []
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"Abyssal",
+				"Draconic",
+				"Primordial"
+			],
+			"cr": "30",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Dendar's spellcasting ability is Charisma (spell save {@dc 24}). Dendar can innately cast the following spells, requiring no somatic or material components or concentration."
+					],
+					"will": [
+						"{@spell darkness}",
+						"{@spell dissonant whispers}",
+						"{@spell sleep} (at 9th level)",
+						"{@spell suggestion}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Gaze Uppon the End",
+					"entries": [
+						"When a creature that can see The Night Serpent starts its turn, Dendar can force it to make a {@dc 24} Wisdom saving throw. If the saving throw fails by 5 or more, the creature is instantly {@condition paralyzed}. Otherwise, a creature that fails the save is {@condition frightend}. The {@condition frightend} creature must repeat the saving throw at the end of its next turn, becoming {@condition paralyzed} on a failure or ending the effect on a success.",
+						"Unless {@quickref Surprise|PHB|3|0|surprised}, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can't see the Night Serpent until the start of its next turn, when it can avert its eyes again. If the creature looks at The Night Serpent in the meantime, it must immediately make the save."
+					]
+				},
+				{
+					"name": "Astral Entity",
+					"entries": [
+						"The Night Serpent can't leave the Astral Plane, nor can it be banished or otherwise transported out of that plane."
+					]
+				},
+				{
+					"name": "Nightmarish Demiple",
+					"entries": [
+						"Anything The Night Serpent devours is transported to a demiplane that can be entered by no other means except a {@spell wish} spell or The Night Serpent's Devour and Glimse of Doom. A creature can leave the demiplane only by using magic that enables planar travel, such as the {@spell plane shift} spell. Like a stomach, it contains the remains of past meals. The The Night Serpent can't be harmed from within the demiplane. If The Night Serpent dies, the demiplane disappears, and everything inside it appears around The Night Serpent's corpse. The demiplane is otherwise indestructible."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If The Night Serpent fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Sever Silver Cord",
+					"entries": [
+						"If The Night Serpent scores a critical hit against a creature travelling by means of the {@spell astral projection} spell, The Night Serpent can cut the target's silver cord instead of dealing damage."
+					]
+				},
+				{
+					"name": "Unusual Nature",
+					"entries": [
+						"The Night Serpent doesn't require air, food, drink, or sleep."
+					]
+				},
+				{
+					"name": "Living Darkness",
+					"entries": [
+						"While in dim light or darkness, The Night Serpent is immune to damage that isn't force, psychic, or radiant"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Night Sepent makes three two Forked Tongue and one Devour"
+					]
+				},
+				{
+					"name": "Devour",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}62 ({@damage 6d12 + 10}) force damage. If the target is a creature and this damage reduces it to 0 hit points or it is {@condition incapacitated}, The Night Serpent swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space in a Nightmarish Demiple."
+					]
+				},
+				{
+					"name": "Forked Tongue",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 20 ft., one target. {@h}20 ({@damage 3d6 + 10}) bludgeoning damage, plus 10 ({@damage 3d6}) psychic damage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Nightmares",
+					"entries": [
+						"The Night Serpent uses its spellcasting ability or uses a devoured creature's abilities as her own."
+					]
+				},
+				{
+					"name": "Glimse of Doom",
+					"entries": [
+						"One creature that The Night Serpent can see within 60 feet of it must succeed on a {@dc 24} Charisma saving throw or be teleported to an unoccupied space in Dendar's Nightmarish Demiple. At the end of the target's next turn, it reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+					]
+				},
+				{
+					"name": "Nightmare Projection (Costs 2 Actions)",
+					"entries": [
+						"Each creature within 60 feet of The Night Serpent must make a {@dc 24} Wisdom saving throw, taking 40 ({@damage 6d10 + 7}) psychic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Beholder",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					"Eater of the World",
+					"Mother of the Night Parade",
+					"Nidhogg",
+					"The Night Serpent",
+					"The Serpent Mother"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s6VHWJe.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/s6VHWJe.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Unusual Nature"
+			],
+			"senseTags": [
+				"B",
+				"SD",
+				"U"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"AB",
+				"DR",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightend",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Dzaan",
 			"isNpc": true,
 			"isNamedCreature": true,
@@ -2917,6 +3401,205 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Felgolos",
+			"group": [
+				"Metallic Dragon"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d12 + 102",
+				"average": 212
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 22,
+			"int": 18,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"con": "+13",
+				"wis": "+10",
+				"cha": "+13",
+				"dex": "+7"
+			},
+			"skill": {
+				"insight": "+10",
+				"perception": "+17",
+				"arcana": "+11"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 27,
+			"immune": [
+				"lightning"
+			],
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Felgolos can breathe air and water."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Felgolos fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Felgolos can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of Felgolos's choice that is within 120 feet of Felgolos and aware of it must succeed on a {@dc 17} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to Felgolos's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Breath Weapons {@recharge 5}",
+					"entries": [
+						"Felgolos uses one of the following breath weapons.",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "Lightning Breath",
+									"entry": "Felgolos exhales lightning in a 90-foot line that is 5 feet wide. Each creature in that line must make a {@dc 19} Dexterity saving throw, taking 66 ({@damage 12d10}) lightning damage on a failed save, or half as much damage on a successful one."
+								},
+								{
+									"type": "item",
+									"name": "Repulsion Breath",
+									"entry": "Felgolos exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a {@dc 19} Strength saving throw. On a failed save, the creature is pushed 60 feet away from Felgolos."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Felgolos magically polymorphs into a humanoid or beast that has a challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (Felgolos's choice).",
+						"In a new form, Felgolos retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"Felgolos makes a Wisdom ({@skill Perception}) check."
+					]
+				},
+				{
+					"name": "Tail Attack",
+					"entries": [
+						"Felgolos makes a tail attack."
+					]
+				},
+				{
+					"name": "Wing Attack (Costs 2 Actions)",
+					"entries": [
+						"Felgolos beats its wings. Each creature within 10 feet of Felgolos must succeed on a {@dc 20} Dexterity saving throw or take 14 ({@damage 2d6 + 7}) bludgeoning damage and be knocked {@condition prone}. Felgolos can then fly up to half its flying speed."
+					]
+				}
+			],
+			"dragonAge": "adult",
+			"tokenUrl": "https://5e.tools/img/SKT/Felgolos.png",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"deafened",
+				"prone"
+			]
 		},
 		{
 			"name": "Flame Beard",
