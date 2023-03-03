@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.171.0",
+	"siteVersion": "1.177.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1670963723,
-		"dateLastModified": 1670963723
+		"dateAdded": 1677845370,
+		"dateLastModified": 1677845370
 	},
 	"monster": [
 		{
@@ -858,6 +858,148 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Blood-Toll Witch",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 8",
+				"average": 44
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 9,
+			"wis": 12,
+			"cha": 17,
+			"save": {
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"arcana": "+2",
+				"deception": "+6",
+				"perception": "+4",
+				"sleight of hand": "+5"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The harpy is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
+					],
+					"spells": {
+						"3": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell hex}",
+								"{@spell wind wall}"
+							],
+							"slots": 2,
+							"lower": 1
+						}
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The harpy makes two attacks: one with its claws and one with its shillelagh."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Shillelagh",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Luring Song",
+					"entries": [
+						"The harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a {@dc 14} Wisdom saving throw or be {@condition charmed} until the song ends. The harpy must take a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy is {@condition incapacitated}.",
+						"While {@condition charmed} by the harpy, a target is {@condition incapacitated} and ignores the songs of other harpies. If the {@condition charmed} target is more than 5 feet away from the harpy, the target can take the {@action Dash} action on its turn to move toward the harpy by the most direct route. It doesn't avoid {@action opportunity attack|phb|opportunity attacks}, but before moving into damaging terrain, such as lava or a pit , and whenever it takes damage from a source other than the harpy, a target can repeat the saving throw. A creature can also repeat the saving throw at the end of each of its turns . If a creature's saving throw is successful , the effect ends on it. A target that successfully saves is immune to this harpy's song for the next 24 hours."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Vexing Screech {@recharge 4}",
+					"entries": [
+						"When a creature within 30 feet of the harpy, is visible to the harpy, and can hear the harpy makes an attack roll but before the outcome is determined, the harpy can impose disadvantage to the creature's attack roll. If the attack misses, the creature must succeed on a {@dc 14} Charisma saving throw or take 7 ({@damage 2d6}) psychic damage and is knocked {@condition prone}."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/harpywitch.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/harpywitch.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"N"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated",
+				"prone"
+			]
 		},
 		{
 			"name": "Boneclaw Ripper",
@@ -1925,6 +2067,226 @@
 				"prone"
 			],
 			"hasFluff": true
+		},
+		{
+			"name": "Devout",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 16,
+			"int": 12,
+			"wis": 20,
+			"cha": 17,
+			"save": {
+				"con": "+7",
+				"int": "+5",
+				"wis": "+9"
+			},
+			"skill": {
+				"insight": "+9",
+				"perception": "+9",
+				"religion": "+9"
+			},
+			"senses": [
+				"truesight 60 ft."
+			],
+			"passive": 19,
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical weapons",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Common",
+				"Abyssal",
+				"Infernal"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The devout is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The devout has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}",
+								"{@spell mending}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell guiding bolt}",
+								"{@spell inflict wounds}",
+								"{@spell protection from evil and good}",
+								"{@spell sanctuary}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell blindness/deafness}",
+								"{@spell silence}",
+								"{@spell spiritual weapon}",
+								"{@spell warding bond}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell dispel magic}",
+								"{@spell spirit guardians}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell death ward}",
+								"{@spell guardian of faith}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell negative energy flood|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If it has a sacred vessel, a destroyed devout gains a new body in {@dice 1d10} days, regaining all its hp and becoming active again. The new body appears within 5 feet of the vessel."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The devout  has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unholy Smite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage plus 9 ({@damage 2d8}) necrotic damage. The target must succeed on a {@dc 17} Wisdom saving throw or be {@condition charmed} for 1 minute. The {@condition charmed} target must defend the devout. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. An undead target that fails is {@condition charmed} for 24 hours and can only repeat the saving throw once every 24 hours."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spiritual Weapon (4th level)",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d8 + 5}) force damage."
+					]
+				}
+			],
+			"environment": [
+				"any"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ufxUqiX.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/c2ocNkq.png",
+			"traitTags": [
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O"
+			],
+			"damageTagsLegendary": [
+				"R"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"deafened",
+				"incapacitated",
+				"paralyzed",
+				"prone"
+			]
 		},
 		{
 			"name": "Dragonborn Aerial Knight",
@@ -3728,6 +4090,172 @@
 			]
 		},
 		{
+			"name": "Forest Kobold Shaman",
+			"source": "MoR",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kobold"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 16,
+					"condition": "with {@spell barkskin}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d6 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 12,
+			"int": 8,
+			"wis": 15,
+			"cha": 8,
+			"skill": {
+				"stealth": "+4",
+				"survival": "+4",
+				"nature": "+1"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Common",
+				"Draconic"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The kobold is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell druidcraft}",
+								"{@spell poison spray}",
+								"{@spell thorn whip}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell earth tremor|XGE}",
+								"{@spell healing word}",
+								"{@spell ray of sickness}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell barkskin}",
+								"{@spell spike growth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell erupting earth|XGE}",
+								"{@spell plant growth}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The kobold has advantage on an attack roll against a creature if at least one of the kobold's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Change Shape (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The kobold magically polymorphs into a giant lizard or weasel, remaining in that form for up to 1 hour. It can revert to its true form as a bonus action. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Club",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Blowgun",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 25/100 ft., one target. {@h} 3 piercing damage, plus 5 ({@damage 2d4}) poison damage."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"incapacitated",
+				"prone"
+			]
+		},
+		{
 			"name": "Hellfire Engine Behir",
 			"source": "MoR",
 			"size": [
@@ -3891,6 +4419,148 @@
 			"conditionInflict": [
 				"grappled",
 				"restrained"
+			]
+		},
+		{
+			"name": "Hellwasp Brood Queen",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "fiend",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				},
+				{
+					"ac": 15,
+					"from": [
+						"while prone"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d12 + 36"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 20,
+				"canHover": false
+			},
+			"str": 23,
+			"dex": 11,
+			"con": 17,
+			"int": 12,
+			"wis": 15,
+			"cha": 8,
+			"save": {
+				"wis": "+5",
+				"con": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 60 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"fire"
+			],
+			"vulnerable": [
+				"cold"
+			],
+			"languages": [
+				"Infernal",
+				"telepathy 300 ft. (with other hellwasps only)"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Lay Egg",
+					"entries": [
+						"As a bonus action, the brood queen can lay an egg that contains a hellwasp grub. The egg appears in the nearest space within 5 feet of the brood queen. The egg has an of AC 5 and has 5 hit points. At the end of the brood queen's next turn, the hellwasp grub can use a bonus action to break out of its egg and immediately move and attack the nearest creature that isn't an hellwasp."
+					]
+				},
+				{
+					"name": "Burst Forth (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The brood queen breaks through solid ground or wall as a bonus action, showering the area with debris. Each creature within 15 feet of the brood queen that is surprised must succeed on a {@dc 17} Strength check, taking 20 ({@damage 4d6 + 6}) bludgeoning damage and is knocked {@condition prone} on a failed save, or half as much damage and isn't knocked {@condition prone} on a successful one."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The brood queen makes two melee attacks: one with its bite and one with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}20 ({@damage 4d6 + 6}) slashing damage plus 7 ({@dice 2d6}) fire. If the target is a Huge or smaller creature, it is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the brood queen can bite only the {@condition grappled} creature and has advantage on attack rolls to do so."
+					]
+				},
+				{
+					"name": "Sword Talons",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Command Brood",
+					"entries": [
+						"The brood queen targets {@dice 1d4} hellwasps within 30 feet that can see and hear the brood queen. The target uses its reaction to make one melee attack."
+					]
+				},
+				{
+					"name": "Fire Spray {@recharge 5}",
+					"entries": [
+						"The brood queen spits burning bile in a line that is 60 feet long and 5 feet wide. Each creature in that line must succeed on a {@dc 14} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/BGDIA/Hellwasp.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/BGDIA/Hellwasp.png",
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
 			]
 		},
 		{
@@ -6970,6 +7640,490 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Pack of Manes",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "small demons",
+						"prefix": "swarm of"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 9,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d6 + 16",
+				"average": 72
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 13,
+			"int": 3,
+			"wis": 8,
+			"cha": 4,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"understands Abyssal but can't speak"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Demon Pack",
+					"entries": [
+						"The pack of manes can move through a space as narrow as 2 feet wide without squeezing. The pack of manes can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature must succeed on a {@dc 12} Strength saving throw or be {@condition grapled} by the manes. Additionally, the pack of manes are susceptible to effects that deal damage in an area, they take double damage from such effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}22 ({@damage 8d4+2}) slashing damage, or 12 ({@damage 4d4+2}) slashing damage if the swarm has half of its hit points or fewer. If this attack hits a creature that is {@condition grapled}, it becomes {@condition restrained} by the pack of manes."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Manes",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Souls of evil creatures that descend to the Lower Planes are transformed into manes-the lowest form of demonkind. These wretched fiends attack any non-demon they see, and they are called to the Material Plane by those seeking to sow death and chaos.",
+									"Orcus, the Prince of Undeath, has the power to transform manes into undead monsters, most often ghouls and shadows. Other demon lords feed on manes, destroying them utterly. Otherwise, killing a manes causes it to dissipate into a cloud of reeking vapor that reforms into another manes after one day."
+								]
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Demons",
+						"entries": [
+							"Spawned in the Infinite Layers of the Abyss, demons are the embodiment of chaos and evil-engines of destruction barely contained in monstrous form. Possessing no compassion, empathy, or mercy, they exist only to destroy.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Spawn of Chaos",
+												"entries": [
+													"The Abyss creates demons as extensions of itself, spontaneously forming fiends out of filth and carnage. Some are unique monstrosities, while others represent uniform strains virtually identical to each other. Other demons (such as manes) are created from mortal souls shunned or cursed by the gods, or which are otherwise trapped in the Abyss."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Capricious Elevation",
+												"entries": [
+													"Demons respect power and power alone. A greater demon commands shrieking mobs of lesser demons because it can destroy any lesser demon that dares to refuse its commands. A demon's status grows with the blood it spills; the more enemies that fall before it, the greater it becomes.",
+													"A demon might spawn as a manes, then become a dretch, and eventually transform to a vrock after untold time spent fighting and surviving in the Abyss. Such elevations are rare, however, for most demons are destroyed before they attain significant power. The greatest of those that do survive make up the ranks of the demon lords that threaten to tear the Abyss apart with their endless warring.",
+													"By expending considerable magical power, demon lords can raise lesser demons into greater forms, though such promotions never stem from a demon's deeds or accomplishments. Rather, a demon lord might warp a manes into a quasit when it needs an invisible spy, or turn an army of dretches into hezrous when marching against a rival lord. Demon lords only rarely elevate demons to the highest ranks, fearful of inadvertently creating rivals to their own power."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Abyssal Invasions",
+												"entries": [
+													"Wherever they wander across the Abyss, demons search for portals to the other planes. They crave the chance to slip free of their native realm and spread their dark influence across the multiverse, undoing the works of the gods, tearing down civilizations, and reducing the cosmos to despair and ruin.",
+													"Some of the darkest legends of the mortal realm are built around the destruction wrought by demons set loose in the world. As such, even nations embroiled in bitter conflict will set their differences aside to help contain an outbreak of demons, or to seal off abyssal breaches before these fiends can break free."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Signs of Corruption",
+												"entries": [
+													"Demons carry the stain of abyssal corruption with them, and their mere presence changes the world for the worse. Plants wither and die in areas where abyssal breaches and demons appear. Animals shun the sites where a demon has made a kill. The site of a demonic infestation might be fouled by a stench that never abates, by areas of bitter cold or burning heat, or by permanent shadows that mark the places where these fiends lingered."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Eternal Evil",
+												"entries": [
+													"Outside the Abyss, death is a minor nuisance that no demon fears. Mundane weapons can't stop these fiends, and many demons are resistant to the energy of the most potent spells. When a lucky hero manages to drop a demon in combat, the fiend dissolves into foul ichor. It then instantly reforms in the Abyss, its mind and essence intact even as its hatred is inflamed.",
+													"The only way to truly destroy a demon is to seek it in the Abyss and kill it there."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Protected Essence",
+												"entries": [
+													"A powerful demon can take steps to safeguard its life essence, using secret methods and abyssal metals to create an amulet into which part of that essence is ceded. If the demon's abyssal form is ever destroyed, the amulet allows the fiend to reform at a time and place of its choosing.",
+													"Obtaining a demonic amulet is a dangerous enterprise, and simply seeking such a device risks drawing the attention of the demon that created it. A creature possessing a demonic amulet can exact favors from the demon whose life essence the amulet holds—or inflict great pain if the fiend resists. If an amulet is destroyed, the demon that created it is trapped in the Abyss for a year and a day."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Demonic Cults",
+												"entries": [
+													"Despite the dark risks involved in dealing with fiends, the mortal realm is filled with creatures that covet demonic power. Demon lords manipulate these mortal servants into performing ever greater acts of depravity, furthering the demon lord's ambitions in exchange for magic and other boons. However, a demon regards any mortals in its service as tools to use and then discard at its whim, consigning their mortal souls to the Abyss."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Demon Summoning",
+												"entries": [
+													"Few acts are as dangerous as summoning a demon, and even mages who bargain freely with devils fear the fiends of the Abyss. Though demons yearn to sow chaos on the Material Plane, they show no gratitude when brought there, raging against their prisons and demanding release.",
+													"Those who would risk summoning a demon might do so to wrest information from it, press it into service, or send it on a mission that only a creature of absolute evil can complete. Preparation is key, and experienced summoners know the specific spells and magic items that can force a demon to bend to another's will. If a single mistake is made, a demon that breaks free shows no mercy as it makes its summoner the first victim of its wrath."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Bound Demons",
+												"entries": [
+													"The Book of Vile Darkness, the Black Scrolls of Ahm, and the Demonomicon of Iggwilv are the foremost authorities on demonic matters. These ancient tomes describe techniques that can trap the essence of a demon on the Material Plane, placing it within a weapon, idol, or piece of jewelry and preventing the fiend's return to the Abyss.",
+													"An object that binds a demon must be specially prepared with unholy incantations and innocent blood. It radiates a palpable evil, chilling and fouling the air around it. A creature that handles such an object experiences unsettling dreams and wicked impulses, but is able to control the demon whose essence is trapped within the object. Destroying the object frees the demon, which immediately seeks revenge against its binder."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Demonic Possession",
+												"entries": [
+													"No matter how secure its bindings, a powerful demon often finds a way to escape an object that holds it. When a demonic essence emerges from its container, it can possess a mortal host. Sometimes a fiend employs stealth to hide a successful possession. Other times, it unleashes the full brunt of its fiendish drives through its new form.",
+													"As long as the demon remains in possession of its host, the soul of that host is in danger of being dragged to the Abyss with the demon if it is exorcised from the flesh, or if the host dies. If a demon possesses a creature and the object binding the demon is destroyed, the possession lasts until powerful magic is used to drive the demonic spirit out of its host."
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Demon Lords",
+								"entries": [
+									"The chaotic power of the Abyss rewards demons of particular ruthlessness and ingenuity with a dark blessing, transforming them into unique fiends whose power can rival the gods. These demon lords rule through cunning or brute force, hoping to one day claim the prize of absolute control over all the Abyss.",
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Reward for Outsiders",
+												"entries": [
+													"Although most demon lords rise up from the vast and uncountable mobs of demons rampaging across the Abyss, the plane also rewards outsiders that conquer any of its infinite layers. The elven goddess Lolth became a demon lord after Corellon Larethian cast her into the Abyss for betraying elvenkind. Sages claim that the Dark Prince Graz'zt originated on some other plane before stealing his abyssal title from another long-forgotten demon lord."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"type": "entries",
+												"name": "Power and Control",
+												"entries": [
+													"The greatest sign of a demon lord's power is its ability to reshape an abyssal realm. A layer of the Abyss controlled by a demon lord becomes a twisted reflection of that fiend's vile personality, and demon lords seldom leave their realms for fear of allowing another creature to reshape and seize it.",
+													"As with other demons, a demon lord that dies on another plane has its essence return to the Abyss, where it reforms into a new body. Likewise, a demon lord that dies in the Abyss is permanently destroyed. Most demon lords keep a portion of their essence safely stored away to prevent such a fate."
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Baphomet",
+										"entries": [
+											"The demon lord Baphomet, also known as the Horned King and the Prince of Beasts, rules over minotaurs and other savage creatures. If he had his way, civilization would crumble and all races would embrace their base animal savagery.",
+											"The Prince of Beasts appears as a huge, black-furred minotaur with iron horns, red eyes, and a blood-soaked mouth. His iron crown is topped with the rotting heads of his enemies, while his dark armor is set with spikes and skull-like serrations. He carries a huge glaive named Heartcleaver, but often hurls it into the fray so as to face his enemies with horns and hooves."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Demogorgon",
+										"entries": [
+											"The Sibilant Beast and the self-styled Prince of Demons, Demogorgon yearns for nothing less than undoing the order of the multiverse. An insane assemblage of features and drives, the Prince of Demons inspires fear and hatred among other demons and demon lords.",
+											"Demogorgon towers three times the height of a human, his body as sinuous as a snake's and as powerful as a great ape's. Suckered tentacles take the place of his arms. His saurian lower torso ends in webbed and clawed feet, and a forked tail whose whip-like tips are armed with cruel blades. The Prince of Demons has two baleful baboon heads, both of them mad. It is only the conflict between the two halves of his dual nature that keeps the demon lord's ambitions in check."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Graz'zt",
+										"entries": [
+											"The demon lord Graz'zt appears as a darkly handsome figure nearly nine feet tall. Those who refer to the Dark Prince as the most humanoid of the demon lords vastly underestimate the capacity for evil in his scheming heart.",
+											"Graz'zt is a striking physical specimen, whose demonic nature shows in his ebon skin, pointed ears, yellow fangs, crown of horns, and six-fingered hands. He delights in finery, pageantry, and sating his decadent desires with subjects and consorts alike, among whom incubi and succubi are often his favorites."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Juiblex",
+										"entries": [
+											"The demon lord of slimes and oozes, Juiblex is a stew of noxious fluids that lurks in the abyssal depths. The wretched Faceless Lord cares nothing for cultists or mortal servants, and its sole desire is to turn all creatures into formless copies of its horrid self.",
+											"In its resting state, Juiblex spreads out in a noxious mass, bubbling and filling the air with a profound stench. On the rare occasions when creatures confront the demon lord, Juiblex draws itself up into a shuddering cone of slime striated with veins of black and green. Baleful red eyes swim within its gelatinous body, while dripping pseudopods of ooze lash out hungrily at any creature they can reach."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Lolth",
+										"entries": [
+											"The Demon Queen of Spiders is the evil matron of the drow. Her every thought is touched by malice, and the depth of her viciousness can surprise even her most faithful priestesses. She directs her faithful while she weaves plots across the worlds of the Material Plane, looking forward to the time when her drow followers bring those worlds under her control.",
+											"Lolth appears as a lithe, imperious drow matriarch when she manifests to her followers in the mortal realm, which she does with unusual frequency. When battle breaks out-or if she has a reason to remind her followers to fear her—Lolth's lower body transforms into that of a huge demonic spider, whose spike—tipped legs and mandibles tear foes apart."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Orcus",
+										"entries": [
+											"Known as the Demon Prince of Undeath and the Blood Lord, the demon lord Orcus is worshiped by the undead and by living creatures that channel the power of undeath. A brooding and nihilistic entity, Orcus yearns to make the multiverse a place of death and darkness, forever unchanging except by his will.",
+											"The Demon Prince of Undeath is a foul and corpulent creature, with a humanoid torso, powerful goat legs, and the desiccated head of a ram. His sore-ridden body stinks of disease, but his decaying head and glowing red eyes are as a creature already dead. Great black bat wings sprout from his back, stirring reeking air as he moves.",
+											"Orcus wields a malevolent artifact known as the Wand of Orcus, a mace-like rod of obsidian topped by a humanoid skull. He surrounds himself with undead, and living creatures not under his control are anathema to him."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Yeenoghu",
+										"entries": [
+											"Known as the Gnoll Lord and the Beast of Butchery, the demon lord Yeenoghu hungers for slaughter and senseless destruction. Gnolls are his mortal instruments, and he drives them to ever-greater atrocities in his name. Delighting in sorrow and hopelessness, the Gnoll Lord yearns to turn the world into a wasteland in which the last surviving gnolls tear each other apart for the right to feast upon the dead.",
+											"Yeenoghu appears as a huge, scarred gnoll with a spiky crest of black spines, and eyes that burn with emerald flame. His armor is a patchwork of shields and breastplates claimed from fallen foes, and decorated by those foes' flayed skins. Yeenoghu can summon a triple flail he calls the Butcher, which he wields to deadly effect or wills to fly independently into battle as he tears foes apart with teeth and claws."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Other Demon Lords",
+										"entries": [
+											"No one knows the full number of demon lords that rage in the Abyss. Given the infinite depths of that plane, powerful demons constantly rise to become demon lords, then fall almost as quickly. Among the demon lords whose power has endured long enough for demonologists to name them are Fraz-Urb'luu, the Prince of Deception; Kostchtchie, the Prince of Wrath; Pazuzu, Prince of the Lower Aerial Kingdoms; and Zuggtmoy, Lady of Fungi."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Demon Types",
+										"entries": [
+											"Demonologists organize the chaotic distribution of demons into broad categories of power known as types. Most demons fit into one of six major types, with the weakest categorized as Type 1 and the strongest as Type 6. Demons outside the six main types are categorized as minor demons and demon lords."
+										]
+									},
+									{
+										"type": "table",
+										"caption": "Demons by Type",
+										"colLabels": [
+											"Type",
+											"Examples"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"barlgura, shadow demon, vrock"
+											],
+											[
+												"2",
+												"chasme, hezrou"
+											],
+											[
+												"3",
+												"glabrezu, yochlol"
+											],
+											[
+												"4",
+												"nalfeshnee"
+											],
+											[
+												"5",
+												"marilith"
+											],
+											[
+												"6",
+												"balor, goristro"
+											]
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Demon True Names",
+										"entries": [
+											"Though demons all have common names, every demon lord and every demon of type 1 through 6 has a true name that it keeps secret. A demon can be forced to disclose its true name if {@condition charmed}, and ancient scrolls and tomes are said to exist that list the true names of the most powerful demons.",
+											"A mortal who learns a demon's true name can use powerful summoning magic to call the demon from the Abyss and exercise some measure of control over it. However, most demons brought to the Material Plane in this manner do everything in their power to wreak havoc or sow discord and strife."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Demon Summoning",
+										"entries": [
+											"Some demons can have an action option that allows them to summon other demons. Summon Demon (1/Day). The demon chooses what to summon and attempts a magical summoning.",
+											{
+												"type": "list",
+												"items": [
+													"A balor has a {@chance 50|50 percent} chance of summoning {@dice 1d8} vrocks, {@dice 1d6} hezrous, {@dice 1d4} glabrezus, {@dice 1d3} nalfeshnees, {@dice 1d2} mariliths, or one goristro.",
+													"A barlgura has a {@chance 30|30 percent} chance of summoning one barlgura.",
+													"A chasme has a {@chance 30|30 percent} chance of summoning one chasme.",
+													"A glabrezu has a {@chance 30|30 percent} chance of summoning {@dice 1d3} vrocks, {@dice 1d2} hezrous, or one glabrezu.",
+													"A hezrou has a {@chance 30|30 percent} chance of summoning {@dice 2d6} dretches or one hezrou.",
+													"A marilith has a {@chance 50|50 percent} chance of summoning {@dice 1d6} vrocks, {@dice 1d4} hezrous, {@dice 1d3} glabrezus, {@dice 1d2} nalfeshnees, or one marilith.",
+													"A nalfeshnee has a {@chance 50|50 percent} chance of summoning {@dice 1d4} vrocks, {@dice 1d3} hezrous, {@dice 1d2} glabrezus, or one nalfeshnee.",
+													"A vrock has a {@chance 30|30 percent} chance of summoning {@dice 2d4} dretches or one vrock.",
+													"A yochlol has a {@chance 50|50 percent} chance of summoning one yochlol."
+												]
+											},
+											"A summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Manes.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Manes.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/manes.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grapled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "Pope Lich",
 			"source": "MoR",
 			"size": [
@@ -7055,7 +8209,7 @@
 				{
 					"name": "Spellcasting",
 					"headerEntries": [
-						"The pope is a 20th-level spellcaster. Its spellcasting ability is wisdom (spell save {@dc 23}, {@hit 15} to hit with spell attacks). The pope has the following cleric spells prepared:"
+						"The pope is a 20th-level spellcaster. Its spellcasting ability is wisdom (spell save {@dc 21}, {@hit 13} to hit with spell attacks). The pope has the following cleric spells prepared:"
 					],
 					"spells": {
 						"0": {
@@ -7176,13 +8330,13 @@
 				{
 					"name": "Paralyzing Touch",
 					"entries": [
-						"{@atk ms} {@hit 15} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"{@atk ms} {@hit 13} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 19} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
 					"name": "Spiritual Weapon (BA)",
 					"entries": [
-						"{@atk mw} {@hit 15} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d8 + 6}) force damage."
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d8 + 6}) force damage."
 					]
 				}
 			],
@@ -7202,7 +8356,7 @@
 				{
 					"name": "Spell (Costs 1-3 Actions)",
 					"entries": [
-						"The lich casts one of its spells that is 3rd or lower level for the number of actions as the level of the spell."
+						"The lich casts one of its spells that is 3rd or lower level costs a number of actions per spell level."
 					]
 				},
 				{
@@ -7224,114 +8378,21 @@
 				}
 			],
 			"legendaryGroup": {
-				"name": "Lich",
-				"source": "MM"
+				"name": "Hierophant Lich",
+				"source": "CCodex"
 			},
 			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.",
-									"A lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.",
-									{
-										"name": "Secrets of Undeath",
-										"type": "entries",
-										"entries": [
-											"No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to Orcus, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.",
-											"A lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the Outer Planes after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.",
-											"With its phylactery prepared, the future lich drinks a potion of transformation-a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains."
-										]
-									},
-									{
-										"name": "Soul Sacrifices",
-										"type": "entries",
-										"entries": [
-											"A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the {@spell imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a dispel magic cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.",
-											"A lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a demilich."
-										]
-									},
-									{
-										"name": "Death and Restoration",
-										"type": "entries",
-										"entries": [
-											"When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.",
-											"Destroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself."
-										]
-									},
-									{
-										"name": "Lonely Existence",
-										"type": "entries",
-										"entries": [
-											"From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.",
-											"Few liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King."
-										]
-									},
-									{
-										"name": "Magic Collectors",
-										"type": "entries",
-										"entries": [
-											"Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spellbooks, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack."
-										]
-									},
-									{
-										"name": "Undead Nature",
-										"type": "entries",
-										"entries": [
-											"A lich doesn't require air, food, drink, or sleep."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Lich's Lair",
-										"entries": [
-											"A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps. Everything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.",
-											"A lich encountered in its lair has a challenge rating of 22 (41,000 XP)."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:",
-									{
-										"type": "list",
-										"items": [
-											"The lich rolls a {@dice d8} and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.",
-											"The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a {@dc 18} Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.",
-											"The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, taking 52 ({@damage 15d6}) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://i.pinimg.com/564x/01/a0/5a/01a05a2f7a6426319b78229222c5f4ff.jpg"
+							"url": "https://cdnb.artstation.com/p/assets/images/images/016/811/787/large/hyun-lee-rendering-10-small.jpg?1553567662"
 						}
 					}
 				]
 			},
-			"tokenUrl": "https://i.pinimg.com/564x/01/53/00/01530037961f4635ac6f012ce6dff3df.jpg",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/lich.mp3?v=1.113.8"
-			},
+			"tokenUrl": "https://i.imgur.com/FkZ7a3Q.png",
 			"traitTags": [
 				"Legendary Resistances",
 				"Rejuvenation",
@@ -7348,6 +8409,16 @@
 				"C",
 				"N",
 				"O"
+			],
+			"damageTagsLegendary": [
+				"R"
+			],
+			"damageTagsSpell": [
+				"I",
+				"N",
+				"O",
+				"P",
+				"R"
 			],
 			"spellcastingTags": [
 				"CC"
@@ -9738,6 +10809,135 @@
 			]
 		},
 		{
+			"name": "Swarm of Rats",
+			"source": "MoR",
+			"page": 339,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 24,
+				"formula": "7d8 - 7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 11,
+			"con": 9,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"darkvision 30 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"The swarm has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny rat. The swarm can't regain hit points or gain temporary hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bites",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 0 ft., one target in the swarm's space. {@h}7 ({@damage 2d6}) piercing damage, or 3 ({@damage 1d6}) piercing damage if the swarm has half of its hit points or fewer."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"urban"
+			],
+			"fluff": {
+				"name": "Swarm of Rats",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Swarm of Rats.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "inset",
+										"name": "The Nature of Swarms",
+										"entries": [
+											"The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a yuan-ti abomination might have swarms of poisonous snakes slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Swarm of Rats.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/swarm-of-rats.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
 			"name": "The Balack Rider",
 			"source": "MoR",
 			"size": [
@@ -9941,7 +11141,7 @@
 			],
 			"ac": [
 				{
-					"ac": 19,
+					"ac": 18,
 					"from": [
 						"natural armor"
 					]
@@ -9952,33 +11152,32 @@
 				"average": 207
 			},
 			"speed": {
-				"walk": 40,
-				"fly": 60,
-				"swim": 40,
-				"canHover": false
+				"walk": 15,
+				"fly": 20,
+				"swim": 15
 			},
 			"str": 23,
 			"dex": 13,
-			"con": 20,
+			"con": 21,
 			"int": 16,
 			"wis": 16,
 			"cha": 12,
 			"save": {
-				"con": "+10",
-				"wis": "+8",
-				"cha": "+6"
+				"con": "+11",
+				"wis": "+9",
+				"dex": "+7"
 			},
 			"skill": {
-				"perception": "+8",
-				"stealth": "+6",
-				"survival": "+8",
-				"athletics": "+11"
+				"perception": "+9",
+				"stealth": "+7",
+				"athletics": "+12",
+				"survival": "+9"
 			},
 			"senses": [
 				"blindsight 60 ft.",
 				"darkvision 120 ft."
 			],
-			"passive": 18,
+			"passive": 19,
 			"resist": [
 				"fire",
 				"poison"
@@ -9987,12 +11186,11 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
 				"Draconic",
 				"Elvish",
 				"Sylvan"
 			],
-			"cr": "15",
+			"cr": "17",
 			"trait": [
 				{
 					"name": "Amphibious",
@@ -10009,26 +11207,19 @@
 				{
 					"name": "Multiheaded",
 					"entries": [
-						"The zmey normally has three heads.",
-						"While it has more than one head, the zmey can only be {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition paralyzed} or {@condition stunned} if all of it's remaining heads are affected. If a single head is affected by such condition only that head is affected. If one head of the zmey takes 60 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies. The zmey has one Legendary Actions and Reactions per head per turn."
+						"The zmey normally has three heads, each can act independently. When the zmey rolls initiative it can roll initiative for all of its heads and can take a complete turn on all initiative. "
 					]
 				},
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The zmey regains 10 hit points when it uses a legendary action. If one of it's head's takes acid or necrotic damage, this trait doesn't functions for that head the next time it would regenerate."
+						"The zmey's head and body regains 10 hit points at the start of its turn. If a head takes cold or necrotic damage, this trait doesn't functions for that head until it's the next turn."
 					]
 				},
 				{
 					"name": "Spawn Headling",
 					"entries": [
-						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing acid or necrotic damage to it prevents this transformation."
-					]
-				},
-				{
-					"name": "Firepower",
-					"entries": [
-						"The zmey has 9 charges of Firepower it can use to power it's Fire Breath and Spellburn. At the start of it's turn the zmey regains one Firepower for each of it's heads"
+						"The severed head of a zmey grows into a zmey headling after one round after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing cold or necrotic damage to it prevents this transformation."
 					]
 				},
 				{
@@ -10043,33 +11234,29 @@
 			],
 			"action": [
 				{
-					"name": "Multiattack",
-					"entries": [
-						"The zmey makes two claws attack and one tail attack."
-					]
-				},
-				{
 					"name": "Bite",
 					"entries": [
 						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
 					]
 				},
 				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage. The Zmey can choose not to deal damage, but to try to grapple the creature instead."
-					]
-				},
-				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 19} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 20} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
 					]
 				},
 				{
-					"name": "Fire Breath (cost 1-3 firepower)",
+					"name": "Fire Breath",
 					"entries": [
-						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads that prepared one. Creatures in a cone take 17 ({@damage 5d6}) fire damage, or half damage with a successful {@dc 18} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads that prepared one. Creatures in a cone take 14 ({@damage 4d6}), 31 ({@damage 9d6}), if two cones overlap or 56 ({@damage 16d6}) fire damage if all three cones overlap or half damage with a successful {@dc 19} Dexterity saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
 					]
 				}
 			],
@@ -10077,7 +11264,7 @@
 				{
 					"name": "Spellburn",
 					"entries": [
-						"When the zmey sees a spell being cast within 60 of it or if the spell targets the zmey, it can use it's reaction to nullify the spell's effect by spending Firepower charges equal to the spell's level."
+						"If the zmey is holding it's breath and sees a spell being cast within 60 of it or if the spell targets the zmey, it can use it's reaction to unleash its breath weapon with one head at the spell or the spellcaster."
 					]
 				}
 			],
@@ -10175,11 +11362,9 @@
 				"SD"
 			],
 			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
+				"Breath Weapon"
 			],
 			"languageTags": [
-				"C",
 				"DR",
 				"E",
 				"S"
