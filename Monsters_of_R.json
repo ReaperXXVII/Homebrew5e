@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1677845370,
-		"dateLastModified": 1677845370
+		"dateAdded": 1678564208,
+		"dateLastModified": 1678564208
 	},
 	"monster": [
 		{
@@ -6798,6 +6798,161 @@
 				"restrained",
 				"stunned"
 			]
+		},
+		{
+			"name": "Night Terror",
+			"source": "MoR",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "10d8",
+				"average": 45
+			},
+			"speed": {
+				"fly": {
+					"number": 20,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 17,
+			"con": 10,
+			"int": 6,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"dex": "+6",
+				"int": "+1"
+			},
+			"skill": {
+				"stealth": "+9"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "unless the Night Terror is in bright light"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"languages": [
+				"Abyssal",
+				"Deep Speech",
+				"telepathy 120 ft.,"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The terror can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				},
+				{
+					"name": "Light Sensitivity",
+					"entries": [
+						"While in bright light, the terror has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the terror can take the Hide action as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mind Rake",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}10 ({@damage 2d6 + 3}) psychic damage or, if the terror had advantage on the attack roll, 17 ({@damage 4d6 + 3}) psychic damage. If the target is a creature and is {@condition frightened}, it also ages a number of years equal to the psychic damage taken."
+					]
+				},
+				{
+					"name": "Creeping Presence",
+					"entries": [
+						"Each creature of the terror's choice that is within 30 feet of the terror and aware of it, but can't see it must succeed on a {@dc 13} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/ac/62/7e/ac627ea8cab5346ad1a0aee87ad957a8.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ulvR3fy.png",
+			"traitTags": [
+				"Incorporeal Movement",
+				"Light Sensitivity"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"AB",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Oblex Master",
