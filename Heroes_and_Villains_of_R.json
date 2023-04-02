@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.177.1",
+	"siteVersion": "1.178.0",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1677845381,
-		"dateLastModified": 1677845381
+		"dateAdded": 1680427237,
+		"dateLastModified": 1680427237
 	},
 	"monster": [
 		{
@@ -3056,7 +3056,7 @@
 				{
 					"name": "Devour",
 					"entries": [
-						"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}62 ({@damage 6d12 + 10}) force damage. If the target is a creature and this damage reduces it to 0 hit points or it is {@condition incapacitated}, The Night Serpent swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space in a Nightmarish Demiple."
+						"{@atk mw} {@hit 19} to hit, reach 10 ft., one target. {@h}49 ({@damage 6d12 + 20}) force damage. If the target is a creature and this damage reduces it to 0 hit points or it is {@condition incapacitated}, The Night Serpent swallows it. The swallowed target, along with everything it is wearing and carrying, appears in an unoccupied space in a Nightmarish Demiple."
 					]
 				},
 				{
@@ -3068,7 +3068,7 @@
 			],
 			"legendary": [
 				{
-					"name": "Nightmares",
+					"name": "Wispers of the Night",
 					"entries": [
 						"The Night Serpent uses its spellcasting ability or uses a devoured creature's abilities as her own."
 					]
@@ -3080,7 +3080,7 @@
 					]
 				},
 				{
-					"name": "Nightmare Projection (Costs 2 Actions)",
+					"name": "Mind Venom (Costs 2 Actions)",
 					"entries": [
 						"Each creature within 60 feet of The Night Serpent must make a {@dc 24} Wisdom saving throw, taking 40 ({@damage 6d10 + 7}) psychic damage on a failed save, or half as much damage on a successful one."
 					]
@@ -3092,11 +3092,13 @@
 			},
 			"fluff": {
 				"entries": [
-					"Eater of the World",
-					"Mother of the Night Parade",
-					"Nidhogg",
-					"The Night Serpent",
-					"The Serpent Mother"
+					"Lair Actions:",
+					"Regurgitate Horrors.",
+					"The Night Serpent's maw opens agape and horrors it has consumed pour out. Two creatures trapped in her Nightmarish Demiple appear in unoccupied spaces 10 feet in front of The Night Serpent. They immediately take their turns.",
+					"Crushing Body.",
+					"A creature within 120 feet of Dendar must succeed on a DC 20 Dexterity saving throw or take 55 (10d10) bludgeoning damage and become restrained and fall prone as The Night Serpents' immense body crushes the creature. On a successful save a creature takes half damage and is not restrained and does not fall prone.",
+					"Unseen End.",
+					"The Night Serpent snuffs all magical and non-magical light within a mile of itself. Spells that shed light lower than 6th level are dispelled while higher level spells and effects of magic items that shed light are suppressed until the next initiative count 20."
 				],
 				"images": [
 					{
@@ -7437,6 +7439,178 @@
 			],
 			"conditionInflictSpell": [
 				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "The Masterpiece",
+			"source": "HaVoR",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 20,
+			"int": 20,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+10",
+				"cha": "+10",
+				"dex": "+10"
+			},
+			"skill": {
+				"perception": "+10",
+				"insight": "+10",
+				"deception": "+10",
+				"stealth": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft.,"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The masterpiece's spellcasting ability is Charisma (spell save {@dc 18}). The masterpiece can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell charm person}",
+						"{@spell cure wounds}",
+						"{@spell disguise self}",
+						"{@spell raulothim's psychic lance|FTD}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell dominate person}",
+							"{@spell mass suggestion}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Aura of The False Angel",
+					"entries": [
+						"A creature that starts its turn within 30 feet of the masterpiece must make a {@dc 18} Wisdom saving throw, provided the masterpiece isn't {@condition incapacitated}. On a failed save, the creature is {@condition charmed} by the masterpiece. A creature {@condition charmed} in this way can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Once it succeeds on the saving throw, a creature is immune to this masterpiece's aura for 24 hours."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The masterpiece has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Blood Aegis",
+					"entries": [
+						"While the masterpiece has temporary hit points it gains a plus 2 to its AC, and when is subjected to an effect that allows it to make a saving throw to take only half damage, the masterpiece instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The radiant idol makes a single melee attack against all creatures in a 120 feet line."
+					]
+				},
+				{
+					"name": "Psychic Lance",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 120 ft., all creatures in a 120 feet line. 24 ({@damage 7d6}) psychic damage and the target is {@condition incapacitated} until the start of the end of the masterpiece's next turn."
+					]
+				},
+				{
+					"name": "Swirl of Red (1/Day)",
+					"entries": [
+						"The masterpiece chooses a point on the ground it can see within 60 feet of it. A 30-foot-radius sphere appears where all blood is quickly drained from creatures. Each creature in the sphere when it appears or that ends its turn there must make a {@dc 18} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. The masterpiece gains temporary hit points equal to the total damage done by this ability. The area of the sphere is also difficult terrain and it remains for one minute. While the sphere remains the masterpiece can use its bonus action to move the sphere up to 20 feet in any direction."
+					]
+				}
+			],
+			"tokenUrl": "https://i.imgur.com/18viRzT.png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"charmed"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
