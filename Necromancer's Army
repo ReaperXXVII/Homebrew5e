@@ -1,0 +1,2525 @@
+{
+	"siteVersion": "1.181.6",
+	"_meta": {
+		"sources": [
+			{
+				"json": "NecromancersArmy",
+				"abbreviation": "NA",
+				"full": "Necromancer's Army",
+				"url": "",
+				"authors": [
+					"R"
+				],
+				"convertedBy": [],
+				"color": "#743c75"
+			}
+		],
+		"dateAdded": 1686926438,
+		"dateLastModified": 1686926438
+	},
+	"monster": [
+		{
+			"name": "Army of Blights",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Needle Blight",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 20",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 13,
+			"int": 4,
+			"wis": 8,
+			"cha": 3,
+			"skill": {
+				"stealth": "+3"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 9,
+			"vulnerable": [
+				"fire",
+				"slashing"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"understands any one language (usually Common) but can't speak"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 15 ({@damage 6d4}) piercing damage, or 7 ({@dice 3d4}) if the unit is below half hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Thorns and Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}15 ({@damage 6d4}) piercing damage."
+					]
+				},
+				{
+					"name": "Needles",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 30/60 ft., one target. {@h}21 ({@damage 6d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Needle Spray",
+					"entries": [
+						"All creatures in a 10 ft. wide, 30 ft. long line must make a {@dc 11} Dexterity saving throw, taking 21 ({@damage 6d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Cloud of Bats",
+			"source": "NecromancersArmy",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "beast",
+				"swarmSize": "T",
+				"tags": [
+					{
+						"tag": "swarm of bats",
+						"prefix": "2-4"
+					}
+				]
+			},
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "20d6 + 20",
+				"average": 90
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 2,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Echolocation",
+					"entries": [
+						"The swarm can't use its blindsight while {@condition deafened}."
+					]
+				},
+				{
+					"name": "Swarm",
+					"entries": [
+						"The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points. The unit takes double damage from area of effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Bites",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 0 ft., one creature in the swarm's space. {@h}10 ({@damage 4d4}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"hill",
+				"mountain",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"name": "Swarm of Bats",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Swarm of Bats.jpg"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "inset",
+										"name": "The Nature of Swarms",
+										"entries": [
+											"The swarms presented here aren't ordinary or benign assemblies of little creatures. They form as a result of some sinister or unwholesome influence. A vampire can summon swarms of bats and rats from the darkest corners of the night, while the very presence of a mummy lord can cause scarab beetles to boil up from the sand-filled depths of its tomb. A hag might have the power to turn swarms of ravens against her enemies, while a yuan-ti abomination might have swarms of poisonous snakes slithering in its wake. Even druids can't charm these swarms, and their aggressiveness is borderline unnatural."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Swarm of Bats.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/swarm-of-bats.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Dwarven Shield Wall",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"dwarf",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"wis": "+3",
+				"dex": "+2"
+			},
+			"skill": {
+				"athletics": "+7"
+			},
+			"passive": 11,
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any two language (usually Common, and Dwarvish)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d8}) slashing damage, or 7 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 40 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 19 ({@dice 3d8 + 6}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Advancing Wall",
+					"entries": [
+						"The unit's moment speed can not be hindered or slowed unless it is {@condition grapled} or {@condition restrained}. If its movement would be blocked by another unit, it can push back."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points, it can use its Close the Gaps in place of one attack."
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Close The Gaps",
+					"entries": [
+						"The unit gains a plus 3 bonus to its Armor Class and Dexterity Saving throws until the start of its next turn. (this bonus with the shield bonus is considered three-quarters cover)"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Elven Skirmishers",
+			"shortName": "Archer Line",
+			"source": "NecromancersArmy",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"elf",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8",
+				"average": 135
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+6",
+				"acrobatics": "+5"
+			},
+			"passive": 16,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 13 ({@dice 3d8}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h} 9 ({@damage 2d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Blacken Sky",
+					"entries": [
+						"The unit chooses a point within 600 feet. All creatures within 15 feet of that point must make a {@dc 15} Dexterity saving throw, taking 9 ({@damage 2d8}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Light Step",
+					"entries": [
+						"The unit can take the disengage, doge or dash action as a bonus action."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Goblin Raiding Party",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "S",
+				"tags": [
+					"goblins",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "20d6",
+				"average": 70
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 10,
+			"int": 8,
+			"wis": 7,
+			"cha": 8,
+			"skill": {
+				"stealth": "+4",
+				"acrobatics": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"resist": [],
+			"immune": [],
+			"vulnerable": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"paralyzed",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Goblin)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) piercing damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 16, only once per remains)."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 14 ({@dice 4d6}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30/120 ft., one target. {@h}10 ({@damage 4d4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Rain of Stones",
+					"entries": [
+						"The unit chooses a point within 120 feet. All creatures within 15 feet of that point must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d4}) bludgeoning damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"The unit can take the Disengage or Hide action as a bonus action on each of its turns."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"GO",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Light Cavilary Unit",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 60",
+				"average": 195
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"wis": "+2"
+			},
+			"skill": {
+				"athletics": "+7"
+			},
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) slashing damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 19 ({@dice 3d8 + 6}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 15, only once per remains)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}10 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Rain of Arrows",
+					"entries": [
+						"The unit chooses a point within 320 feet. All creatures within 15 feet of that point must make a {@dc 11} Dexterity saving throw, taking 7 ({@damage 2d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Skirmish",
+					"entries": [
+						"The unit can take the disengage action or move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Longbowman Line",
+			"shortName": "Archer Line",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 9 ({@dice 2d8}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}18 ({@damage 4d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Blacken Sky",
+					"entries": [
+						"The unit chooses a point within 600 feet. All creatures within 20 feet of that point must make a {@dc 11} Dexterity saving throw, taking 18 ({@damage 4d8}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Mob",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "20d8",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 10,
+			"int": 7,
+			"wis": 7,
+			"cha": 7,
+			"skill": {
+				"athletics": "+5"
+			},
+			"passive": 8,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Swarm",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 9 ({@dice 2d8}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Improvised Weapons",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6}) piercing damage, plus 7 ({@damage 2d6}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stoning",
+					"entries": [
+						"The unit chooses a point within 60 feet. All creatures within 10 feet of that point must make a {@dc 10} Dexterity saving throw, taking 10 ({@damage 4d4}) bludgeoning damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"variant": [
+				{
+					"name": "Cultists",
+					"entries": [
+						{
+							"name": "Frenzied",
+							"entries": [
+								"If the swarm has half of its hit points or fewer at the start of its turn, roll a d6. On a roll of 5 or 6, the swarm uses its action to make a melee attack against a randomly determined creature within its reach. If there is no creature within its reach, the swarm does nothing this turn."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sacrifice",
+							"entries": [
+								"When the swarm hits a Medium or smaller target with a melee weapon attack, it is {@condition grappled} (escape {@dc 13}). Until this grapple ends, the target is {@condition restrained}, the swarm can automatically hit the target with its melee weapon attacks. The target dies if reduced to 0 hit points while {@condition grappled} by the swarm."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Open the Gate",
+							"entries": [
+								"The swarm reduces itself to 0 hit points, summoning a fiend or aberration creature of challenge rating equal to its own or lower, or half of its challenge rating (rounded up) if it has half of its hit points or fewer. The creature appears in an unoccupied space within the swarm's space. The summoned creature disappears when it drops to 0 hit points."
+							],
+							"type": "entries"
+						}
+					],
+					"type": "variant"
+				},
+				{
+					"name": "Fanatics",
+					"entries": [
+						{
+							"name": "Bad Omens",
+							"entries": [
+								"If the swarm has half of its hit points or fewer at the start of its turn, roll a d6. On a roll of 5 or 6, the swarm has a speed of 0 and has disadvantage on ability checks and attack rolls until the start of its next turn."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Burn the Heretics",
+							"entries": [
+								"While inside the swarm's space, any creature that tries to cast a spell must avoid the wrath of the fanatics. The creature can choose another action, but if it tries to cast the spell, it must make a {@dc 15} Dexterity saving throw. On a failed save, it takes 1d6 fire damage per level of the spell, and the spell has no effect and is wasted."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Purified by Fire",
+							"entries": [
+								"When the swarm hits with any weapon, if the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 (1d10) fire damage at the start of each of its turns."
+							],
+							"type": "entries"
+						}
+					],
+					"type": "variant"
+				},
+				{
+					"name": "Militia",
+					"entries": [
+						{
+							"name": "Reactive",
+							"entries": [
+								"The swarm can take one reaction on every turn in a combat."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Unruly",
+							"entries": [
+								"If the swarm has half of its hit points or fewer at the start of its turn, roll a d6. On a roll of 5 or 6, the swarm uses up all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The swarm doesn't take an action this turn."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Countercharge",
+							"entries": [
+								"In response to a creature entering its reach, the swarm can make one melee weapon attack with advantage against the creature."
+							],
+							"type": "entries"
+						}
+					],
+					"type": "variant"
+				},
+				{
+					"name": "Rebels",
+					"entries": [
+						{
+							"name": "Impetuous",
+							"entries": [
+								"If the swarm has half of its hit points or fewer at the start of its turn, roll a d6. On a roll of 5 or 6, the swarm uses up all its movement to move toward the nearest and most obvious seat of power. The swarm moves toward the seat of power by the most direct route."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sworn Enemy",
+							"entries": [
+								"The swarm has a sworn enemy, which include every identified member of an organization or government. When the swarm makes a melee or ranged attack roll against its sworn enemy, it has advantage on the roll. In addition, its target gains no benefit from cover, other than total cover. If the attack hits, the sworn enemy takes an extra 10 (3d6) damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Destructive",
+							"entries": [
+								"The swarm deals double damage to objects and structures."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Inspirational Ideals {@recharge 4}",
+							"entries": [
+								"Up to three allies within 120 feet of the swarm that can hear it can use their reactions to be freed from any charm and fright effect."
+							],
+							"type": "entries"
+						}
+					],
+					"type": "variant"
+				}
+			],
+			"fluff": {},
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true
+		},
+		{
+			"name": "Musketiers",
+			"shortName": "Archer Line",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 20",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 11 ({@dice 2d8 + 2}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Bayonete",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Musket",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}26 ({@damage 4d12}) piercing damage. The unit must take the reload action before it can use this attack again."
+					]
+				},
+				{
+					"name": "Firing Line",
+					"entries": [
+						"All creatures in a 15 ft. wide, 40 ft. long line must make a {@dc 11} Dexterity saving throw, taking 26 ({@damage 4d12}) piercing damage on a failed save or half as much on a successful one. The unit must take the reload action before it can use this attack again."
+					]
+				},
+				{
+					"name": "Reload",
+					"entries": [
+						"If the unit made a Targeted Fire or Firing Line it must take this action before it can use those again."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Phantom Infantry",
+			"source": "NecromancersArmy",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Phantom",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"stealth": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "and slashing from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"vulnerable": [
+				"psychic",
+				"radiant"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Incorporeal Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, even other units, and the unit can move through solid objects as if it were difficult terrain. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 10 ({@damage 3d8}) piercing damage, or 7 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Spectral Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 3d8}) force damage."
+					]
+				},
+				{
+					"name": "Ethereal Battlecry",
+					"entries": [
+						"The phantoms let out an eerie Battlecry. Each creature within 30 feet that isn't an undead or a construct must make a {@dc 10} Wisdom saving throw. On a failure, the target takes 9 ({@damage 2d8}) cold damage and is {@condition frightened} until the end of the phantom's next turn. On a success, the target takes half the damage and isn't {@condition frightened}."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"C",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Skeletal Archers",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Skeleton",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) piercing damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 15, only once per remains)."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 7 hit points. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 7 hit points of the unit. If a creature controlling a portion of the unit dies the unit loses hit points equal to the controlled hit points by the creature, as the undead become uncontrollable and wander off. For every 7 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Shortswor",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Rain of Arrows",
+					"entries": [
+						"The unit chooses a point within 320 feet. All creatures within 15 feet of that point must make a {@dc 11} Dexterity saving throw, taking 14 ({@damage 4d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			]
+		},
+		{
+			"name": "Skeletal Heavy Cavalry",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "L",
+				"tags": [
+					"Skeleton Rider",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 90",
+				"average": 255
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 8,
+			"cha": 3,
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 18 ({@damage 4d8}) bludgeoning damage, or 9 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 13 hit points. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 13 hit points of the unit. If a creature controlling a portion of the unit dies the unit loses hit points equal to the controlled hit points by the creature, as the undead become uncontrollable and wander off. For every 13 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Trampleing Charge",
+					"entries": [
+						"If the cavalry moves 20 feet in a straight line toward a unit or creature and hits it with a Flail Attack the target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone} and suspend the Horde ability of the trampled unit. The cavalry can enter and move through the space of the targeted unit as if it were difficult terrain."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "Skeletal Infantry",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Skeleton",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 60",
+				"average": 150
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 8,
+			"cha": 3,
+			"skill": {
+				"athletics": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) piercing damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 16, only once per remains)."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 7 hit points. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 7 hit points of the unit. If a creature controlling a portion of the unit dies the unit loses hit points equal to the controlled hit points by the creature, as the undead become uncontrollable and wander off. For every 7 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Rain of Javelins",
+					"entries": [
+						"The unit chooses a point within 120 feet. All creatures within 10 feet of that point must make a {@dc 10} Dexterity saving throw, taking 14 ({@damage 4d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Skeletal Light Cavalry",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "L",
+				"tags": [
+					"Skeleton Rider",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 40",
+				"average": 150
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 3,
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) bludgeoning damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 15, only once per remains)."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 7 hit points. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 7 hit points of the unit. If a creature controlling a portion of the unit dies the unit loses hit points equal to the controlled hit points by the creature, as the undead become uncontrollable and wander off. For every 7 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Shorbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 80/320 ft., one target. {@h}10 ({@damage 2d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Rain of Arrows",
+					"entries": [
+						"The unit chooses a point within 320 feet. All creatures within 15 feet of that point must make a {@dc 11} Dexterity saving throw, taking 10 ({@damage 2d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Skeletal Musketiers",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Skeleton",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"armor scraps"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 14,
+			"int": 6,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 7 hitpoints. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 7 hitpoints of the unit. If a creature controlling a portion of the unit dies the unit loses hitpoints equal to the controlled hitpoints by the creature, as the undead become uncontrollable and wander off. For every 7 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Bayonete",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Targeted Fire",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}26 ({@damage 4d12}) piercing damage. The unit must take the reload action before it can use this attack again."
+					]
+				},
+				{
+					"name": "Firing Line",
+					"entries": [
+						"All creatures in a 15 ft. wide, 40 ft. long line must make a {@dc 13} Dexterity saving throw, taking 26 ({@damage 4d12}) piercing damage on a failed save or half as much on a successful one. The unit must take the reload action before it can use this attack again."
+					]
+				},
+				{
+					"name": "Reload",
+					"entries": [
+						"If the unit made a Targeted Fire or Firing Line it must take this action before it can use those again."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Skeleton (base)",
+			"source": "NecromancersArmy",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it spoke in life but can't speak"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"name": "Skeleton",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Skeletons arise when animated by dark magic. They heed the summons of spellcasters who call them from their stony tombs and ancient battlefields, or rise of their own accord in places saturated with death and loss, awakened by stirrings of necromantic energy or the presence of corrupting evil.",
+									{
+										"name": "Animated Dead",
+										"type": "entries",
+										"entries": [
+											"Whatever sinister force awakens a skeleton infuses its bones with a dark vitality, adhering joint to joint and reassembling dismantled limbs. This energy motivates a skeleton to move and think in a rudimentary fashion, though only as a pale imitation of the way it behaved in life. An animated skeleton retains no connection to its past, although resurrecting a skeleton restores it body and soul, banishing the hateful undead spirit that empowers it.",
+											"While most skeletons are the animated remains of dead humans and other humanoids, skeletal undead can be created from the bones of other creatures besides humanoids, giving rise to a host of terrifying and unique forms."
+										]
+									},
+									{
+										"name": "Obedient Servants",
+										"type": "entries",
+										"entries": [
+											"Skeletons raised by spell are bound to the will of their creator. They follow orders to the letter, never questioning the tasks their masters give them, regardless of the consequences. Because of their literal interpretation of commands and unwavering obedience, skeletons adapt poorly to changing circumstances. They can't read, speak, emote, or communicate in any way except to nod, shake their heads, or point. Still, skeletons are able to accomplish a variety of relatively complex tasks.",
+											"A skeleton can fight with weapons and wear armor, can load and fire a catapult or trebuchet, scale a siege ladder, form a shield wall, or dump boiling oil. However, it must receive careful instructions explaining how such tasks are accomplished.",
+											"Although they lack the intellect they possessed in life, skeletons aren't mindless. Rather than break its limbs attempting to batter its way through an iron door, a skeleton tries the handle first. If that doesn't work, it searches for another way through or around the obstacle."
+										]
+									},
+									{
+										"name": "Habitual Behaviors",
+										"type": "entries",
+										"entries": [
+											"Independent skeletons temporarily or permanently free of a master's control sometimes pantomime actions from their past lives, their bones echoing the rote behaviors of their former living selves. The skeleton of a miner might lift a pick and start chipping away at stone walls. The skeleton of a guard might strike up a post at a random doorway. The skeleton of a dragon might lie down on a pile of treasure, while the skeleton of a horse crops grass it can't eat. Left alone in a ballroom, the skeletons of nobles might continue an eternally unfinished dance.",
+											"When skeletons encounter living creatures, the necromantic energy that drives them compels them to kill unless they are commanded by their masters to refrain from doing so. They attack without mercy and fight until destroyed, for skeletons possess little sense of self and even less sense of self-preservation."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A skeleton doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Skeleton.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Skeleton.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Skirmisher Unit",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item padded armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 60",
+				"average": 195
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"wis": "+2"
+			},
+			"skill": {
+				"athletics": "+6"
+			},
+			"passive": 10,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d8}) slashing damage, or 7 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 19 ({@dice 3d8 + 6}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 17, only once per remains)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) slashing damage."
+					]
+				},
+				{
+					"name": "Rain of Javelins",
+					"entries": [
+						"The unit chooses a point within 120 feet. All creatures within 15 feet of that point must make a {@dc 11} Dexterity saving throw, taking 14 ({@damage 4d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Skirmish",
+					"entries": [
+						"The unit can take the disengage action or move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Spearman Infantry",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"any race",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 20",
+				"average": 110
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 9,
+			"cha": 10,
+			"skill": {
+				"athletics": "+6"
+			},
+			"passive": 9,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) piercing damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 16, only once per remains)."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 11 ({@dice 2d8 + 2}) as some of its members break away and flee."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Rain of Javelins",
+					"entries": [
+						"The unit chooses a point within 120 feet. All creatures within 10 feet of that point must make a {@dc 10} Dexterity saving throw, taking 14 ({@damage 4d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Zombie Horde",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "undead",
+				"swarmSize": "M",
+				"tags": [
+					"Zombie",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				7
+			],
+			"hp": {
+				"formula": "30d8 + 90",
+				"average": 225
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 4,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"skill": {
+				"athletics": "+6"
+			},
+			"passive": 8,
+			"resist": [],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) bludgeoning damage, or 7 ({@dice 2d6}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Animated Army",
+					"entries": [
+						"The unit can only be healed by raising new dead to fill the ranks. Adding another undead to the ranks heals the unit by 11 hit points. The unit needs one or more creatures to control It at all times. If a spell or feature allows to control of a single undead it allows control over 11 hit points of the unit. If a creature controlling a portion of the unit dies the unit loses hit points equal to the controlled hit points by the creature, as the undead become uncontrollable and wander off. For every 11 hit points lost this way an uncontrolled individual member of the creature appears within 5 feet of the unit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit-points."
+					]
+				},
+				{
+					"name": "Gnaw and Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) slashing damage."
+					]
+				},
+				{
+					"name": "Pull Under",
+					"entries": [
+						"The unit attempts to envelop a creature within 5 feet of the horde. The target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone} and considered {@condition grappled} (escape {@dc 14}) as they are pinned to the ground under a horde of zombies. The zombies can enter and move through the space of a {@condition grappled} unit as if it were difficult terrain."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"When the horde takes damage that is not radiant, it can use its reaction to halve the damage sustained."
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		}
+	]
+}
