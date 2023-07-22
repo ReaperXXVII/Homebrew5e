@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.181.6",
+	"siteVersion": "1.181.7",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1686926445,
-		"dateLastModified": 1686926445
+		"dateAdded": 1690054591,
+		"dateLastModified": 1690054591
 	},
 	"monster": [
 		{
@@ -1718,6 +1718,152 @@
 			"conditionInflict": [
 				"petrified",
 				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Corpse Rose",
+			"source": "MoR",
+			"size": [
+				"L"
+			],
+			"type": "plant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d10 + 45"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 16,
+			"int": 7,
+			"wis": 15,
+			"cha": 3,
+			"senses": [
+				"blindsight 120 ft. (blind beyond this radius)"
+			],
+			"passive": 12,
+			"conditionImmune": [
+				"blinded",
+				"deafened",
+				"poisoned"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Corpses",
+					"entries": [
+						"When first encountered, a corpse rose contains the corpses of {@dice 1d6 + 3} Humanoids. A corpse rose can hold the remains of up to nine Humanoids. These remains have total cover against attacks and other effects outside the corpse rose. If the corpse rose dies, the corpses within it can be pulled free."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The corpse rose can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Stench of Death",
+					"entries": [
+						"The corpse rose and its zombies releases a fetid smell. Each creature that starts its turn within 10 feet of the corpse rose or one of its zombies must make a {@dc 14} Constitution saving throw, unless the creature is a Construct or an Undead. On a failed save, the creature takes 10 ({@damage 3d6}) poison damage and becomes {@condition poisoned} until the start of its next turn. On a successful save, a creature takes half damage and is not {@condition poisoned}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The corpse rose pulls all creatures {@condition grappled} by it 10 feet closer to itself and then uses Grasping Thorns twice or a Grasping Thorns and Harvest the Dead once."
+					]
+				},
+				{
+					"name": "Harvest the Dead",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6+2}) piercing damage, plus 10 ({@damage 3d6}) poison damage, and the target is {@condition grappled} or {@condition restrained} if it is already {@condition grappled} (escape {@dc 13}). Alternatively, the corpse rose swallows all unsecured Humanoid corpses within 5 feet of it, along with any equipment the corpse is wearing or carrying."
+					]
+				},
+				{
+					"name": "Grasping Thorns",
+					"entries": [
+						"The corpse rose rapidly grows thorny wines in a 15-foot line that is 5 feet wide. Each creature in that line must make a {@dc 13} Athletics or Acrobatics skill check or become {@condition grappled}. The grasping thorns have AC 12 and an area of 5- foot-square that can be cleared by dealing 4 slashing, fire, or necrotic damage or more to it at once. Cutting the thorns doesn't hurt the rose, but ends the grapple. Additionally, the sharp thorns growing from the ground in the area turn the ground into difficult terrain. When a creature moves or is moved in the area it takes 4 piercing damage for every 5 feet of it moved."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Digest",
+					"entries": [
+						"The corpse rose digests one corpse in its body and instantly regains 20 hit points. Nothing of the digested corpse remains. Any equipment on the corpse is expelled from the corpse rose in its space. Additionally, the corpse rose activates Stench of Death until the end of its next turn."
+					]
+				},
+				{
+					"name": "Reanimate",
+					"entries": [
+						"The corpse rose animates one corpse in its body, turning it into a {@creature zombie}. The zombie appears in an unoccupied space within 5 feet of the corpse rose and acts immediately after it in the initiative order. The zombie acts as an ally of the corpse rose but isn't under its control, and the rose's stench clings to it (see Stench of Death)."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp",
+				"urban"
+			],
+			"fluff": {
+				"name": "Corpse Flower",
+				"source": "MPMM",
+				"entries": [
+					"A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful Undead creatures. Unless it is uprooted and burned while it is still a seedling, the corpse flower grows to enormous size over several weeks, then tears itself free of the earth and begins scavenging Humanoid corpses from battlefields and graveyards. Using its fibrous tentacles, it stuffs the remains into its body to sustain and repair itself. The plant has a malevolent bent and despises the living.",
+					"With or without corpses nested in its body, a corpse flower exudes a stench of decay that can overwhelm the senses of nearby creatures, causing them to become nauseated. The stench, which serves as a defense mechanism, fades {@dice 2d4} days after the corpse flower dies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Corpse Flower.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MPMM/Corpse Flower.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/corpse-flower.mp3"
+			},
+			"traitTags": [
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
 				"restrained"
 			],
 			"hasFluff": true,
@@ -12731,6 +12877,115 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Terror Wolf",
+			"source": "MoR",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d10 + 16",
+				"average": 60
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 15,
+			"int": 6,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6",
+				"athletics": "+6"
+			},
+			"passive": 16,
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Lone Wolf",
+					"entries": [
+						"The wolf has disadvantage on all its attack rolls if at least one other wolf, dire wolf or other wolf-type creature is within 20 feet of it."
+					]
+				},
+				{
+					"name": "Ruthless",
+					"entries": [
+						"The wolf gains advantage on its attacks against a creature that is {@condition frightened}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage. If the target is a creature with blood, it must succeed on a {@dc 14} Constitution saving throw or start to bleed profusely. A bleeding creature takes {@damage 2d6} necrotic damage at the start of its turns. The bleeding can be stopped by a successful {@dc 10} medicine skill check or with the use of a healer's kit. The bleeding also stops if the creature receives magical healing."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Silent Stare",
+					"entries": [
+						"When the wolf sees a creature come within 30 feet of itself it stares at the creature. The target must succeed on a {@dc 12} Wisdom saving or become {@condition frightened} of the wolf as long as the creature has a line of sight of the wolf."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill"
+			],
+			"fluff": {
+				"name": "Dire Wolf",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Dire Wolf.webp"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Dire Wolf.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/dire-wolf.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluffImages": true
+		},
+		{
 			"name": "The Bagman",
 			"source": "MoR",
 			"size": [
@@ -13541,6 +13796,501 @@
 			]
 		},
 		{
+			"name": "The Zmey",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30,
+				"swim": 20
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 21,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+11",
+				"wis": "+9",
+				"dex": "+7"
+			},
+			"skill": {
+				"perception": "+9",
+				"athletics": "+12",
+				"survival": "+9",
+				"stealth": "+7"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Draconic",
+				"Elvish",
+				"Sylvan"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Multiheaded",
+					"entries": [
+						"The zmey normally has three heads, each can act independently. When the zmey rolls initiative it can roll initiative for all of its heads and can take a turn on all initiative, as the heads were different creatures with separate actions and reactions."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The zmey's head and body regains 10 hit points at the start of its turn. If a head takes cold or necrotic damage, this trait doesn't functions for that head until it's the next turn."
+					]
+				},
+				{
+					"name": "Spawn Headling",
+					"entries": [
+						"The severed head of a zmey grows into a zmey headling after one round after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing cold or necrotic damage to it prevents this transformation."
+					]
+				},
+				{
+					"name": "Hemotoxin venom",
+					"entries": [
+						"For each points of Hemotoxin afflicting a creature:",
+						"-Subtracts one from all it's Dexterity and Strength-based attack rolls, saving throws and skill checks.",
+						"-Suffers one point of poison damage for each point of hemotoxin it has each time it casts a spell attacks, moves 10 feet or when it takes damage.",
+						"A creature affected by Hemotoxin can make a {@dc 19} Constitution saving throw at the end of its turn, on a success the creature loses 1 points of Hemotoxin, 2 if it succeeds by 5 or more. The Hemotoxin is considered a type poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 points per level of the spell used."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Prepare",
+					"entries": [
+						"The zmey prepares a breath attack and makes one tail attack."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The zmey makes one bite attack and one claw attack or attempts to grapple a medium or smaller creature."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 20} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"The zmey breathes a 60-foot cones of fire. Creatures in a cone take 17 ({@damage 5d6}), 42 ({@damage 12d6}), if two cones overlap or 70 ({@damage 20d6}) fire damage if all three cones overlap or half damage with a successful {@dc 19} Dexterity saving throw. A zmey can choose whether this attack harms plants or plant creatures."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Quickburn",
+					"entries": [
+						"If the zmey is holding its breath and sees a spell being cast within 60 feet of it or another of its head uses its fire breath, it can use its reaction to unleash its breath weapon."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
+			"name": "The Zmey",
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30,
+				"swim": 20
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 21,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"con": "+11",
+				"wis": "+9",
+				"dex": "+8"
+			},
+			"skill": {
+				"perception": "+9",
+				"athletics": "+12",
+				"survival": "+9",
+				"stealth": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 19,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Draconic",
+				"Elvish",
+				"Sylvan",
+				"plus one any additional language"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A Zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as an action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the Zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Multiheaded",
+					"entries": [
+						"The Zmey normally has three heads, each can act independently. When the Zmey rolls initiative it can roll initiative for all of its heads and can take a turn on all initiative, as if the heads were different creatures with separate actions and reactions. Each head has its own hit points equal to one-third of the Zmey's body hit point total."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Zmey's head and body regains 10 hit points at the start of its turn. If a head takes acid and cold damage in a turn, this trait doesn't function for that head until it's the next turn."
+					]
+				},
+				{
+					"name": "Spawn Headling",
+					"entries": [
+						"The severed head of a Zmey grows into a Zmey headling after one round after being separated from the body. Smearing at least a pound of salt on the severed head's stump or dealing cold and acid damage to it prevents this transformation."
+					]
+				},
+				{
+					"name": "Hemotoxin venom",
+					"entries": [
+						"For each point of Hemotoxin afflicting a creature:",
+						"-Subtracts one from all its Dexterity and Strength-based attack rolls, saving throws and skill checks.",
+						"-Suffers one point of poison damage for each point of hemotoxin it has each time it casts a spell attacks, moves 10 feet or it takes damage.",
+						"A creature affected by Hemotoxin can make a {@dc 19} Constitution saving throw at the end of its turn, on a success the creature loses 1 point of Hemotoxin, 2 if it succeeds by 5 or more. The Hemotoxin is considered a type of poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 point per level of the spell used."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Prepare",
+					"entries": [
+						"The Zmey prepares a breath attack which it can use at the start of its next turn and makes one tail attack."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Zmey makes one bite attack and one claw attack or attempts to grapple a medium or smaller creature."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage and the target must make a {@dc 20} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"The Zmey breathes 60-foot cones of fire. Creatures in a cone take 17 ({@damage 5d6}), 42 ({@damage 12d6}), if two cones overlap or 70 ({@damage 20d6}) fire damage if all three cones overlap or half damage with a successful {@dc 19} Dexterity saving throw. A Zmey can choose whether this attack harms plants or plant creatures."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Quickburn",
+					"entries": [
+						"If the Zmey is holding its fire breath and sees a spell being cast within 60 feet of it or another of its head uses its fire breath, it can use its reaction to unleash its breath weapon."
+					]
+				},
+				{
+					"name": "Shifting Defence",
+					"entries": [
+						"When another head is hit with an attack the Zmey can shift its necks to swap places and interpose between the attacker and its target. The two heads swap places and the head that was attacked gains a plus 5 to it's Armor Class until the end of the attacker's round."
+					]
+				},
+				{
+					"name": "Preemptive Bite",
+					"entries": [
+						"If the Zmey is not holding its fire breath and it sees a creature come within 10 feet of it, the Zmey can lunge forward and make a bite attack against the creature."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"fluff": {
+				"entries": [
+					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
+					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Claws of the Forest",
+										"entries": [
+											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Solitary Hunters",
+										"entries": [
+											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Three-Headed Rage",
+										"entries": [
+											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
+											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Zmey Headling",
+						"entries": [
+							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e010234b-f821-440e-befc-b2f05bc0beab/db1yix9-4f6bb7fe-10ed-4c5f-8c0f-41a2832e480f.jpg/v1/fill/w_1228,h_651,q_70,strp/zmey_gorynych_by_arvalis_db1yix9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQ4IiwicGF0aCI6IlwvZlwvZTAxMDIzNGItZjgyMS00NDBlLWJlZmMtYjJmMDViYzBiZWFiXC9kYjF5aXg5LTRmNmJiN2ZlLTEwZWQtNGM1Zi04YzBmLTQxYTI4MzJlNDgwZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eKxGICockmcMSbjv0FxVfiDoHv-aZAR9GoP0mI3gQ9Q"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/351407278/Vbh1k5fShVuNpwmY-rB0PA/med.png?1690022275",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			]
+		},
+		{
 			"name": "The Zmey (venom)",
 			"source": "MoR",
 			"size": [
@@ -13826,6 +14576,171 @@
 				"paralyzed",
 				"prone"
 			]
+		},
+		{
+			"name": "Twin Maw of Sekolah",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "MoR",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d12 + 56",
+				"average": 147
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 50
+			},
+			"str": 21,
+			"dex": 12,
+			"con": 19,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+8"
+			},
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"passive": 18,
+			"languages": [
+				"Sahuagin",
+				"telepathy 100 ft."
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Water Breathing",
+					"entries": [
+						"The maw of Sekolah can breathe only underwater."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The maw of Sekolah has advantage on melee attack rolls against a creature who has a bleeding injury. When the the maw of Sekolah starts its turn within 30 feet of a non-shark or sahuagin creature that doesn't have all its hit points it is overwhelmed by bloodlust. It must use its action to attack the creature with the most hitpoints missing with a bite attack (can be a shark or sahuagin) unless it succeeds on a {@dc 10} Wisdom saving throw."
+					]
+				},
+				{
+					"name": "Two Heads",
+					"entries": [
+						"The maw of Sekolah has advantage on Wisdom ({@skill Perception}) checks and on saving throws against being {@condition charmed}, {@condition frightened}, {@condition stunned}, or knocked {@condition unconscious}. Additionally, if the maw of Sekolah is affected by one of those conditions it instead loses two legendary actions for the duration of the condition and is only affected by the condition if the same or another condition mentioned would be applied to it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The maw of Sekolah makes one attack with its bite and one attack with its tail smash all against two different targets."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage. If the target is a creature with blood, it must succeed on a {@dc 16} Constitution saving throw or receive a bleeding injury. A bleeding creature takes {@damage 1d6} necrotic damage per bleeding injury at the start of its turns. As an action, a creature can stop the bleeding with a successful {@dc 10} medicine skill check or the use of a healer's kit closing all bleeding injuries the creature had. The bleeding also stops if the creature receives magical healing."
+					]
+				},
+				{
+					"name": "Tail Smash",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage and the target is pushed 5 feet back if it is a medium or smaller creature or object."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Detect",
+					"entries": [
+						"The maw of Sekolah makes a Wisdom (Perception) check."
+					]
+				},
+				{
+					"name": "Unrelenting Speed",
+					"entries": [
+						"The maw of Sekolah moves up to its speed, attempts to break free from a grapple or end one condition on itself that offers a saving throw each round."
+					]
+				},
+				{
+					"name": "Waters of Sekolah (Costs 2 Actions)",
+					"entries": [
+						"The ferocious spirit of Sekolah flashes through the water, tearing through the foes of the maw of Sekolah. Each creature with bleeding injuries within 60 feet of it takes {@damage 1d6} necrotic damage per untreated bleeding injury they have and must succeed on a {@dc 13} Constitution saving or double the number of bleeding injuries they have."
+					]
+				},
+				{
+					"name": "Feeding Frezy (Costs 2 Actions)",
+					"entries": [
+						"The maw of Sekolah makes a bite attack against a creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Maw of Sekolah",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Summoned from the shadowy depths of the ocean through ritual and tidal magic, the Maw of Sekolah appears in The Final Enemy as the avatar of the hungry sahuagin god. This huge, two-headed shark is fed a steady diet of sentient creatures, captured by the sahuagin and offered up as tribute. Sahuagin priestesses adorn the fins of the maw of Sekolah with gemmed bands and polished skulls."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/GoS/Maw of Sekolah.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Water Breathing"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true
 		},
 		{
 			"name": "Vampire Knight",
