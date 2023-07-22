@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1690054591,
-		"dateLastModified": 1690054591
+		"dateAdded": 1690056305,
+		"dateLastModified": 1690056305
 	},
 	"monster": [
 		{
@@ -13560,504 +13560,7 @@
 			],
 			"hp": {
 				"formula": "18d12 + 90",
-				"average": 207
-			},
-			"speed": {
-				"walk": 15,
-				"fly": 20,
-				"swim": 15
-			},
-			"str": 23,
-			"dex": 13,
-			"con": 21,
-			"int": 16,
-			"wis": 16,
-			"cha": 12,
-			"save": {
-				"con": "+11",
-				"wis": "+9",
-				"dex": "+7"
-			},
-			"skill": {
-				"perception": "+9",
-				"stealth": "+7",
-				"athletics": "+12",
-				"survival": "+9"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 19,
-			"resist": [
-				"fire",
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Draconic",
-				"Elvish",
-				"Sylvan"
-			],
-			"cr": "17",
-			"trait": [
-				{
-					"name": "Amphibious",
-					"entries": [
-						"The zmey can breathe air and water."
-					]
-				},
-				{
-					"name": "Lake Leap",
-					"entries": [
-						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
-					]
-				},
-				{
-					"name": "Multiheaded",
-					"entries": [
-						"The zmey normally has three heads, each can act independently. When the zmey rolls initiative it can roll initiative for all of its heads and can take a complete turn on all initiative. "
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The zmey's head and body regains 10 hit points at the start of its turn. If a head takes cold or necrotic damage, this trait doesn't functions for that head until it's the next turn."
-					]
-				},
-				{
-					"name": "Spawn Headling",
-					"entries": [
-						"The severed head of a zmey grows into a zmey headling after one round after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing cold or necrotic damage to it prevents this transformation."
-					]
-				},
-				{
-					"name": "Hemotoxin venom",
-					"entries": [
-						"For each points of Hemotoxin afflicting a creature:",
-						"-Subtracts one from all it's Dexterity and Strength based attack rolls, saving throws and skill checks.",
-						"-Suffers one points of poison damage each time it casts a spell attacks, moves 10 feet or when it takes damage.",
-						"A creature affected by Hemotoxin can make a {@dc 13} Constitution saving throw at the end of its turn, on a success the creature loses 1 points of Hemotoxin, 2 if it succeeds by 5 or more and 4 if it succeeds by 10 or more. The Hemotoxin is considered a type poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 points per level of the spell used."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 20} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
-					]
-				},
-				{
-					"name": "Fire Breath",
-					"entries": [
-						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads that prepared one. Creatures in a cone take 14 ({@damage 4d6}), 31 ({@damage 9d6}), if two cones overlap or 56 ({@damage 16d6}) fire damage if all three cones overlap or half damage with a successful {@dc 19} Dexterity saving throw. A zmey can choose whether this attack harms plants or plant creatures."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Spellburn",
-					"entries": [
-						"If the zmey is holding it's breath and sees a spell being cast within 60 of it or if the spell targets the zmey, it can use it's reaction to unleash its breath weapon with one head at the spell or the spellcaster."
-					]
-				}
-			],
-			"legendaryActions": 1,
-			"legendary": [
-				{
-					"name": "Bite",
-					"entries": [
-						"The zmey makes a bite attack."
-					]
-				},
-				{
-					"name": "Prepare",
-					"entries": [
-						"The head prepares its Fire Breath."
-					]
-				},
-				{
-					"name": "Fire Breath",
-					"entries": [
-						"The head uses it's and all other prepared Fire Breaths."
-					]
-				},
-				{
-					"name": "Trample",
-					"entries": [
-						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
-					]
-				}
-			],
-			"environment": [
-				"forest"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
-					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Claws of the Forest",
-										"entries": [
-											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Solitary Hunters",
-										"entries": [
-											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Three-Headed Rage",
-										"entries": [
-											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
-											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Zmey Headling",
-						"entries": [
-							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
-			"traitTags": [
-				"Amphibious",
-				"Regeneration"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon"
-			],
-			"languageTags": [
-				"DR",
-				"E",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
-			]
-		},
-		{
-			"name": "The Zmey",
-			"source": "MoR",
-			"size": [
-				"H"
-			],
-			"type": "dragon",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 90",
-				"average": 207
-			},
-			"speed": {
-				"walk": 20,
-				"fly": 30,
-				"swim": 20
-			},
-			"str": 23,
-			"dex": 13,
-			"con": 21,
-			"int": 16,
-			"wis": 16,
-			"cha": 12,
-			"save": {
-				"con": "+11",
-				"wis": "+9",
-				"dex": "+7"
-			},
-			"skill": {
-				"perception": "+9",
-				"athletics": "+12",
-				"survival": "+9",
-				"stealth": "+7"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 19,
-			"resist": [
-				"fire",
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Draconic",
-				"Elvish",
-				"Sylvan"
-			],
-			"cr": "17",
-			"trait": [
-				{
-					"name": "Amphibious",
-					"entries": [
-						"The zmey can breathe air and water."
-					]
-				},
-				{
-					"name": "Lake Leap",
-					"entries": [
-						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
-					]
-				},
-				{
-					"name": "Multiheaded",
-					"entries": [
-						"The zmey normally has three heads, each can act independently. When the zmey rolls initiative it can roll initiative for all of its heads and can take a turn on all initiative, as the heads were different creatures with separate actions and reactions."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The zmey's head and body regains 10 hit points at the start of its turn. If a head takes cold or necrotic damage, this trait doesn't functions for that head until it's the next turn."
-					]
-				},
-				{
-					"name": "Spawn Headling",
-					"entries": [
-						"The severed head of a zmey grows into a zmey headling after one round after being separated from the body. Smearing at least a pound of salt on the severed head's stump, dealing cold or necrotic damage to it prevents this transformation."
-					]
-				},
-				{
-					"name": "Hemotoxin venom",
-					"entries": [
-						"For each points of Hemotoxin afflicting a creature:",
-						"-Subtracts one from all it's Dexterity and Strength-based attack rolls, saving throws and skill checks.",
-						"-Suffers one point of poison damage for each point of hemotoxin it has each time it casts a spell attacks, moves 10 feet or when it takes damage.",
-						"A creature affected by Hemotoxin can make a {@dc 19} Constitution saving throw at the end of its turn, on a success the creature loses 1 points of Hemotoxin, 2 if it succeeds by 5 or more. The Hemotoxin is considered a type poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 points per level of the spell used."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Prepare",
-					"entries": [
-						"The zmey prepares a breath attack and makes one tail attack."
-					]
-				},
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The zmey makes one bite attack and one claw attack or attempts to grapple a medium or smaller creature."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d8 + 6}) bludgeoning damage, and the target must make a {@dc 20} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
-					]
-				},
-				{
-					"name": "Fire Breath",
-					"entries": [
-						"The zmey breathes a 60-foot cones of fire. Creatures in a cone take 17 ({@damage 5d6}), 42 ({@damage 12d6}), if two cones overlap or 70 ({@damage 20d6}) fire damage if all three cones overlap or half damage with a successful {@dc 19} Dexterity saving throw. A zmey can choose whether this attack harms plants or plant creatures."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Quickburn",
-					"entries": [
-						"If the zmey is holding its breath and sees a spell being cast within 60 feet of it or another of its head uses its fire breath, it can use its reaction to unleash its breath weapon."
-					]
-				}
-			],
-			"legendaryActions": 1,
-			"environment": [
-				"forest"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
-					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Claws of the Forest",
-										"entries": [
-											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Solitary Hunters",
-										"entries": [
-											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Three-Headed Rage",
-										"entries": [
-											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
-											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Zmey Headling",
-						"entries": [
-							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
-			"traitTags": [
-				"Amphibious",
-				"Regeneration"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"E",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
-			]
-		},
-		{
-			"name": "The Zmey",
-			"source": "MoR",
-			"size": [
-				"H"
-			],
-			"type": "dragon",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 90",
-				"average": 207
+				"average": 270
 			},
 			"speed": {
 				"walk": 20,
@@ -14287,293 +13790,6 @@
 				"RCH"
 			],
 			"conditionInflict": [
-				"prone"
-			]
-		},
-		{
-			"name": "The Zmey (venom)",
-			"source": "MoR",
-			"size": [
-				"H"
-			],
-			"type": "dragon",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 90",
-				"average": 270
-			},
-			"speed": {
-				"walk": 40,
-				"fly": 60,
-				"swim": 40,
-				"canHover": false
-			},
-			"str": 23,
-			"dex": 13,
-			"con": 20,
-			"int": 16,
-			"wis": 16,
-			"cha": 12,
-			"save": {
-				"con": "+10",
-				"wis": "+8",
-				"cha": "+6"
-			},
-			"skill": {
-				"perception": "+8",
-				"stealth": "+6",
-				"survival": "+8",
-				"athletics": "+11"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 90 ft."
-			],
-			"passive": 18,
-			"resist": [
-				"fire",
-				"poison"
-			],
-			"conditionImmune": [
-				"paralyzed",
-				"unconscious"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"Elvish",
-				"Sylvan"
-			],
-			"cr": "14",
-			"trait": [
-				{
-					"name": "Amphibious",
-					"entries": [
-						"The zmey can breathe air and water."
-					]
-				},
-				{
-					"name": "Lake Leap",
-					"entries": [
-						"A zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as a bonus action to a similar body of water within 5,000 feet. Rapidly flowing water doesn't serve for this ability, but the zmey can leap to or from a river or stream where the water is calm and slow-moving."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If the zmey fails a saving throw, it can count it as a success instead."
-					]
-				},
-				{
-					"name": "Multiheaded",
-					"entries": [
-						"The zmey normally has three heads. While it has more than one head, the zmey has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, and {@condition stunned}. If the zmey takes 40 or more damage in a single turn (and the damage isn't poison or psychic), one of its heads is severed. If all three of its heads are severed, the zmey dies."
-					]
-				},
-				{
-					"name": "Regeneration",
-					"entries": [
-						"The zmey regains 15 hit points at the start of its turn. If the zmey takes acid or fire damage, this trait doesn't function at the start of the zmey's next turn. Regeneration stops functioning when all heads are severed."
-					]
-				},
-				{
-					"name": "Spawn Headling",
-					"entries": [
-						"The severed head of a zmey grows into a zmey headling {@dice 1d4+1} rounds after being separated from the body. Smearing at least a pound of salt on the severed head's stump prevents this transformation."
-					]
-				},
-				{
-					"name": "Toxins",
-					"entries": [
-						"Each of the zmey's viper like heads has a unique toxin they can deliver with their bite attack:",
-						"-Neurotoxic Venom",
-						"-Hemotoxic Venom",
-						"-Cytotoxic Venom",
-						"Each venom has three stages, If a creature fails It's save against the toxin, it advances to one stage above. While under the effect of a toxin the a creature must succeed against the venom at the end of each of it's turns until it succeeds on it for the first time. Succeeding on the save does not end the current effects. A creature must separability  for each different toxins it has been {@condition poisoned} with."
-					]
-				},
-				{
-					"name": "Neurotoxic Venom",
-					"entries": [
-						"-First Stage: The target suffers 16 ({@damage 3d10})",
-						"-Second Stage: While the target is affected by the Neurotoxin it experiences crippling pain. Any speed it has can be no higher than 10 feet. The target also has disadvantage on attack rolls, ability checks, and saving throws, other than Constitution saving throws. Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.",
-						"-Third Stage: The target becomes {@condition paralyzed}."
-					]
-				},
-				{
-					"name": "Hemotoxic Venom",
-					"entries": [
-						"-First Stage: While the target is affected by the Hemotoxin a creature takes necrotic damage at the start of it's turn equal to half  the total bludgeoning, piercing and slashing damage it took that round unless it revived magical healing that turn.",
-						"-Second Stage: The creature receives vulnerability to all bludgeoning, piercing and slashing damage.",
-						"-Third Stage: The target starts to suffocate as blood fills it's lungs. At the start of its next turn, it drops to 0 hit points and is dying, and it can't regain hit points or be stabilized until it can breathe again."
-					]
-				},
-				{
-					"name": "Cytotoxic Venom",
-					"entries": [
-						"-First Stage: At the star of each of it's turns as the creature afflicted by the toxin takes 3 ({@damage 1d6}) poison damage and it's hit point maximum is reduced by the same amount.This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
-						"-Second Stage: The creature takes 21 ({@damage 6d6}) necrotic damage it's hit point maximum is reduced by the same amount. This reduction can only be reversed by a healing spell that is at least sixth level or a Greater Restoration spell.",
-						"-Third Stage: If an effect would cure or neutralize a poison afflicting this creature, it fails to do so unless it is casted at least at sixth level."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The zmey makes one bite attack per head and one claws attack."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}19 ({@damage 2d10 + 6}) piercing damage, and the target must make a {@dc 18} Constitution saving throws or be."
-					]
-				},
-				{
-					"name": "Claws",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
-					]
-				},
-				{
-					"name": "Tail",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage, and the target must make a {@dc 14} Dexterity saving throws or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
-					]
-				},
-				{
-					"name": "Fire Breath {@recharge 5}",
-					"entries": [
-						"The zmey breathes up to three 60-foot cones of fire, one from each of its heads. Creatures in a cone take 18 ({@damage 4d8}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw. If cones overlap, their damage adds together but each target makes only one saving throw. A zmey can choose whether this attack harms plants or plant creatures."
-					]
-				}
-			],
-			"legendaryActions": 1,
-			"legendary": [
-				{
-					"name": "Bite",
-					"entries": [
-						"The zmey makes a claw attack."
-					]
-				},
-				{
-					"name": "Tail Attack",
-					"entries": [
-						"The zmey makes a tail attack."
-					]
-				},
-				{
-					"name": "Trample",
-					"entries": [
-						"The zmey moves up to half its land speed. It can enter enemy-occupied spaces but can't end its move there. Creatures in spaces the zmey enters must make successful {@dc 14} Dexterity saving throws or take 10 ({@damage 1d8 + 6}) bludgeoning damage and fall {@condition prone}."
-					]
-				}
-			],
-			"environment": [
-				"forest"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
-					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Claws of the Forest",
-										"entries": [
-											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Solitary Hunters",
-										"entries": [
-											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Three-Headed Rage",
-										"entries": [
-											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
-											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Zmey Headling",
-						"entries": [
-							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a {@creature Zmey Headling|ToB|stunted body} and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey.png",
-			"traitTags": [
-				"Amphibious",
-				"Legendary Resistances",
-				"Regeneration"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"E",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"I",
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"HPR",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"paralyzed",
 				"prone"
 			]
 		},
@@ -16893,8 +16109,8 @@
 				"average": 60
 			},
 			"speed": {
-				"walk": 30,
-				"swim": 30
+				"walk": 20,
+				"swim": 20
 			},
 			"str": 16,
 			"dex": 16,
@@ -16907,7 +16123,8 @@
 				"cha": "+5"
 			},
 			"skill": {
-				"perception": "+7"
+				"perception": "+7",
+				"stealth": "+8"
 			},
 			"senses": [
 				"blindsight 60 ft.",
@@ -16922,10 +16139,10 @@
 				"poisoned"
 			],
 			"languages": [
-				"Common",
 				"Draconic",
 				"Elvish",
-				"Sylvan"
+				"Sylvan",
+				"plus one any additional language"
 			],
 			"trait": [
 				{
@@ -16937,13 +16154,13 @@
 				{
 					"name": "Regeneration",
 					"entries": [
-						"The zmey headling reaver regains 10 hit points at the start of its turn. This trait doesn't function if the zmey headling took acid or necrotic damage since the end of its previous turn. It dies if it starts its turn with 0 hit points and doesn't regenerate."
+						"The zmey headling reaver regains 10 hit points at the start of its turn. This trait doesn't function if the zmey headling took acid and cold damage since the end of its previous turn. It dies if it starts its turn with 0 hit points and doesn't regenerate."
 					]
 				},
 				{
-					"name": "Firepower",
+					"name": "Lake Leap",
 					"entries": [
-						"At the start of it's turn the zmey headling regains one Firepower."
+						"A Zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as an action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the Zmey can leap to or from a river or stream where the water is calm and slow-moving."
 					]
 				}
 			],
@@ -16963,75 +16180,29 @@
 				{
 					"name": "Constrict",
 					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage, and if the target is a medium or smaller creature, the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the creature is {@condition restrained}, and the headling can't constrict another target."
 					]
 				},
 				{
-					"name": "Fire Breath (cost 1 firepower)",
+					"name": "Fire Breath (1/Day)",
 					"entries": [
 						"The zmey headling exhales fire in a 30-foot cone. Each creature in that area takes 17 ({@damage 5d6}) fire damage, or half damage with a successful {@dc 16} Dexterity saving throw."
 					]
 				}
 			],
+			"reaction": [
+				{
+					"name": "Preemptive Bite",
+					"entries": [
+						"If the headling sees a creature come within 5 feet of it, the headling can lunge forward and make a bite attack against the creature."
+					]
+				}
+			],
 			"environment": [
 				"forest",
-				"marshes"
+				"marshes",
+				"swamp"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Zmey.webp"
-						}
-					}
-				],
-				"entries": [
-					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
-					"Hunting beneath the canopy of the forest, lurking below the surfaces of lakes, and guarding caves concealing great treasure and mystery, the zmey has two roles—vicious terror and nature's protector.",
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Claws of the Forest",
-										"entries": [
-											"Single-mindedly destructive, the zmey keeps the heart of the forest free from interlopers. Rumors suggest the heart of an ancient forest itself can control the actions of these beasts, while others believe that they have a pact with certain forest druids. Certainly they are clever enough, often destroying bridges, dams, or logging camps infringing on their territory."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Solitary Hunters",
-										"entries": [
-											"Zmey avoid their own kind, seeking out isolated hunting grounds. They eat any organic matter, but they favor the fresh meat of large birds and mammals. The smarter the prey, the better, because zmey believe that intellect flavors the meat. They consider alseids, halflings, and gnomes especially succulent."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Three-Headed Rage",
-										"entries": [
-											"Dappled black and green scales cover this enormous beast and its three towering necks are long and powerful. Each neck is topped with an identical, menacing head, and each head is flanked by spiny, frilled membranes. A forked tongue flickers across long pale teeth, and six pairs of eyes burn red with rage.",
-											"When a zmey stands upright, it measures 25 feet from snout to tail. The beast weighs over 9,000 lb."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Zmey Headling",
-						"entries": [
-							"A zmey's head doesn't die when severed from the body. Instead, the head rapidly (within {@dice 2d6} rounds) sprouts a stunted body and two vestigial claws with which it can fight and drag itself across the ground. Within days it develops into a complete, miniature zmey, and by the time two lunar cycles elapse, the head regenerates into a full-grown zmey with three heads."
-						]
-					}
-				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Zmey%20Headling.png",
 			"traitTags": [
 				"Amphibious",
 				"Regeneration"
@@ -17045,19 +16216,22 @@
 				"Multiattack"
 			],
 			"languageTags": [
-				"C",
 				"DR",
 				"E",
 				"S"
 			],
 			"damageTags": [
+				"B",
 				"F",
-				"P",
-				"S"
+				"P"
 			],
 			"miscTags": [
 				"AOE",
 				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
 			]
 		}
 	]
