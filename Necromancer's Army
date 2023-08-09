@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.182.2",
+	"siteVersion": "1.183.1",
 	"_meta": {
 		"sources": [
 			{
@@ -14,8 +14,8 @@
 				"color": "#743c75"
 			}
 		],
-		"dateAdded": 1690925918,
-		"dateLastModified": 1690925918
+		"dateAdded": 1691589377,
+		"dateLastModified": 1691589377
 	},
 	"monster": [
 		{
@@ -413,6 +413,148 @@
 			"miscTags": [
 				"MW",
 				"RCH"
+			]
+		},
+		{
+			"name": "Dwarven War Veterans",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"dwarf",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 120",
+				"average": 300
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"dex": "+3",
+				"wis": "+4",
+				"str": "+8"
+			},
+			"skill": {
+				"athletics": "+11",
+				"intimidation": "+4"
+			},
+			"passive": 11,
+			"resist": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"any two language (usually Common, and Dwarvish)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d8}) slashing damage, or 7 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 60 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 30 ({@dice 4d8 + 12}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Advancing Wall",
+					"entries": [
+						"The unit's moment speed can not be hindered or slowed unless it is {@condition grapled} or {@condition restrained}. If its movement would be blocked by another unit, it can push back."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half hit points, it can use its Close the Gaps in place of one attack."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Shields Up",
+					"entries": [
+						"The unit gains a plus 3 bonus to its Armor Class and Dexterity Saving throws until the start of its next turn and If the unit is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it takes no damage if it succeeds on the saving throw, and only takes half damage even if it fails the save."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"attachedItems": [
+				"battleaxe|phb",
+				"spear|phb"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			]
 		},
 		{
