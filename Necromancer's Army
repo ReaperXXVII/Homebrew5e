@@ -14,8 +14,8 @@
 				"color": "#743c75"
 			}
 		],
-		"dateAdded": 1692445707,
-		"dateLastModified": 1692445707
+		"dateAdded": 1692483600,
+		"dateLastModified": 1692483600
 	},
 	"monster": [
 		{
@@ -1483,6 +1483,117 @@
 				"dexterity",
 				"strength"
 			]
+		},
+		{
+			"name": "Pack of Dretch",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"swarmSize": "S",
+				"tags": [
+					"Dretch",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d6 + 40",
+				"average": 180
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 13,
+			"int": 5,
+			"wis": 8,
+			"cha": 3,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 60 ft. (works only with creatures that understand Abyssal)"
+			],
+			"trait": [
+				{
+					"name": "Fetid Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 15 ({@damage 4d4}) slashing damage, or 7 ({@dice 2d4}) if the unit is below half hit points. Additionally, the creature must succeed on a {@dc 13} Constitution saving throw or be {@condition poisoned} until the start of its next turn. While {@condition poisoned} in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions."
+					]
+				},
+				{
+					"name": "Unit",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a small humanoid as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points."
+					]
+				},
+				{
+					"name": "Rip and Tear",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 4d4}) slashing and 7 ({@damage 2d6}) slashing damage."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
 		},
 		{
 			"name": "Pack of Manes",
