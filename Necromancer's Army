@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.183.1",
+	"siteVersion": "1.184.0",
 	"_meta": {
 		"sources": [
 			{
@@ -14,8 +14,8 @@
 				"color": "#743c75"
 			}
 		],
-		"dateAdded": 1691915937,
-		"dateLastModified": 1691915937
+		"dateAdded": 1692445707,
+		"dateLastModified": 1692445707
 	},
 	"monster": [
 		{
@@ -1347,18 +1347,155 @@
 			]
 		},
 		{
-			"name": "Pack of Manes (WIP)",
+			"name": "Orc Auroch Riders",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "Humanoids and Beasts",
+				"swarmSize": "L",
+				"tags": [
+					"Orc Auroch Rider",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d10 + 90",
+				"average": 255
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 16,
+			"int": 8,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"wis": "+4"
+			},
+			"skill": {
+				"intimidation": "+3",
+				"athletics": "+9",
+				"animal handling": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"Common",
+				"Orc"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a large creature as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 18 ({@damage 4d8}) bludgeoning damage, or 9 ({@dice 2d8}) if the unit is below half hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Trampling Charge in place of its attacks."
+					]
+				},
+				{
+					"name": "Flail",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the cavalry moves 20 feet in a straight line toward a unit or creature and hits it with a melee attack the target must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone} and suspend the Horde ability of the trampled unit until the end of the the cavilary's next turn. The cavalry can enter and move through the space of a trampled unit as if it were difficult terrain."
+					]
+				},
+				{
+					"name": "Rain of Javelins",
+					"entries": [
+						"The unit chooses a point within 120 feet. All creatures within 15 feet of that point must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d6}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Skirmish",
+					"entries": [
+						"The unit can take the disengage action or move up to its speed toward a hostile creature that it can see."
+					]
+				}
+			],
+			"attachedItems": [
+				"flail|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Pack of Manes",
 			"source": "NecromancersArmy",
 			"size": [
 				"H"
 			],
 			"type": {
 				"type": "fiend",
+				"swarmSize": "S",
 				"tags": [
-					{
-						"tag": "small demons",
-						"prefix": "swarm of"
-					}
+					"Manes",
+					"10-20 members"
 				]
 			},
 			"alignment": [
@@ -1408,17 +1545,35 @@
 			],
 			"trait": [
 				{
-					"name": "Demon Pack",
+					"name": "Horde",
 					"entries": [
-						"The pack of manes can move through a space as narrow as 2 feet wide without squeezing. The pack of manes can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature must succeed on a {@dc 12} Strength saving throw or be {@condition grapled} by the manes. Additionally, the pack of manes are susceptible to effects that deal damage in an area, they take double damage from such effects."
+						"A creature that begins its turn within the unit's space takes 15 ({@damage 6d4}) slashing damage, or 7 ({@dice 3d4}) if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Unit",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a small humanoid as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
 					]
 				}
 			],
 			"action": [
 				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Pull Under in place of its attacks."
+					]
+				},
+				{
 					"name": "Claws",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}22 ({@damage 8d4+2}) slashing damage, or 12 ({@damage 4d4+2}) slashing damage if the swarm has half of its hit points or fewer. If this attack hits a creature that is {@condition grapled}, it becomes {@condition restrained} by the pack of manes."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}15 ({@damage 6d4}) slashing damage. If this attack hits a creature that is {@condition grapled}, it becomes {@condition restrained} by the pack of manes."
+					]
+				},
+				{
+					"name": "Pull Under",
+					"entries": [
+						"The unit attempts to envelop a creature within 5 feet of the horde. The target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone} and considered {@condition grappled} (escape {@dc 12}) as they are pinned to the ground under a pack of manes. The demons can enter and move through the space of a {@condition grappled} unit as if it were difficult terrain."
 					]
 				}
 			],
@@ -1824,7 +1979,7 @@
 				"MW"
 			],
 			"conditionInflict": [
-				"grapled"
+				"prone"
 			],
 			"savingThrowForced": [
 				"strength"
