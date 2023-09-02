@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.183.1",
+	"siteVersion": "1.185.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1691915912,
-		"dateLastModified": 1691915912
+		"dateAdded": 1693649288,
+		"dateLastModified": 1693649288
 	},
 	"monster": [
 		{
@@ -14580,6 +14580,214 @@
 				"restrained",
 				"stunned",
 				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Young Zmey",
+			"source": "MoR",
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "dragon",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 64",
+				"average": 152
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80,
+				"swim": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 16,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"con": "+8",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+7",
+				"athletics": "+9",
+				"survival": "+7"
+			},
+			"senses": [
+				"blindsight 30 ft.",
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"fire",
+				"poison"
+			],
+			"immune": [],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Draconic",
+				"Elvish",
+				"Sylvan",
+				"plus one any additional language"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The Zmey can breathe air and water."
+					]
+				},
+				{
+					"name": "Lake Leap",
+					"entries": [
+						"A Zmey spends much of its time lurking in lakes and ponds. When submerged in a natural pool of standing water, it can transport itself as an action to a similar body of water within 500 feet. Rapidly flowing water doesn't serve for this ability, but the Zmey can leap to or from a river or stream where the water is calm and slow-moving."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Zmey regains 10 hit points at the start of its turn. If it takes acid and cold damage in a turn, this trait doesn't function until it's the next turn."
+					]
+				},
+				{
+					"name": "Hemotoxin venom",
+					"entries": [
+						"For each point of Hemotoxin afflicting a creature:",
+						"-Subtracts one from all its Dexterity and Strength-based attack rolls, saving throws and skill checks.",
+						"-Suffers one point of poison damage for each point of hemotoxin it has each time it casts a spell attacks, moves 10 feet or it takes damage.",
+						"A creature affected by Hemotoxin can make a {@dc 19} Constitution saving throw at the end of its turn, on a success the creature loses 1 point of Hemotoxin, 2 if it succeeds by 5 or more. The Hemotoxin is considered a type of poison, saving throws affecting poison affect the Hemotoxin as well. A spell that would neutralize poison, nullifies 1 point per level of the spell used."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Prepare",
+					"entries": [
+						"The Zmey prepares a breath attack which it can use at the start of its next turn and makes one tail attack."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Zmey makes three attacks: one with its bite and two with its claws."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}16 ({@damage 2d10 + 5}) piercing damage, and the Zmey injects {@dice 1d4} points of Hemotoxin into the creatures body."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Fire Breath",
+					"entries": [
+						"The Zmey breathes 60-foot cones of fire. Creatures in a cone take 17 ({@damage 5d6}), 42 ({@damage 12d6}), if two cones overlap or 70 ({@damage 20d6}) fire damage if all three cones overlap or half damage with a successful {@dc 16} Dexterity saving throw. A Zmey can choose whether this attack harms plants or plant creatures."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 20 ft., one target. {@h}14 ({@damage 2d8 + 5}) bludgeoning damage and the target must make a {@dc 17} Dexterity saving throw or be knocked back 10 feet or fall {@condition prone} (the Zmey's choice)."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Quickburn",
+					"entries": [
+						"If the Zmey is holding its fire breath and sees a spell being cast within 60 feet of it or another of its head uses its fire breath, it can use its reaction to unleash its breath weapon."
+					]
+				},
+				{
+					"name": "Shifting Defence",
+					"entries": [
+						"When another Zmey is hit with an attack the Zmey can move up to half its flying speed to the attacked Zmey and swap places with it interpose between the attacker and its target. The other Zmey can move up to half its movement speed without provoking an attack of opportunity."
+					]
+				},
+				{
+					"name": "Preemptive Bite",
+					"entries": [
+						"If the Zmey is not holding its fire breath and it sees a creature come within 10 feet of it, the Zmey can lunge forward and make a bite attack against the creature."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e010234b-f821-440e-befc-b2f05bc0beab/db1yix9-4f6bb7fe-10ed-4c5f-8c0f-41a2832e480f.jpg/v1/fill/w_1228,h_651,q_70,strp/zmey_gorynych_by_arvalis_db1yix9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQ4IiwicGF0aCI6IlwvZlwvZTAxMDIzNGItZjgyMS00NDBlLWJlZmMtYjJmMDViYzBiZWFiXC9kYjF5aXg5LTRmNmJiN2ZlLTEwZWQtNGM1Zi04YzBmLTQxYTI4MzJlNDgwZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eKxGICockmcMSbjv0FxVfiDoHv-aZAR9GoP0mI3gQ9Q"
+						}
+					}
+				]
+			},
+			"dragonCastingColor": "green",
+			"dragonAge": "young",
+			"tokenUrl": "https://i.imgur.com/mDJgwxF.png",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
