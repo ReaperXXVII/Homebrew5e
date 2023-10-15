@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.185.1",
+	"siteVersion": "1.188.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1693649288,
-		"dateLastModified": 1693649288
+		"dateAdded": 1697360777,
+		"dateLastModified": 1697360777
 	},
 	"monster": [
 		{
@@ -97,6 +97,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The scroll mummy's innate spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It can innately cast the following spells, requiring only verbal components:"
 					],
@@ -123,8 +124,7 @@
 							"{@spell wall of sand|XGE}"
 						]
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -188,6 +188,32 @@
 				"desert",
 				"urban"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Scroll Mummy (Token).png",
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"paralyzed",
+				"restrained"
+			],
 			"fluff": {
 				"entries": [
 					{
@@ -231,33 +257,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Scroll Mummy (Token).png",
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"D",
-				"T"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"B",
-				"O"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"frightened",
-				"paralyzed",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Ancient Spider Chimera",
@@ -405,17 +405,6 @@
 				"swamp",
 				"underdark"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/ancientchimera.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/ancientchimera.png",
 			"traitTags": [
 				"Pounce"
@@ -445,7 +434,18 @@
 				"paralyzed",
 				"poisoned",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/ancientchimera.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Black Abishai Assassin",
@@ -584,6 +584,39 @@
 			"environment": [
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MTF/Black Abishai.png?v=1.113.0",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-abishai.mp3?v=1.113.0"
+			},
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
 			"fluff": {
 				"name": "Black Abishai",
 				"source": "MTF",
@@ -644,40 +677,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MTF/Black Abishai.png?v=1.113.0",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/black-abishai.mp3?v=1.113.0"
-			},
-			"traitTags": [
-				"Devil's Sight",
-				"Magic Resistance",
-				"Magic Weapons",
-				"Sneak Attack"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"I",
-				"TP"
-			],
-			"damageTags": [
-				"A",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"incapacitated"
-			]
+			}
 		},
 		{
 			"name": "Black Corruption",
@@ -770,6 +770,31 @@
 			"environment": [
 				"underdark"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Tar%20Ooze%20(Token).png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/black-pudding.mp3"
+			},
+			"traitTags": [
+				"Amorphous",
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -832,32 +857,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Tar%20Ooze%20(Token).png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/black-pudding.mp3"
-			},
-			"traitTags": [
-				"Amorphous",
-				"Regeneration",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"B"
-			],
-			"damageTags": [
-				"A",
-				"B"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Blood-Toll Witch",
@@ -909,6 +909,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The harpy is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 14}, {@hit 6} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -923,8 +924,7 @@
 							"lower": 1
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"action": [
@@ -962,17 +962,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/harpywitch.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/harpywitch.png",
 			"actionTags": [
 				"Multiattack"
@@ -999,7 +988,18 @@
 				"charmed",
 				"incapacitated",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/harpywitch.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Brassleaf Tree",
@@ -1141,6 +1141,31 @@
 				"forest",
 				"urban"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Dragonleaf%20Tree.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
 			"fluff": {
 				"images": [
 					{
@@ -1192,32 +1217,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Dragonleaf%20Tree.png",
-			"traitTags": [
-				"Legendary Resistances"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH",
-				"RW"
-			]
+			}
 		},
 		{
 			"name": "Chained Angel",
@@ -1295,6 +1295,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The angel's innate spellcasting ability is Charisma (spell save {@dc 22}, {@hit 14} to hit with spell attacks). The angel can innately cast the following spells, requiring no material components:"
 					],
@@ -1315,8 +1316,7 @@
 							"{@spell suggestion}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -1367,17 +1367,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/GGR/Deathpact Angel.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GGR/Deathpact Angel.png?v=1.121.2",
 			"traitTags": [
 				"Flyby",
@@ -1409,7 +1398,18 @@
 			"conditionInflictSpell": [
 				"charmed",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/GGR/Deathpact Angel.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Cockatrice Raptor",
@@ -1487,30 +1487,6 @@
 			"environment": [
 				"grassland"
 			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. Usually Cockatrices are omnivores with a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. However these creatures have grown bigger and much more deadlier thanks to their carnivore diet. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its clawed feet darts out to slash and grab onto it's prey. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Cockatrice.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Cockatrice.png",
 			"soundClip": {
 				"type": "external",
@@ -1535,7 +1511,31 @@
 				"restrained"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The cockatrice looks like a hideous hybrid of lizard, bird, and bat, and it is infamous for its ability to turn flesh to stone. Usually Cockatrices are omnivores with a diet that consists of berries, nuts, flowers, and small animals such as insects, mice, and frogs-things they can swallow whole. However these creatures have grown bigger and much more deadlier thanks to their carnivore diet. A cockatrice flies into the face of any threat, squawking and madly beating its wings as its clawed feet darts out to slash and grab onto it's prey. The smallest scratch from a cockatrice's beak can spell doom as its victim slowly turns to stone from the injury."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Cockatrice.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Corpse Rose",
@@ -1635,23 +1635,6 @@
 				"swamp",
 				"urban"
 			],
-			"fluff": {
-				"name": "Corpse Flower",
-				"source": "MPMM",
-				"entries": [
-					"A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful Undead creatures. Unless it is uprooted and burned while it is still a seedling, the corpse flower grows to enormous size over several weeks, then tears itself free of the earth and begins scavenging Humanoid corpses from battlefields and graveyards. Using its fibrous tentacles, it stuffs the remains into its body to sustain and repair itself. The plant has a malevolent bent and despises the living.",
-					"With or without corpses nested in its body, a corpse flower exudes a stench of decay that can overwhelm the senses of nearby creatures, causing them to become nauseated. The stench, which serves as a defense mechanism, fades {@dice 2d4} days after the corpse flower dies."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MPMM/Corpse Flower.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MPMM/Corpse Flower.png",
 			"soundClip": {
 				"type": "external",
@@ -1681,7 +1664,138 @@
 				"restrained"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Corpse Flower",
+				"source": "MPMM",
+				"entries": [
+					"A corpse flower can sprout atop the grave of an evil necromancer or the remains of powerful Undead creatures. Unless it is uprooted and burned while it is still a seedling, the corpse flower grows to enormous size over several weeks, then tears itself free of the earth and begins scavenging Humanoid corpses from battlefields and graveyards. Using its fibrous tentacles, it stuffs the remains into its body to sustain and repair itself. The plant has a malevolent bent and despises the living.",
+					"With or without corpses nested in its body, a corpse flower exudes a stench of decay that can overwhelm the senses of nearby creatures, causing them to become nauseated. The stench, which serves as a defense mechanism, fades {@dice 2d4} days after the corpse flower dies."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Corpse Flower.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Corpse Wisp",
+			"source": "MoR",
+			"page": 72,
+			"size": [
+				"T"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 25,
+				"formula": "10d4"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 20,
+			"con": 10,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"save": {
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Corpse Bound",
+					"entries": [
+						"A corpse wisp can't stray more than 300 feet from the remains that spawned it."
+					]
+				},
+				{
+					"name": "Dead Light",
+					"entries": [
+						"The corpse wisp sheds {@quickref Vision and Light|PHB|2||dim light} in a 20-foot radius."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The corpse wisp can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@damage 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tendril",
+					"entries": [
+						"{@atk ms} {@hit 7} to hit, reach 15 ft., one creature. {@h}7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. If a target dies, the wisp regains 10 ({@dice 4d4}) hit points, gaining any excess as temporary hit points."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/GHMG/Tokens/CorpseWisp.webp",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"RCH"
+			],
+			"fluff": {}
 		},
 		{
 			"name": "Corrupted Avatar of Lurue",
@@ -1823,28 +1937,6 @@
 				"name": "Unicorn",
 				"source": "MM"
 			},
-			"fluff": {
-				"name": "Corrupted Avatar of Lurue",
-				"source": "CM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"In normal circumstances, the avatar of Lurue is a breathtaking sight; her silver, stardust-like mane, her shimmering hooves, and her perfectly formed spiral horn elicit awe from even the most hardened souls. As powerful and striking as she is in her true form, she's just as wicked in her alternative state. With necrotic energy twisting and dancing at the tip of her black horn, this corrupted avatar of Lurue is instead a nightmare come to life.",
-							"While tainted by the influence of Malar, the avatar of Lurue carries out the Beast Lord's will: to slaughter anything that dares to cross its path."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/CM/Corrupted Avatar of Lurue.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/JioF424.png",
 			"traitTags": [
 				"Charge",
@@ -1876,7 +1968,29 @@
 				"prone"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Corrupted Avatar of Lurue",
+				"source": "CM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"In normal circumstances, the avatar of Lurue is a breathtaking sight; her silver, stardust-like mane, her shimmering hooves, and her perfectly formed spiral horn elicit awe from even the most hardened souls. As powerful and striking as she is in her true form, she's just as wicked in her alternative state. With necrotic energy twisting and dancing at the tip of her black horn, this corrupted avatar of Lurue is instead a nightmare come to life.",
+							"While tainted by the influence of Malar, the avatar of Lurue carries out the Beast Lord's will: to slaughter anything that dares to cross its path."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/CM/Corrupted Avatar of Lurue.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Crystaline Guardian",
@@ -1980,28 +2094,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Minotaur Living Crystal Statue",
-				"source": "GoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Given life through powerful magic, a large, crudely carved crystal minotaur guards the tunnels in Isle of the Abbey."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GoS/Minotaur Living Crystal Statue.png?v=1.124.0",
 			"traitTags": [
 				"Immutable Form"
@@ -2026,7 +2118,29 @@
 				"blinded",
 				"prone"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Minotaur Living Crystal Statue",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Given life through powerful magic, a large, crudely carved crystal minotaur guards the tunnels in Isle of the Abbey."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Devout",
@@ -2104,6 +2218,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The devout is a 9th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). The devout has the following cleric spells prepared:"
 					],
@@ -2157,8 +2272,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -2194,17 +2308,6 @@
 			"environment": [
 				"any"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/ufxUqiX.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/c2ocNkq.png",
 			"traitTags": [
 				"Rejuvenation",
@@ -2246,7 +2349,18 @@
 				"incapacitated",
 				"paralyzed",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ufxUqiX.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Dragonborn Aerial Knight",
@@ -2373,19 +2487,6 @@
 				"mountain",
 				"urban"
 			],
-			"fluff": {
-				"entries": [
-					"{@i Clad in armor and carrying a spiked lance, the knight grips tight to the reins of its wyvern mount. The knight snarls, goading its mount forward.}",
-					"For centuries, many realms have been safeguarded by knights on horseback, their advanced mobility and powerful steeds cutting through infantry lines like shears through cloth. But against the wyvern knights, even mighty cavaliers are little more than worms to be snapped up by a hungry starling. The wyvern knights are trained to ride domesticated war wyverns (see page 386), using their aerial mobility to perform countless roles on the battlefield from shattering cavalry charges to sowing chaos from behind enemy lines.",
-					{
-						"type": "entries",
-						"name": "Baal's First",
-						"entries": [
-							"A group of elite kobolds (see page 237), calling themselves Baal's First Legion,  works with a dragonborn wyvern knight commander. The kobolds themselves hang onto leather straps and buckle themselves onto the commander's war wyvern for swift transport across a battlefield. As arsonists, scouts, and ambushers, they've been extremely effective."
-						]
-					}
-				]
-			},
 			"actionTags": [
 				"Breath Weapon",
 				"Multiattack"
@@ -2405,7 +2506,20 @@
 				"RNG",
 				"RW",
 				"THW"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@i Clad in armor and carrying a spiked lance, the knight grips tight to the reins of its wyvern mount. The knight snarls, goading its mount forward.}",
+					"For centuries, many realms have been safeguarded by knights on horseback, their advanced mobility and powerful steeds cutting through infantry lines like shears through cloth. But against the wyvern knights, even mighty cavaliers are little more than worms to be snapped up by a hungry starling. The wyvern knights are trained to ride domesticated war wyverns (see page 386), using their aerial mobility to perform countless roles on the battlefield from shattering cavalry charges to sowing chaos from behind enemy lines.",
+					{
+						"type": "entries",
+						"name": "Baal's First",
+						"entries": [
+							"A group of elite kobolds (see page 237), calling themselves Baal's First Legion,  works with a dragonborn wyvern knight commander. The kobolds themselves hang onto leather straps and buckle themselves onto the commander's war wyvern for swift transport across a battlefield. As arsonists, scouts, and ambushers, they've been extremely effective."
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Dread Legioner",
@@ -2495,6 +2609,28 @@
 				"underdark",
 				"urban"
 			],
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"hasFluff": true,
 			"fluff": {
 				"name": "Dread Warrior",
 				"source": "TftYP",
@@ -2523,29 +2659,7 @@
 						]
 					}
 				]
-			},
-			"traitTags": [
-				"Undead Fortitude"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"RW",
-				"THW"
-			],
-			"hasFluff": true
+			}
 		},
 		{
 			"name": "Dream Spawn",
@@ -2849,17 +2963,6 @@
 				"hill",
 				"mountain"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MPMM/Elder%20Tempest.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/ciL7LJr.png",
 			"soundClip": {
 				"type": "external",
@@ -2890,7 +2993,18 @@
 			"conditionInflict": [
 				"prone",
 				"stunned"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MPMM/Elder%20Tempest.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Elite Red Battle Caster",
@@ -2947,6 +3061,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The war caster is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -3012,8 +3127,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -3096,20 +3210,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"Rath Modar was a Red Wizard of Thay who had desires to become the next Zulkir of Illusion and even grander plans for himself."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/HotDQ/Rath%20Modar.jpg?v=1.125.1"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/HotDQ/Rath%20Modar.png?v=1.125.1",
 			"actionTags": [
 				"Multiattack"
@@ -3126,7 +3226,21 @@
 			],
 			"miscTags": [
 				"MW"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"Rath Modar was a Red Wizard of Thay who had desires to become the next Zulkir of Illusion and even grander plans for himself."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/HotDQ/Rath%20Modar.jpg?v=1.125.1"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Enormous Mimic",
@@ -3235,17 +3349,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.redd.it/3jegc2ai3xi41.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/CoS/Baba%20Lysaga's%20Creeping%20Hut.png",
 			"traitTags": [
 				"False Appearance",
@@ -3269,7 +3372,18 @@
 				"blinded",
 				"grappled",
 				"restrained"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.redd.it/3jegc2ai3xi41.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Fellforged Frontman",
@@ -3470,6 +3584,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The cambion's spellcasting ability is Charisma (spell save {@dc 14}). The cambion can innately cast the following spells, requiring no material components:"
 					],
@@ -3484,8 +3599,7 @@
 							"{@spell detect magic}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3519,6 +3633,44 @@
 			"environment": [
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Cambion.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cambion.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"S",
+				"T"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -3563,45 +3715,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Cambion.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/cambion.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"I"
-			],
-			"damageTags": [
-				"F",
-				"S",
-				"T"
-			],
-			"damageTagsSpell": [
-				"B",
-				"F",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Fire Giant Forgemaster",
@@ -3655,6 +3769,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The giant is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following cleric spells prepared:"
 					],
@@ -3723,8 +3838,7 @@
 							"slots": 0
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -3815,17 +3929,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/firegiantduke.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/firegiantduke.png",
 			"actionTags": [
 				"Multiattack"
@@ -3847,7 +3950,18 @@
 			],
 			"conditionInflict": [
 				"restrained"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/firegiantduke.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Fire Ginat Ortifex",
@@ -3965,6 +4079,25 @@
 			"environment": [
 				"urban"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Ortifex (Token).png",
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"grappled"
+			],
 			"fluff": {
 				"entries": [
 					{
@@ -4028,26 +4161,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Ortifex (Token).png",
-			"senseTags": [
-				"B"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"N"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflict": [
-				"charmed",
-				"grappled"
-			]
+			}
 		},
 		{
 			"name": "Forest Kobold Shaman",
@@ -4102,6 +4216,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The kobold is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It has the following druid spells prepared:"
 					],
@@ -4136,8 +4251,7 @@
 							"slots": 2
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -4290,6 +4404,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The glabrezu's spellcasting ability is Intelligence (spell save {@dc 16}). The glabrezu can innately cast the following spells, requiring no material components:"
 					],
@@ -4305,8 +4420,7 @@
 							"{@spell fly}"
 						]
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -4348,6 +4462,45 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Glabrezu.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/glabrezu.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"conditionInflictSpell": [
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Glabrezu",
 				"source": "MM",
@@ -4730,46 +4883,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Glabrezu.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/glabrezu.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"TP"
-			],
-			"damageTags": [
-				"B"
-			],
-			"damageTagsSpell": [
-				"N"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"conditionInflictSpell": [
-				"stunned"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Goblyn",
@@ -4877,22 +4991,6 @@
 				"hill",
 				"underdark"
 			],
-			"fluff": {
-				"entries": [
-					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
-					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
-					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Goblin.png",
 			"attachedItems": [
 				"scimitar|phb",
@@ -4914,7 +5012,23 @@
 				"RW"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
+					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
+					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Goblyn Bully",
@@ -5028,22 +5142,6 @@
 				"hill",
 				"underdark"
 			],
-			"fluff": {
-				"entries": [
-					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
-					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
-					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Goblin.png",
 			"attachedItems": [
 				"scimitar|phb",
@@ -5066,7 +5164,23 @@
 				"blinded"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
+					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
+					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Goblyn Sneak",
@@ -5184,22 +5298,6 @@
 				"hill",
 				"underdark"
 			],
-			"fluff": {
-				"entries": [
-					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
-					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
-					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Goblin.png",
 			"attachedItems": [
 				"scimitar|phb",
@@ -5225,7 +5323,23 @@
 				"incapacitated"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
+					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
+					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Goblin.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Hellfire Engine Behir",
@@ -5498,17 +5612,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/BGDIA/Hellwasp.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/BGDIA/Hellwasp.png",
 			"senseTags": [
 				"D",
@@ -5533,7 +5636,18 @@
 			"conditionInflict": [
 				"grappled",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/BGDIA/Hellwasp.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Horned Serpent Form",
@@ -5658,6 +5772,33 @@
 				"grassland",
 				"swamp"
 			],
+			"tokenUrl": "https://i.imgur.com/u2fBKI0.png",
+			"traitTags": [
+				"Amphibious"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
 			"fluff": {
 				"entries": [
 					"{@i This huge serpent has spines on it's back, forming a crown like frill on it's head. It's gem-like eyes gives off a faint glow as it gazes at it's prey.}",
@@ -5722,34 +5863,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://i.imgur.com/u2fBKI0.png",
-			"traitTags": [
-				"Amphibious"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"B",
-				"I",
-				"N",
-				"P",
-				"R"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Horrific Helmed Horror",
@@ -5863,6 +5977,31 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Helmed Horror.png?v=1.114.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/helmed-horror.mp3?v=1.114.1"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Spell Immunity"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
 			"fluff": {
 				"name": "Helmed Horror",
 				"source": "MM",
@@ -5909,32 +6048,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Helmed Horror.png?v=1.114.1",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/helmed-horror.mp3?v=1.114.1"
-			},
-			"traitTags": [
-				"Magic Resistance",
-				"Spell Immunity"
-			],
-			"senseTags": [
-				"B"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"O",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			]
+			}
 		},
 		{
 			"name": "Inkling",
@@ -5979,6 +6093,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The inkling's innate spellcasting ability is Intelligence (spell save {@dc 12}, {@hit 4} to hit with spell attacks). It can innately cast the following spells, requiring only somatic components:"
 					],
@@ -5996,8 +6111,7 @@
 							"{@spell magic missile}"
 						]
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -6046,6 +6160,26 @@
 			],
 			"environment": [
 				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/SCC/Inkling%20Mascot.png",
+			"traitTags": [
+				"Amorphous",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
 			],
 			"fluff": {
 				"images": [
@@ -6129,27 +6263,201 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/SCC/Inkling%20Mascot.png",
-			"traitTags": [
-				"Amorphous",
-				"Magic Resistance"
+			}
+		},
+		{
+			"name": "Inquisitor Operative",
+			"source": "MoR",
+			"size": [
+				"M"
 			],
-			"senseTags": [
-				"B"
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8 + 4",
+				"average": 22
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 9,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+4",
+				"stealth": "+4",
+				"athletics": "+3",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Unarmored Defense",
+					"entries": [
+						"While the operative is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The operative makes one attack with a weapon and two Unarmed Strike attacks as a bonus action."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d4 + 2}) bludgeoning damage. Once per turn, the adept can cause one of the following additional effects (choose one or roll a {@dice d4}):",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"type": "item",
+									"name": "1–2: Knock Down.",
+									"entry": "The target must succeed on a {@dc 13} Dexterity saving throw or be knocked {@condition prone}."
+								},
+								{
+									"type": "item",
+									"name": "3–4: Push.",
+									"entry": "The target must succeed on a {@dc 13} Strength saving throw or be pushed up to 10 feet directly away from the adept."
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Dart",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Deflect Missile",
+					"entries": [
+						"In response to being hit by a ranged weapon attack, the adept deflects the missile. The damage it takes from the attack is reduced by {@dice 1d10 + 2}. If the damage is reduced to 0, the adept catches the missile if it's small enough to hold in one hand and the adept has a hand free."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MPMM/Martial Arts Adept.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/martial-arts-adept.mp3"
+			},
+			"attachedItems": [
+				"dart|phb"
+			],
+			"actionTags": [
+				"Multiattack"
 			],
 			"languageTags": [
-				"CS"
+				"C",
+				"X"
 			],
 			"damageTags": [
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
+				"B",
+				"P"
 			],
 			"miscTags": [
-				"MW"
-			]
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Martial Arts Adept",
+				"source": "MPMM",
+				"entries": [
+					"Martial arts adepts are disciplined monks with extensive training in hand-to-hand combat. Some protect monasteries; others travel the world seeking enlightenment or new forms of combat to master. A few become bodyguards, trading their combat prowess and loyalty for food and lodging.",
+					"Some martial artists adorn themselves with tattoos to honor inspirations or instructors, or to memorialize profound lessons, triumphs, or defeats. You may roll on the Martial Arts Adept Tattoos table to determine what sort of tattoo an adept bears.",
+					{
+						"type": "table",
+						"caption": "Martial Arts Adept Tattoos",
+						"colLabels": [
+							"d8",
+							"Tattoo"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								"1",
+								"Patterning on the arms that make them look as though they were made of marble or granite"
+							],
+							[
+								"2",
+								"Colorful dragon scales"
+							],
+							[
+								"3",
+								"Collage of playful Elemental or Fey creatures"
+							],
+							[
+								"4",
+								"Constellations on the palm of each hand"
+							],
+							[
+								"5",
+								"Passage from a fighting manual"
+							],
+							[
+								"6",
+								"Beautiful but poisonous flowers"
+							],
+							[
+								"7",
+								"Two couatls swirling around each other, rendered in metallic ink"
+							],
+							[
+								"8",
+								"Detailed landscape depicting natural beauty"
+							]
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Martial Arts Adept.webp"
+						},
+						"credit": "Bryan Sola"
+					}
+				]
+			}
 		},
 		{
 			"name": "Iron Coffin Golem",
@@ -6271,6 +6579,39 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Iron Golem.png?v=1.131.6",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3?v=1.131.6"
+			},
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Iron Golem",
 				"source": "MM",
@@ -6336,40 +6677,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Iron Golem.png?v=1.131.6",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3?v=1.131.6"
-			},
-			"traitTags": [
-				"Damage Absorption",
-				"Immutable Form",
-				"Magic Resistance",
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Knight of the Black Sword",
@@ -6432,6 +6740,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The knight is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The knight has the following spells prepared:"
 					],
@@ -6453,8 +6762,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -6505,18 +6813,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Knight of the Black Sword",
-				"source": "IDRotF",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else."
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/IDRotF/Knight of the Black Sword.png",
 			"actionTags": [
 				"Multiattack"
@@ -6540,7 +6836,19 @@
 				"paralyzed",
 				"prone"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Knight of the Black Sword",
+				"source": "IDRotF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Fanatics are often part of a cult's leadership, using their charisma and dogma to influence and prey on those of weak will. Most are interested in personal power above all else."
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Magnetic Assembler",
@@ -6674,6 +6982,27 @@
 				"hill",
 				"mountain"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Magnetic Elemental (Token).png",
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"T"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
 			"fluff": {
 				"entries": [
 					{
@@ -6724,28 +7053,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Magnetic Elemental (Token).png",
-			"senseTags": [
-				"D",
-				"T"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"T"
-			],
-			"damageTags": [
-				"O"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled"
-			]
+			}
 		},
 		{
 			"name": "Marilith Battledancer",
@@ -6821,6 +7129,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The marilith's innate spellcasting ability is Charisma (spell save {@dc 19}). The marilith can innately cast the following spells, without providing material components:"
 					],
@@ -6835,8 +7144,7 @@
 							"{@spell steel wind strike|XGE}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -6961,17 +7269,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/8/84/Marilith_-_Sam_Wood.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/EyTOpy1.png",
 			"traitTags": [
 				"Magic Resistance",
@@ -7015,7 +7312,18 @@
 				"grappled",
 				"prone",
 				"restrained"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/8/84/Marilith_-_Sam_Wood.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Martial Arts Barbed Devil",
@@ -7149,6 +7457,36 @@
 						"{@atk rs} {@hit 8} to hit, range 150 ft., one target. {@h}17 ({@damage 5d6}) fire damage. If the target is a flammable object that isn't being worn or carried."
 					]
 				}
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Barbed Devil.png?v=1.111.0",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/barbed-devil.mp3?v=1.111.0"
+			},
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone"
 			],
 			"fluff": {
 				"name": "Barbed Devil",
@@ -7455,37 +7793,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Barbed Devil.png?v=1.111.0",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/barbed-devil.mp3?v=1.111.0"
-			},
-			"traitTags": [
-				"Devil's Sight",
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"I",
-				"TP"
-			],
-			"damageTags": [
-				"F",
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone"
-			]
+			}
 		},
 		{
 			"name": "Martial Arts Succubus",
@@ -7565,6 +7873,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The succubus's innate spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -7581,8 +7890,7 @@
 							"{@spell staggering smite}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -7748,6 +8056,30 @@
 			"environment": [
 				"desert"
 			],
+			"tokenUrl": "https://i.imgur.com/WZtS3Xn.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/medusa.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"petrified",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -7786,31 +8118,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://i.imgur.com/WZtS3Xn.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/medusa.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"petrified",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Mirage Stalker",
@@ -7892,6 +8200,35 @@
 			"environment": [
 				"forest"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Displacer Beast.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/displacer-beast.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Displacer Beast",
 				"source": "MM",
@@ -7934,36 +8271,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Displacer Beast.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/displacer-beast.mp3"
-			},
-			"traitTags": [
-				"Keen Senses",
-				"Pounce"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Tentacles"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Mist Mephit",
@@ -8034,6 +8342,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (1/Day)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mephit can innately cast {@spell invisibility}, requiring no material components. Its innate spellcasting ability is Charisma."
 					],
@@ -8043,8 +8352,7 @@
 					"ability": "cha",
 					"hidden": [
 						"will"
-					],
-					"type": "spellcasting"
+					]
 				}
 			],
 			"trait": [
@@ -8081,6 +8389,40 @@
 			"environment": [
 				"underwater"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Steam Mephit.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/steam-mephit.mp3"
+			},
+			"traitTags": [
+				"Death Burst"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AQ",
+				"AU"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Steam Mephit",
 				"source": "MM",
@@ -8132,41 +8474,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Steam Mephit.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/steam-mephit.mp3"
-			},
-			"traitTags": [
-				"Death Burst"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Breath Weapon"
-			],
-			"languageTags": [
-				"AQ",
-				"AU"
-			],
-			"damageTags": [
-				"C",
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflict": [
-				"unconscious"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Mythic Tarrasque",
@@ -8515,17 +8823,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.pinimg.com/originals/ac/62/7e/ac627ea8cab5346ad1a0aee87ad957a8.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/ulvR3fy.png",
 			"traitTags": [
 				"Incorporeal Movement",
@@ -8550,7 +8847,18 @@
 				"frightened"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/ac/62/7e/ac627ea8cab5346ad1a0aee87ad957a8.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Oblex Master",
@@ -8621,6 +8929,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oblex's innate spellcasting ability is Intelligence (spell save {@dc 23}). It can innately cast the following spells, requiring no material components:"
 					],
@@ -8641,11 +8950,11 @@
 							"{@spell telekinesis}"
 						]
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oblex is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 23}, {@hit 15} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -8711,8 +9020,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -8808,17 +9116,6 @@
 				"name": "Elder Brain",
 				"source": "VGM"
 			},
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://vignette.wikia.nocookie.net/forgottenrealms/images/c/c8/Oblex_elder-5e.jpg/revision/latest?cb=20190515010210"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://img.fireden.net/tg/image/1528/02/1528026354798.png",
 			"traitTags": [
 				"Amorphous",
@@ -8855,7 +9152,18 @@
 				"incapacitated",
 				"paralyzed",
 				"restrained"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://vignette.wikia.nocookie.net/forgottenrealms/images/c/c8/Oblex_elder-5e.jpg/revision/latest?cb=20190515010210"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Oblex Worker",
@@ -8927,6 +9235,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The oblex's innate spellcasting ability is Intelligence (spell save {@dc 13}). It can innately cast the following spells, requiring no components:"
 					],
@@ -8936,8 +9245,7 @@
 							"{@spell hold person}"
 						]
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -8993,6 +9301,33 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MTF/Oblex Spawn.png?v=1.125.1",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/oblex-spawn.mp3?v=1.125.1"
+			},
+			"traitTags": [
+				"Amorphous"
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Oblex Spawn",
 				"source": "MTF",
@@ -9059,34 +9394,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MTF/Oblex Spawn.png?v=1.125.1",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/oblex-spawn.mp3?v=1.125.1"
-			},
-			"traitTags": [
-				"Amorphous"
-			],
-			"senseTags": [
-				"B"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"S",
-				"Y"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"unconscious"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Ophanim",
@@ -9267,6 +9575,34 @@
 			"environment": [
 				"underdark"
 			],
+			"tokenUrl": "https://i.imgur.com/96JysFX.png",
+			"senseTags": [
+				"SD",
+				"U"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"paralyzed"
+			],
+			"conditionInflictLegendary": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -9362,35 +9698,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://i.imgur.com/96JysFX.png",
-			"senseTags": [
-				"SD",
-				"U"
-			],
-			"languageTags": [
-				"TP",
-				"XX"
-			],
-			"damageTags": [
-				"L",
-				"N",
-				"O",
-				"Y"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflict": [
-				"charmed",
-				"paralyzed"
-			],
-			"conditionInflictLegendary": [
-				"grappled"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Pope Lich",
@@ -9477,6 +9785,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pope is a 20th-level spellcaster. Its spellcasting ability is wisdom (spell save {@dc 21}, {@hit 13} to hit with spell attacks). The pope has the following cleric spells prepared:"
 					],
@@ -9559,8 +9868,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -9650,17 +9958,6 @@
 				"name": "Hierophant Lich",
 				"source": "CCodex"
 			},
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://cdnb.artstation.com/p/assets/images/images/016/811/787/large/hyun-lee-rendering-10-small.jpg?1553567662"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/FkZ7a3Q.png",
 			"traitTags": [
 				"Legendary Resistances",
@@ -9702,7 +9999,18 @@
 				"charmed",
 				"invisible",
 				"stunned"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/016/811/787/large/hyun-lee-rendering-10-small.jpg?1553567662"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Priest of Unlife",
@@ -9783,6 +10091,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The priest is a 13th-level spellcaster. Its spellcasting ability is wisdom (spell save {@dc 19}, {@hit 11} to hit with spell attacks). The priest has the following cleric spells prepared:"
 					],
@@ -9849,8 +10158,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -9900,6 +10208,37 @@
 						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}18 ({@damage 3d8 + 5}) force damage."
 					]
 				}
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.113.8",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"C",
+				"O"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
 			],
 			"fluff": {
 				"entries": [
@@ -10000,38 +10339,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.113.8",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Turn Resistance"
-			],
-			"senseTags": [
-				"U"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"C",
-				"O"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"paralyzed"
-			],
-			"conditionInflictSpell": [
-				"charmed",
-				"invisible",
-				"stunned"
-			]
+			}
 		},
 		{
 			"name": "Pro Shadow Dancer",
@@ -10144,6 +10452,37 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MTF/Shadow Dancer.png?v=1.110.5",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/shadow-dancer.mp3?v=1.110.5"
+			},
+			"traitTags": [
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
 			"fluff": {
 				"name": "Shadow Dancer",
 				"source": "MTF",
@@ -10196,38 +10535,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MTF/Shadow Dancer.png?v=1.110.5",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/shadow-dancer.mp3?v=1.110.5"
-			},
-			"traitTags": [
-				"Fey Ancestry"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"N",
-				"P"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled",
-				"prone",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Scylla",
@@ -10326,6 +10634,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The empyrean's innate spellcasting ability is Charisma (spell save {@dc 23}, {@hit 15} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
 					],
@@ -10345,8 +10654,7 @@
 							"{@spell tsunami}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -10574,6 +10882,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The couatl's spellcasting ability is Charisma (spell save {@dc 17}). It can innately cast the following spells, requiring only verbal components:"
 					],
@@ -10582,11 +10891,11 @@
 						"{@spell detect magic}",
 						"{@spell detect thoughts}"
 					],
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The couatl is a 17th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 18}, +10 to hit with spell attacks). It has the following cleric spells prepared:"
 					],
@@ -10667,8 +10976,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -10718,6 +11026,42 @@
 				"grassland",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/couatl.mp3?v=1.113.2"
+			},
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"poisoned",
+				"restrained"
+			],
 			"fluff": {
 				"name": "Couatl",
 				"source": "MM",
@@ -10758,43 +11102,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/couatl.mp3?v=1.113.2"
-			},
-			"traitTags": [
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"TP",
-				"XX"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"spellcastingTags": [
-				"CC",
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"grappled",
-				"poisoned",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Serpent of the Night Sky",
@@ -10873,6 +11181,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
 					],
@@ -10893,8 +11202,7 @@
 							"{@spell scrying}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -10944,6 +11252,40 @@
 				"grassland",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/couatl.mp3?v=1.113.2"
+			},
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained"
+			],
 			"fluff": {
 				"name": "Couatl",
 				"source": "MM",
@@ -10984,41 +11326,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/couatl.mp3?v=1.113.2"
-			},
-			"traitTags": [
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"TP",
-				"XX"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled",
-				"poisoned",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Skeletal Gladiator",
@@ -11120,23 +11428,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Gladiator",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death."
-								]
-							}
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Gladiator.png?v=1.127.0",
 			"soundClip": {
 				"type": "external",
@@ -11166,7 +11457,24 @@
 				"prone",
 				"restrained"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Gladiator",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Gladiators battle for the entertainment of raucous crowds. Some gladiators are brutal pit fighters who treat each match as a life-or-death struggle, while others are professional duelists who command huge fees but rarely fight to the death."
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Skeletal Murderer",
@@ -11253,6 +11561,26 @@
 			"environment": [
 				"underwater"
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/shadowskeleton_token.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
 			"fluff": {
 				"images": [
 					{
@@ -11297,27 +11625,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex/shadowskeleton_token.png",
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS",
-				"LF"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			]
+			}
 		},
 		{
 			"name": "Skull Emperor",
@@ -11417,6 +11725,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The pope is a 20th-level spellcaster. Its spellcasting ability is wisdom (spell save {@dc 23}, {@hit 15} to hit with spell attacks). The pope has the following cleric spells prepared:"
 					],
@@ -11499,8 +11808,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -11591,6 +11899,45 @@
 				"name": "Lich",
 				"source": "MM"
 			},
+			"tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.113.8",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/lich.mp3?v=1.113.8"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
 			"fluff": {
 				"name": "Lich",
 				"source": "MM",
@@ -11692,46 +12039,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.113.8",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/lich.mp3?v=1.113.8"
-			},
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Turn Resistance"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"X"
-			],
-			"damageTags": [
-				"C",
-				"N",
-				"O"
-			],
-			"spellcastingTags": [
-				"CC"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"paralyzed"
-			],
-			"conditionInflictSpell": [
-				"charmed",
-				"invisible",
-				"stunned"
-			]
+			}
 		},
 		{
 			"name": "Statue of The Beast",
@@ -11790,6 +12098,7 @@
 			"spellcasting": [
 				{
 					"name": "Psionic Predator",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The statue harbors a wellspring of psionic energy. This energy is represented as Psi power. The statue can use the following abilities using Psi power:",
 						"• Mind Barrier",
@@ -11800,8 +12109,7 @@
 						"{@spell thunderous smite}",
 						"{@spell thunderwave}",
 						"{@spell wrathful smite}"
-					],
-					"type": "spellcasting"
+					]
 				}
 			],
 			"trait": [
@@ -11884,35 +12192,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"A large, exquisitely carved jade statue of a vampire guards the tunnels in Isle of the Abbey, having been brought to life by dark magic. Its stone fangs draw blood that it then uses to work a curse on its victims."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/11cpMPh.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/11cpMPh.png",
 			"traitTags": [
 				"Immutable Form"
@@ -11944,7 +12223,36 @@
 			"conditionInflict": [
 				"prone"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"A large, exquisitely carved jade statue of a vampire guards the tunnels in Isle of the Abbey, having been brought to life by dark magic. Its stone fangs draw blood that it then uses to work a curse on its victims."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/11cpMPh.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Sultans Steed",
@@ -12040,20 +12348,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"\"As Sultan of the Efreet, Marrake was able to indulge any whim he cared for. Interestingly, however, he was a creature of few pleasures and rarely even visited his harem of a hundred and one courtesans. He was instead a lover of gambling on races, particularly those involving his prized nightmares, Eversmoke and Black Onyx. His love of these steeds was such that it had even led to rumors that he slept in their stables before important races. Sometimes his wagers resulted in near bankruptcies for the city's treasury.\""
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png",
 			"soundClip": {
 				"type": "external",
@@ -12075,7 +12369,21 @@
 			"miscTags": [
 				"AOE",
 				"MW"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"\"As Sultan of the Efreet, Marrake was able to indulge any whim he cared for. Interestingly, however, he was a creature of few pleasures and rarely even visited his harem of a hundred and one courtesans. He was instead a lover of gambling on races, particularly those involving his prized nightmares, Eversmoke and Black Onyx. His love of these steeds was such that it had even led to rumors that he slept in their stables before important races. Sometimes his wagers resulted in near bankruptcies for the city's treasury.\""
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://2e.aonprd.com/Images/Monsters/Nightmare_Nightmare.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Terror Wolf",
@@ -12156,19 +12464,6 @@
 				"forest",
 				"hill"
 			],
-			"fluff": {
-				"name": "Dire Wolf",
-				"source": "MM",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Dire Wolf.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Dire Wolf.png",
 			"soundClip": {
 				"type": "external",
@@ -12184,7 +12479,20 @@
 			"miscTags": [
 				"MW"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Dire Wolf",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Dire Wolf.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "The Bagman",
@@ -12290,29 +12598,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "The Bagman",
-				"source": "VRGR",
-				"entries": [
-					{
-						"type": "entries",
-						"name": "Beware the Bagman",
-						"entries": [
-							"The Bagman is an urban legend about an adventurer who sought to escape doom by abandoning his party and hiding inside a {@item bag of holding}. When he tried to leave, though, he became lost amid a constantly increasing number of extradimensional storage spaces. Over time, the strange forces of this magical in-between place transformed the adventurer into a monstrous creature. Now, every night, the Bagman slips out from a random {@item bag of holding}. If he doesn't find his home, he drags someone back into the bag with him and leaves behind some trinket from his hidden kingdom of lost junk. Some say that if you speak too loudly over an open {@item bag of holding} or whisper \"follow my voice\" into a magical storage space three times, the Bagman will come for you.",
-							"Any character might know the story of the Bagman. What the Bagman is and how you use this urban legend is up to you. Is there truly a Bagman, or is he just a story? If an object vanishes overnight or if someone finds something that isn't theirs in a {@item bag of holding}, is the Bagman to blame? Is the Bagman just a monster that preys on adventurers, or is he the Darklord of his own hidden domain? The possibilities for horror adventures are endless, and nowhere—especially not adventurers' gear—is safe."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/The Bagman.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/KQXfsy4.png",
 			"traitTags": [
 				"Amorphous",
@@ -12342,7 +12627,30 @@
 				"stunned"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "The Bagman",
+				"source": "VRGR",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Beware the Bagman",
+						"entries": [
+							"The Bagman is an urban legend about an adventurer who sought to escape doom by abandoning his party and hiding inside a {@item bag of holding}. When he tried to leave, though, he became lost amid a constantly increasing number of extradimensional storage spaces. Over time, the strange forces of this magical in-between place transformed the adventurer into a monstrous creature. Now, every night, the Bagman slips out from a random {@item bag of holding}. If he doesn't find his home, he drags someone back into the bag with him and leaves behind some trinket from his hidden kingdom of lost junk. Some say that if you speak too loudly over an open {@item bag of holding} or whisper \"follow my voice\" into a magical storage space three times, the Bagman will come for you.",
+							"Any character might know the story of the Bagman. What the Bagman is and how you use this urban legend is up to you. Is there truly a Bagman, or is he just a story? If an object vanishes overnight or if someone finds something that isn't theirs in a {@item bag of holding}, is the Bagman to blame? Is the Bagman just a monster that preys on adventurers, or is he the Darklord of his own hidden domain? The possibilities for horror adventures are endless, and nowhere—especially not adventurers' gear—is safe."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VRGR/The Bagman.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "The Empty",
@@ -12716,6 +13024,38 @@
 				"forest",
 				"swamp"
 			],
+			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/351407278/Vbh1k5fShVuNpwmY-rB0PA/med.png?1690022275",
+			"traitTags": [
+				"Amphibious",
+				"Regeneration"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone"
+			],
 			"fluff": {
 				"entries": [
 					"{@i Crashing through the forest, this three-headed dragon stands upright, its spiked tail thrashing from side to side as it walks. A vicious mouth lined with glistening teeth graces each head, and its green scales gleam in the fleeting sunlight.}",
@@ -12769,39 +13109,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://s3.amazonaws.com/files.d20.io/images/351407278/Vbh1k5fShVuNpwmY-rB0PA/med.png?1690022275",
-			"traitTags": [
-				"Amphibious",
-				"Regeneration"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"E",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone"
-			]
+			}
 		},
 		{
 			"name": "Twin Maw of Sekolah",
@@ -12921,28 +13229,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Maw of Sekolah",
-				"source": "GoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Summoned from the shadowy depths of the ocean through ritual and tidal magic, the Maw of Sekolah appears in The Final Enemy as the avatar of the hungry sahuagin god. This huge, two-headed shark is fed a steady diet of sentient creatures, captured by the sahuagin and offered up as tribute. Sahuagin priestesses adorn the fins of the maw of Sekolah with gemmed bands and polished skulls."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GoS/Maw of Sekolah.png",
 			"traitTags": [
 				"Legendary Resistances",
@@ -12966,7 +13252,29 @@
 				"MW",
 				"RCH"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Maw of Sekolah",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Summoned from the shadowy depths of the ocean through ritual and tidal magic, the Maw of Sekolah appears in The Final Enemy as the avatar of the hungry sahuagin god. This huge, two-headed shark is fed a steady diet of sentient creatures, captured by the sahuagin and offered up as tribute. Sahuagin priestesses adorn the fins of the maw of Sekolah with gemmed bands and polished skulls."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Vampire Knight",
@@ -13103,6 +13411,36 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Vampire Spawn.png?v=1.111.0",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/vampire-spawn.mp3?v=1.111.0"
+			},
+			"traitTags": [
+				"Regeneration",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
 			"fluff": {
 				"name": "Vampire Spawn",
 				"source": "MM",
@@ -13181,37 +13519,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Vampire Spawn.png?v=1.111.0",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/vampire-spawn.mp3?v=1.111.0"
-			},
-			"traitTags": [
-				"Regeneration",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			],
-			"conditionInflict": [
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Vampire Patrician of Barovia",
@@ -13367,6 +13675,33 @@
 					]
 				}
 			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex%20(3pp)/vampirepatrician_token.png",
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"restrained"
+			],
 			"fluff": {
 				"images": [
 					{
@@ -13412,34 +13747,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/CCodex%20(3pp)/vampirepatrician_token.png",
-			"traitTags": [
-				"Regeneration",
-				"Shapechanger",
-				"Spider Climb"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"paralyzed",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Warforged Demolisher",
@@ -13554,6 +13862,34 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/ERLW/Warforged Titan.png",
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Warforged Titan",
 				"source": "ERLW",
@@ -13586,35 +13922,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/ERLW/Warforged Titan.png",
-			"traitTags": [
-				"Siege Monster"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"CS"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "White Abishai Reaver",
@@ -13751,6 +14059,38 @@
 			"environment": [
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MTF/White Abishai.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/white-abishai.mp3"
+			},
+			"traitTags": [
+				"Devil's Sight",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Reckless"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"DR",
+				"I",
+				"TP"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "White Abishai",
 				"source": "MTF",
@@ -13811,39 +14151,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MTF/White Abishai.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/white-abishai.mp3"
-			},
-			"traitTags": [
-				"Devil's Sight",
-				"Magic Resistance",
-				"Magic Weapons",
-				"Reckless"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"DR",
-				"I",
-				"TP"
-			],
-			"damageTags": [
-				"C",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Wight Legioner",
@@ -13984,17 +14292,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/wightcaptain.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/token/wightcaptain.png",
 			"traitTags": [
 				"Sunlight Sensitivity"
@@ -14021,7 +14318,18 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/MonsterManualExpanded/wightcaptain.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Winter Caller",
@@ -14095,6 +14403,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The winter caller is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}; {@hit 5} to hit with spell attacks). It has the following druid spells prepared:"
 					],
@@ -14130,8 +14439,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -14185,17 +14493,6 @@
 				"forest",
 				"mountain"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/kx1VwFv.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/kx1VwFv.png",
 			"traitTags": [
 				"Keen Senses",
@@ -14228,7 +14525,18 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/kx1VwFv.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Winter Hag",
@@ -14293,6 +14601,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The hag's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). She can innately cast the following spells, requiring no material components:"
 					],
@@ -14309,11 +14618,11 @@
 							"{@spell control weather}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Shared Spellcasting (Coven Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"While all three members of a hag coven are within 30 feet of one another, they can each cast the following spells but must share the spell slots among themselves:"
 					],
@@ -14364,8 +14673,7 @@
 					},
 					"footerEntries": [
 						"For casting these spells, each hag is a 12th-level spellcaster that uses Intelligence as her spellcasting ability. The spell save DC is 14 + the hag's Intelligence modifier, and the spell attack bonus is 6 + the hag's Intelligence modifier."
-					],
-					"type": "spellcasting"
+					]
 				}
 			],
 			"trait": [
@@ -14415,6 +14723,56 @@
 			"environment": [
 				"arctic"
 			],
+			"tokenUrl": "https://5e.tools/img/VGM/Bheur Hag.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bheur-hag.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"N",
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			],
+			"conditionInflictLegendary": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -14532,57 +14890,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/VGM/Bheur Hag.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/bheur-hag.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"AU",
-				"C",
-				"GI"
-			],
-			"damageTags": [
-				"B",
-				"C"
-			],
-			"damageTagsSpell": [
-				"B",
-				"C",
-				"N",
-				"P"
-			],
-			"spellcastingTags": [
-				"I",
-				"S"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"frightened",
-				"incapacitated"
-			],
-			"conditionInflictLegendary": [
-				"restrained"
-			],
-			"conditionInflictSpell": [
-				"blinded",
-				"charmed",
-				"frightened",
-				"paralyzed",
-				"poisoned",
-				"restrained",
-				"stunned",
-				"unconscious"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Young Zmey",
@@ -14740,17 +15048,6 @@
 			"environment": [
 				"forest"
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e010234b-f821-440e-befc-b2f05bc0beab/db1yix9-4f6bb7fe-10ed-4c5f-8c0f-41a2832e480f.jpg/v1/fill/w_1228,h_651,q_70,strp/zmey_gorynych_by_arvalis_db1yix9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQ4IiwicGF0aCI6IlwvZlwvZTAxMDIzNGItZjgyMS00NDBlLWJlZmMtYjJmMDViYzBiZWFiXC9kYjF5aXg5LTRmNmJiN2ZlLTEwZWQtNGM1Zi04YzBmLTQxYTI4MzJlNDgwZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eKxGICockmcMSbjv0FxVfiDoHv-aZAR9GoP0mI3gQ9Q"
-						}
-					}
-				]
-			},
 			"dragonCastingColor": "green",
 			"dragonAge": "young",
 			"tokenUrl": "https://i.imgur.com/mDJgwxF.png",
@@ -14790,7 +15087,18 @@
 				"dexterity"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e010234b-f821-440e-befc-b2f05bc0beab/db1yix9-4f6bb7fe-10ed-4c5f-8c0f-41a2832e480f.jpg/v1/fill/w_1228,h_651,q_70,strp/zmey_gorynych_by_arvalis_db1yix9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODQ4IiwicGF0aCI6IlwvZlwvZTAxMDIzNGItZjgyMS00NDBlLWJlZmMtYjJmMDViYzBiZWFiXC9kYjF5aXg5LTRmNmJiN2ZlLTEwZWQtNGM1Zi04YzBmLTQxYTI4MzJlNDgwZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.eKxGICockmcMSbjv0FxVfiDoHv-aZAR9GoP0mI3gQ9Q"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Yuan-ti Cultist",
@@ -14849,6 +15157,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The fanatic is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 12}, {@hit 4} to hit with spell attacks). The fanatic has the following cleric spells prepared, and it can innately cast some spells, requiring no material components:"
 					],
@@ -14870,8 +15179,7 @@
 							"{@spell shield of faith}"
 						]
 					},
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -14916,6 +15224,39 @@
 				"swamp",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Yuan-ti Pureblood.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-pureblood.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Yuan-ti Pureblood",
 				"source": "MM",
@@ -15007,40 +15348,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Yuan-ti Pureblood.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/yuan-ti-pureblood.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"N",
-				"O",
-				"S"
-			],
-			"spellcastingTags": [
-				"CC",
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Yuan-ti Hunter",
@@ -15100,6 +15408,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The yuan-ti's innate spellcasting ability is Charisma (spell save {@dc 12}). The yuan-ti can innately cast the following spells, requiring no material components:"
 					],
@@ -15111,8 +15420,7 @@
 							"{@spell suggestion}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -15166,6 +15474,50 @@
 				"forest",
 				"swamp"
 			],
+			"tokenUrl": "https://i.imgur.com/TYZSkYQ.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/yuan-ti-malison.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Yuan-ti Malison (Type 3)",
 				"source": "MM",
@@ -15257,51 +15609,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://i.imgur.com/TYZSkYQ.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/yuan-ti-malison.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"I",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"F",
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RNG",
-				"RW"
-			],
-			"conditionInflict": [
-				"grappled",
-				"restrained"
-			],
-			"conditionInflictSpell": [
-				"charmed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Zmey Headling",
