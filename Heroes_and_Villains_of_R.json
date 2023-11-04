@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.183.1",
+	"siteVersion": "1.189.1",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1691915856,
-		"dateLastModified": 1691915856
+		"dateAdded": 1699131943,
+		"dateLastModified": 1699131943
 	},
 	"monster": [
 		{
@@ -90,6 +90,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save {@dc 20}), requiring no material components:"
 					],
@@ -103,11 +104,11 @@
 							"{@spell true seeing}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The warlock is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 20}, {@hit 12} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:"
 					],
@@ -140,8 +141,7 @@
 							"lower": 1
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"action": [
@@ -185,28 +185,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Warlock of the Great Old One",
-				"source": "VGM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/rZkGHSS.png",
 			"senseTags": [
 				"D"
@@ -237,7 +215,29 @@
 				"charmed",
 				"restrained"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Warlock of the Great Old One",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Warlocks of the Great Old One gain their powers through magical pacts forged with eldritch entities from strange and distant realms of existence. Some of these warlocks associate with cultists devoted to these entities, as well as aberrations that share their goals, yet other warlocks of the Great Old One are experts at rooting out the insanity and wickedness inspired by bizarre beings from beyond the stars."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Akar Kessell",
@@ -311,6 +311,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The wight's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no verbal or material components:"
 					],
@@ -327,8 +328,7 @@
 							"{@spell misty step}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -360,6 +360,30 @@
 					]
 				}
 			],
+			"tokenUrl": "https://i.imgur.com/u9uY6nV.png",
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -413,31 +437,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://i.imgur.com/u9uY6nV.png",
-			"traitTags": [
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"N"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Angel of Shadow (outdated)",
@@ -510,6 +510,7 @@
 			"spellcasting": [
 				{
 					"name": "Shadow Arts",
+					"type": "spellcasting",
 					"headerEntries": [
 						"As an action, the angel can spend 2 ki points to cast the following spells."
 					],
@@ -518,11 +519,11 @@
 						"{@spell pass without trace}",
 						"{@spell shadow blade|XGE}",
 						"{@spell silence}"
-					],
-					"type": "spellcasting"
+					]
 				},
 				{
 					"name": "Hellish Bloodline",
+					"type": "spellcasting",
 					"will": [
 						"{@spell command} only devils"
 					],
@@ -538,8 +539,7 @@
 								"{@spell mage hand}"
 							]
 						}
-					},
-					"type": "spellcasting"
+					}
 				}
 			],
 			"trait": [
@@ -628,17 +628,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.pinimg.com/564x/c1/5f/c0/c15fc04b1a89334abd1a77edb05bfe92.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcBUSMtmsBLgksZp36cY49XKXCbsp2csuijA&usqp=CAU",
 			"traitTags": [
 				"Charge"
@@ -657,7 +646,18 @@
 			],
 			"conditionInflict": [
 				"stunned"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/c1/5f/c0/c15fc04b1a89334abd1a77edb05bfe92.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Arveiaturace",
@@ -725,13 +725,13 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"daily": {
 						"7": [
 							"{@spell fireball}",
 							"{@spell lightning bolt}"
 						]
-					},
-					"type": "spellcasting"
+					}
 				}
 			],
 			"trait": [
@@ -813,20 +813,6 @@
 			"environment": [
 				"arctic"
 			],
-			"fluff": {
-				"entries": [
-					"Arveiaturace the White Wyrm, known to sailors and minstrels alike as Iceclaws, thanks to her habit of drifting low over ships sailing off the Sword Coast and plucking up crew members for quick snacks. This ancient white dragon is feared by all sailors who ply the shipping lanes of the Sword Coast, except for those who dismiss her as a legend -- until it's too late. The Flying Hunt of Nimbral and several aerial patrols from Evermeet have fought her in midair and forced her into flight on occasion, but most ships are helpless against her diving attacks -- and when crews scramble down into their holds to escape her snatching claws, she's been known to land on a ship and tear it apart like a child opening a gift. What makes Arveiaturace so deadly is she is the steed of a wizard, Meltharond Thone, who captured and tamed her centuries ago."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/adventure/IDRotF/091-02-002.dragon.png"
-						}
-					}
-				]
-			},
 			"dragonCastingColor": "white",
 			"dragonAge": "ancient",
 			"tokenUrl": "https://i.imgur.com/XZyArwb.png",
@@ -880,7 +866,21 @@
 				"blinded"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Arveiaturace the White Wyrm, known to sailors and minstrels alike as Iceclaws, thanks to her habit of drifting low over ships sailing off the Sword Coast and plucking up crew members for quick snacks. This ancient white dragon is feared by all sailors who ply the shipping lanes of the Sword Coast, except for those who dismiss her as a legend -- until it's too late. The Flying Hunt of Nimbral and several aerial patrols from Evermeet have fought her in midair and forced her into flight on occasion, but most ships are helpless against her diving attacks -- and when crews scramble down into their holds to escape her snatching claws, she's been known to land on a ship and tear it apart like a child opening a gift. What makes Arveiaturace so deadly is she is the steed of a wizard, Meltharond Thone, who captured and tamed her centuries ago."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/IDRotF/091-02-002.dragon.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Avarice",
@@ -947,6 +947,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Avarice is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 16}; {@hit 8} to hit with spell attacks). She has knows the following sorcerer and warlock spells:"
 					],
@@ -1002,8 +1003,7 @@
 							"slots": 2
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -1062,6 +1062,41 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/IDRotF/Avarice.png",
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I",
+				"O",
+				"OTH"
+			],
+			"damageTags": [
+				"C",
+				"F"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"CL",
+				"CS"
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"conditionInflictSpell": [
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Avarice",
 				"source": "IDRotF",
@@ -1111,42 +1146,7 @@
 						"title": "Avarice, her raven familiar, and her gargoyles"
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/IDRotF/Avarice.png",
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"I",
-				"O",
-				"OTH"
-			],
-			"damageTags": [
-				"C",
-				"F"
-			],
-			"damageTagsSpell": [
-				"B",
-				"C",
-				"F",
-				"L",
-				"O",
-				"T"
-			],
-			"spellcastingTags": [
-				"CL",
-				"CS"
-			],
-			"conditionInflict": [
-				"incapacitated"
-			],
-			"conditionInflictSpell": [
-				"incapacitated"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Blackblood",
@@ -1299,17 +1299,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/ZpeCtxF.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/ZpeCtxF.png",
 			"traitTags": [
 				"Keen Senses",
@@ -1336,7 +1325,18 @@
 				"grappled"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ZpeCtxF.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Bo'sun McGraw",
@@ -1410,6 +1410,27 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Ogre Zombie.png",
+			"traitTags": [
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"GI"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Ogre Zombie",
 				"source": "MM",
@@ -1479,28 +1500,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Ogre Zombie.png",
-			"traitTags": [
-				"Undead Fortitude"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C",
-				"CS",
-				"GI"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Boneclaw Ripper",
@@ -1748,6 +1748,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The war caster is a 12th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, + {@hit 9} to hit with spell attacks). It has the following wizard spells prepared:"
 					],
@@ -1812,8 +1813,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -1876,30 +1876,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"Cassius Elendiir is a 48 year old male human artificier.",
-					"He has short, well kept, black hair with white steaks and green eyes.",
-					"He has soft gray skin.",
-					"He stands 189cm (6'2\") tall and has a regular build.",
-					"He has a diamond-shaped face.",
-					"Magic items:",
-					"Mithral +1 Half Plate Armor",
-					"Gauntlets of Ogre Power",
-					"Staff of Thunder and Lightning",
-					"Shield Guardian Amulet",
-					"Potion of Greater Healing"
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/U5ydEnC.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/U5ydEnC.png",
 			"actionTags": [
 				"Multiattack"
@@ -1934,7 +1910,31 @@
 			"conditionInflict": [
 				"prone",
 				"stunned"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"Cassius Elendiir is a 48 year old male human artificier.",
+					"He has short, well kept, black hair with white steaks and green eyes.",
+					"He has soft gray skin.",
+					"He stands 189cm (6'2\") tall and has a regular build.",
+					"He has a diamond-shaped face.",
+					"Magic items:",
+					"Mithral +1 Half Plate Armor",
+					"Gauntlets of Ogre Power",
+					"Staff of Thunder and Lightning",
+					"Shield Guardian Amulet",
+					"Potion of Greater Healing"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/U5ydEnC.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Cirlia Salinde",
@@ -1999,6 +1999,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Cirlia is a 4th-level spellcaster that uses Intelligence as his spellcasting ability (spell save {@dc 13}; {@hit 5} to hit with spell attacks). Cirlia has the following spells prepared from the wizard's spell list:"
 					],
@@ -2028,8 +2029,7 @@
 							"slots": 3
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -2040,31 +2040,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Personality: Cirlia Salinde is a very shy but kind hearted person who is always willing to help others. She is very loyal to those she loves and respects. She can be unpatient at times but always refrains herself from doing something dangerous or dumb.",
-									"Appearance: Cirlia Salinde is a young female High elf with green short hair with two smaller ponytail like strands at the back of her head."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/oxScMxA.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/dfOvUFc.png",
 			"traitTags": [
 				"Fey Ancestry"
@@ -2095,7 +2070,32 @@
 				"invisible"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Personality: Cirlia Salinde is a very shy but kind hearted person who is always willing to help others. She is very loyal to those she loves and respects. She can be unpatient at times but always refrains herself from doing something dangerous or dumb.",
+									"Appearance: Cirlia Salinde is a young female High elf with green short hair with two smaller ponytail like strands at the back of her head."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/oxScMxA.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Dendar, The Night Serpent",
@@ -2193,6 +2193,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Dendar's spellcasting ability is Charisma (spell save {@dc 24}). Dendar can innately cast the following spells, requiring no somatic or material components or concentration."
 					],
@@ -2202,8 +2203,7 @@
 						"{@spell sleep} (at 9th level)",
 						"{@spell suggestion}"
 					],
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -2295,26 +2295,6 @@
 				"name": "Beholder",
 				"source": "MM"
 			},
-			"fluff": {
-				"entries": [
-					"Lair Actions:",
-					"Regurgitate Horrors.",
-					"The Night Serpent's maw opens agape and horrors it has consumed pour out. Two creatures trapped in her Nightmarish Demiple appear in unoccupied spaces 10 feet in front of The Night Serpent. They immediately take their turns.",
-					"Crushing Body.",
-					"A creature within 120 feet of Dendar must succeed on a DC 20 Dexterity saving throw or take 55 (10d10) bludgeoning damage and become restrained and fall prone as The Night Serpents' immense body crushes the creature. On a successful save a creature takes half damage and is not restrained and does not fall prone.",
-					"Unseen End.",
-					"The Night Serpent snuffs all magical and non-magical light within a mile of itself. Spells that shed light lower than 6th level are dispelled while higher level spells and effects of magic items that shed light are suppressed until the next initiative count 20."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/s6VHWJe.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/s6VHWJe.png",
 			"traitTags": [
 				"Legendary Resistances",
@@ -2358,7 +2338,27 @@
 				"paralyzed"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"Lair Actions:",
+					"Regurgitate Horrors.",
+					"The Night Serpent's maw opens agape and horrors it has consumed pour out. Two creatures trapped in her Nightmarish Demiple appear in unoccupied spaces 10 feet in front of The Night Serpent. They immediately take their turns.",
+					"Crushing Body.",
+					"A creature within 120 feet of Dendar must succeed on a DC 20 Dexterity saving throw or take 55 (10d10) bludgeoning damage and become restrained and fall prone as The Night Serpents' immense body crushes the creature. On a successful save a creature takes half damage and is not restrained and does not fall prone.",
+					"Unseen End.",
+					"The Night Serpent snuffs all magical and non-magical light within a mile of itself. Spells that shed light lower than 6th level are dispelled while higher level spells and effects of magic items that shed light are suppressed until the next initiative count 20."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/s6VHWJe.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Dread Admiral",
@@ -2426,6 +2426,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The admiral is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It has the following paladin spells prepared:"
 					],
@@ -2460,8 +2461,7 @@
 							"slots": 2
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -2524,17 +2524,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/Ie3DOsn.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/Ie3DOsn.png",
 			"traitTags": [
 				"Magic Resistance"
@@ -2581,7 +2570,18 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Ie3DOsn.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Felgolos",
@@ -2925,6 +2925,40 @@
 				"swamp",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Revenant.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/revenant.mp3"
+			},
+			"traitTags": [
+				"Regeneration",
+				"Rejuvenation",
+				"Turn Immunity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Revenant",
 				"source": "MM",
@@ -2971,41 +3005,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Revenant.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/revenant.mp3"
-			},
-			"traitTags": [
-				"Regeneration",
-				"Rejuvenation",
-				"Turn Immunity"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"C",
-				"E"
-			],
-			"damageTags": [
-				"B",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"paralyzed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Flesh of the Deep",
@@ -3073,6 +3073,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Flesh is a spellcaster. Its spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following spells:"
 					],
@@ -3090,8 +3091,7 @@
 							"lower": 1
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3288,6 +3288,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The jester's spellcasting ability is Charisma (spell save {@dc 15}, {@hit 7} to hit with spell attacks). It can innately cast the following spells requiring no components:"
 					],
@@ -3310,8 +3311,7 @@
 							"{@spell seeming}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3478,6 +3478,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The jester's spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It can innately cast the following spells requiring no components:"
 					],
@@ -3503,8 +3504,7 @@
 							"{@spell seeming}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3549,17 +3549,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.pinimg.com/564x/bf/98/29/bf98297eb887528c4962fd14461a2318.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.pinimg.com/564x/e1/76/f5/e176f58042b33cc060c99f276fbea082.jpg",
 			"traitTags": [
 				"Turn Resistance"
@@ -3576,7 +3565,18 @@
 			],
 			"spellcastingTags": [
 				"I"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/564x/bf/98/29/bf98297eb887528c4962fd14461a2318.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Harkon Lukas",
@@ -3643,6 +3643,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting (Humanoid Form Only)",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The bard casts one of the following spells using Charisma as its spellcasting ability (spell save {@dc 18}):"
 					],
@@ -3661,8 +3662,7 @@
 							"{@spell slow}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3754,40 +3754,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Loup Garou",
-				"source": "VRGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"Loup garou possess a strain of lycanthropy more virulent than that carried by common werewolves. Aside from being deadlier than their werewolf cousins, loup garou aggressively spread the plague of lycanthropy. Only through the death of a loup garou might those afflicted by it escape their curse."
-						]
-					},
-					{
-						"type": "section",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Loup Garou Lycanthropy",
-								"entries": [
-									"A Humanoid who succumbs to a loup garou's lycanthropy becomes a werewolf. This form of lycanthropy can't be removed while the loup garou that inflicted the curse lives. See the {@i Monster Manual} for details on lycanthropy.",
-									"Once a loup garou is slain, a {@spell remove curse} spell cast during the night of a full moon on any afflicted werewolf it created forces the target to make a DC 17 Constitution saving throw. On a success, the curse is broken, and the target returns to its normal form and gains 3 levels of exhaustion. On a failure, the curse remains, and the target automatically fails any saving throw made to break this curse for 1 month."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/VRGR/Loup Garou.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/VRGR/Loup Garou.png",
 			"traitTags": [
 				"Legendary Resistances",
@@ -3823,7 +3789,41 @@
 				"prone"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Loup Garou",
+				"source": "VRGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Loup garou possess a strain of lycanthropy more virulent than that carried by common werewolves. Aside from being deadlier than their werewolf cousins, loup garou aggressively spread the plague of lycanthropy. Only through the death of a loup garou might those afflicted by it escape their curse."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Loup Garou Lycanthropy",
+								"entries": [
+									"A Humanoid who succumbs to a loup garou's lycanthropy becomes a werewolf. This form of lycanthropy can't be removed while the loup garou that inflicted the curse lives. See the {@i Monster Manual} for details on lycanthropy.",
+									"Once a loup garou is slain, a {@spell remove curse} spell cast during the night of a full moon on any afflicted werewolf it created forces the target to make a DC 17 Constitution saving throw. On a success, the curse is broken, and the target returns to its normal form and gains 3 levels of exhaustion. On a failure, the curse remains, and the target automatically fails any saving throw made to break this curse for 1 month."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VRGR/Loup Garou.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Hedralin",
@@ -3890,6 +3890,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The couatl's spellcasting ability is Charisma (spell save {@dc 14}). It can innately cast the following spells, requiring only verbal components:"
 					],
@@ -3911,8 +3912,7 @@
 							"{@spell scrying}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -3952,6 +3952,37 @@
 			],
 			"environment": [
 				"urban"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained",
+				"unconscious"
 			],
 			"fluff": {
 				"name": "Couatl",
@@ -3993,38 +4024,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Couatl.png?v=1.113.2",
-			"traitTags": [
-				"Magic Weapons"
-			],
-			"senseTags": [
-				"U"
-			],
-			"actionTags": [
-				"Shapechanger"
-			],
-			"languageTags": [
-				"TP",
-				"XX"
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"grappled",
-				"poisoned",
-				"restrained",
-				"unconscious"
-			]
+			}
 		},
 		{
 			"name": "Helmsman Wraithbone",
@@ -4142,6 +4142,32 @@
 			"environment": [
 				"underdark"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Wraith.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Wraith",
 				"source": "MM",
@@ -4197,33 +4223,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Wraith.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/wraith.mp3"
-			},
-			"traitTags": [
-				"Incorporeal Movement",
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"AB",
-				"C"
-			],
-			"damageTags": [
-				"N",
-				"O"
-			],
-			"miscTags": [
-				"HPR",
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Judas",
@@ -4513,6 +4513,34 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Sneak Attack",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			],
 			"fluff": {
 				"entries": [
 					"{@i Handsome and youthful-looking with blond hair, slightly pointed ears, and piercing blue eyes, this vampire has a definite air of arrogance as he regards everything around him with barely concealed contempt. }",
@@ -4549,35 +4577,7 @@
 						]
 					}
 				]
-			},
-			"traitTags": [
-				"Regeneration",
-				"Shapechanger",
-				"Sneak Attack",
-				"Spider Climb",
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"incapacitated",
-				"restrained"
-			]
+			}
 		},
 		{
 			"name": "Lady Mary Moonfire",
@@ -4638,6 +4638,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Lady Moonfire is a 5th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 13}, {@hit 5} to hit with spell attacks). She regains her expended spell slots when she finishes a short or long rest. She knows the following warlock spells:"
 					],
@@ -4662,8 +4663,7 @@
 							"lower": 1
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -4706,20 +4706,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"https://forgottenrealms.fandom.com/wiki/Moonfire_(person)"
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b3/Lady_Moonfire.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/87uR2hT.png",
 			"traitTags": [
 				"Fey Ancestry"
@@ -4759,7 +4745,21 @@
 				"charmed",
 				"incapacitated"
 			],
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"https://forgottenrealms.fandom.com/wiki/Moonfire_(person)"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/b/b3/Lady_Moonfire.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Lich Hound",
@@ -4842,10 +4842,10 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The eye has 8 charges. You can use an action and expend 1 or more charges to cast one of the following spells (save {@dc 18}) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges)."
-					],
-					"type": "spellcasting"
+					]
 				}
 			],
 			"trait": [
@@ -4901,17 +4901,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://pbs.twimg.com/media/CSIUaBtUcAMx8-q.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://vignette.wikia.nocookie.net/witcher/images/6/68/Gwent_cardart_monsters_the_beast.png/revision/latest/top-crop/width/220/height/220?cb=20180130223039",
 			"traitTags": [
 				"Keen Senses"
@@ -4938,7 +4927,18 @@
 			"conditionInflict": [
 				"paralyzed",
 				"prone"
-			]
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://pbs.twimg.com/media/CSIUaBtUcAMx8-q.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Lich Knight",
@@ -5011,6 +5011,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The death knight is a 20th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). It has the following paladin spells prepared:"
 					],
@@ -5058,8 +5059,7 @@
 							"slots": 2
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -5227,6 +5227,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Mr. Dory's innate spellcasting ability is Charisma (save {@dc 14}, {@hit 6} to hit with spell attacks). Mr. Dory can innately cast the following spells, requiring no material components:"
 					],
@@ -5245,8 +5246,7 @@
 							"{@spell fireball}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -5291,37 +5291,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Mr. Dory",
-				"source": "GoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"One of the four councillors who rule the Styes, Mr. Dory hides his cursed nature in plain sight. His rare, liquid-sensitive \"skin condition\" is actually a form of the same aboleth affliction that creates skum, though Dory's condition is not as severe, and he has managed to retain his free will."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/GoS/Mr. Dory.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GoS/Mr. Dory.png",
 			"traitTags": [
 				"Magic Resistance"
@@ -5355,7 +5324,38 @@
 				"MW"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Mr. Dory",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"One of the four councillors who rule the Styes, Mr. Dory hides his cursed nature in plain sight. His rare, liquid-sensitive \"skin condition\" is actually a form of the same aboleth affliction that creates skum, though Dory's condition is not as severe, and he has managed to retain his free will."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GoS/Mr. Dory.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Mr. Green Dory",
@@ -5418,6 +5418,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The slaad's innate spellcasting ability is Charisma (spell save {@dc 14}). The slaad can innately cast the following spells, requiring no material components:"
 					],
@@ -5436,8 +5437,7 @@
 							"{@spell invisibility} (self only)"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -5510,6 +5510,51 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Green Slaad.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/green-slaad.mp3"
+			},
+			"traitTags": [
+				"Magic Resistance",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"OTH",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"frightened",
+				"invisible"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Green Slaad",
 				"source": "MM",
@@ -5583,52 +5628,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Green Slaad.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/green-slaad.mp3"
-			},
-			"traitTags": [
-				"Magic Resistance",
-				"Regeneration",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"OTH",
-				"TP"
-			],
-			"damageTags": [
-				"A",
-				"F",
-				"P",
-				"S",
-				"Y"
-			],
-			"damageTagsSpell": [
-				"F",
-				"I"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"frightened",
-				"invisible"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Navigator Morgan",
@@ -5755,6 +5755,30 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Ghost.png",
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"grappled",
+				"incapacitated"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Ghost",
 				"source": "MM",
@@ -5802,31 +5826,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Ghost.png",
-			"traitTags": [
-				"Incorporeal Movement"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"LF"
-			],
-			"damageTags": [
-				"N",
-				"O"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"grappled",
-				"incapacitated"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Nurvureem, The Dark Lady",
@@ -5902,6 +5902,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The dragon casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
 					],
@@ -5924,8 +5925,7 @@
 							"{@spell silent image}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -6022,6 +6022,59 @@
 				"name": "Shadow Dragon",
 				"source": "FTD"
 			},
+			"dragonAge": "adult",
+			"tokenUrl": "https://i.imgur.com/NgworSK.png",
+			"traitTags": [
+				"Amphibious",
+				"Legendary Resistances",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"N",
+				"O",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"poisoned",
+				"prone",
+				"restrained"
+			],
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					"Everyone seems to agree that the Dark Lady who haunts Rundreth Manor now is something different - something that brings death to many handsome young men, sending others away alive but changed. The survivors return with a faraway look in their eyes and doom riding their shoulders like a dark, tattered cloak that curls and switches of its own volition.",
@@ -6102,60 +6155,7 @@
 						}
 					}
 				]
-			},
-			"dragonAge": "adult",
-			"tokenUrl": "https://i.imgur.com/NgworSK.png",
-			"traitTags": [
-				"Amphibious",
-				"Legendary Resistances",
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"B",
-				"U"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"N",
-				"P",
-				"S"
-			],
-			"damageTagsLegendary": [],
-			"damageTagsSpell": [
-				"B",
-				"C",
-				"N",
-				"O",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"poisoned",
-				"prone",
-				"restrained"
-			],
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Phaia",
@@ -6220,6 +6220,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The necromancer is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 10} to hit with spell attacks). The necromancer has the following wizard spells prepared:"
 					],
@@ -6292,8 +6293,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -6332,6 +6332,17 @@
 				"desert",
 				"urban"
 			],
+			"tokenUrl": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Phaia-5e.jpg/revision/latest/scale-to-width-down/975?cb=20171015002914",
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"hasFluff": true,
 			"fluff": {
 				"entries": [
 					{
@@ -6360,313 +6371,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://static.wikia.nocookie.net/forgottenrealms/images/c/c0/Phaia-5e.jpg/revision/latest/scale-to-width-down/975?cb=20171015002914",
-			"languageTags": [
-				"X"
-			],
-			"damageTags": [
-				"P"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"hasFluff": true
-		},
-		{
-			"name": "Pit Master Zuikum",
-			"isNpc": true,
-			"source": "HaVoR",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "monstrosity",
-				"tags": [
-					"warlock"
-				]
-			},
-			"alignment": [
-				"N",
-				"E"
-			],
-			"alignmentPrefix": "Typically ",
-			"ac": [
-				{
-					"ac": 20,
-					"from": [
-						"{@item plate armor|phb}, {@item shield|phb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "16d8 + 32",
-				"average": 104
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 15,
-			"dex": 12,
-			"con": 14,
-			"int": 10,
-			"wis": 14,
-			"cha": 19,
-			"save": {
-				"wis": "+7",
-				"cha": "+9",
-				"con": "+7"
-			},
-			"skill": {
-				"deception": "+14",
-				"insight": "+7",
-				"medicine": "+7",
-				"persuasion": "+9",
-				"performance": "+9",
-				"perception": "+7"
-			},
-			"senses": [
-				"darkvision 300 ft."
-			],
-			"passive": 17,
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Draconic"
-			],
-			"cr": "14",
-			"spellcasting": [
-				{
-					"name": "Spellcasting (Innate)",
-					"headerEntries": [
-						"The yuan-ti casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 19}):"
-					],
-					"will": [
-						"{@spell animal friendship} (snakes only)"
-					],
-					"daily": {
-						"3": [
-							"{@spell suggestion}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				},
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Pit Master is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It has the following cleric spells prepared:"
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell guidance}",
-								"{@spell message}",
-								"{@spell poison spray}",
-								"{@spell ray of frost}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell bless}",
-								"{@spell guiding bolt}",
-								"{@spell healing word}",
-								"{@spell shield}",
-								"{@spell silvery barbs|SCC}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell alter self}",
-								"{@spell darkness}",
-								"{@spell hold person}",
-								"{@spell invisibility}",
-								"{@spell mirror image}"
-							],
-							"slots": 4
-						},
-						"3": {
-							"spells": [
-								"{@spell blink}",
-								"{@spell counterspell}",
-								"{@spell dispel magic}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell polymorph}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell cone of cold}"
-							],
-							"slots": 2
-						},
-						"6": {
-							"spells": [
-								"{@spell mass suggestion}"
-							],
-							"slots": 1
-						},
-						"7": {
-							"spells": [
-								"{@spell divine word}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"trait": [
-				{
-					"name": "Devil's Sight",
-					"entries": [
-						"Magical darkness doesn't impede the yuan-ti's {@sense darkvision}."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The yuan-ti has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Dark Wispers",
-					"entries": [
-						"When casting a spell the yuan-ti can choose to cast the spell without verbal or somatic components."
-					]
-				},
-				{
-					"name": "Enduring Darkness",
-					"entries": [
-						"When the yuan-ti is reduced to 0 hitpoints it does not die or fall {@condition unconscious} until the end of its next turn."
-					]
-				},
-				{
-					"name": "Twin Spell",
-					"entries": [
-						"Then casting a spell that only targets one creature the yuan-ti can target a second one within the range of the spell."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The yuan-ti makes three Bite attacks, it can replace one with a weapon attack and one with a spell."
-					]
-				},
-				{
-					"name": "Socking Bite",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 13 ({@damage 3d8}) lightning damage and the target can't take reactions until the start of its next turn."
-					]
-				},
-				{
-					"name": "Starfall",
-					"entries": [
-						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgoining damage. Hit or miss each creature in a 15 feet cube originating from the yuan-ti must succeed on a {@dc 16} Strength saving throw, taking 14 ({@damage 4d6}) radiant damage on a failed save, or half as much on a success."
-					]
-				},
-				{
-					"name": "Merrshaulk's Slumber (1/Day)",
-					"entries": [
-						"The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a {@dc 17} Constitution saving throw or fall into a magical sleep and be {@condition unconscious} for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap it awake. This magical sleep has no effect on a creature immune to being {@condition charmed}."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Change Shape",
-					"entries": [
-						"The yuan-ti transforms into a Medium snake or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
-					]
-				}
-			],
-			"environment": [
-				"desert",
-				"forest",
-				"underdark"
-			],
-			"fluff": {
-				"entries": [
-					"With snakes for arms, pit masters are yuan-ti malison priests who have made a pact with the god Merrshaulk and seek to rouse him from his slumber by sacrificing Humanoids to him. They are the most traditionalist yuan-ti and believe that they are best equipped to achieve the goals of their people.",
-					"Pit masters are deeply involved in yuan-ti's longterm plan to take over Humanoid governments, as well as in the ongoing effort to protect their cities from discovery or attacks by hostiles. They oppose reckless behavior and argue for a slow, cautious approach in all matters."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/PtKzbkS.png"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://i.imgur.com/PtKzbkS.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/yuan-ti-pit-master.mp3"
-			},
-			"traitTags": [
-				"Devil's Sight",
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Shapechanger"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"DR"
-			],
-			"damageTags": [
-				"L",
-				"P",
-				"R"
-			],
-			"damageTagsSpell": [
-				"B",
-				"C",
-				"I",
-				"P",
-				"R",
-				"S"
-			],
-			"spellcastingTags": [
-				"CC",
-				"I"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"unconscious"
-			],
-			"conditionInflictSpell": [
-				"charmed",
-				"invisible",
-				"paralyzed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Rigger Grimshaw",
@@ -6780,6 +6485,28 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Ghast.png",
+			"traitTags": [
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Ghast",
 				"source": "MM",
@@ -6826,29 +6553,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Ghast.png",
-			"traitTags": [
-				"Turn Resistance"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"C"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"paralyzed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Shadow of Virmenda",
@@ -6971,24 +6676,6 @@
 				"swamp",
 				"underdark"
 			],
-			"fluff": {
-				"name": "Nightwalker",
-				"source": "MPMM",
-				"entries": [
-					"The Negative Plane is a place of death, anathema to all living things. Yet there are some who would tap into its fell power and use its energy for sinister ends. Most individuals prove unequal to the task. Those not destroyed outright are sometimes drawn inside the plane and replaced by nightwalkers—terrifying Undead creatures that devour all life they encounter.",
-					"One can reach the Negative Plane from the Shadowfell in places where the barrier between the planes is thin. Stepping onto the Negative Plane is almost always fatal since the plane sucks the life and soul from creatures, annihilating most at once. The few who survive by sheer luck or by harnessing some rare form of protective magic soon discover that they can't leave as easily as they arrived. Worse, for each creature that enters the plane, a nightwalker is released to take its place. In order for a trapped creature to escape, the released nightwalker must be lured back to the Negative Plane by offerings of life for it to devour. If the nightwalker is destroyed, the trapped creature has no hope of escape.",
-					"Generally, a nightwalker on the Material Plane is attracted to elements of the world associated with the creature responsible for its creation, which can provide clues as to who the trapped creature is. This attraction doesn't indicate a willingness to engage with the world, though; nightwalkers exist to make life extinct, and they prioritize anything associated with the trapped creature for destruction."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MPMM/Nightwalker.webp"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MPMM/Nightwalker.png",
 			"soundClip": {
 				"type": "external",
@@ -7017,7 +6704,25 @@
 				"paralyzed"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Nightwalker",
+				"source": "MPMM",
+				"entries": [
+					"The Negative Plane is a place of death, anathema to all living things. Yet there are some who would tap into its fell power and use its energy for sinister ends. Most individuals prove unequal to the task. Those not destroyed outright are sometimes drawn inside the plane and replaced by nightwalkers—terrifying Undead creatures that devour all life they encounter.",
+					"One can reach the Negative Plane from the Shadowfell in places where the barrier between the planes is thin. Stepping onto the Negative Plane is almost always fatal since the plane sucks the life and soul from creatures, annihilating most at once. The few who survive by sheer luck or by harnessing some rare form of protective magic soon discover that they can't leave as easily as they arrived. Worse, for each creature that enters the plane, a nightwalker is released to take its place. In order for a trapped creature to escape, the released nightwalker must be lured back to the Negative Plane by offerings of life for it to devour. If the nightwalker is destroyed, the trapped creature has no hope of escape.",
+					"Generally, a nightwalker on the Material Plane is attracted to elements of the world associated with the creature responsible for its creation, which can provide clues as to who the trapped creature is. This attraction doesn't indicate a willingness to engage with the world, though; nightwalkers exist to make life extinct, and they prioritize anything associated with the trapped creature for destruction."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Nightwalker.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Sylvia Deathcry",
@@ -7132,27 +6837,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Lonelywood Banshee",
-				"source": "IDRotF",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							"This banshee is the spectral remnant of a female elf warrior who was banished for a selfish, evil act. It wields a spectral longbow that shoots phantom arrows. There is only one banshee haunting the forest. If it's destroyed, it re-forms after 24 hours in a random location in the forest, damned to its eternal exile."
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/IDRotF/Lonelywood Banshee.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/IDRotF/Lonelywood Banshee.png",
 			"traitTags": [
 				"Incorporeal Movement"
@@ -7173,7 +6857,28 @@
 				"frightened"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Lonelywood Banshee",
+				"source": "IDRotF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"This banshee is the spectral remnant of a female elf warrior who was banished for a selfish, evil act. It wields a spectral longbow that shoots phantom arrows. There is only one banshee haunting the forest. If it's destroyed, it re-forms after 24 hours in a random location in the forest, damned to its eternal exile."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/IDRotF/Lonelywood Banshee.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Szass Tam",
@@ -7269,6 +6974,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Szass Tam is a 20th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 26}, {@hit 18} to hit with spell attacks). Szass Tam has the following wizard spells prepared:"
 					],
@@ -7362,8 +7068,7 @@
 							"slots": 2
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -7430,17 +7135,6 @@
 				"name": "Lich",
 				"source": "MM"
 			},
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d6/Szass_Tam_-_Sam_Wood.jpg"
-						}
-					}
-				]
-			},
 			"traitTags": [
 				"Legendary Resistances",
 				"Rejuvenation",
@@ -7498,7 +7192,18 @@
 				"poisoned"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://static.wikia.nocookie.net/forgottenrealms/images/d/d6/Szass_Tam_-_Sam_Wood.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Talona The Gloom Stalker",
@@ -7576,6 +7281,7 @@
 			"spellcasting": [
 				{
 					"name": "Ranger spells & Poisoned Heart",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Talona absorbed the green shard thus poisoning his heart. He can cast the following with dc 18 to hit bonus +10"
 					],
@@ -7612,11 +7318,11 @@
 							],
 							"slots": 2
 						}
-					},
-					"type": "spellcasting"
+					}
 				},
 				{
 					"name": "Air Genasi spells",
+					"type": "spellcasting",
 					"headerEntries": [
 						"dc 16 +8 to hit"
 					],
@@ -7631,8 +7337,7 @@
 								"{@spell gust|XGE}"
 							]
 						}
-					},
-					"type": "spellcasting"
+					}
 				}
 			],
 			"trait": [
@@ -7702,23 +7407,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Assassin",
-				"source": "MM",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
-								]
-							}
-						]
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/MM/Assassin.png?v=1.122.1",
 			"senseTags": [
 				"D"
@@ -7742,7 +7430,24 @@
 				"RNG",
 				"RW"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Tamoachan",
@@ -7818,6 +7523,7 @@
 			"spellcasting": [
 				{
 					"name": "Hand of the Mist",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The magic item has 8 charges and using the item the wielder can cast any of the following spells as normal using charges equal to the spell level. The spellcasting ability is Wisdom (spell save {@dc 17}, {@hit 9} to hit with spell attacks). "
 					],
@@ -7830,8 +7536,7 @@
 						"{@spell phantasmal killer}",
 						"{@spell scatter|XGE}"
 					],
-					"ability": "wis",
-					"type": "spellcasting"
+					"ability": "wis"
 				}
 			],
 			"trait": [
@@ -7942,6 +7647,38 @@
 					]
 				}
 			],
+			"traitTags": [
+				"Regeneration",
+				"Shapechanger",
+				"Sneak Attack",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"incapacitated"
+			],
 			"fluff": {
 				"entries": [
 					{
@@ -8031,39 +7768,7 @@
 						]
 					}
 				]
-			},
-			"traitTags": [
-				"Regeneration",
-				"Shapechanger",
-				"Sneak Attack",
-				"Spider Climb",
-				"Sunlight Sensitivity"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"CE",
-				"DR"
-			],
-			"damageTags": [
-				"B",
-				"N",
-				"P",
-				"Y"
-			],
-			"miscTags": [
-				"MW",
-				"RW"
-			],
-			"conditionInflict": [
-				"charmed",
-				"incapacitated"
-			]
+			}
 		},
 		{
 			"name": "Tarul Var (Archmage)",
@@ -8158,6 +7863,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Var is a 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:",
 						"*Conjuration spell of 1st level or higher"
@@ -8239,8 +7945,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -8314,6 +8019,37 @@
 				"name": "Lich",
 				"source": "MM"
 			},
+			"tokenUrl": "https://5e.tools/img/TftYP/Tarul Var.png?v=1.125.1",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"OTH",
+				"P"
+			],
+			"damageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Tarul Var",
 				"source": "TftYP",
@@ -8351,38 +8087,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/TftYP/Tarul Var.png?v=1.125.1",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Turn Resistance"
-			],
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"I",
-				"OTH",
-				"P"
-			],
-			"damageTags": [
-				"C"
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"conditionInflict": [
-				"frightened",
-				"paralyzed"
-			],
-			"conditionInflictSpell": [
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "The Abbot",
@@ -8459,6 +8164,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The Abbot's spellcasting ability is Charisma (spell save {@dc 17}). The Abbot can innately cast the following spells, requiring only verbal components:"
 					],
@@ -8473,8 +8179,7 @@
 							"{@spell raise dead}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -8626,6 +8331,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The mad mage is an 19th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). He has the following wizard spells prepared:"
 					],
@@ -8719,8 +8425,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -8840,6 +8545,7 @@
 			"spellcasting": [
 				{
 					"name": "Innate Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The masterpiece's spellcasting ability is Charisma (spell save {@dc 18}). The masterpiece can innately cast the following spells, requiring no material components:"
 					],
@@ -8856,8 +8562,7 @@
 							"{@spell mass suggestion}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -8940,6 +8645,155 @@
 			"hasFluffImages": true
 		},
 		{
+			"name": "Twilight Hound",
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 13,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "while in complete darkness",
+					"cond": true
+				}
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"will": [
+						"{@spell darkness}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Ethereal Awareness",
+					"entries": [
+						"The hound can see ethereal creatures and objects."
+					]
+				},
+				{
+					"name": "Sunlight Weakness",
+					"entries": [
+						"While in bright light created by sunlight, the hound has disadvantage on attack rolls, ability checks, and saving throws."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The hound can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@dice 1d10}) force damage if it ends its turn inside an object."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"swamp"
+			],
+			"tokenUrl": "https://5e.tools/img/MPMM/Shadow Mastiff.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/shadow-mastiff.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Shadow Mastiff",
+				"source": "MPMM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Shadow Mastiff.webp"
+						},
+						"credit": "Conceptopolis"
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Shunning sunlight, these hounds are usually met as a pack. Some faiths devoted to deities of gloom and night, such as that of Shar in the Forgotten Realms, perform unholy rites to summon shadow mastiffs to work as temple sentinels and bodyguards."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Shadow Mastiffs",
+						"entries": [
+							"Shadow mastiffs—hounds of the Shadowfell—move invisibly through the shadows, always on the hunt."
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Undying Alchemist",
 			"source": "HaVoR",
 			"size": [
@@ -9002,10 +8856,10 @@
 			"spellcasting": [
 				{
 					"name": "Replicate Spells",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The alchemist casts one of the following spells without needing to concentrate on them, using Intelligence as the spellcasting ability  (spell save {@dc 14}, {@hit 6} to hit with spell attacks):"
 					],
-					"ability": "int",
 					"weekly": {
 						"3": [
 							"{@spell animate dead}",
@@ -9019,7 +8873,7 @@
 							"{@spell Tasha's caustic brew|TCE}"
 						]
 					},
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -9132,37 +8986,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Skeletal Alchemist",
-				"source": "GoS",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"This undead retains enough of its former self to continue its alchemical work, often on behalf of necromancers or other sinister patrons. It toils in a dark laboratory (such as the one found in The Sinister Secret of Saltmarsh), often falling dormant for long periods of time."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/GoS/Skeletal Alchemist.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GoS/Skeletal Alchemist.png",
 			"traitTags": [
 				"Magic Resistance"
@@ -9198,7 +9021,38 @@
 				"RW"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Skeletal Alchemist",
+				"source": "GoS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"This undead retains enough of its former self to continue its alchemical work, often on behalf of necromancers or other sinister patrons. It toils in a dark laboratory (such as the one found in The Sinister Secret of Saltmarsh), often falling dormant for long periods of time."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GoS/Skeletal Alchemist.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Unfinnished Chardalyn Dragon",
@@ -9376,31 +9230,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"This construct is fashioned from pieces of chardalyn (see the {@adventure sidebar on Chardalyn|IDRotF|0|Chardalyn}) that have been assembled in the form of a dragon. The only parts of the dragon not forged from chardalyn are its wing flaps, which are made of an oily film as tough as rubber, and its heart, which is an orb of pulsating, radiant energy. Demonic magic suffusing the chardalyn imbues the construct with malevolence, allowing it to enjoy the terror it causes. This effect extends outward from it, corrupting other creatures who get too close to the dragon. Those affected by the dragon's presence turn their efforts to helping the dragon inflict suffering on others.",
-									"A chardalyn dragon serves the tyrannical will of its evil creator—a tireless drive devotion that exceeds its own instinct of self-preservation. Thus, the dragon will destroy itself in pursuit of its master's desires if necessary. The dragon likes to tear foes apart, as well as knock down doors and other structures. Against enemies it can't reach, it fires a beam of destructive radiance from its grill-like maw."
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/adventure/IDRotF/156-04-001.dragon.png"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/Yu29elM.png",
 			"traitTags": [
 				"Immutable Form",
@@ -9433,7 +9262,32 @@
 				"prone"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"This construct is fashioned from pieces of chardalyn (see the {@adventure sidebar on Chardalyn|IDRotF|0|Chardalyn}) that have been assembled in the form of a dragon. The only parts of the dragon not forged from chardalyn are its wing flaps, which are made of an oily film as tough as rubber, and its heart, which is an orb of pulsating, radiant energy. Demonic magic suffusing the chardalyn imbues the construct with malevolence, allowing it to enjoy the terror it causes. This effect extends outward from it, corrupting other creatures who get too close to the dragon. Those affected by the dragon's presence turn their efforts to helping the dragon inflict suffering on others.",
+									"A chardalyn dragon serves the tyrannical will of its evil creator—a tireless drive devotion that exceeds its own instinct of self-preservation. Thus, the dragon will destroy itself in pursuit of its master's desires if necessary. The dragon likes to tear foes apart, as well as knock down doors and other structures. Against enemies it can't reach, it fires a beam of destructive radiance from its grill-like maw."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/adventure/IDRotF/156-04-001.dragon.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Virmenda",
@@ -9536,6 +9390,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda can innately cast some spells, once per day each, requiring no material components. Her spellcasting ability is Charisma her spell save is {@dc 17}, and it has +9 to hit with spell attacks."
 					],
@@ -9546,11 +9401,11 @@
 							"{@spell suggestion}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 17}), {@hit 9} to hit with spell attacks)."
 					],
@@ -9614,8 +9469,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -9699,6 +9553,54 @@
 			"environment": [
 				"forest"
 			],
+			"dragonCastingColor": "green",
+			"dragonAge": "adult",
+			"tokenUrl": "https://i.imgur.com/J4J2Tp0.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"GI",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"I",
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"charmed",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -9934,55 +9836,7 @@
 						}
 					}
 				]
-			},
-			"dragonCastingColor": "green",
-			"dragonAge": "adult",
-			"tokenUrl": "https://i.imgur.com/J4J2Tp0.png",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"D",
-				"DR",
-				"E",
-				"GI",
-				"I",
-				"S"
-			],
-			"damageTags": [
-				"B",
-				"C",
-				"I",
-				"N",
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"charmed",
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Virmenda The True Mother",
@@ -10087,6 +9941,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda can innately cast some spells, once per day each, requiring no material components. Her spellcasting ability is Charisma her spell save is {@dc 23}, and it has +15 to hit with spell attacks."
 					],
@@ -10096,11 +9951,11 @@
 							"{@spell mislead}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}), {@hit 10} to hit with spell attacks). She can't cast leveled spells in her draconic form."
 					],
@@ -10184,8 +10039,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -10326,6 +10180,72 @@
 				"name": "Green Dragon",
 				"source": "MM"
 			},
+			"dragonCastingColor": "green",
+			"dragonAge": "adult",
+			"tokenUrl": "https://i.imgur.com/T7LJZNn.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"GI",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"C",
+				"I",
+				"N",
+				"P"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"L",
+				"N",
+				"P",
+				"R",
+				"S",
+				"T",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"charmed",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -10561,73 +10481,7 @@
 						}
 					}
 				]
-			},
-			"dragonCastingColor": "green",
-			"dragonAge": "adult",
-			"tokenUrl": "https://i.imgur.com/T7LJZNn.png",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"D",
-				"DR",
-				"E",
-				"GI",
-				"I",
-				"S"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"C",
-				"I",
-				"N",
-				"P"
-			],
-			"damageTagsLegendary": [
-				"B",
-				"P"
-			],
-			"damageTagsSpell": [
-				"A",
-				"B",
-				"L",
-				"N",
-				"P",
-				"R",
-				"S",
-				"T",
-				"Y"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"charmed",
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Virmenda The Weeping Mother",
@@ -10731,6 +10585,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda can innately cast some spells, once per day each, requiring no material components. Her spellcasting ability is Charisma her spell save is {@dc 18}, and it has +10 to hit with spell attacks."
 					],
@@ -10741,11 +10596,11 @@
 							"{@spell mislead}"
 						]
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				},
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}), {@hit 10} to hit with spell attacks). She can't cast leveled spells in her draconic form."
 					],
@@ -10816,8 +10671,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -10958,6 +10812,57 @@
 				"name": "Green Dragon",
 				"source": "MM"
 			},
+			"dragonCastingColor": "green",
+			"dragonAge": "adult",
+			"tokenUrl": "https://i.imgur.com/T7LJZNn.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"GI",
+				"I",
+				"S"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"C",
+				"I",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"prone"
+			],
+			"conditionInflictLegendary": [
+				"charmed",
+				"prone",
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"entries": [
 					{
@@ -11193,58 +11098,7 @@
 						}
 					}
 				]
-			},
-			"dragonCastingColor": "green",
-			"dragonAge": "adult",
-			"tokenUrl": "https://i.imgur.com/T7LJZNn.png",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"D",
-				"DR",
-				"E",
-				"GI",
-				"I",
-				"S"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"C",
-				"I",
-				"N",
-				"P"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"charmed",
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Virmenda The Weeping Mother (new)",
@@ -11334,6 +11188,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Virmenda The Weeping Mother is a 20th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 22}, {@hit 14} to hit with spell attacks). She has the following spells prepared:"
 					],
@@ -11422,8 +11277,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -11505,38 +11359,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"name": "Niv-Mizzet",
-				"source": "GGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Possessed of arrogance and vanity that matches his vast intellect and tremendous power, Niv-Mizzet is the ancient dragon who founded and continues to control the Izzet League. From his private laboratory at the top of the Izzet guildhall, Niv-Mizzet directs the research and experiments of his countless underlings. He coordinates a tremendous number of apparently unrelated projects, working toward some mysterious end.",
-											"There can be little doubt that this ancient dragon is one of the most intelligent beings on Ravnica and one of the world's most powerful spellcasters. He is just as acquisitive as any dragon, but his treasure is scientific and magical knowledge. His ambition is a looming threat in the minds of all the other guildmasters, but confronting him directly is almost unthinkable thanks to the combination of his awesome magical power and the sheer physical threat of a fire-breathing, swordtoothed dragon."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/GGR/Niv-Mizzet.jpg"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://5e.tools/img/GGR/Niv-Mizzet.png",
 			"traitTags": [
 				"Legendary Resistances",
@@ -11603,7 +11425,39 @@
 				"wisdom"
 			],
 			"hasFluff": true,
-			"hasFluffImages": true
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Niv-Mizzet",
+				"source": "GGR",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Possessed of arrogance and vanity that matches his vast intellect and tremendous power, Niv-Mizzet is the ancient dragon who founded and continues to control the Izzet League. From his private laboratory at the top of the Izzet guildhall, Niv-Mizzet directs the research and experiments of his countless underlings. He coordinates a tremendous number of apparently unrelated projects, working toward some mysterious end.",
+											"There can be little doubt that this ancient dragon is one of the most intelligent beings on Ravnica and one of the world's most powerful spellcasters. He is just as acquisitive as any dragon, but his treasure is scientific and magical knowledge. His ambition is a looming threat in the minds of all the other guildmasters, but confronting him directly is almost unthinkable thanks to the combination of his awesome magical power and the sheer physical threat of a fire-breathing, swordtoothed dragon."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/GGR/Niv-Mizzet.jpg"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Weretigress Magi",
@@ -11670,6 +11524,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"The magi is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 18}, {@hit 11} to hit with spell attacks). The magi is a shapechanger that can cast spells in her Hybrid form, but only those that don't require material components. It has the following wizard spells prepared:"
 					],
@@ -11745,8 +11600,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "int",
-					"type": "spellcasting"
+					"ability": "int"
 				}
 			],
 			"trait": [
@@ -11816,24 +11670,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"She is very direct.",
-					"She is materialistic.",
-					"She disregards poorer people.",
-					"She doesn't tolerate nicknames.",
-					"She doesn't like listening to jokes."
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://cdnb.artstation.com/p/assets/images/images/020/051/377/large/kibaek-lee-.jpg?1566163396"
-						}
-					}
-				]
-			},
 			"tokenUrl": "https://i.imgur.com/Fjk2v7E.png",
 			"traitTags": [
 				"Keen Senses",
@@ -11856,7 +11692,25 @@
 			],
 			"conditionInflict": [
 				"prone"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"She is very direct.",
+					"She is materialistic.",
+					"She disregards poorer people.",
+					"She doesn't tolerate nicknames.",
+					"She doesn't like listening to jokes."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdnb.artstation.com/p/assets/images/images/020/051/377/large/kibaek-lee-.jpg?1566163396"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Xandala the Firetounge",
@@ -11934,6 +11788,7 @@
 			"spellcasting": [
 				{
 					"name": "Spellcasting",
+					"type": "spellcasting",
 					"headerEntries": [
 						"Xandala is a 17th-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks).",
 						"She has 17 sorcery points that she can use for her meta-magics.",
@@ -12017,8 +11872,7 @@
 							"slots": 1
 						}
 					},
-					"ability": "cha",
-					"type": "spellcasting"
+					"ability": "cha"
 				}
 			],
 			"trait": [
@@ -12073,6 +11927,25 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/ToA/Xandala.png?v=1.122.1",
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"E",
+				"H"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"RCH"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Xandala",
 				"source": "ToA",
@@ -12131,26 +12004,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/ToA/Xandala.png?v=1.122.1",
-			"languageTags": [
-				"C",
-				"D",
-				"DR",
-				"E",
-				"H"
-			],
-			"damageTags": [
-				"F"
-			],
-			"spellcastingTags": [
-				"CS"
-			],
-			"miscTags": [
-				"RCH"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Xaya",
@@ -12233,26 +12087,6 @@
 					]
 				}
 			],
-			"fluff": {
-				"entries": [
-					"{@i This wyvern's thick armor, jagged claws, and heavy brow belies a pair of intelligent eyes. It looks upon its rider like a hound looks at its master.}",
-					"Bred to be fearsome, obedient, and intelligent mounts for elite knights, war wyverns are superior in all ways to their wild cousins. Their natural scales are enhanced with thick steel scale armor, and selective breeding has granted them the ability to spit venom, in addition to delivering it with their scorpion-like tails.",
-					{
-						"type": "entries",
-						"name": "Loyal and Deadly",
-						"entries": [
-							"A war wyvern is unflinchingly loyal and has been taught to unerringly follow verbal commands given by its master. In military situations, a wyvern's master will often command it to snatch cavalry riders from their horses with its steel-tipped talons, hurling them to their doom, or to use its spiked tail to smash siege weapons or supply wagons. Despite their viciousness on the battlefield, these domesticated wyverns serve their masters out of love, not fear, and act like energetic pit bulls when around those who treat them with kindness."
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Two Fight as One",
-						"entries": [
-							"Wyvern knights and their war wyverns act as a single unit in combat. A war wyvern cannot move or take actions independently while it is being used as a mount, but its specialized training gives it the ability to make a single attack when its rider takes the Multiattack action."
-						]
-					}
-				]
-			},
 			"traitTags": [
 				"Siege Monster"
 			],
@@ -12279,7 +12113,424 @@
 			"conditionInflict": [
 				"grappled",
 				"restrained"
-			]
+			],
+			"fluff": {
+				"entries": [
+					"{@i This wyvern's thick armor, jagged claws, and heavy brow belies a pair of intelligent eyes. It looks upon its rider like a hound looks at its master.}",
+					"Bred to be fearsome, obedient, and intelligent mounts for elite knights, war wyverns are superior in all ways to their wild cousins. Their natural scales are enhanced with thick steel scale armor, and selective breeding has granted them the ability to spit venom, in addition to delivering it with their scorpion-like tails.",
+					{
+						"type": "entries",
+						"name": "Loyal and Deadly",
+						"entries": [
+							"A war wyvern is unflinchingly loyal and has been taught to unerringly follow verbal commands given by its master. In military situations, a wyvern's master will often command it to snatch cavalry riders from their horses with its steel-tipped talons, hurling them to their doom, or to use its spiked tail to smash siege weapons or supply wagons. Despite their viciousness on the battlefield, these domesticated wyverns serve their masters out of love, not fear, and act like energetic pit bulls when around those who treat them with kindness."
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Two Fight as One",
+						"entries": [
+							"Wyvern knights and their war wyverns act as a single unit in combat. A war wyvern cannot move or take actions independently while it is being used as a mount, but its specialized training gives it the ability to make a single attack when its rider takes the Multiattack action."
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Zuikum The Master of the Pit",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger",
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"{@item +1 plate armor}, {@item shield}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 32",
+				"average": 104
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 13,
+			"wis": 14,
+			"cha": 19,
+			"save": {
+				"con": "+7",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"deception": "+14",
+				"insight": "+7",
+				"medicine": "+7",
+				"perception": "+7",
+				"performance": "+9",
+				"persuasion": "+9"
+			},
+			"senses": [
+				"darkvision 300 ft."
+			],
+			"passive": 17,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (Yuan-ti Form Only)",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Zuikum's innate spellcasting ability is Charisma (spell save {@dc 16}). Zuikum can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell animal friendship} (snakes only)"
+					],
+					"daily": {
+						"3": [
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The Pit Master's spellcasting ability is Charisma (spell save {@dc 19}, {@hit 11} to hit with spell attacks). It has the following spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell poison spray}",
+								"{@spell ray of frost}",
+								"{@spell spare the dying}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell faerie fire}",
+								"{@spell guiding bolt}",
+								"{@spell inflict wounds}",
+								"{@spell shield}",
+								"{@spell silvery barbs|SCC}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell alter self}",
+								"{@spell darkness}",
+								"{@spell hold person}",
+								"{@spell invisibility}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell blink}",
+								"{@spell counterspell}",
+								"{@spell dispel magic}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell greater invisibility}",
+								"{@spell polymorph}",
+								"{@spell raulothim's psychic lance|FTD}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell mass suggestion}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell plane shift}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The yuan-ti can use its action to polymorph into a Medium snake, or back into its true form. Its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It doesn't change form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The yuan-ti has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Shadow Magic",
+					"entries": [
+						"When Zuikum casts a spell he doesn't need to provide verbal or somatic components, and when he targets a single creature with a spell he can choose a second target within range."
+					]
+				},
+				{
+					"name": "Eyes of Night",
+					"entries": [
+						"Magical darkness doesn't impede the Zuikum's darkvision."
+					]
+				},
+				{
+					"name": "Twilight of Ill Omen (1/Day)",
+					"entries": [
+						"When Zuikum is reduced to 0 hit points his form becomes ethereal as if the Blink spell was cast on him and he becomes stable. A 15-foot-radius sphere of magical darkness appears originating from his body and four twilight hounds appear in the sphere. When a twilight hound deals damage Zuikum is healed for the same amount."
+					]
+				},
+				{
+					"name": "Foul Armor",
+					"entries": [
+						"When a creature grapples the pit master or he grapples a target while wearing this armour, it must succeed on a {@dc 15} Constitution saving throw or be {@condition poisoned} for 1 minute. While {@condition poisoned} in this way, the target can't regain hit points. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. When the Pit Master uses shape change the armor is melded into the new form keeping this benefit."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Pit Master makes a foul bite and two Biting Touch attacks, it can replace one with a weapon attack and one with a spell."
+					]
+				},
+				{
+					"name": "Foul Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 10 ({@damage 3d6}) poison damage and the target can't regain hitpoints until the end of the next turn of the yuan-ti."
+					]
+				},
+				{
+					"name": "Biting Touch",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 3}) piercing damage plus 13 ({@damage 3d8}) lightning damage and the target can't take reactions until the start of its next turn."
+					]
+				},
+				{
+					"name": "Starfall",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgoining damage. Hit or miss each creature in a 15 feet cube originating from the yuan-ti must succeed on a {@dc 16} Strength saving throw, taking 14 ({@damage 4d6}) radiant damage on a failed save, or half as much on a success."
+					]
+				},
+				{
+					"name": "Merrshaulk's Slumber (1/Day)",
+					"entries": [
+						"The yuan-ti targets up to five creatures that it can see within 60 feet of it. Each target must succeed on a {@dc 17} Constitution saving throw or fall into a magical sleep and be {@condition unconscious} for 10 minutes. A sleeping target awakens if it takes damage or if someone uses an action to shake or slap it awake. This magical sleep has no effect on a creature immune to being {@condition charmed}."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest",
+				"swamp"
+			],
+			"tokenUrl": "https://i.imgur.com/NgiIv9G.png",
+			"traitTags": [
+				"Magic Resistance",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"I",
+				"L",
+				"P",
+				"R"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"I",
+				"N",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"F",
+				"I",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned",
+				"unconscious"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"A malison is a hideous blend of human and serpentine features. Three different types of malisons are known to exist, and other types are possible. Malisons form the middle caste of yuan-ti society and hunt with arrows tipped with their own venom. They use their magical powers of suggestion to force their enemies' surrender.",
+					{
+						"type": "section",
+						"name": "Yuan-ti",
+						"entries": [
+							"Yuan-ti are devious serpent folk devoid of compassion. From remote temples in jungles, swamps, and deserts, the yuan-ti plot to supplant and dominate all other races and to make themselves gods.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Forsaken Humanity",
+												"entries": [
+													"The yuan-ti were once humans who thrived in the earliest days of civilization and worshiped serpents as totem animals. They lauded the serpent's sinuous flexibility, its calculated poise, and its deadly strike. Their advanced philosophy taught the virtue of detachment from emotion and of clear, focused thought.",
+													"Yuan-ti culture was among the richest in the mortal world. Their warriors were legendary, their empires always expanding. Yuan-ti temples stood at the centers of ancient metropolises, reaching ever higher in prayer to the gods they longed to emulate. In time, the serpent gods heard those prayers, their sibilant voices responding from the darkness as they told the yuan-ti what they must do. The yuan-ti religion grew more fanatical in its devotion. Cults bound themselves to the worship of the serpent gods and imitated their ways, indulging in cannibalism and humanoid sacrifice. Through foul sorcery, the yuan-ti bred with snakes, utterly sacrificing their humanity to become like the serpent gods in form, as well as in thought and emotion.",
+													"Yuan-ti know that the world they hope to rule can't be bound for long by brute force, and that many creatures will refuse to serve. As a result, yuan-ti first influence other creatures with the promise of wealth and power. Time and again, humanoid cultures make the fatal mistake of trusting the yuan-ti. They forget that a yuan-ti that acts honorably or lends aid in a time of trouble does so only as part of a grander design.",
+													"Yuan-ti leaders are cunning and ruthless tacticians who readily sacrifice lesser yuan-ti if potential victory justifies such losses. They have no sense of honorable combat and strike first in decisive ambush if they can."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Serpent Kings of Fallen Empires",
+												"entries": [
+													"The yuan-ti view their physical transformation as a transcendent moment for their race, allowing them to shed their frail humanity like dead skin. Those that did not transform eventually became slaves or food for the blessed of the serpent gods. The yuan-ti empires withered or were defeated by those who fought against their cannibalism and slavery, and the serpent folk were left in the ruins of their great capitals, far removed from other races."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Cold of Heart",
+												"entries": [
+													"Humanoid emotions are foreign to most yuan-ti, which understand sentiment only as unexploitable weakness. A yuan-ti views the world and the events of its own life with such extreme pragmatism that it is nearly impossible to manipulate, influence, or control by nonmagical means, even as it seeks to control other creatures through terror, pleasure, and awe."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "False Worship",
+												"entries": [
+													"Yuan-ti life revolves around their temples, yet yuan-ti don't love the gods they worship. Instead, they see worship as a means to attain power. A yuan-ti believes an individual who attains enough power can devour and replace one of the yuan-ti gods. The yuan-ti strive for ascension and are willing to commit the darkest atrocities to achieve it."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Serpent Gods",
+										"entries": [
+											"The yuan-ti revere a number of powerful entities as gods, including the following.",
+											{
+												"name": "Dendar, the Night Serpent",
+												"entries": [
+													"{@deity Dendar|yuan-ti|VGM|Dendar's} followers say that one day she will grow so large from feasting on the fears and nightmares of the world that she will devour it whole. Yuan-ti that serve Dendar terrorize other creatures in any way they can, growing and nurturing the fears of humanoids to feed the Night Serpent."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Merrshaulk, Master of the Pit",
+												"entries": [
+													"{@deity Merrshaulk|yuan-ti|VGM} is the long slumbering chief deity of the yuan-ti. As worship of Merrshaulk waned, he went into slumber. Merrshaulk's priests are yuan-ti abominations that maintain traditions of living sacrifice and cause suffering in the god's name. With enough vile acts, the abominations believe that Merrshaulk will reawaken and restore the yuan-ti to their rightful place."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Sseth, the Sibilant Death",
+												"entries": [
+													"{@deity Sseth|yuan-ti|VGM} appeared to the yuan-ti of antiquity in the form of a winged yuan-ti claiming to be an avatar of Merrshaulk. Speaking with Merrshaulk's voice, Sseth vowed to pull the yuan-ti out of decline and build a new empire. Many of Merrshaulk's devout turned to the worship of Sseth. Some yuan-ti have long suspected Sseth as an usurper taking advantage of Merrshaulk's slumber to make himself a god. They believe that Sseth might even have devoured Merrshaulk, and now answers the prayers of Merrshaulk's followers, as his priests convert or consume Merrshaulk's more stubborn adherents."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"The yuan-ti cast off their humanity long ago, and with it, their sanity."
+										],
+										"by": "From {@style Masters of the Forbidden City|small-caps} by Codo Vidak"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/NgiIv9G.png"
+						}
+					}
+				]
+			}
 		}
 	]
 }
