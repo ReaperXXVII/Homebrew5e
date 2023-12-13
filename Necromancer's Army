@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.184.0",
+	"siteVersion": "1.196.0",
 	"_meta": {
 		"sources": [
 			{
@@ -14,8 +14,8 @@
 				"color": "#743c75"
 			}
 		],
-		"dateAdded": 1692483600,
-		"dateLastModified": 1692483600
+		"dateAdded": 1702467170,
+		"dateLastModified": 1702467170
 	},
 	"monster": [
 		{
@@ -229,6 +229,25 @@
 				"underdark",
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Swarm of Bats.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/swarm-of-bats.mp3"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Swarm of Bats",
 				"source": "MM",
@@ -260,26 +279,7 @@
 						]
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Swarm of Bats.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/swarm-of-bats.mp3"
-			},
-			"traitTags": [
-				"Keen Senses"
-			],
-			"senseTags": [
-				"B"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Dwarven Shield Wall",
@@ -674,6 +674,338 @@
 			]
 		},
 		{
+			"name": "Goblyn Brute",
+			"source": "NecromancersArmy",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item hide armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 5",
+				"average": 27
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 8,
+			"cha": 7,
+			"skill": {
+				"stealth": "+4",
+				"survival": "+1",
+				"athletics": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"Goblin"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Horrific Bite",
+					"entries": [
+						"A creature bitten by a goblyn must constitution saving throw the next time finishes a long rest while a bite reduces its hitpoints maximum, the DC is equal to twice the hitpoint maximum reduction the creature sustained. On a failed saving throw the wound festers and mutates the body part affected, reducing the creature's Charisma score by {@damage 1d4}, and gain a random mutation. This change can be reversed by a use of greater restoration if cast within 10 days of the change, but only by a wish spell after the ten day."
+					]
+				},
+				{
+					"name": "Malicious Glee",
+					"entries": [
+						"When the goblyn scores a critical hit against a creature or deals damage that reduces a creature to 0 hit points, it breaks out into gleeful celebration. The goblyn is Stunned until the start of its next turn or until it takes damage."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"Melee weapon attacks deal one extra die of damage when the goblyn hits."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The goblyn has advantage on saving throws against being {@condition charmed}, and magic can't put the goblyn to sleep."
+					]
+				},
+				{
+					"name": "Flash of Horid Teeth",
+					"entries": [
+						"When the goblyn rolls initiative and is not surprised or {@condition incapacitated} it suddenly flashes its teeth frightening opponents. Each hostile creature within 60 feet that can see the goblyn must succeed on a {@dc 12} Wisdom saving throw or become {@condition frightened} until the end of their turn. A creature becomes immune to this effect for 24 hours if it succeeds on the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The goblyn makes two attacks, but only one of witch can be a bite."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Nasty Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. 7 ({@damage 2d4 + 2})piercing damage and its hit point maximum is reduced by an amount equal to the damage taken and is affected by Horrific Bite. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Feast",
+					"entries": [
+						"When the goblyn scores a critical hit or hits a creature with both of its claw attacks on a turn it can make a bite attack as a bonus action."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"traitTags": [
+				"Brute",
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GO"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
+					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
+					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
+				]
+			}
+		},
+		{
+			"name": "Goblyn Marauder",
+			"source": "NecromancersArmy",
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fey",
+				"tags": [
+					"goblinoid"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 8,
+			"cha": 6,
+			"skill": {
+				"stealth": "+4",
+				"survival": "+1",
+				"athletics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"conditionImmune": [
+				"exhaustion"
+			],
+			"languages": [
+				"Goblin"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Horrific Bite",
+					"entries": [
+						"A creature bitten by a goblyn must constitution saving throw the next time finishes a long rest while a bite reduces its hitpoints maximum, the DC is equal to twice the hitpoint maximum reduction the creature sustained. On a failed saving throw the wound festers and mutates the body part affected, reducing the creature's Charisma score by {@damage 1d4}, and gain a random mutation. This change can be reversed by a use of greater restoration if cast within 10 days of the change, but only by a wish spell after the ten day."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"Melee weapon attacks deal one extra die of damage when the goblyn hits."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The goblyn has advantage on saving throws against being {@condition charmed}, and magic can't put the goblyn to sleep."
+					]
+				},
+				{
+					"name": "Flash of Horid Teeth",
+					"entries": [
+						"When the goblyn rolls initiative and is not surprised or {@condition incapacitated} it suddenly flashes its teeth frightening opponents. Each hostile creature within 60 feet that can see the goblyn must succeed on a {@dc 12} Wisdom saving throw or become {@condition frightened} until the end of their turn. A creature becomes immune to this effect for 24 hours if it succeeds on the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The goblyn makes two attacks, but only one of witch can be a bite."
+					]
+				},
+				{
+					"name": "Pike",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d10 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Nasty Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. 8 ({@damage 2d4 + 3})piercing damage and its hit point maximum is reduced by an amount equal to the damage taken and is affected by Horrific Bite. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit +4} to hit, range 150/600 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage and the target's speed is reduced by 10 feet until the end of its next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Feast",
+					"entries": [
+						"When the goblyn scores a critical hit or hits a creature with both of its claw attacks on a turn it can make a bite attack as a bonus action."
+					]
+				},
+				{
+					"name": "Incite Rampage {@recharge 5}",
+					"entries": [
+						"One creature the goblyn can see within 30 feet of it can use its reaction to make a melee attack if it can hear the goblyn."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill",
+				"underdark"
+			],
+			"attachedItems": [
+				"longbow|phb",
+				"pike|phb"
+			],
+			"traitTags": [
+				"Brute",
+				"Fey Ancestry"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"HPR",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"-DC 12: This misshapen, leering creature is a goblyn, a humanoid transformed by dark magic into a foul minion of a more powerful master. Goblyns are not actually related to goblinoids in any way, but they share enough similarities that they are often confused for each other. This result reveals all humanoid traits and the goblinoid subtype.",
+					"-DC 17: Goblyns are fearsome, frantic combatants. They may startle unprepared foes with a sudden flash of their teeth. Goblyns are most notorious for their habit of biting off chunks of flesh from the face and throat of their victims, a trait goblyns call “feasting.” Goblyn feasting leaves horrific scarring on its survivors.",
+					"-DC 22: Goblyns never sleep and are immune to fatigue and sleep effects. They do not feel pain. A goblyn is telepathically linked to its master, and through that master, to all other goblyns the master controls."
+				]
+			}
+		},
+		{
 			"name": "Greater Rot Zombie",
 			"source": "NecromancersArmy",
 			"page": 228,
@@ -978,7 +1310,7 @@
 				{
 					"name": "Rout",
 					"entries": [
-						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 9 ({@dice 2d8}) as some of its members break away and flee."
+						"When the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 9 ({@dice 2d8}) as some of its members break away and flee."
 					]
 				}
 			],
@@ -1008,6 +1340,10 @@
 					]
 				}
 			],
+			"attachedItems": [
+				"longbow|phb",
+				"shortsword|phb"
+			],
 			"languageTags": [
 				"C",
 				"X"
@@ -1016,9 +1352,13 @@
 				"P"
 			],
 			"miscTags": [
+				"MLW",
 				"MW",
-				"RNG",
 				"RW"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
 			]
 		},
 		{
@@ -1218,7 +1558,6 @@
 					"type": "variant"
 				}
 			],
-			"fluff": {},
 			"actionTags": [
 				"Multiattack"
 			],
@@ -1237,7 +1576,8 @@
 			"conditionInflict": [
 				"restrained"
 			],
-			"hasFluff": true
+			"hasFluff": true,
+			"fluff": {}
 		},
 		{
 			"name": "Musketiers",
@@ -1569,7 +1909,7 @@
 				{
 					"name": "Rip and Tear",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 4d4}) slashing and 7 ({@damage 2d6}) slashing damage."
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}10 ({@damage 4d4}) slashing and 7 ({@damage 2d6}) piercing damage."
 					]
 				}
 			],
@@ -1581,6 +1921,7 @@
 				"TP"
 			],
 			"damageTags": [
+				"P",
 				"S"
 			],
 			"miscTags": [
@@ -1688,6 +2029,32 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Manes.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/manes.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Manes",
 				"source": "MM",
@@ -2070,33 +2437,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Manes.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/manes.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"AB",
-				"CS"
-			],
-			"damageTags": [
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"prone"
-			],
-			"savingThrowForced": [
-				"strength"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Phantom Infantry",
@@ -2232,6 +2573,435 @@
 			],
 			"conditionInflict": [
 				"frightened"
+			]
+		},
+		{
+			"name": "Sahuagin Demolishers",
+			"source": "NecromancersArmy",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"sahuagin",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 60",
+				"average": 195
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"athletics": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"sahuagin"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a medium humanoid as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Biting Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes  ({@damage 4d4}) piercing damage and gains two {@condition bleeding|GH} injuries, or 5 ({@dice 2d4}) and gains {@condition bleeding|GH} injury if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 19 ({@dice 3d8 + 6}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 16, only once per remains)."
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The unit deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The unit can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The unit has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Rain of Javelins in place of its attacks."
+					]
+				},
+				{
+					"name": "Warhammer",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Demolish",
+					"entries": [
+						"The sahuagins slam the ground in unisense with their hammers. Each creature in a 15-foot cube originating from the unit must make a {@dc 12} Dexterity saving throw, taking 14 ({@damage 4d6}) bludgeoning damage on a failed save or half as much on a successful one. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand."
+					]
+				}
+			],
+			"attachedItems": [
+				"warhammer|phb"
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"bleeding|gh"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sahuagin Elite Squad",
+			"source": "NecromancersArmy",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"sahuagin",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "50d8 + 50",
+				"average": 275
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"athletics": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"sahuagin"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a medium humanoid as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Biting Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes  ({@damage 4d4}) piercing damage and gains two {@condition bleeding|GH} injuries, or 5 ({@dice 2d4}) and gains {@condition bleeding|GH} injury if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 27 ({@dice 5d8 + 5}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The unit can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The unit has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Rain of Spears in place of its attacks."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Spearing",
+					"entries": [
+						"All creatures in a 15 ft. wide, 20 ft. long line must make a {@dc 11} Dexterity saving throw, taking 18 ([[/r {@dice 4d8}]]) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"attachedItems": [
+				"spear|phb"
+			],
+			"traitTags": [
+				"Siege Monster"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"bleeding|gh"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sahuagin Raiders",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "humanoid",
+				"swarmSize": "M",
+				"tags": [
+					"Sahuagin",
+					"10-20 members"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 40",
+				"average": 220
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"athletics": "+6"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"Sahuagin"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units and the unit can move through any opening large enough for a medium humanoid as difficult terrain if it is smaller than the size of the unit. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Biting Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes  ({@damage 4d4}) piercing damage and gains two {@condition bleeding|GH} injuries, or 5 ({@dice 2d4}) and gains {@condition bleeding|GH} injury if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Scavengers",
+					"entries": [
+						"If the unit spends 10 or more minutes picking through the remains of a defeated army, its Armor Class permanently increases by 1 (to a maximum of 14, only once per remains)."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"Then the unit takes 30 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 22 ({@dice 4d8 + 4}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Limited Amphibiousness",
+					"entries": [
+						"The unit can breathe air and water, but it needs to be submerged at least once every 4 hours to avoid suffocating."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The unit has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Spearing in place of its attacks."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}14 ({@damage 4d8}) piercing damage."
+					]
+				},
+				{
+					"name": "Spearing",
+					"entries": [
+						"All creatures in a 15 ft. wide, 20 ft. long line must make a {@dc 10} Dexterity saving throw, taking 14 ({@damage 4d8}) piercing damage on a failed save or half as much on a successful one. Creatures wearing heavy armor make this save with advantage, and take no damage on a successful save if it is wielding a shield."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spear Line",
+					"entries": [
+						"When a creature moves into the unit's range it can make a spear attack against it as a reaction."
+					]
+				}
+			],
+			"attachedItems": [
+				"spear|phb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"bleeding|gh"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
 			]
 		},
 		{
@@ -2900,6 +3670,109 @@
 			]
 		},
 		{
+			"name": "Skeletal Tiger",
+			"source": "NecromancersArmy",
+			"page": 339,
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 12",
+				"average": 45
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 15,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Pounce",
+					"entries": [
+						"If the tiger moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the tiger can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage. "
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Tiger.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/tiger.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pounce"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
 			"name": "Skeleton (base)",
 			"source": "NecromancersArmy",
 			"basicRules": true,
@@ -2956,6 +3829,26 @@
 			"environment": [
 				"urban"
 			],
+			"tokenUrl": "https://5e.tools/img/MM/Skeleton.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
 			"fluff": {
 				"name": "Skeleton",
 				"source": "MM",
@@ -3013,27 +3906,7 @@
 						}
 					}
 				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Skeleton.png",
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/skeleton.mp3"
-			},
-			"senseTags": [
-				"D"
-			],
-			"languageTags": [
-				"CS",
-				"LF"
-			],
-			"damageTags": [
-				"P"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true
+			}
 		},
 		{
 			"name": "Skirmisher Unit",
@@ -3346,6 +4219,26 @@
 					]
 				}
 			],
+			"tokenUrl": "https://5e.tools/img/CoS/Strahd Zombie.png",
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
 			"fluff": {
 				"name": "Strahd Zombie",
 				"source": "CoS",
@@ -3381,9 +4274,276 @@
 						]
 					}
 				]
+			}
+		},
+		{
+			"name": "Strahd Skeletal Steed",
+			"source": "NecromancersArmy",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item ring mail barding|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d10 + 18",
+				"average": 67
 			},
-			"tokenUrl": "https://5e.tools/img/CoS/Strahd Zombie.png",
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 9,
+			"resist": [
+				{
+					"resist": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [
+				"bludgeoning"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"understands Abyssal but can't speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the skeletal steed moves at least 20 feet straight toward a target and then hits it with a hooves attack on the same turn, the target takes an extra 7 ({@damage 2d6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 14} Strength saving throw or be pushed up to 10 feet away and knocked {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				},
+				{
+					"name": "Breath of Death {@recharge 4}",
+					"entries": [
+						"The skeletal steed exhales noxious gases on a creature within 5 feet of itself. If the target creature is not a construct or undead, it must succeed on a {@dc 12} Constitution saving throw or be {@condition paralyzed} until the end of the skeletal steed's next turn."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Warhorse%20Skeleton.png",
+			"traitTags": [
+				"Charge"
+			],
 			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/MM/Warhorse%20Skeleton.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Strahd Skeleton",
+			"source": "NecromancersArmy",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"from": [
+						"natural armor"
+					],
+					"ac": 14
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"darkvision 60 ft.",
+				"blindsight 10 ft."
+			],
+			"passive": 9,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				{
+					"immune": [
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"vulnerable": [
+				"thunder"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Fossilized Bones",
+					"entries": [
+						"Any nonmagical slashing or piercing weapon that hits the skeleton cracks. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition that hits the skeleton is destroyed after dealing damage."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The strahd skeleton has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The skeleton makes battleaxe attacks or three handaxe attacks."
+					]
+				},
+				{
+					"name": "Battleaxe",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"arctic",
+				"badlands",
+				"coastal",
+				"desert",
+				"farmland",
+				"forest",
+				"grassland",
+				"hill",
+				"mountain",
+				"planar",
+				"swamp",
+				"underdark",
+				"underwater",
+				"urban"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/token/Swordbreaker%20Skeleton%20%28Token%29.png",
+			"attachedItems": [
+				"battleaxe|phb",
+				"handaxe|phb"
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"B",
 				"D"
 			],
 			"actionTags": [
@@ -3394,14 +4554,299 @@
 				"LF"
 			],
 			"damageTags": [
-				"N",
-				"P",
 				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Tougher than a typical animated skeleton, these undead are raised from skeletal remains that have fossilized.",
+									{
+										"type": "entries",
+										"name": "Bones of Stone",
+										"entries": [
+											"The swordbreaker skeleton's bones have fossilized and become stony. Most weapons shatter against these bones, but the fossilization makes the skeletons more susceptible to magic that harms stone or that causes concussive bursts of sound."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Undead Nature",
+										"entries": [
+											"A swordbreaker skeleton doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Swordbreaker Skeleton Template",
+								"entries": [
+									"Any creature that has been dead for more than 100 years and that has a skeletal structure can be animated as a swordbreaker skeleton. When a creature is animated as a swordbreaker skeleton, it retains its statistics except as described below.",
+									{
+										"type": "entries",
+										"name": "Type",
+										"entries": [
+											"The skeleton's type changes to undead, and it no longer requires air, food, drink, or sleep."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Alignment",
+										"entries": [
+											"The skeleton's alignment changes to lawful evil."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Armor Class",
+										"entries": [
+											"The creature has a natural armor class of 13 + its Dexterity modifier."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Ability Scores",
+										"entries": [
+											"The skeleton's Intelligence score is reduced to 6 ({@d20 -2}), if it was higher, otherwise it retains its Intelligence score. Its Wisdom score changes to 8 ({@d20 -1}), and its Charisma score changes to 5 ({@d20 -3})."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Damage Vulnerabilities",
+										"entries": [
+											"The skeleton is vulnerable to thunder damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Damage Resistances",
+										"entries": [
+											"The skeleton has resistance to piercing and slashing damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Damage Immunities",
+										"entries": [
+											"The skeleton is immune to poison damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Condition Immunities",
+										"entries": [
+											"The skeleton is immune to {@condition exhaustion} and the {@condition poisoned} and {@condition petrified} conditions."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Senses",
+										"entries": [
+											"The skeleton gains {@sense darkvision} with a radius of 60 feet."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Languages",
+										"entries": [
+											"The skeleton understands all languages it knew in life but it can't speak."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "New Trait: Fossilized Bones",
+										"entries": [
+											"Any nonmagical slashing or piercing weapon made of metal or wood that hits the swordbreaker skeleton cracks. After dealing damage, the weapon takes a permanent and cumulative −1 penalty to damage rolls. If its penalty drops to −5, the weapon is destroyed. Nonmagical ammunition made of metal or wood that hits the swordbreaker skeleton is destroyed after dealing damage."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB2/creature/Swordbreaker%20Skeleton.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vampire Aristocrat",
+			"source": "NecromancersArmy",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 42",
+				"average": 105
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 17,
+			"dex": 17,
+			"con": 17,
+			"int": 13,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"con": "+6",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6",
+				"performance": "+6",
+				"persuasion": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"necrotic"
+			],
+			"vulnerable": [],
+			"conditionImmune": [],
+			"languages": [
+				"any three languages"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the vampire is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the vampire instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 10 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"Forbiddance. The vampire can't enter a residence without an invitation from one of the occupants.",
+						"Harmed by Running Water. The vampire takes 20 acid damage when it ends its turn in running water.",
+						"Stake to the Heart. The vampire is destroyed if a piercing weapon made of wood is driven into its heart while it is {@condition incapacitated} in its resting place.",
+						"Sunlight Hypersensitivity. The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire attacks twice with its rapier, once with its dagger, and once with its bite."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d4 + 4}) piercing damage, and the target must succeed on a {@dc 16} Constitution saving throw or take 14 ({@damage 4d6}) necrotic damage. The vampire regains hit points equal to the necrotic damage the target takes."
+					]
+				},
+				{
+					"name": "Charm (1/Day)",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 16} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack, willingly failing the saving throw.",
+						"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Creatures of the Night (1/Day)",
+					"entries": [
+						"Provided it isn't in direct sunlight, the vampire magically calls 5 ({@dice 2d4}) {@creature Swarm of Bats|MM|swarms of bats} or {@creature Swarm of Rats|MM|rats}. While outdoors, the vampire can call 5 ({@dice 2d4}) {@creature wolf|MM|wolves} instead. The called beasts arrive in 2 ({@dice 1d4}) rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Horrifying Revelation",
+					"entries": [
+						"When a creature within 30 feet of the vampire harms it, the vampire reveals a ghastly distortion of its true form to the attacker. The target must succeed on a {@dc 16} Wisdom saving throw or become {@condition frightened} of the vampire for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, it is immune to this vampire's Horrifying Revelation for 24 hours."
+					]
+				}
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/GHMG/Tokens/SomanVampireNoble.webp",
+			"traitTags": [
+				"Brute",
+				"Regeneration",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"N",
+				"P"
 			],
 			"miscTags": [
 				"MW"
 			],
-			"hasFluff": true
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/GHMG/SomanVampire.webp"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "Werewolf Skirmishers",
@@ -3625,6 +5070,158 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Yuan-ti Arcane Archers",
+			"source": "NecromancersArmy",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "monstrosity",
+				"swarmSize": "M",
+				"tags": [
+					"Yuan-ti",
+					"5-10 members"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d10 + 80",
+				"average": 300
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 18,
+			"con": 14,
+			"int": 14,
+			"wis": 12,
+			"cha": 16,
+			"skill": {
+				"stealth": "+7",
+				"perception": "+4",
+				"arcana": "+5",
+				"deception": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [],
+			"immune": [
+				"poison"
+			],
+			"vulnerable": [],
+			"conditionImmune": [
+				"charmed",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned"
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Draconic (Yuan-ti)"
+			],
+			"trait": [
+				{
+					"name": "Army",
+					"entries": [
+						"The unit can occupy another creature's space and vice versa, but not other units, and the unit can move through any opening large enough for a medium humanoid. The unit's attacks deal double damage to other units and it takes double damage from area of effects."
+					]
+				},
+				{
+					"name": "Coiling Horde",
+					"entries": [
+						"A creature that begins its turn within the unit's space takes 14 ({@damage 4d6}) bludgeoning damage and is {@condition restrained}, or 7 ({@dice 2d6}) and is {@condition grappled} if the unit is below half hit points."
+					]
+				},
+				{
+					"name": "Rout",
+					"entries": [
+						"When the unit takes 50 or more damage from a single source or falls below half its hit point maximum, it must make a {@dc 14} wisdom saving throw or become {@condition frightened} of the source of the damage for one minute. If the unit starts its turn {@condition frightened} it immediately takes 30 ({@dice 4d10+8}) as some of its members break away and flee."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The unit has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Unit Multiattack",
+					"entries": [
+						"The unit makes two attacks if it has more than half of its hit points. The unit can use Arcane Volley in place of its attacks."
+					]
+				},
+				{
+					"name": "Bites",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage and piercing and 14 ({@damage 4d6}) poison damage."
+					]
+				},
+				{
+					"name": "Faming Arrows",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 150/600 ft., one target. {@h}18 ({@damage 4d8}) piercing damage and 14 ({@damage 4d6}) fire damage."
+					]
+				},
+				{
+					"name": "Arcane Volley",
+					"entries": [
+						"The unit chooses a point within 320 feet. All creatures within 20 feet of that point must make a {@dc 15} Dexterity saving throw, taking 7({@damage 2d8}) piercing damage and 14 ({@damage 4d8}) lightning damage on a failed save or half as much on a successful one."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"I",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
 		},
 		{
 			"name": "Zombie Horde",
