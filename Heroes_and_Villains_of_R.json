@@ -1,5 +1,5 @@
 {
-	"siteVersion": "1.189.1",
+	"siteVersion": "1.204.0",
 	"_meta": {
 		"sources": [
 			{
@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1699131943,
-		"dateLastModified": 1699131943
+		"dateAdded": 1712442013,
+		"dateLastModified": 1712442013
 	},
 	"monster": [
 		{
@@ -2098,6 +2098,340 @@
 			}
 		},
 		{
+			"name": "Cromatic Guardian Naga",
+			"source": "HaVoR",
+			"page": 234,
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 18,
+			"con": 16,
+			"int": 16,
+			"wis": 19,
+			"cha": 18,
+			"save": {
+				"dex": "+8",
+				"con": "+7",
+				"int": "+7",
+				"wis": "+8",
+				"cha": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"immune": [],
+			"conditionImmune": [
+				"charmed"
+			],
+			"languages": [
+				"Celestial",
+				"Abyssal",
+				"Primordial"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Spellcasting (Acid/Water)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell grease}",
+						"{@spell Melf's acid arrow}"
+					],
+					"daily": {
+						"1": [
+							"{@spell vitriolic sphere|XGE}"
+						],
+						"2": [
+							"{@spell hunger of Hadar}",
+							"{@spell tidal wave|XGE}"
+						]
+					}
+				},
+				{
+					"name": "Spellcasting (Lightning/Air)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell thunderwave}"
+					],
+					"daily": {
+						"1": [
+							"{@spell storm sphere|XGE}"
+						],
+						"2": [
+							"{@spell thunder step|XGE}",
+							"{@spell wind wall}"
+						]
+					}
+				},
+				{
+					"name": "Spellcasting (Radiant/Light)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell guiding bolt}"
+					],
+					"daily": {
+						"1": [
+							"{@spell sickening radiance|XGE}"
+						],
+						"2": [
+							"{@spell blinding smite}",
+							"{@spell wall of sand|XGE}"
+						]
+					}
+				},
+				{
+					"name": "Spellcasting (Poison/Earth)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell ray of sickness}"
+					],
+					"daily": {
+						"1": [
+							"{@spell contagion}"
+						],
+						"2": [
+							"{@spell stinking cloud}",
+							"{@spell summon lesser demons|XGE}"
+						]
+					}
+				},
+				{
+					"name": "Spellcasting (Fire/Fire)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell burning hands}",
+						"{@spell cure wounds}",
+						"{@spell scorching ray}"
+					],
+					"daily": {
+						"1": [
+							"{@spell wall of fire}"
+						],
+						"2": [
+							"{@spell aura of vitality}",
+							"{@spell fireball}"
+						]
+					}
+				},
+				{
+					"name": "Spellcasting (Necrotic/Shadow)",
+					"type": "spellcasting",
+					"will": [
+						"{@spell arms of Hadar}"
+					],
+					"daily": {
+						"1": [
+							"{@spell enervation|XGE}"
+						],
+						"2": [
+							"{@spell dispel magic}",
+							"{@spell fear}"
+						]
+					}
+				}
+			],
+			"trait": [
+				{
+					"name": "Devour",
+					"entries": [
+						"While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the naga, and it takes 20 ({@damage 8d4}) acid damage at the start of each of the naga's turns.",
+						"If the naga takes 20 damage or more on a single turn from a creature inside it, the naga must succeed on a {@dc 20} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the naga. If the naga dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 30 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Chromatic Guardians",
+					"entries": [
+						"The Chromatic Nagas are always found in groups, each one possesses a unique elemental affinity. Each Naga also has a vulnerability to one of the damage types of another Naga. A chromatic naga is immune to its element and gives damage resistance to the associated damage type for all other allied nagas, negating the damage vulnerability of its counterpart naga.",
+						"Each naga has access to a different bite attack and spells, associated with the element it represents. When a naga loses the protection againts the damage type it is vulnerable to, it gains access to a a more powerful spell and all it's attacks deal an additional {@dice 2d8} of its associated damage type."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Poisonous Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) poison damage. Additionally, the target must make a {@dc 16} Constitution saving throw, or be {@condition poisoned} until the end of the naga's next turn."
+					]
+				},
+				{
+					"name": "Devouring Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) acid damage. If the target is a creature it is also {@condition grappled} (escape {@dc 16}). Until this grapple ends the naga can't bite another target and if it hits the {@condition grappled} creature a second time the naga swallows the creature."
+					]
+				},
+				{
+					"name": "Immolating Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 5 ({@damage 1d10}) fire damage at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Illuminating Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) radiant damage. Additionally, the next attack roll made against this target before the end of the naga's next turn has advantage, thanks to the mystical dim light glittering on the target until then."
+					]
+				},
+				{
+					"name": "Killing Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) necrotic damage. Additionally, the target can't regain hit points until the start of the naga's next turn."
+					]
+				},
+				{
+					"name": "Thunderous Bite",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one creature. {@h}8 ({@damage 1d8 + 4}) piercing damage and 9 ({@damage 2d8}) lightning damage. Additionally, the target must make a {@dc 16} Strength saving throw, or be knocked back 15 feet."
+					]
+				}
+			],
+			"environment": [
+				"desert",
+				"forest"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Guardian Naga.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/guardian-naga.mp3"
+			},
+			"traitTags": [
+				"Rejuvenation"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"P"
+			],
+			"damageTags": [
+				"A",
+				"F",
+				"I",
+				"L",
+				"N",
+				"P",
+				"R"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"R",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Guardian Naga",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Guardian Naga.jpg"
+						}
+					}
+				],
+				"entries": [
+					"Wise and good, the beautiful guardian nagas protect sacred places and items of magical power from falling into evil hands. In their hidden redoubts, they research spells and hatch convoluted plots to thwart the evil designs of their enemies.",
+					"A guardian naga doesn't seek out violence, warning off intruders rather than attacking. Only if its foes persist does the naga attack, accosting enemies with its spells and poisonous spittle.",
+					{
+						"type": "section",
+						"name": "Nagas",
+						"entries": [
+							"Nagas are intelligent serpents that inhabit the ruins of the past, amassing arcane treasures and knowledge.",
+							"The first nagas were created as immortal guardians by a humanoid race long lost to history. When this race died out, the nagas deemed themselves the rightful inheritors of their masters' treasures and magical lore. Industrious and driven, nagas occasionally venture out from their lairs to track down magic items or rare spellbooks.",
+							"Nagas never feel the ravages of time or succumb to sickness. Even if it is struck down, a naga's immortal spirit reforms in a new body in a matter of days, ready to continue its eternal work.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Benevolent Dictators and Brutal Tyrants",
+												"entries": [
+													"A naga rules its domain with absolute authority. Whether it rules with compassion or by terrorizing its subjects, the naga believes itself the master of all other creatures that inhabit its domain."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Rivalry",
+												"entries": [
+													"Nagas have a long-standing enmity with the yuan-ti, with each race seeing itself as the epitome of serpentine evolution. Though cooperation between them is rare, nagas and yuan-ti sometimes set aside their differences to work toward common objectives. However, yuan-ti always chafe under a naga's authority."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Immortal Nature",
+												"entries": [
+													"A naga doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Dendar, The Night Serpent",
 			"source": "HaVoR",
 			"size": [
@@ -2361,229 +2695,6 @@
 			}
 		},
 		{
-			"name": "Dread Admiral",
-			"isNpc": true,
-			"source": "HaVoR",
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item +1 studded leather armor|dmg}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "16d10 + 80",
-				"average": 168
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 20,
-			"dex": 14,
-			"con": 20,
-			"int": 12,
-			"wis": 16,
-			"cha": 18,
-			"save": {
-				"dex": "+7",
-				"wis": "+8",
-				"cha": "+9"
-			},
-			"skill": {
-				"athletics": "+10",
-				"survival": "+8",
-				"perception": "+8",
-				"intimidation": "+9"
-			},
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 18,
-			"immune": [
-				"fire",
-				"necrotic",
-				"poison"
-			],
-			"conditionImmune": [
-				"exhaustion",
-				"frightened",
-				"poisoned"
-			],
-			"languages": [
-				"Abyssal",
-				"Common"
-			],
-			"cr": "16",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"type": "spellcasting",
-					"headerEntries": [
-						"The admiral is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 17}, {@hit 9} to hit with spell attacks). It has the following paladin spells prepared:"
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell command}",
-								"{@spell compelled duel}",
-								"{@spell searing smite}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell hold person}",
-								"{@spell locate object}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell dispel magic}",
-								"{@spell incite greed|AI}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell dimension door}",
-								"{@spell staggering smite}"
-							],
-							"slots": 2
-						}
-					},
-					"ability": "cha"
-				}
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The admiral has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Undead Captian",
-					"entries": [
-						"Unless the admiral is {@condition incapacitated}, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The admiral makes three falchion attacks."
-					]
-				},
-				{
-					"name": "Falchion +1",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, or 11 ({@damage 1d10 + 6}) slashing damage if used with two hands, plus 13 ({@damage 3d8}) necrotic damage."
-					]
-				},
-				{
-					"name": "Hellfire Orb (1/Day)",
-					"entries": [
-						"The admiral hurls a ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a {@dc 17} Dexterity saving throw. The sphere spreads around corners. A creature takes 35 ({@damage 10d6}) fire damage and 35 ({@damage 10d6}) bludgeoning damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Legendary Reactions",
-					"entries": [
-						"The admiral can take up to three reactions per round but only one per turn."
-					]
-				},
-				{
-					"name": "Parry",
-					"entries": [
-						"The admiral adds 5 to its AC against attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
-					]
-				},
-				{
-					"name": "Command The Crew",
-					"entries": [
-						"When the admiral sees a hostile creature on his ship he can command an allied unleaded creature that can hear Flame Beard to can take an action using their reaction."
-					]
-				},
-				{
-					"name": "Not the ship",
-					"entries": [
-						"If the admiral sees a creature attempting to damage his ship, he can cast command or compelled duel on that creature before it can act."
-					]
-				}
-			],
-			"tokenUrl": "https://i.imgur.com/Ie3DOsn.png",
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"languageTags": [
-				"AB",
-				"C"
-			],
-			"damageTags": [
-				"B",
-				"F",
-				"N",
-				"S"
-			],
-			"damageTagsSpell": [
-				"F",
-				"O",
-				"Y"
-			],
-			"spellcastingTags": [
-				"CP"
-			],
-			"miscTags": [
-				"AOE",
-				"MW"
-			],
-			"conditionInflictSpell": [
-				"incapacitated",
-				"paralyzed",
-				"prone"
-			],
-			"savingThrowForced": [
-				"dexterity"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"wisdom"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/Ie3DOsn.png"
-						}
-					}
-				]
-			}
-		},
-		{
 			"name": "Felgolos",
 			"group": [
 				"Metallic Dragon"
@@ -2616,8 +2727,8 @@
 				"fly": 80,
 				"swim": 40
 			},
-			"str": 25,
-			"dex": 10,
+			"str": 23,
+			"dex": 12,
 			"con": 22,
 			"int": 18,
 			"wis": 16,
@@ -2626,12 +2737,13 @@
 				"con": "+13",
 				"wis": "+10",
 				"cha": "+13",
-				"dex": "+7"
+				"dex": "+8"
 			},
 			"skill": {
 				"insight": "+10",
 				"perception": "+17",
-				"arcana": "+11"
+				"arcana": "+11",
+				"stealth": "+8"
 			},
 			"senses": [
 				"blindsight 60 ft.",
@@ -2646,6 +2758,87 @@
 				"Draconic"
 			],
 			"cr": "24",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Felgolos is a 16th-level spellcaster. Its spellcasting ability is Charisma (spell save {@dc 21}, {@hit 13} to hit with spell attacks). Felgolos knows the following spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell message}",
+								"{@spell prestidigitation}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell alarm}",
+								"{@spell catapult|XGE}",
+								"{@spell comprehend languages}",
+								"{@spell detect magic}",
+								"{@spell fog cloud}",
+								"{@spell sleep}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}"
+							],
+							"slots": 4
+						},
+						"3": {
+							"spells": [
+								"{@spell clairvoyance}",
+								"{@spell tongues}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell arcane eye}",
+								"{@spell greater invisibility}",
+								"{@spell locate creature}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell Bigby's hand}",
+								"{@spell passwall}",
+								"{@spell scrying}",
+								"{@spell transmute rock|XGE}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell true seeing}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell teleport}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell earthquake}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha"
+				}
+			],
 			"trait": [
 				{
 					"name": "Amphibious",
@@ -2657,6 +2850,18 @@
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
 						"If Felgolos fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Thongameir's Master Spell",
+					"entries": [
+						"This powerful, enduring spell was cast upon Felgolos by the archmage Thongameir. It has three effects; all three function only against effects that are subject to spell resistance. If the attack is one that affects multiple creatures, other creatures are affected normally and Felgolos is unharmed (Thongameir's magic doesn't protect anyone other than Felgolos himself). Like actual spell resistance, Felgolos can suppress this ability when he wants to accept certain spells.",
+						"---",
+						"All Enchantment effects that would affect at Felgolos have no effect other than to cure a number of hit points equal to one point per spell level of the magical attack. Hit points in excess of his normal total remain for one day as temporary hit points. Successive enchantment effects simply cure more hit points or give him more temporary hit points. Effects without a spell level do not give him hit points but still do not affect him.",
+						"---",
+						"All Necromancy magics cast at Felgolos have no effect other than to give him a limited fast healing ability for one day, restoring hit points per hour equal to 1 hit point per spell level of the necromantic attack. This effect has brought the dragon back from apparent death more than once. Multiple Necromancy effects do not stack; he gains the most favorable rate of limited fast healing from the attacks directed against him (so if struck with a 9th-level Necromancy spell and a 1st-level Necromancy spell, Felgolos heals 9 hit points per hour for the next day). Effects without a spell level do not give him fast healing but still do not otherwise affect him.",
+						"---",
+						"All Transmutation magics of 5th-level or higher cast at Felgolos have no effect except to allow the dragon to cast a single teleport spell at any time within the next day. Multiple Transmutation effects give him multiple uses of this teleport spell, each with its own time of expiration. Transmutation effects of less than 5th level have no effect whatsoever, but do not give him the ability to use teleport."
 					]
 				}
 			],
@@ -2670,19 +2875,19 @@
 				{
 					"name": "Bite",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 10 ft., one target. {@h}18 ({@damage 2d10 + 7}) piercing damage."
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage."
 					]
 				},
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage."
 					]
 				},
 				{
 					"name": "Tail",
 					"entries": [
-						"{@atk mw} {@hit 12} to hit, reach 15 ft., one target. {@h}16 ({@damage 2d8 + 7}) bludgeoning damage."
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage."
 					]
 				},
 				{
@@ -2737,12 +2942,12 @@
 				{
 					"name": "Wing Attack (Costs 2 Actions)",
 					"entries": [
-						"Felgolos beats its wings. Each creature within 10 feet of Felgolos must succeed on a {@dc 20} Dexterity saving throw or take 14 ({@damage 2d6 + 7}) bludgeoning damage and be knocked {@condition prone}. Felgolos can then fly up to half its flying speed."
+						"Felgolos beats its wings. Each creature within 10 feet of Felgolos must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. Felgolos can then fly up to half its flying speed."
 					]
 				}
 			],
 			"dragonAge": "adult",
-			"tokenUrl": "https://5e.tools/img/SKT/Felgolos.png",
+			"tokenUrl": "https://i.imgur.com/WfQQ78S.png",
 			"traitTags": [
 				"Amphibious",
 				"Legendary Resistances"
@@ -2768,6 +2973,13 @@
 				"S"
 			],
 			"damageTagsLegendary": [],
+			"damageTagsSpell": [
+				"B",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
 			"miscTags": [
 				"AOE",
 				"MW",
@@ -2780,7 +2992,33 @@
 			"conditionInflictLegendary": [
 				"deafened",
 				"prone"
-			]
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			],
+			"fluff": {
+				"entries": [
+					"Art made by madnessdemon.",
+					"https://www.deviantart.com/madnessdemon/art/Bronze-dragon-922464373"
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/WfQQ78S.png"
+						}
+					}
+				]
+			}
 		},
 		{
 			"name": "First Mate Barnabus Blackwood",
@@ -6725,6 +6963,354 @@
 			}
 		},
 		{
+			"name": "Sibriex Grafter",
+			"source": "HaVoR",
+			"size": [
+				"H"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d12 + 96",
+				"average": 200
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 3,
+			"con": 23,
+			"int": 25,
+			"wis": 24,
+			"cha": 25,
+			"save": {
+				"int": "+13",
+				"cha": "+13"
+			},
+			"skill": {
+				"arcana": "+14",
+				"history": "+14",
+				"perception": "+14",
+				"nature": "+21",
+				"medicine": "+21"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 24,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"all",
+				"telepathy 120 ft."
+			],
+			"cr": "21",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The sibriex casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (spell save {@dc 22}):"
+					],
+					"will": [
+						"{@spell command} at 3rd level",
+						"{@spell dispel magic}",
+						"{@spell hold monster}"
+					],
+					"daily": {
+						"1": [
+							"{@spell feeblemind}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Contamination",
+					"entries": [
+						"The sibriex emits an aura of corruption 30 feet in every direction. Vegetation withers in the aura, and the ground in the aura is {@quickref difficult terrain||3} for other creatures. Any creature that starts its turn in the aura must succeed on a {@dc 21} Constitution saving throw or take 14 ({@damage 4d6}) poison damage or take half the damage on a successful save."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the sibriex fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sibriex has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sibriex makes three Chain attacks, and it uses Squirt Bile."
+					]
+				},
+				{
+					"name": "Chain",
+					"entries": [
+						"{@atk mw} {@hit 14} to hit, reach 15 ft., one target. {@h}21 ({@damage 2d12 + 7}) force damage."
+					]
+				},
+				{
+					"name": "Squirt Bile",
+					"entries": [
+						"The sibriex targets one creature it can see within 120 feet of it. The target must succeed on a {@dc 21} Dexterity saving throw or take 31 ({@damage 9d6}) acid damage."
+					]
+				},
+				{
+					"name": "Warp Creature",
+					"entries": [
+						"The sibriex targets up to three creatures it can see within 120 feet of it. Each target must make a {@dc 21} Constitution saving throw. On a successful save, a creature becomes immune to this sibriex's Warp Creature. On a failed save, the target is {@condition poisoned}, which causes it to also gain 1 level of {@condition exhaustion}. While {@condition poisoned} in this way, the target must repeat the saving throw at the start of each of its turns. Three successful saves against the poison end it. Lesser restoration or a similar effect removes one level of {@condition exhaustion} and the {@condition poisoned} condition ends if the last {@condition exhaustion} level is cured. Each failed save causes the target to gain another level of {@condition exhaustion}. Once the target reaches 6 levels of {@condition exhaustion}, it dies and instantly transforms into a living {@creature manes} under the sibriex's control. The transformation of the body can be undone only by a {@spell wish} spell. "
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cast a Spell",
+					"entries": [
+						"The sibriex uses Spellcasting."
+					]
+				},
+				{
+					"name": "Spray Bile",
+					"entries": [
+						"The sibriex uses Squirt Bile."
+					]
+				},
+				{
+					"name": "Warp (Costs 2 Actions)",
+					"entries": [
+						"The sibriex uses Warp Creature."
+					]
+				}
+			],
+			"variant": [
+				{
+					"type": "variant",
+					"name": "Flesh Warping",
+					"entries": [
+						"Creatures that encounter a sibriex can be twisted beyond recognition. Whenever a creature fails a saving throw against the sibriex's Warp Creature effect, you can roll percentile dice and consult the Flesh Warping table to determine an additional effect, which vanishes when Warp Creature ends on the creature. If the creature transforms into a manes, the effect becomes a permanent feature of that body. A creature can willingly submit to flesh warping, an agonizing process that takes at least 1 hour while the creature stays within 30 feet of the sibriex. At the end of the process, roll once on the table (or choose one effect) to determine how the creature is transformed permanently.",
+						{
+							"type": "table",
+							"caption": "Flesh Warping",
+							"colLabels": [
+								"d100",
+								"Effect"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"01–05",
+									"The color of the target's hair, eyes, and skin becomes blue, red, yellow, or patterned."
+								],
+								[
+									"06–10",
+									"The target's eyes push out of its head at the end of stalks."
+								],
+								[
+									"11–15",
+									"The target's hands grow claws, which can be used as daggers."
+								],
+								[
+									"16–20",
+									"One of the target's legs grows longer than the other, reducing its walking speed by 10 feet."
+								],
+								[
+									"21–25",
+									"The target's eyes become beacons, filling a 15- foot cone with dim light when they are open."
+								],
+								[
+									"26–30",
+									"A pair of wings, either feathered or leathery, sprout from the target's back, granting it a flying speed of 30 feet."
+								],
+								[
+									"31–35",
+									"The target's ears tear free from its head and scurry away; the target is {@condition deafened}."
+								],
+								[
+									"36–40",
+									"Two of the target's teeth turn into short tusks."
+								],
+								[
+									"41–45",
+									"The target's skin develops bark-like scales, granting it a +1 bonus to AC but reducing its Charisma score by 2 (to a minimum of 1)."
+								],
+								[
+									"46–50",
+									"The target's arms and legs switch places, preventing the target from moving unless it crawls."
+								],
+								[
+									"51–55",
+									"The target's arms become tentacles with fingers on the ends, increasing its reach by 5 feet."
+								],
+								[
+									"56–60",
+									"The target's legs grow incredibly long and springy, increasing its walking speed by 10 feet."
+								],
+								[
+									"61–65",
+									"The target grows a long, thin tail, which it can use as a whip."
+								],
+								[
+									"66–70",
+									"The target's entire eyes turn black, and it gains {@sense darkvision} out to a range of 120 feet."
+								],
+								[
+									"71–75",
+									"The target swells, tripling its weight."
+								],
+								[
+									"76–80",
+									"The target becomes thin and skeletal, halving its weight."
+								],
+								[
+									"81–85",
+									"The target's head triples in size."
+								],
+								[
+									"86–90",
+									"The target's ears become wings, giving it a flying speed of 5 feet."
+								],
+								[
+									"91–95",
+									"The target's body becomes unusually brittle, causing the target to have vulnerability to bludgeoning, piercing, and slashing damage."
+								],
+								[
+									"96–00",
+									"The target grows another head, causing it to have advantage on saving throws against being {@condition charmed}, {@condition frightened}, or {@condition stunned}."
+								]
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"tokenUrl": "https://5e.tools/img/MPMM/Sibriex.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/sibriex.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"O"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"deafened",
+				"exhaustion",
+				"poisoned"
+			],
+			"conditionInflictSpell": [
+				"paralyzed",
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Sibriex",
+				"source": "MPMM",
+				"entries": [
+					"Thought to be as old as the Abyss itself, sibriexes haunt remote parts of that plane, where they use their vile abilities to create new horrors and they seek ancient lore. Rivulets of blood and bile cascade from a sibriex's body, polluting the surrounding landscape.",
+					"Sibriexes have spent eons amassing knowledge from across the planes, hoarding it for when it might be useful. Such are their incredible intellects and stores of information that many seek them out, including demon lords. Some sibriexes act as advisors and oracles, manipulating demons into serving their ends, while others parcel out lore only when doing so advances their plans.",
+					"Sibriexes can channel the power of the Abyss to create new demons from other creatures. Some demons petition sibriexes for physical gifts, for sibriexes can graft on new body parts to give the demons greater strength, vision, or stamina. Sibriexes never give aid freely, though; they demand a service or a treasure in return for the flesh-shaping they provide."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Sibriex.webp"
+						},
+						"credit": "Christopher Burdett"
+					}
+				]
+			}
+		},
+		{
 			"name": "Sylvia Deathcry",
 			"source": "HaVoR",
 			"size": [
@@ -8575,21 +9161,21 @@
 				{
 					"name": "Magic Resistance",
 					"entries": [
-						"The masterpiece has advantage on saving throws against spells and other magical effects."
+						"The Masterpiece has advantage on saving throws against spells and other magical effects."
 					]
 				},
 				{
 					"name": "Blood Aegis",
 					"entries": [
-						"While the masterpiece has temporary hit points it gains a plus 2 to its AC, and when is subjected to an effect that allows it to make a saving throw to take only half damage, the masterpiece instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+						"While the Masterpiece has temporary hit points it gains a plus 2 to its AC, and when is subjected to an effect that allows it to make a saving throw to take only half damage, the Masterpiece instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Multiattack",
+					"name": "Mind Piercing Lance",
 					"entries": [
-						"The radiant idol makes a single melee attack against all creatures in a 120 feet line."
+						"The Masterpiece makes Psychic Lance attack against all creatures in a 120 feet line."
 					]
 				},
 				{
@@ -8601,7 +9187,7 @@
 				{
 					"name": "Swirl of Red (1/Day)",
 					"entries": [
-						"The masterpiece chooses a point on the ground it can see within 60 feet of it. A 30-foot-radius sphere appears where all blood is quickly drained from creatures. Each creature in the sphere when it appears or that ends its turn there must make a {@dc 18} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. The masterpiece gains temporary hit points equal to the total damage done by this ability. The area of the sphere is also difficult terrain and it remains for one minute. While the sphere remains the masterpiece can use its bonus action to move the sphere up to 20 feet in any direction."
+						"The Masterpiece chooses a point on the ground it can see within 60 feet of it. A 30-foot-radius sphere appears where all blood is quickly drained from creatures. Each creature in the sphere when it appears and when it ends its turn there must make a {@dc 18} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one. The Masterpiece gains temporary hit points equal to the total damage done by this ability. The area of the sphere is also difficult terrain and it remains for one minute. While the sphere remains the masterpiece can use its bonus action to move the sphere up to 20 feet in any direction."
 					]
 				}
 			],
@@ -8631,6 +9217,7 @@
 			],
 			"miscTags": [
 				"AOE",
+				"MLW",
 				"MW",
 				"RCH"
 			],
@@ -8641,8 +9228,195 @@
 			"conditionInflictSpell": [
 				"charmed"
 			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"wisdom"
+			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Titanoboa",
+			"source": "HaVoR",
+			"page": 382,
+			"size": [
+				"G"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 232,
+				"formula": "15d20 + 75"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"swim": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 3,
+			"save": {
+				"dex": "+5",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 15,
+			"cr": "12",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"constant": [
+						"{@spell greater invisibility}",
+						"{@spell haste}",
+						"{@spell holy weapon|XGE}",
+						"{@spell intellect fortress|TCE}",
+						"{@spell polymorph}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Slither",
+					"entries": [
+						"If the titanoboa hasn't eaten a Huge creature in the last 24 hours, it can move through a space as narrow as 10 feet wide without squeezing, or 5 feet while squeezing."
+					]
+				},
+				{
+					"name": "Sparkling Scales",
+					"entries": [
+						"The titanoboa's scales refract light in iridescent cascades that are hypnotic to gaze upon. If the titanoboa is in bright light, a creature within 30 feet that looks at it must make a successful {@dc 17} Wisdom saving throw or be {@condition stunned} until the end of its next turn. Unless surprised, a creature can avoid the saving throw by choosing to avert its eyes at the start of its turn. A creature that averts its eyes can't see the titanoboa until the start of its next turn, when it can choose to avert its eyes again. If the creature looks at the titanoboa in the meantime, it must immediately make the saving throw."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The titanoboa makes one bite attack and one constrict attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage. If the target is a Huge or smaller creature, it must succeed on a {@dc 18} Dexterity saving throw or be swallowed by the titanoboa. A swallowed creature is {@condition blinded} and {@condition restrained}, has total cover against attacks and other effects outside the snake, and takes 21 ({@damage 6d6}) acid damage at the start of each of the titanoboa's turns. If the titanoboa takes 30 damage or more on a single turn from a creature inside it, the titanoboa must succeed on a {@dc 15} Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of the titanoboa. If the titanoboa dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Constrict",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 15 ft., one target. {@h}27 ({@damage 3d12 + 8}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}, and the titanoboa can't constrict another target."
+					]
+				}
+			],
+			"environment": [
+				"forest"
+			],
+			"tokenUrl": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/token/Titanoboa.png",
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Swallow"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"restrained",
+				"stunned"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/ToB/Titanoboa.webp"
+						}
+					}
+				],
+				"entries": [
+					"{@i A This titanic green serpent can raise its enormous head high above, as much as 20 feet high. Its body extends in seemingly endless coils.}",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Territorial and Aggressive",
+										"entries": [
+											"Territorial and voracious, the rare titanoboa devours all trespassers in its domain. Stronger and faster than the giant anaconda, the true king of the rainforest is also more stubborn, fighting off entire groups of hunters and poachers. When stalking prey, these great serpents strike from ambush, swallowing even many dinosaurs in one bite."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Blinding Scales",
+										"entries": [
+											"Against groups of foes, titanoboas trust in their ability to dazzle their enemies with the light reflected from their scales, using this distraction to entwine the stunned foes in crushing coils."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Slow to Mate",
+										"entries": [
+											"Titanoboas mate rarely. They live for hundreds of years and never stop growing, which makes the need for propagation less urgent. When two titanoboas nest, the result is a brood of a half-dozen smaller snakes (giant constrictor snakes). An adult titanoboa is at least 80 feet long and weighs 6,000 lb. or more."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
 		},
 		{
 			"name": "Twilight Hound",
@@ -9284,6 +10058,266 @@
 						"href": {
 							"type": "external",
 							"url": "https://5e.tools/img/adventure/IDRotF/156-04-001.dragon.png"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Vanifer",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "HaVoR",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"tiefling"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 19,
+			"con": 17,
+			"int": 12,
+			"wis": 13,
+			"cha": 20,
+			"skill": {
+				"arcana": "+6",
+				"deception": "+10",
+				"performance": "+10",
+				"persuasion": "+10"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 11,
+			"immune": [
+				"fire"
+			],
+			"languages": [
+				"Common",
+				"Ignan",
+				"Infernal"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Vanifer is a 12h-level spellcaster. Her spellcasting ability is Charisma (spell save {@dc 18}, {@hit 10} to hit with spell attacks). Vanifer knows the following sorcerer spells:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell friends}",
+								"{@spell green-flame blade|TCE}",
+								"{@spell mage hand}",
+								"{@spell message}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell charm person}",
+								"{@spell chromatic orb}",
+								"{@spell hellish rebuke}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell darkness}",
+								"{@spell detect thoughts}",
+								"{@spell misty step}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell hypnotic pattern}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell wall of fire}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell dominate person}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell investiture of flame|XGE}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell fire storm}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Funeral Pyre",
+					"entries": [
+						"When Vanifer drops to 0 hit points, her body is consumed in a flash of fire and smoke. Anything she was wearing or carrying is left behind among ashes."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"If Vanifer fails a saving throw, she can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vanifer makes one melee attack and casts one spell."
+					]
+				},
+				{
+					"name": "Tinderstrike",
+					"entries": [
+						"{@atk mw,rw} {@hit 12} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}10 ({@damage 1d4 + 7}) piercing damage plus 7 ({@damage 2d6}) fire damage."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Vanifer",
+				"source": "PotA"
+			},
+			"tokenUrl": "https://5e.tools/img/PotA/Vanifer.png",
+			"attachedItems": [
+				"tinderstrike|pota"
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"IG"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"damageTagsLegendary": [
+				"F"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"savingThrowForcedLegendary": [
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"name": "Vanifer",
+				"source": "PotA",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Vanifer's rough childhood has hardened her heart against others. The world is a corrupt, painful place, she thinks, and deserving of a fiery end. For years, she was a dancer and concubine in a pasha's court in Calimshan. Later, she took up the mantle of prophet when she found Tinderstrike, and the same ruthless ambition and practiced manipulation that enabled her to escape a life of servitude serves her well as the head of a growing cult.",
+											"For Vanifer, battle is best observed at a distance. She prefers to hurl destructive magic from afar. Those who challenge Vanifer in melee learn a painful lesson, as she and Tinderstrike make a formidable pair.",
+											"In the Fire Node",
+											"When enemies threaten the Temple of Eternal Flame, Vanifer withdraws to the Weeping Colossus, the fire node. Within this node, Vanifer gains one additional use of her Legendary Resistance trait."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"If Vanifer is in the fire node while {@creature Imix|PotA} isn't, the tiefling can take lair actions. On initiative count 20 (losing initiative ties), Vanifer uses a lair action to cast one of her spells, up to 3rd level, without using components or a spell slot. She can't cast the same spell two rounds in a row, although she can continue to concentrate on a spell she previously cast using a lair action. Vanifer can take no other lair actions while {@status concentration||concentrating} on a spell cast as a lair action. Her favorite use of this capability is casting {@spell fireball} or {@spell hypnotic pattern}.",
+									"If Vanifer casts {@spell misty step} using this lair action, she also draws the power of the fire node into herself. By doing so, she regains 15 ({@dice 3d8 + 2}) hit points."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/PotA/Vanifer.webp"
 						}
 					}
 				]
@@ -10485,623 +11519,6 @@
 		},
 		{
 			"name": "Virmenda The Weeping Mother",
-			"group": [
-				"Chromatic Dragon"
-			],
-			"isNpc": true,
-			"source": "HaVoR",
-			"size": [
-				"H"
-			],
-			"type": {
-				"type": "undead",
-				"tags": [
-					"Dracolich"
-				]
-			},
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 19,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "18d12 + 72",
-				"average": 189
-			},
-			"speed": {
-				"walk": 40,
-				"fly": 80,
-				"swim": 40,
-				"canHover": false
-			},
-			"str": 23,
-			"dex": 12,
-			"con": 19,
-			"int": 20,
-			"wis": 15,
-			"cha": 20,
-			"save": {
-				"dex": "+6",
-				"con": "+9",
-				"wis": "+7",
-				"cha": "+10"
-			},
-			"skill": {
-				"deception": "+15",
-				"insight": "+12",
-				"perception": "+7",
-				"persuasion": "+15",
-				"stealth": "+6",
-				"arcana": "+10"
-			},
-			"senses": [
-				"blindsight 60 ft.",
-				"darkvision 120 ft."
-			],
-			"passive": 17,
-			"resist": [
-				{
-					"resist": [
-						"necrotic"
-					]
-				},
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks"
-				}
-			],
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"poisoned"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"Yuan-Ti",
-				"Elvish",
-				"Infernal",
-				"Sylvan",
-				"Giant",
-				"Dwarvish"
-			],
-			"cr": "16",
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"type": "spellcasting",
-					"headerEntries": [
-						"Virmenda can innately cast some spells, once per day each, requiring no material components. Her spellcasting ability is Charisma her spell save is {@dc 18}, and it has +10 to hit with spell attacks."
-					],
-					"daily": {
-						"1e": [
-							"{@spell contagion}",
-							"{@spell danse macabre|XGE}",
-							"{@spell mislead}"
-						]
-					},
-					"ability": "cha"
-				},
-				{
-					"name": "Spellcasting",
-					"type": "spellcasting",
-					"headerEntries": [
-						"Virmenda casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 18}), {@hit 10} to hit with spell attacks). She can't cast leveled spells in her draconic form."
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}",
-								"{@spell chill touch}",
-								"{@spell mage hand}",
-								"{@spell mind sliver|TCE}",
-								"{@spell minor illusion}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell absorb elements|XGE}",
-								"{@spell disguise self}",
-								"{@spell shield}",
-								"{@spell thunderwave}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell hold person}",
-								"{@spell mirror image}",
-								"{@spell misty step}",
-								"{@spell ray of enfeeblement}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell life transference|XGE}",
-								"{@spell lightning bolt}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell greater invisibility}",
-								"{@spell sickening radiance|XGE}",
-								"{@spell vitriolic sphere|XGE}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell animate objects}",
-								"{@spell dominate person}"
-							],
-							"slots": 2
-						},
-						"6": {
-							"spells": [
-								"{@spell circle of death}",
-								"{@spell mass suggestion}"
-							],
-							"slots": 1
-						},
-						"7": {
-							"spells": [
-								"{@spell finger of death}",
-								"{@spell forcecage}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int"
-				}
-			],
-			"trait": [
-				{
-					"name": "Undead Nature",
-					"entries": [
-						"Virmenda doesn't require air, food, drink, or sleep."
-					]
-				},
-				{
-					"name": "Legendary Resistance (3/Day)",
-					"entries": [
-						"If Virmenda fails a saving throw, it can choose to succeed instead."
-					]
-				},
-				{
-					"name": "Rejuvenation",
-					"entries": [
-						"If Virmenda's body is destroyed her soul returns to her phylactery in {@dice 1d10} hours. She can than inhabit a new suitable corps within 120 feet of her phylactery."
-					]
-				},
-				{
-					"name": "Contingency: Frost Shield",
-					"entries": [
-						"The first time Virmenda is hit by a melee attack her contingency activates, surrounding her with a swirling cold aura that protects her for 10 minutes or until dismissed by her. While active the aura gives her resistance to fire damage, additionally whenever a creature within 5 feet hits her with a melee attack, the shield erupts with an icy flare dealing 9 ({@damage 2d8}) cold damage to the attacker."
-					]
-				},
-				{
-					"name": "Recharge",
-					"entries": [
-						"While recharging her breath weapon she becomes vulnerable at some parts. While vulnerable any attacks that does not have disadvantage can become a called shot. A called shot deals double damage but the attack roll is made with a disadvantage."
-					]
-				},
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"Virmenda can use its action to polymorph into a Medium humanoid, or back into her true form. In humanoid form Virmenda loses her flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying is magically transforms with her. She reverts to her true form if she dies."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Chill Touch",
-					"entries": [
-						"{@atk rs} {@hit 10} to hit, 120 ft., one target. {@h}17 ({@damage 3d8}) necrotic damage, and the target can't regain hit points until the start of Virmenda's next turn. Until then, the hand clings to the target."
-					]
-				},
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Virmenda can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}17 ({@damage 2d10 + 6}) piercing damage plus 7 ({@damage 2d6}) poison damage."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) necrotic damage."
-					]
-				},
-				{
-					"name": "Tail Swipe",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage and the target must succeed on {@dc 19} Strength saving throw or be knocked back 15ft. and fall {@condition prone}."
-					]
-				},
-				{
-					"name": "Frightful Presence",
-					"entries": [
-						"Each creature of the Virmenda's choice that is within 120 feet of the her and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the Frightful Presence for the next 24 hours."
-					]
-				},
-				{
-					"name": "Wilting Breath",
-					"entries": [
-						"The dragon exhales noxious gas in a 60-foot cone. Each creature in that area must make a {@dc 17} Constitution saving throw, taking 28 ({@damage 8d6}) poison damage and  28 ({@damage 8d6}) necrotic damage on a failed save, or half as much damage on a successful one. This gas gas loses it's potency in seconds and does not linger."
-					]
-				},
-				{
-					"name": "Chlorine Gas",
-					"entries": [
-						"moderate poison damage on contact, lingering acid damage and blindnes. the gas lingers, fills lower areas. (dex or con)",
-						"The dragon exhales chlorine gas in a 60-foot cone.",
-						"Each creature in that area must make a {@dc 17} Constitution saving throw, taking 14 ({@damage 4d6}) poison damage and  14 ({@damage 4d6}) acid damage on a failed save, or half as much damage on a successful one. On a failed save if a creature is also {@condition blinded} and takes an additional 14 ({@damage 4d6}) acid damage at the end of their next turn. If the creature is submerged or doused with water before taking the secondary acid damage the blindness ends and it does not take the acid damage.",
-						"After that the gas lingers for four rounds, creating a 20ft radius cloud that slowly drifts to the lowest points in the area."
-					]
-				},
-				{
-					"name": "Neurotoxin",
-					"entries": [
-						"no poison damage initially. mind altering like confusion. after x turns it deals poison damage. Lingers, rises to the top."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Recharge Breath Weapon",
-					"entries": [
-						"If Virmenda did not use her breath weapon this turn she can use a bonus action and a legendary reaction to start recharging her breath weapon. She will regain her breath weapon at the start of her next turn."
-					]
-				}
-			],
-			"legendaryHeader": [
-				"Virmenda can take 3 legendary reactions, choosing from the options below. Only one legendary action can be used at a time. Virmenda regains spent legendary reactions at the start of its turn."
-			],
-			"legendary": [
-				{
-					"name": "Tail Swipe",
-					"entries": [
-						"If Virmenda sees or feels a second hostile creature approach her within 15 ft, she swing with her tail in a large arc. Each creature within 15 feet of her must succeed on a {@dc 19} Dexterity saving throw or take 15 ({@damage 2d8 + 6}) bludgeoning damage, knocked back 15ft. and fall {@condition prone}."
-					]
-				},
-				{
-					"name": "Wing Attack",
-					"entries": [
-						"If Virmenda is hit with two ranged attacks in one turn she beats her wings and flies in the direction of her last attacker. Each creature within 10 feet of the dragon must succeed on a {@dc 19} Dexterity saving throw or take 13 ({@damage 2d6 + 6}) bludgeoning damage and be knocked {@condition prone}. She can then move up to half her flying speed."
-					]
-				},
-				{
-					"name": "Deafening Roar",
-					"entries": [
-						"If Virmenda sees or hears a creature casting a spell she tries to disrupt it with a deafening roar. Each creature within 120 feet of her must  succeed on a {@dc 17} Constitution saving throw or become deafen until the end of their next turn and fail to cast any spell that it interrupted a creature that is already {@condition deafened} does not get interrupted."
-					]
-				},
-				{
-					"name": "Defensive Wings",
-					"entries": [
-						"When Virmenda can see an incoming attack would hit her or an effect would cause her to fail on a Dexterity saving throw, she can raise her wings in defense. Giving her a +5 to her AC or rolled Dexterity saving throw possibly blocking the attack or succeeding on the save."
-					]
-				}
-			],
-			"legendaryGroup": {
-				"name": "Green Dragon",
-				"source": "MM"
-			},
-			"dragonCastingColor": "green",
-			"dragonAge": "adult",
-			"tokenUrl": "https://i.imgur.com/T7LJZNn.png",
-			"traitTags": [
-				"Legendary Resistances",
-				"Rejuvenation",
-				"Shapechanger"
-			],
-			"senseTags": [
-				"B",
-				"SD"
-			],
-			"actionTags": [
-				"Breath Weapon",
-				"Frightful Presence",
-				"Multiattack"
-			],
-			"languageTags": [
-				"C",
-				"D",
-				"DR",
-				"E",
-				"GI",
-				"I",
-				"S"
-			],
-			"damageTags": [
-				"A",
-				"B",
-				"C",
-				"I",
-				"N",
-				"P"
-			],
-			"miscTags": [
-				"AOE",
-				"MW",
-				"RCH"
-			],
-			"conditionInflict": [
-				"blinded",
-				"frightened",
-				"prone"
-			],
-			"conditionInflictLegendary": [
-				"charmed",
-				"prone",
-				"restrained"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"fluff": {
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"The most cunning and treacherous of true dragons, green dragons use misdirection and trickery to get the upper hand against their enemies. Nasty tempered and thoroughly evil, they take special pleasure in subverting and corrupting the good-hearted. In the ancient forests they roam, green dragons demonstrate an aggression that is often less about territory than it is about gaining power and wealth with as little effort as possible.",
-									"A green dragon is recognized by its curved jawline and the crest that begins near its eyes and continues down its spine, reaching full height just behind the skull. A green dragon has no external ears, but bears leathery spiked plates that run down the sides of its neck.",
-									"A wyrmling green dragon's thin scales are a shade of green so dark as to appear nearly black. As a green dragon ages, its scales grow larger and lighter, turning shades of forest, emerald, and olive green to help it blend in with its wooded surroundings. Its wings have a dappled pattern, darker near the leading edges and lighter toward the trailing edges.",
-									"A green dragon's legs are longer in relation to its body than with any other dragon, enabling it to easily pass over underbrush and forest debris when it walks. With its equally long neck, an older green dragon can peer over the tops of trees without rearing up.",
-									{
-										"name": "Capricious Hunters",
-										"type": "entries",
-										"entries": [
-											"A green dragon hunts by patrolling its forest territory from the air and the ground. It eats any creature it can see, and will consume shrubs and small trees when hungry enough, but its favorite prey is elves.",
-											"Green dragons are consummate liars and masters of double talk. They favor intimidation of lesser creatures, but employ more subtle manipulations when dealing with other dragons. A green dragon attacks animals and monsters with no provocation, especially when dealing with potential threats to its territory. When dealing with sentient creatures, a green dragon demonstrates a lust for power that rivals its draconic desire for treasure, and it is always on the lookout for creatures that can help it further its ambitions.",
-											"A green dragon stalks its victims as it plans its assault, sometimes shadowing creatures for days. If a target is weak, the dragon enjoys the terror its appearance evokes before it attacks. It never slays all its foes, preferring to use intimidation to establish control over survivors. It then learns what it can about other creatures' activities near its territory, and about any treasure to be found nearby. Green dragons occasionally release prisoners if they can be ransomed. Otherwise, a creature must prove its value to the dragon daily or die."
-										]
-									},
-									{
-										"name": "Manipulative Schemers",
-										"type": "entries",
-										"entries": [
-											"A wily and subtle creature, a green dragon bends other creatures to its will by assessing and playing off their deepest desires. Any creature foolish enough to attempt to subdue a green dragon eventually realizes that the creature is only pretending to serve while it assesses its would-be master.",
-											"When manipulating other creatures, green dragons are honey-tongued, smooth, and sophisticated. Among their own kind, they are loud, crass, and rude, especially when dealing with dragons of the same age and status."
-										]
-									},
-									{
-										"name": "Conflict and Corruption",
-										"type": "entries",
-										"entries": [
-											"Green dragons sometimes clash with other dragons over territory where forest crosses over into other terrain. A green dragon typically pretends to back down, only to wait and watch-sometimes for decades-for the chance to slay the other dragon, then claim its lair and hoard.",
-											"Green dragons accept the servitude of sentient creatures such as goblinoids, ettercaps, ettins, kobolds, orcs, and yuan-ti. They also delight in corrupting and bending elves to their will. A green dragon sometimes wracks its minions' minds with fear to the point of insanity, with the fog that spreads throughout its forest reflecting those minions' tortured dreams."
-										]
-									},
-									{
-										"name": "Living Treasures",
-										"type": "entries",
-										"entries": [
-											"A green dragon's favored treasures are the sentient creatures it bends to its will, including significant figures such as popular heroes, well-known sages, and renowned bards. Among material treasures, a green dragon favors emeralds, wood carvings, musical instruments, and sculptures of humanoid subjects."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "A Green Dragon's Lair",
-										"entries": [
-											"The forest-loving green dragons sometimes compete for territory with black dragons in marshy woods and with white dragons in subarctic taiga. However, a forest controlled by a green dragon is easy to spot. A perpetual fog hangs in the air in a legendary green dragon's wood, carrying an acrid whiff of the creature's poison breath.",
-											"The moss-covered trees grow close together except where winding pathways trace their way like a maze into the heart of the forest. The light that reaches the forest floor carries an emerald green cast, and every sound seems muffled.",
-											"At the center of its forest, a green dragon chooses a cave in a sheer cliff or hillside for its lair, preferring an entrance hidden from prying eyes. Some seek out cave mouths concealed behind waterfalls, or partly submerged caverns that can be accessed through lakes or streams. Others conceal the entrances to their lairs with vegetation."
-										]
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"name": "Chromatic Dragons",
-						"entries": [
-							"The black, blue, green, red, and white dragons represent the evil side of dragonkind. Aggressive, gluttonous, and vain, chromatic dragons are dark sages and powerful tyrants feared by all creatures-including each other.",
-							{
-								"name": "Driven by Greed",
-								"entries": [
-									" Chromatic dragons lust after treasure, and this greed colors their every scheme and plot. They believe that the world's wealth belongs to them by right, and a chromatic dragon seizes that wealth without regard for the humanoids and other creatures that have \"stolen\" it. With its piles of coins, gleaming gems, and magic items, a dragon's hoard is the stuff of legend. However, chromatic dragons have no interest in commerce, amassing wealth for no other reason than to have it."
-								],
-								"type": "entries"
-							},
-							{
-								"name": "Creatures of Ego",
-								"type": "entries",
-								"entries": [
-									"Chromatic dragons are united by their sense of superiority, believing themselves the most powerful and worthy of all mortal creatures. When they interact with other creatures, it is only to further their own interests. They believe in their innate right to rule, and this belief is the cornerstone of every chromatic dragon's personality and worldview. Trying to humble a chromatic dragon is like trying to convince the wind to stop blowing. To these creatures, humanoids are animals, fit to serve as prey or beasts of burden, and wholly unworthy of respect."
-								]
-							},
-							{
-								"name": "Dangerous Lairs",
-								"type": "entries",
-								"entries": [
-									"A dragon's lair serves as the seat of its power and a vault for its treasure. With its innate toughness and tolerance for severe environmental effects, a dragon selects or builds a lair not for shelter but for defense, favoring multiple entrances and exits, and security for its hoard.",
-									"Most chromatic dragon lairs are hidden in dangerous and remote locations to prevent all but the most audacious mortals from reaching them. A black dragon might lair in the heart of a vast swamp, while a red dragon might claim the caldera of an active volcano. In addition to the natural defenses of their lairs, powerful chromatic dragons use magical guardians, traps, and subservient creatures to protect their treasures."
-								]
-							},
-							{
-								"name": "Queen of Evil Dragons",
-								"type": "entries",
-								"entries": [
-									"Tiamat the Dragon Queen is the chief deity of evil dragonkind. She dwells on Avernus, the first layer of the Nine Hells. As a lesser god, Tiamat has the power to grant spells to her worshipers, though she is loath to share her power. She epitomizes the avarice of evil dragons, believing that the multiverse and all its treasures will one day be hers and hers alone.",
-									"Tiamat is a gigantic dragon whose five heads reflect the forms of the chromatic dragons that worship her-black, blue, green, red, and white. She is a terror on the battlefield, capable of annihilating whole armies with her five breath weapons, her formidable spellcasting, and her fearsome claws.",
-									"Tiamat's most hated enemy is Bahamut the Platinum Dragon, with whom she shares control of the faith of dragonkind. She also holds a special enmity for Asmodeus, who long ago stripped her of the rule of Avernus and who continues to curb the Dragon Queen's power."
-								]
-							}
-						]
-					},
-					"True dragons are winged reptiles of ancient lineage and fearsome power. They are known and feared for their predatory cunning and greed, with the oldest dragons accounted as some of the most powerful creatures in the world. Dragons are also magical creatures whose innate power fuels their dreaded breath weapons and other preternatural abilities.",
-					"Many creatures, including wyverns and dragon turtles, have draconic blood. However, true dragons fall into the two broad categories of chromatic and metallic dragons. The black, blue, green, red, and white dragons are selfish, evil, and feared by all. The brass, bronze, copper, gold, and silver dragons are noble, good, and highly respected by the wise.",
-					"Though their goals and ideals vary tremendously, all true dragons covet wealth, hoarding mounds of coins and gathering gems, jewels, and magic items. Dragons with large hoards are loath to leave them for long, venturing out of their lairs only to patrol or feed.",
-					"True dragons pass through four distinct stages of life, from lowly wyrmlings to ancient dragons, which can live for over a thousand years. In that time, their might can become unrivaled and their hoards can grow beyond price.",
-					"Dragon Age Categories",
-					{
-						"type": "table",
-						"colLabels": [
-							"Category",
-							"Size",
-							"Age Range"
-						],
-						"colStyles": [
-							"col-4",
-							"col-4",
-							"col-4"
-						],
-						"rows": [
-							[
-								"Wyrmling",
-								"Medium",
-								"5 years or less"
-							],
-							[
-								"Young",
-								"Large",
-								"6–100 years"
-							],
-							[
-								"Adult",
-								"Huge",
-								"101–800 years"
-							],
-							[
-								"Ancient",
-								"Gargantuan",
-								"801 years or more"
-							]
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Lair Actions",
-								"entries": [
-									"On initiative count 20 (losing initiative ties), the dragon takes a lair action to cause one of the following effects; the dragon can't use the same effect two rounds in a row:",
-									{
-										"type": "list",
-										"items": [
-											"Grasping roots and vines erupt in a 20-foot radius centered on a point on the ground that the dragon can see within 120 feet of it. That area becomes difficult terrain, and each creature there must succeed on a {@dc 15} Strength saving throw or be {@condition restrained} by the roots and vines. A creature can be freed if it or another creature takes an action to make a {@dc 15} Strength check and succeeds. The roots and vines wilt away when the dragon uses this lair action again or when the dragon dies.",
-											"A wall of tangled brush bristling with thorns springs into existence on a solid surface within 120 feet of the dragon. The wall is up to 60 feet long, 10 feet high, and 5 feet thick, and it blocks line of sight. When the wall appears, each creature in its area must make a {@dc 15} Dexterity saving throw. A creature that fails the save takes 18 ({@damage 4d8}) piercing damage and is pushed 5 feet out of the wall's space, appearing on whichever side of the wall it wants. A creature can move through the wall, albeit slowly and painfully. For every 1 foot a creature travels through the wall, it must spend 4 feet of movement. Furthermore, a creature in the wall's space must make a {@dc 15} Dexterity saving throw once each round it's in contact with the wall, taking 18 ({@damage 4d8}) piercing damage on a failed save, or half as much damage on a successful one. Each 10-foot section of wall has AC 5, 15 hit points, vulnerability to fire damage, resistance to bludgeoning and piercing damage, and immunity to psychic damage. The wall sinks back into the ground when the dragon uses this lair action again or when the dragon dies.",
-											"Magical fog billows around one creature the dragon can see within 120 feet of it. The creature must succeed on a {@dc 15} Wisdom saving throw or be {@condition charmed} by the dragon until initiative count 20 on the next round."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Additional Lair Actions",
-										"entries": [
-											"At your discretion, a legendary ({@creature Adult Green Dragon||adult} or {@creature Ancient Green Dragon||ancient}) green dragon can use one or both of the following additional lair actions while in its lair:",
-											{
-												"type": "list",
-												"style": "list-hang-notitle",
-												"items": [
-													{
-														"type": "item",
-														"name": "Creeper Vines",
-														"entry": "The dragon can use the vines and roots within its lair to animate up to three Humanoid corpses, which become {@creature Zombie||zombies}. The zombies take their turn immediately after this lair action. Each one reverts to an inanimate corpse after 1 minute, when the dragon uses this lair action again, or when the zombie is destroyed."
-													},
-													{
-														"type": "item",
-														"name": "Lashing Root",
-														"entry": "One large root or branch that is part of the lair makes a melee attack roll against a creature within 10 feet of it. It has a +7 bonus to hit and deals 10 ({@damage 3d6}) bludgeoning damage on a hit. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked {@condition prone}."
-													}
-												]
-											}
-										],
-										"source": "FTD"
-									}
-								]
-							}
-						]
-					},
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"name": "Regional Effects",
-								"entries": [
-									"The region containing a legendary green dragon's lair is warped by the dragon's magic, which creates one or more of the following effects:",
-									{
-										"type": "list",
-										"items": [
-											"Thickets form labyrinthine passages within 1 mile of the dragon's lair. The thickets act as 10-foot-high, 10-foot-thick walls that block line of sight. Creatures can move through the thickets, with every 1 foot a creature moves costing it 4 feet of movement. A creature in the thickets must make a {@dc 15} Dexterity saving throw once each round it's in contact with the 'thickets or take 3 ({@damage 1d6}) piercing damage from thorns.",
-											"Each 10-foot-cube of thickets has AC 5, 30 hit points, resistance to bludgeoning and piercing damage, vulnerability to fire damage, and immunity to psychic and thunder damage.",
-											"Within 1 mile of its lair, the dragon leaves no physical evidence of its passage unless it wishes to. Tracking it there is impossible except by magical means. In addition, it ignores movement impediments and damage from plants in this area that are neither magical nor creatures, including the thickets described above. The plants remove themselves from the dragon's path.",
-											"Rodents and birds within 1 mile of the dragon's lair serve as the dragon's eyes and ears. Deer and other large game are strangely absent, hinting at the presence of an unnaturally hungry predator."
-										]
-									},
-									"If the dragon dies, the rodents and birds lose their supernatural link to it. The thickets remain, but within {@dice 1d10} days, they become mundane plants and normal difficult terrain, losing their thorns.",
-									{
-										"type": "entries",
-										"name": "Additional Regional Effects",
-										"entries": [
-											"Either or both of these effects might appear in the area around a green dragon's lair, in addition to or instead of those described in the {@i Monster Manual}:",
-											{
-												"type": "list",
-												"style": "list-hang-notitle",
-												"items": [
-													{
-														"type": "item",
-														"name": "Inviting Whispers",
-														"entry": "Whispers rustle in the foliage within 1 mile of the dragon's lair. The words are indistinct, but a creature with an Intelligence score of 5 or higher interprets them as an invitation to move deeper into the greenery."
-													},
-													{
-														"type": "item",
-														"name": "Twisted Messengers",
-														"entry": "The dragon can cause any Tiny Beast within 1 mile of its lair to act as its mouthpiece. The effect is horrendous, as the creature's throat and mouth temporarily warp into a twisted version of the dragon's own in order to allow the dragon's voice to issue forth."
-													}
-												]
-											}
-										],
-										"source": "FTD"
-									}
-								]
-							}
-						]
-					}
-				],
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/T7LJZNn.png"
-						}
-					}
-				]
-			}
-		},
-		{
-			"name": "Virmenda The Weeping Mother (new)",
 			"isNamedCreature": true,
 			"source": "HaVoR",
 			"size": [
@@ -11121,34 +11538,35 @@
 				}
 			],
 			"hp": {
-				"formula": "22d20 + 132",
-				"average": 363
+				"formula": "24d20 + 144",
+				"average": 396
 			},
 			"speed": {
 				"walk": 40,
-				"climb": 30,
-				"fly": 80
+				"fly": 80,
+				"swim": 40
 			},
 			"str": 27,
 			"dex": 14,
 			"con": 23,
-			"int": 23,
+			"int": 22,
 			"wis": 14,
-			"cha": 27,
+			"cha": 22,
 			"save": {
 				"con": "+14",
+				"int": "+14",
 				"wis": "+10",
-				"int": "+14"
+				"dex": "+10"
 			},
 			"skill": {
 				"arcana": "+14",
 				"insight": "+10",
 				"perception": "+10",
-				"deception": "+24",
-				"persuasion": "+24",
+				"deception": "+22",
+				"persuasion": "+22",
 				"religion": "+14",
 				"medicine": "+10",
-				"intimidation": "+16"
+				"intimidation": "+14"
 			},
 			"senses": [
 				"blindsight 60 ft.",
@@ -11195,7 +11613,9 @@
 					"spells": {
 						"0": {
 							"spells": [
+								"{@spell chill touch}",
 								"{@spell fire bolt}",
+								"{@spell mind sliver|TCE}",
 								"{@spell ray of frost}",
 								"{@spell shocking grasp}"
 							]
@@ -11212,13 +11632,12 @@
 						},
 						"2": {
 							"spells": [
-								"{@spell blur}",
-								"{@spell enlarge/reduce}",
-								"{@spell flaming sphere}",
+								"{@spell blindness/deafness}",
 								"{@spell hold person}",
-								"{@spell scorching ray}"
+								"{@spell Tasha's mind whip|TCE}",
+								"{@spell vortex warp|SCC}"
 							],
-							"slots": 6
+							"slots": 8
 						},
 						"3": {
 							"spells": [
@@ -11233,15 +11652,16 @@
 							"spells": [
 								"{@spell confusion}",
 								"{@spell dimension door}",
-								"{@spell fabricate}"
+								"{@spell fabricate}",
+								"{@spell fire shield}"
 							],
 							"slots": 3
 						},
 						"5": {
 							"spells": [
-								"{@spell conjure elemental}",
-								"{@spell polymorph}",
-								"{@spell wall of fire}",
+								"{@spell animate objects}",
+								"{@spell cone of cold}",
+								"{@spell dominate person}",
 								"{@spell wall of force}"
 							],
 							"slots": 3
@@ -11250,12 +11670,15 @@
 							"spells": [
 								"{@spell chain lightning}",
 								"{@spell disintegrate}",
-								"{@spell true seeing}"
+								"{@spell mental prison|XGE}",
+								"{@spell true seeing}",
+								"{@spell wall of ice}"
 							],
 							"slots": 2
 						},
 						"7": {
 							"spells": [
+								"{@spell crown of stars|XGE}",
 								"{@spell project image}",
 								"{@spell reverse gravity}",
 								"{@spell teleport}"
@@ -11264,14 +11687,16 @@
 						},
 						"8": {
 							"spells": [
-								"{@spell control weather}",
-								"{@spell maze}",
+								"{@spell illusory dragon|XGE}",
+								"{@spell maddening darkness|XGE}",
 								"{@spell power word stun}"
 							],
 							"slots": 1
 						},
 						"9": {
 							"spells": [
+								"{@spell invulnerability|XGE}",
+								"{@spell meteor swarm}",
 								"{@spell prismatic wall}"
 							],
 							"slots": 1
@@ -11282,7 +11707,7 @@
 			],
 			"trait": [
 				{
-					"name": "Legendary Resistance (3/Day)",
+					"name": "Undead Resistance (3/Day)",
 					"entries": [
 						"If The Weeping Mother fails a saving throw, she can choose to succeed instead."
 					]
@@ -11292,25 +11717,31 @@
 					"entries": [
 						"The Weeping Mother has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Dracolich Rejuvenation",
+					"entries": [
+						"When The Weeping Mother's body is destroyed it turns to ash, her soul returns to her phylactery in {@dice 1d10} hours. She can then inhabit a new suitable corps within 120 feet of her phylactery and become a Pseudodracolich. If the ash of her original body is within range of her phylactery, she regains her old original form regaining all her hit points."
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The Weeping Mother makes three attacks: one with his bite and two with his claws."
+						"The Weeping Mother makes a bite and a tail attack against different targets and can make one claw attack or cast a spell of 5th or lower level."
 					]
 				},
 				{
-					"name": "Bite",
+					"name": "Death Bite",
 					"entries": [
-						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage plus 14 ({@damage 4d6}) necrotic damage."
+						"{@atk mw} {@hit 16} to hit, reach 15 ft., one target. {@h}21 ({@damage 3d8 + 8}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. If the target is a creature other than an undead or construct it must expend two of its hit die without regaining hit points. If the creature can't expend any hit die it drops to 0 hit points."
 					]
 				},
 				{
-					"name": "Life Ripping Claw",
+					"name": "Paralyzing Claw",
 					"entries": [
-						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 22} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"{@atk mw} {@hit 14} to hit, reach 10 ft., one target. {@h}10 ({@damage 4d6}) cold damage. The target must succeed on a {@dc 22} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{
@@ -11320,22 +11751,29 @@
 					]
 				},
 				{
-					"name": "Lingering Poison Breath",
-					"entries": [
-						"it is just cloud kill, but with no {@status concentration}.",
-						"i can make the breath weapons like the metallic greatwyrms"
-					]
-				},
-				{
 					"name": "Breath of Death",
 					"entries": [
-						"The Weeping Mother exhales a pale fog of death in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw, taking 38 ({@damage 11d6}) poison and necrotic damage on a failed save, or half as much damage on a successful one. A creature dies if the breath reduces it to 0 hit points."
+						"The Weeping Mother exhales a pale fog of death in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw, taking 35 ({@damage 10d6}) poison and necrotic damage on a failed save, or half as much damage on a successful one. A creature dies if the breath reduces it to 0 hit points."
 					]
 				},
 				{
 					"name": "Debilitating Breath",
 					"entries": [
-						"The Weeping Mother exhales gas in a 90-foot cone. Each creature in that area must make a {@dc 24} Constitution saving throw. On a failed save, the creature becomes {@condition poisoned} and is {@condition unconscious} as long as it is {@condition poisoned} this way. On a successful save, or if the creature is immune to being {@condition poisoned}, has disadvantage on attack rolls and saving throws until the end of the Weeping Mother's next turn."
+						"The Weeping Mother exhales gas in a 90-foot cone. Each creature in that area must make a {@dc 22} Constitution saving throw. On a failed save, the creature becomes {@condition poisoned} and is {@condition unconscious} as long as it is {@condition poisoned} this way. On a successful save, or if the creature is immune to being {@condition poisoned}, has disadvantage on attack rolls and saving throws until the end of the Weeping Mother's next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Flight of Doom",
+					"entries": [
+						"The Weeping Mother beats her wings. Each creature within 15 feet of her must succeed on a {@dc 22} Charisma saving throw or take 14 ({@damage 2d6 + 8}) necrotic damage and become {@condition frightened} until the end of their next turn. The Weeping Mother can then fly up to half her flying speed."
+					]
+				},
+				{
+					"name": "Prepear Breath Attack",
+					"entries": [
+						"The Weeping Mother reels back her head and begins to charge her breath attack. On the next turn, she uses one of her breath attacks in place of her bite attack."
 					]
 				}
 			],
@@ -11343,23 +11781,23 @@
 				{
 					"name": "Tail Attack",
 					"entries": [
-						"The Weeping Mother makes a tail attack."
+						"Weeping Mother makes a tail attack."
 					]
 				},
 				{
-					"name": "Wing of Doom (Costs 2 Actions)",
+					"name": "Wings of Doom (Costs 2 Actions)",
 					"entries": [
-						"The Weeping Mother beats her wings. Each creature within 15 feet of her must succeed on a {@dc 24} Charisma saving throw or take 14 ({@damage 2d6 + 8}) necrotic damage and become {@condition frightened} until the end of its next turn. The Weeping Mother can then fly up to half her flying speed."
+						"Weeping Mother beats her wings. Each creature within 15 feet of her must succeed on a {@dc 22} Charisma saving throw or take 14 ({@damage 2d6 + 8}) necrotic damage and become {@condition frightened} until the end of its next turn. The Weeping Mother can then fly up to half her flying speed."
 					]
 				},
 				{
-					"name": "Quick Caast (Costs 1-3 Actions)",
+					"name": "Quick Cast (Costs 1-3 Actions)",
 					"entries": [
-						"The Weeping Mother casts one of her spells of 6th or lower level or one of her cantrips using Legendary Actions equal to half the level of the spell rounder down."
+						"Weeping Mother casts one of her spells of 6th or lower level or one of her cantrips using Legendary Actions equal to half the level of the spell rounder down."
 					]
 				}
 			],
-			"tokenUrl": "https://5e.tools/img/GGR/Niv-Mizzet.png",
+			"tokenUrl": "https://i.imgur.com/ISYL4cZ.png",
 			"traitTags": [
 				"Legendary Resistances",
 				"Magic Resistance"
@@ -11384,12 +11822,18 @@
 			],
 			"damageTagsSpell": [
 				"A",
+				"B",
 				"C",
 				"F",
 				"I",
 				"L",
+				"N",
 				"O",
-				"T"
+				"P",
+				"R",
+				"S",
+				"T",
+				"Y"
 			],
 			"spellcastingTags": [
 				"O"
@@ -11422,38 +11866,18 @@
 			"savingThrowForcedSpell": [
 				"constitution",
 				"dexterity",
+				"intelligence",
 				"wisdom"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"fluff": {
-				"name": "Niv-Mizzet",
-				"source": "GGR",
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									{
-										"type": "entries",
-										"entries": [
-											"Possessed of arrogance and vanity that matches his vast intellect and tremendous power, Niv-Mizzet is the ancient dragon who founded and continues to control the Izzet League. From his private laboratory at the top of the Izzet guildhall, Niv-Mizzet directs the research and experiments of his countless underlings. He coordinates a tremendous number of apparently unrelated projects, working toward some mysterious end.",
-											"There can be little doubt that this ancient dragon is one of the most intelligent beings on Ravnica and one of the world's most powerful spellcasters. He is just as acquisitive as any dragon, but his treasure is scientific and magical knowledge. His ambition is a looming threat in the minds of all the other guildmasters, but confronting him directly is almost unthinkable thanks to the combination of his awesome magical power and the sheer physical threat of a fire-breathing, swordtoothed dragon."
-										]
-									}
-								]
-							}
-						]
-					}
-				],
 				"images": [
 					{
 						"type": "image",
 						"href": {
-							"type": "internal",
-							"path": "bestiary/GGR/Niv-Mizzet.jpg"
+							"type": "external",
+							"url": "https://i.imgur.com/ISYL4cZ.png"
 						}
 					}
 				]
