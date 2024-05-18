@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1716015592,
-		"dateLastModified": 1716015592
+		"dateAdded": 1716065085,
+		"dateLastModified": 1716065085
 	},
 	"monster": [
 		{
@@ -4458,6 +4458,208 @@
 						"href": {
 							"type": "internal",
 							"path": "bestiary/MM/Wraith.jpg"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Hound of The Wispered One",
+			"isNpc": true,
+			"source": "HaVoR",
+			"size": [
+				"L"
+			],
+			"type": "undead",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 60",
+				"average": 127
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 50,
+				"canHover": false
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 18,
+			"int": 6,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"cha": "+7",
+				"dex": "+9"
+			},
+			"skill": {
+				"survival": "+8",
+				"perception": "+8"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"truesight 60 ft."
+			],
+			"passive": 18,
+			"resist": [],
+			"immune": [
+				{
+					"immune": [
+						"cold",
+						"necrotic",
+						"poison"
+					]
+				},
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"understands Common",
+				"Elvish",
+				"and Sylvan but can't speak"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The hound wields a magical eye that has 8 charges. It can use an action and expend 1 or more charges to cast one of the following spells (save {@dc 18}) from it: {@spell clairvoyance} (2 charges), {@spell crown of madness} (1 charge), {@spell disintegrate} (4 charges), {@spell dominate monster} (5 charges), or {@spell eyebite} (4 charges)."
+					]
+				}
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The lich hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Eye of The Whispered One",
+					"entries": [
+						"The lich hound is controlled by Vecna himself by his eye. The artifact grants the hound the following:",
+						"-It has truesight.",
+						"-Ith can use an action to see as if it were wearing a ring of X-ray vision. It can end this effect as a bonus action.",
+						"-While attuned to the artifact, it deals {@damage 1d6} necrotic damage to any plant that isn't a creature and all creatures of 0 CR within 10 ft.",
+						"-While attuned to the artifact, all holy water within 10 feet the eye is destroyed.",
+						"-The artifact can maintain {@status concentration} for one spell cast by its wielder."
+					]
+				},
+				{
+					"name": "Sunlight Banishment",
+					"entries": [
+						"If the hound starts its turn in sunlight, it is transported to the Ethereal Plane. The hound is visible on the Material Plane while it is in the Border Ethereal, and vice versa, but it can't affect or be affected by anything on the other plane."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the hound is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the hound instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d12 + 4}) piercing damage and 10 ({@damage 3d6}) cold damage.  If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Houl of Death (1/day)",
+					"entries": [
+						"The Hound releases a mournful houl, provided that it isn't in sunlight. This wail has no effect on constructs and undead. All other creatures within 30 feet of the hound that can hear it must make a {@dc 16} Constitution saving throw. On a failure, a creature drops to 0 hit points. On a success, a creature takes 21 ({@damage 6d6}) psychic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Gut Rip",
+					"entries": [
+						"As a bonus action, the lich hound phases and tears into the body of an adjacent {@condition prone} creature. The creature must succeed on a {@dc 17} Constitution saving throw or suffer 19 ({@damage 3d12}) slashing damage and 21 ({@damage 6d6}) cold damage and become {@condition paralyzed} for 1 minute or take half damage on a successful save. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Ethereal Jaunt",
+					"entries": [
+						"As a bonus action, the hound can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": "https://i.imgur.com/PBR5x2o.png"
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"senseTags": [
+				"B",
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/PBR5x2o.png"
 						}
 					}
 				]
