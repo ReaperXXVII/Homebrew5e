@@ -13,8 +13,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1716014530,
-		"dateLastModified": 1716014530
+		"dateAdded": 1716015592,
+		"dateLastModified": 1716015592
 	},
 	"monster": [
 		{
@@ -12382,29 +12382,9 @@
 				"darkvision 120 ft."
 			],
 			"passive": 19,
-			"resist": [
-				"cold",
-				"lightning",
-				"necrotic"
-			],
+			"resist": [],
 			"immune": [
-				{
-					"immune": [
-						"poison"
-					]
-				},
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed"
+				"poison"
 			],
 			"languages": [
 				"Common",
